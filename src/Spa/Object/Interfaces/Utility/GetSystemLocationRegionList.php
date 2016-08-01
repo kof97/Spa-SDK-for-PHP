@@ -58,7 +58,7 @@ class GetSystemLocationRegionList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetSystemLocationRegionList {
 }
 
 //end of script
+

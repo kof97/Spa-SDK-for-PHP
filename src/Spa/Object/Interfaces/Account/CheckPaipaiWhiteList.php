@@ -58,7 +58,7 @@ class CheckPaipaiWhiteList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -79,3 +79,4 @@ class CheckPaipaiWhiteList {
 }
 
 //end of script
+

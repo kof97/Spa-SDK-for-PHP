@@ -58,7 +58,7 @@ class Create {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -107,3 +107,4 @@ class Create {
 }
 
 //end of script
+

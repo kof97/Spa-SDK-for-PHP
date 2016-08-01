@@ -58,7 +58,7 @@ class WubaCategory {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class WubaCategory {
 }
 
 //end of script
+

@@ -58,7 +58,7 @@ class GetDailyInvoice {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -149,3 +149,4 @@ class GetDailyInvoice {
 }
 
 //end of script
+

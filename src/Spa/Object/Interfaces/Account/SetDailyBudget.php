@@ -58,7 +58,7 @@ class SetDailyBudget {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -91,3 +91,4 @@ class SetDailyBudget {
 }
 
 //end of script
+

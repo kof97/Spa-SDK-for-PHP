@@ -58,7 +58,7 @@ class SelectGenderAdvertiser {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -142,3 +142,4 @@ class SelectGenderAdvertiser {
 }
 
 //end of script
+

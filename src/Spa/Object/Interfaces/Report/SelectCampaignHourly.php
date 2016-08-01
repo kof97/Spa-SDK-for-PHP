@@ -58,7 +58,7 @@ class SelectCampaignHourly {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -151,3 +151,4 @@ class SelectCampaignHourly {
 }
 
 //end of script
+

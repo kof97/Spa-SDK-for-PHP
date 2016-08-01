@@ -58,7 +58,7 @@ class SelectHourly {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'task' => array(
@@ -104,3 +104,4 @@ class SelectHourly {
 }
 
 //end of script
+

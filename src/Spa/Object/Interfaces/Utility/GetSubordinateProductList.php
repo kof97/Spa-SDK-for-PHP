@@ -58,7 +58,7 @@ class GetSubordinateProductList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -93,3 +93,4 @@ class GetSubordinateProductList {
 }
 
 //end of script
+

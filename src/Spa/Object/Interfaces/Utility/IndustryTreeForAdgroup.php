@@ -58,7 +58,7 @@ class IndustryTreeForAdgroup {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class IndustryTreeForAdgroup {
 }
 
 //end of script
+

@@ -58,7 +58,7 @@ class SelectAdgroupDaily {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -160,3 +160,4 @@ class SelectAdgroupDaily {
 }
 
 //end of script
+

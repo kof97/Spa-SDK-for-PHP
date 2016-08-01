@@ -58,7 +58,7 @@ class CreateByUrl {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -103,3 +103,4 @@ class CreateByUrl {
 }
 
 //end of script
+

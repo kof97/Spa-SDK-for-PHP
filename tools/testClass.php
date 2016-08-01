@@ -58,7 +58,7 @@ class $interface_class {
     }
 
     protected function fieldInfo() {
-    	$field_info
+    	return $field_info
     }
 
 }

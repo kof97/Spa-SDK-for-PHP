@@ -58,7 +58,7 @@ class Preview {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -103,3 +103,4 @@ class Preview {
 }
 
 //end of script
+

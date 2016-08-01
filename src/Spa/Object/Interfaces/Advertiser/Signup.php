@@ -58,7 +58,7 @@ class Signup {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'customer_registration_type' => array(
@@ -328,3 +328,4 @@ class Signup {
 }
 
 //end of script
+

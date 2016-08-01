@@ -58,7 +58,7 @@ class WechatOrderCreate {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -129,3 +129,4 @@ class WechatOrderCreate {
 }
 
 //end of script
+

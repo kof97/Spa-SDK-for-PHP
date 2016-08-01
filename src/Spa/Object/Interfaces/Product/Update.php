@@ -58,7 +58,7 @@ class Update {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -138,3 +138,4 @@ class Update {
 }
 
 //end of script
+

@@ -58,7 +58,7 @@ class GetOpenid {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'app_id' => array(
@@ -79,3 +79,4 @@ class GetOpenid {
 }
 
 //end of script
+

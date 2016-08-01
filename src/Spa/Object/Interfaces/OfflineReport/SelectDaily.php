@@ -58,7 +58,7 @@ class SelectDaily {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'task' => array(
@@ -92,3 +92,4 @@ class SelectDaily {
 }
 
 //end of script
+

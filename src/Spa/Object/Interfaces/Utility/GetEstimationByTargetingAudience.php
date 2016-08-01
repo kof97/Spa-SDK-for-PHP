@@ -58,7 +58,7 @@ class GetEstimationByTargetingAudience {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -86,3 +86,4 @@ class GetEstimationByTargetingAudience {
 }
 
 //end of script
+

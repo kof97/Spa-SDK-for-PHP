@@ -58,7 +58,7 @@ class Ptlogin {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'app_id' => array(
@@ -115,3 +115,4 @@ class Ptlogin {
 }
 
 //end of script
+

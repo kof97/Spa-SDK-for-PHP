@@ -58,7 +58,7 @@ class GetShoppingInterestList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetShoppingInterestList {
 }
 
 //end of script
+

@@ -58,7 +58,7 @@ class SelectAge {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -178,3 +178,4 @@ class SelectAge {
 }
 
 //end of script
+

@@ -58,7 +58,7 @@ class Upload {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -97,3 +97,4 @@ class Upload {
 }
 
 //end of script
+

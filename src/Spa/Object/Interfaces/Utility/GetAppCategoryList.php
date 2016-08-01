@@ -58,7 +58,7 @@ class GetAppCategoryList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetAppCategoryList {
 }
 
 //end of script
+

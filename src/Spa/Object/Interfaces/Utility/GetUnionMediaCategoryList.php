@@ -58,7 +58,7 @@ class GetUnionMediaCategoryList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetUnionMediaCategoryList {
 }
 
 //end of script
+

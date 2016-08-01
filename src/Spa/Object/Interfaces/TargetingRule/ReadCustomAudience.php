@@ -58,7 +58,7 @@ class ReadCustomAudience {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -89,3 +89,4 @@ class ReadCustomAudience {
 }
 
 //end of script
+

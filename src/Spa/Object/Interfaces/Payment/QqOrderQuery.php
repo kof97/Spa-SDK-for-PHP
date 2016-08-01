@@ -58,7 +58,7 @@ class QqOrderQuery {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -91,3 +91,4 @@ class QqOrderQuery {
 }
 
 //end of script
+

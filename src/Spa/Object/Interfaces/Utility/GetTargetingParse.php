@@ -58,7 +58,7 @@ class GetTargetingParse {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -98,3 +98,4 @@ class GetTargetingParse {
 }
 
 //end of script
+

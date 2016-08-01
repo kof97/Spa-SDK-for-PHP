@@ -58,7 +58,7 @@ class GetQzonePageList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'qq' => array(
@@ -79,3 +79,4 @@ class GetQzonePageList {
 }
 
 //end of script
+

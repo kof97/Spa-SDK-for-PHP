@@ -58,7 +58,7 @@ class SelectAdvertiserHourly {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -133,3 +133,4 @@ class SelectAdvertiserHourly {
 }
 
 //end of script
+

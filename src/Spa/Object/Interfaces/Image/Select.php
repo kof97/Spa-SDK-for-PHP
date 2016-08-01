@@ -58,7 +58,7 @@ class Select {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -120,3 +120,4 @@ class Select {
 }
 
 //end of script
+

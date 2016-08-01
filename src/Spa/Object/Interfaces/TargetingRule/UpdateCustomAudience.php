@@ -58,7 +58,7 @@ class UpdateCustomAudience {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -113,3 +113,4 @@ class UpdateCustomAudience {
 }
 
 //end of script
+

@@ -58,7 +58,7 @@ class GetBusinessInterestList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetBusinessInterestList {
 }
 
 //end of script
+

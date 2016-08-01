@@ -58,7 +58,7 @@ class GetTransactionDetail {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -137,3 +137,4 @@ class GetTransactionDetail {
 }
 
 //end of script
+

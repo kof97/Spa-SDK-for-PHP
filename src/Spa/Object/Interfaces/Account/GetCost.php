@@ -58,7 +58,7 @@ class GetCost {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -92,3 +92,4 @@ class GetCost {
 }
 
 //end of script
+

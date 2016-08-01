@@ -58,7 +58,7 @@ class CreativePreview {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -91,3 +91,4 @@ class CreativePreview {
 }
 
 //end of script
+

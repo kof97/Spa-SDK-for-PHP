@@ -58,7 +58,7 @@ class Append {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -108,3 +108,4 @@ class Append {
 }
 
 //end of script
+

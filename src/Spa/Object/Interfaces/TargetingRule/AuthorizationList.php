@@ -58,7 +58,7 @@ class AuthorizationList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -120,3 +120,4 @@ class AuthorizationList {
 }
 
 //end of script
+

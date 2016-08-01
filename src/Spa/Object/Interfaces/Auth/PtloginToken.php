@@ -58,7 +58,7 @@ class PtloginToken {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'app_id' => array(
@@ -127,3 +127,4 @@ class PtloginToken {
 }
 
 //end of script
+

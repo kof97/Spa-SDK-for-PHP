@@ -58,7 +58,7 @@ class GetIndustryList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetIndustryList {
 }
 
 //end of script
+

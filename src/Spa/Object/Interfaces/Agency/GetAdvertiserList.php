@@ -58,7 +58,7 @@ class GetAdvertiserList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'page' => array(
@@ -91,3 +91,4 @@ class GetAdvertiserList {
 }
 
 //end of script
+

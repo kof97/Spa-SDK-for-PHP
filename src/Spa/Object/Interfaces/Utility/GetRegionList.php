@@ -58,7 +58,7 @@ class GetRegionList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetRegionList {
 }
 
 //end of script
+

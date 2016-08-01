@@ -58,7 +58,7 @@ class AddAdvertiser {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'corporation_name' => array(
@@ -159,3 +159,4 @@ class AddAdvertiser {
 }
 
 //end of script
+

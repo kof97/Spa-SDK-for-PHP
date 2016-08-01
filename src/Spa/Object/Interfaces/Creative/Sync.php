@@ -58,7 +58,7 @@ class Sync {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -209,3 +209,4 @@ class Sync {
 }
 
 //end of script
+

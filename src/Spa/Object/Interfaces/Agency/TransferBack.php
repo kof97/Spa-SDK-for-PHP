@@ -58,7 +58,7 @@ class TransferBack {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -136,3 +136,4 @@ class TransferBack {
 }
 
 //end of script
+

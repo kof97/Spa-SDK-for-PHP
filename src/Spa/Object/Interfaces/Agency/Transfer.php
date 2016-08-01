@@ -58,7 +58,7 @@ class Transfer {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -142,3 +142,4 @@ class Transfer {
 }
 
 //end of script
+

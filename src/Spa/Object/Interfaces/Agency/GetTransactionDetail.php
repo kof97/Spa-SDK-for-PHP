@@ -58,7 +58,7 @@ class GetTransactionDetail {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'account_type' => array(
@@ -125,3 +125,4 @@ class GetTransactionDetail {
 }
 
 //end of script
+

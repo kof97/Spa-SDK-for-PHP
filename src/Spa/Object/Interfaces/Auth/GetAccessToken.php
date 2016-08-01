@@ -58,7 +58,7 @@ class GetAccessToken {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'app_id' => array(
@@ -103,3 +103,4 @@ class GetAccessToken {
 }
 
 //end of script
+

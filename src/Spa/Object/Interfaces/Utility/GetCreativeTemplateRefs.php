@@ -58,7 +58,7 @@ class GetCreativeTemplateRefs {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'creative_template_id' => array(
@@ -77,3 +77,4 @@ class GetCreativeTemplateRefs {
 }
 
 //end of script
+

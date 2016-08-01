@@ -58,7 +58,7 @@ class GetFinancialOverview {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
         );
@@ -67,3 +67,4 @@ class GetFinancialOverview {
 }
 
 //end of script
+

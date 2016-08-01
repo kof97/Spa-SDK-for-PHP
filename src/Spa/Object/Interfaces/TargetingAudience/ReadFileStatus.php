@@ -58,7 +58,7 @@ class ReadFileStatus {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -91,3 +91,4 @@ class ReadFileStatus {
 }
 
 //end of script
+

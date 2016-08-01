@@ -257,8 +257,7 @@ EOF;
 function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name) {
     $arr = array();
     $method = strtoupper($method);
-    $field_info = '
-        array(
+    $field_info = 'array(
 ';
 
     foreach ($interface as $key => $value) {
@@ -451,12 +450,13 @@ class $interface_class {
     }
 
     protected function fieldInfo() {
-        $field_info
+        return $field_info
     }
 
 }
 
 //end of script
+
 
 EOF;
 

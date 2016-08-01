@@ -58,7 +58,7 @@ class SelectRegionAdvertiser {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -142,3 +142,4 @@ class SelectRegionAdvertiser {
 }
 
 //end of script
+

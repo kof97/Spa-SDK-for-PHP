@@ -58,7 +58,7 @@ class GetFileList {
     }
 
     protected function fieldInfo() {
-        
+        return 
         array(
 
             'advertiser_id' => array(
@@ -130,3 +130,4 @@ class GetFileList {
 }
 
 //end of script
+
