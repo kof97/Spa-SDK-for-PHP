@@ -143,6 +143,7 @@ class GetDailyInvoice {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

@@ -85,6 +85,7 @@ class GetAdvertiserList {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

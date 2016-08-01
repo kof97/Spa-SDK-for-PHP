@@ -102,6 +102,7 @@ class Append {
                 'min_length' => '32',
             ),
 
+        );
     }
 
 }

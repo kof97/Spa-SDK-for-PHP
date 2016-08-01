@@ -73,6 +73,7 @@ class CheckPaipaiWhiteList {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

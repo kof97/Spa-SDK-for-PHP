@@ -123,6 +123,7 @@ class InnerTransfer {
                 'pattern' => '{memo_pattern}',
             ),
 
+        );
     }
 
 }

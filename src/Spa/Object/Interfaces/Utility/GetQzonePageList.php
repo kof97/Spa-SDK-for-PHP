@@ -73,6 +73,7 @@ class GetQzonePageList {
                 'min' => '10000',
             ),
 
+        );
     }
 
 }

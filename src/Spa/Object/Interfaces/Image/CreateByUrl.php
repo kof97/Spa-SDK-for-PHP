@@ -97,6 +97,7 @@ class CreateByUrl {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

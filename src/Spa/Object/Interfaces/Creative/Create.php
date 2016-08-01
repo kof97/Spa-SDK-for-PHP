@@ -204,6 +204,7 @@ class Create {
                 'source' => 'api_configured_status',
             ),
 
+        );
     }
 
 }

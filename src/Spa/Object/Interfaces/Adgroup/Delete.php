@@ -84,6 +84,7 @@ class Delete {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

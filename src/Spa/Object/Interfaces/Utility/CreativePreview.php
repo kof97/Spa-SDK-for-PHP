@@ -85,6 +85,7 @@ class CreativePreview {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

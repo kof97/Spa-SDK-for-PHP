@@ -353,6 +353,9 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
         }
     }
 
+    $field_info .= '
+        );';
+
     $content = <<<EOF
 <?php 
 

@@ -83,6 +83,7 @@ class Delete {
                 'errormsg' => '规则id不正确',
             ),
 
+        );
     }
 
 }

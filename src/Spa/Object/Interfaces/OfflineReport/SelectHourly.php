@@ -98,6 +98,7 @@ class SelectHourly {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

@@ -112,6 +112,7 @@ class Count {
                 'item_max_length' => '255',
             ),
 
+        );
     }
 
 }

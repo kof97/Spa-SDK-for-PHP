@@ -123,6 +123,7 @@ class WechatOrderCreate {
                 'pattern' => '{url_pattern}',
             ),
 
+        );
     }
 
 }

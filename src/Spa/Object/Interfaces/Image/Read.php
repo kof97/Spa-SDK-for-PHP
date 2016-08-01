@@ -85,6 +85,7 @@ class Read {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

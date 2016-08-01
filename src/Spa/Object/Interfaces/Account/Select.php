@@ -73,6 +73,7 @@ class Select {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

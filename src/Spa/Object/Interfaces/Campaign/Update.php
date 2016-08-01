@@ -168,6 +168,7 @@ class Update {
                 'source' => 'api_configured_status',
             ),
 
+        );
     }
 
 }

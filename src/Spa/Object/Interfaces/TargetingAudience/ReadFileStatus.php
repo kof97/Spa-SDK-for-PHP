@@ -85,6 +85,7 @@ class ReadFileStatus {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

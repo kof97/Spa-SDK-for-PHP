@@ -61,6 +61,7 @@ class GetShoppingInterestList {
         
         array(
 
+        );
     }
 
 }

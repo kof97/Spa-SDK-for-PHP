@@ -131,6 +131,7 @@ class GetAllTransactionDetail {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

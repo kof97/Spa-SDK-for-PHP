@@ -152,6 +152,7 @@ class SelectGender {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

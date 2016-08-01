@@ -171,6 +171,7 @@ class SelectAdgroupHourly {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

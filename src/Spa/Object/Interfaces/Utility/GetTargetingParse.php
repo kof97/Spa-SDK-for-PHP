@@ -92,6 +92,7 @@ class GetTargetingParse {
                 'type' => '',
             ),
 
+        );
     }
 
 }

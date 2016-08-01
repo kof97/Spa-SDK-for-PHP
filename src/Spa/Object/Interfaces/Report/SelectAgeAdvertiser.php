@@ -130,6 +130,7 @@ class SelectAgeAdvertiser {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

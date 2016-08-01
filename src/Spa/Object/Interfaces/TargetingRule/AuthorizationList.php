@@ -108,6 +108,7 @@ class AuthorizationList {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

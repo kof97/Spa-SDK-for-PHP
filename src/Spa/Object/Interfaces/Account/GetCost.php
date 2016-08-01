@@ -86,6 +86,7 @@ class GetCost {
                 'pattern' => '{date_pattern}',
             ),
 
+        );
     }
 
 }

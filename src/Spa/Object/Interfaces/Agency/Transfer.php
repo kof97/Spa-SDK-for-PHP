@@ -136,6 +136,7 @@ class Transfer {
                 'pattern' => '{date_pattern}',
             ),
 
+        );
     }
 
 }

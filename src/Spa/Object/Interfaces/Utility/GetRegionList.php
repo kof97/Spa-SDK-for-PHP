@@ -61,6 +61,7 @@ class GetRegionList {
         
         array(
 
+        );
     }
 
 }

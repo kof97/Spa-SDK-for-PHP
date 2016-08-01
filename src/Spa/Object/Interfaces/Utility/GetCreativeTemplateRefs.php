@@ -71,6 +71,7 @@ class GetCreativeTemplateRefs {
                 'errormsg' => '素材规格Id不正确',
             ),
 
+        );
     }
 
 }

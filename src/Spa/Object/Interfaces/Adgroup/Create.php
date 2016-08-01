@@ -332,6 +332,7 @@ class Create {
                 'type' => '',
             ),
 
+        );
     }
 
 }

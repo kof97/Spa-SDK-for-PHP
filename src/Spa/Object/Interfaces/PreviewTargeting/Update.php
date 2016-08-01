@@ -94,6 +94,7 @@ class Update {
                 'errormsg' => '预览QQ列表错误',
             ),
 
+        );
     }
 
 }

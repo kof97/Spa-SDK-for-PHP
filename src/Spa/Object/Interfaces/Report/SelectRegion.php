@@ -152,6 +152,7 @@ class SelectRegion {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

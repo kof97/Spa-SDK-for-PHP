@@ -61,6 +61,7 @@ class IndustryTreeForAdgroup {
         
         array(
 
+        );
     }
 
 }

@@ -244,6 +244,7 @@ class Create {
                 'errormsg' => '外部人群规则Id不正确',
             ),
 
+        );
     }
 
 }

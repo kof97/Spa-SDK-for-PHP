@@ -109,6 +109,7 @@ class Ptlogin {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

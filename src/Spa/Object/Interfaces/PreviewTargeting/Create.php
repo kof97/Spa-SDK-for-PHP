@@ -94,6 +94,7 @@ class Create {
                 'errormsg' => '预览QQ列表错误',
             ),
 
+        );
     }
 
 }

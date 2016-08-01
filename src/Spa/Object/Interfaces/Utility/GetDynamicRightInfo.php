@@ -73,6 +73,7 @@ class GetDynamicRightInfo {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

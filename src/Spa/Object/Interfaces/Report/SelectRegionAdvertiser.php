@@ -130,6 +130,7 @@ class SelectRegionAdvertiser {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

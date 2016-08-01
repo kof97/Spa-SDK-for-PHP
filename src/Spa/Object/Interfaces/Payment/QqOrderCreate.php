@@ -123,6 +123,7 @@ class QqOrderCreate {
                 'pattern' => '{url_pattern}',
             ),
 
+        );
     }
 
 }

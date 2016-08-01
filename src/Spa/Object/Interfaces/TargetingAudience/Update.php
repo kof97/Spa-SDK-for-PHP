@@ -174,6 +174,7 @@ class Update {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

@@ -159,6 +159,7 @@ class SelectCampaignHourly {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

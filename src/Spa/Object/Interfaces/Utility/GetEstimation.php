@@ -133,6 +133,7 @@ class GetEstimation {
                 'item_max_length' => '32',
             ),
 
+        );
     }
 
 }

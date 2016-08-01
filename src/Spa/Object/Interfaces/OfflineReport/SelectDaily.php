@@ -86,6 +86,7 @@ class SelectDaily {
                 'pattern' => '{date_pattern}',
             ),
 
+        );
     }
 
 }

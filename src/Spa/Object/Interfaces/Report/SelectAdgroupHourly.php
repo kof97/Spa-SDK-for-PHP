@@ -132,6 +132,7 @@ class SelectAdgroupHourly {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

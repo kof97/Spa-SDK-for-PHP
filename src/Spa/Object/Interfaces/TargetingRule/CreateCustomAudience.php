@@ -109,6 +109,7 @@ class CreateCustomAudience {
                 'min_length' => '0',
             ),
 
+        );
     }
 
 }

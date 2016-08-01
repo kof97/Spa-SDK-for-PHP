@@ -107,6 +107,7 @@ class UpdateCustomAudience {
                 'min_length' => '0',
             ),
 
+        );
     }
 
 }

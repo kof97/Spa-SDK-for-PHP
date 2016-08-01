@@ -116,6 +116,7 @@ class UpdateByPb {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

@@ -61,6 +61,7 @@ class GetSystemLocationRegionList {
         
         array(
 
+        );
     }
 
 }

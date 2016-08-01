@@ -168,6 +168,7 @@ class SelectCampaignDaily {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

@@ -152,6 +152,7 @@ class SelectAge {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

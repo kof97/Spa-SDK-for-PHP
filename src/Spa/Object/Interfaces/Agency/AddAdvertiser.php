@@ -153,6 +153,7 @@ class AddAdvertiser {
                 'type' => '',
             ),
 
+        );
     }
 
 }

@@ -97,6 +97,7 @@ class GetAccessToken {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

@@ -259,6 +259,7 @@ class Update {
                 'type' => '',
             ),
 
+        );
     }
 
 }

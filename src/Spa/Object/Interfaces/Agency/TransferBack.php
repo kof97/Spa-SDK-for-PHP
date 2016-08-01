@@ -130,6 +130,7 @@ class TransferBack {
                 'pattern' => '{memo_pattern}',
             ),
 
+        );
     }
 
 }

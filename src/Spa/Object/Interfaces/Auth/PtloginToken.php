@@ -121,6 +121,7 @@ class PtloginToken {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

@@ -73,6 +73,7 @@ class GetOpenid {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

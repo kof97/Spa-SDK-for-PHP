@@ -130,6 +130,7 @@ class SelectAdvertiserDaily {
                 'item_max_length' => '255',
             ),
 
+        );
     }
 
 }

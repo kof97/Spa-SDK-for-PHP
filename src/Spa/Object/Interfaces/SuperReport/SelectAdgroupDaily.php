@@ -168,6 +168,7 @@ class SelectAdgroupDaily {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

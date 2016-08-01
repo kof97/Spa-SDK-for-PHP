@@ -97,6 +97,7 @@ class SetDailyBudget {
                 'min' => '5000',
             ),
 
+        );
     }
 
 }

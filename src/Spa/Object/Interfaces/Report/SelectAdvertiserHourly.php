@@ -121,6 +121,7 @@ class SelectAdvertiserHourly {
                 'item_max_length' => '255',
             ),
 
+        );
     }
 
 }

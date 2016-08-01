@@ -85,6 +85,7 @@ class QqOrderQuery {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

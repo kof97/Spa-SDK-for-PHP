@@ -130,6 +130,7 @@ class SelectGenderAdvertiser {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

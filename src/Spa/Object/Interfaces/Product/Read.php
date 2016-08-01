@@ -98,6 +98,7 @@ class Read {
                 'source' => 'api_product_type',
             ),
 
+        );
     }
 
 }

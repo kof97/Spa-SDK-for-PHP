@@ -83,6 +83,7 @@ class Delete {
                 'errormsg' => '人群规则id不正确',
             ),
 
+        );
     }
 
 }

@@ -91,6 +91,7 @@ class Upload {
                 'min_length' => '32',
             ),
 
+        );
     }
 
 }

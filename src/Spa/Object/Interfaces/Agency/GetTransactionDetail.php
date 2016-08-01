@@ -119,6 +119,7 @@ class GetTransactionDetail {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

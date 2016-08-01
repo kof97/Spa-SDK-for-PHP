@@ -73,6 +73,7 @@ class GetLocationList {
                 'min' => '0',
             ),
 
+        );
     }
 
 }

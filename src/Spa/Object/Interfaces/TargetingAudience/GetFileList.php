@@ -118,6 +118,7 @@ class GetFileList {
                 'min' => '1',
             ),
 
+        );
     }
 
 }

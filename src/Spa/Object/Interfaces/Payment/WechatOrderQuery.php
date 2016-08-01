@@ -97,6 +97,7 @@ class WechatOrderQuery {
                 'min_length' => '1',
             ),
 
+        );
     }
 
 }

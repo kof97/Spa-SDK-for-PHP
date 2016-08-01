@@ -97,6 +97,7 @@ class Preview {
                 'min_length' => '32',
             ),
 
+        );
     }
 
 }

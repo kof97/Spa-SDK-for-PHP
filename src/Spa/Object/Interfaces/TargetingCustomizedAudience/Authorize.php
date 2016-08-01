@@ -118,6 +118,7 @@ class Authorize {
                 'min_length' => '0',
             ),
 
+        );
     }
 
 }

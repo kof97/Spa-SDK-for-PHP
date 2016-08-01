@@ -108,6 +108,7 @@ class Select {
                 'item_max_length' => '255',
             ),
 
+        );
     }
 
 }
