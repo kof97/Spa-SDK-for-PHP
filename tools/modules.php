@@ -255,6 +255,7 @@ EOF;
  * 生成接口实体
  */
 function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name) {
+    $arr = array();
     $method = strtoupper($method);
     $field_info = '';
 
@@ -265,8 +266,8 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $extendType = $v->attributes()['type'] . '';
                 $require = $v->attributes()['require'] . '';
 
-                getExtendTypeInfo($data, $mod_name, $interface_name, $extendType);
-
+                $arr = getExtendTypeInfo($data, $mod_name, $interface_name, $extendType);
+//var_dump($arr);
             }
         }
     }
@@ -382,8 +383,9 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType) {
                             foreach ($value as $k => $v) {
                                 if (($v->attributes()['name'] . '') === $extendType) {
                                     $type = $v->attributes()['extends'] . '';
-                                    processField($v);
-                                    // var_dump($type);
+                                    $arr = processField($v);
+
+                                    return $arr;
                                 }
                             }
                         }
@@ -396,8 +398,9 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType) {
             foreach ($child->children() as $k => $v) {
                 if (($v->attributes()['name'] . '') === $extendType) {
                     $type = $v->attributes()['extends'] . '';
-                    processField($v);
-                    // var_dump($type);
+                    $arr = processField($v);
+
+                    return $arr;
                 }
             }
         }
@@ -440,15 +443,39 @@ function processField($data) {
                         if (($v->attributes()['type'] . '') === 'enum') {
                             $arr['enum'] = '1';
                             $arr['source'] = $v->attributes()['source'] . '';
-                        }                        
+                        }
                     }
                 }
             }
             return $arr;
         
         case 'integer':
-            //var_dump($type);
-            break;
+            foreach ($data as $key => $value) {
+                if ($key === 'attribute') {
+                    $attr = $value->attributes();
+                    if (($attr['name'] . '') === 'description') {
+                        $arr['description'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'restraint') {
+                        $arr['restraint'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'errormsg') {
+                        $arr['errormsg'] = $attr['value'] . '';
+                    }
+                }
+                if ($key === 'restriction') {
+                    foreach ($value as $k => $v) {
+                        if (($v->attributes()['type'] . '') === 'integer') {
+                            foreach ($v as $key => $value) {
+                                $arr['enum'] = '1';
+                                $arr['source'] = $v->attributes()['source'] . '';
+                            }
+                        }
+                    }
+                }
+            }
+            var_dump($arr);
+            return $arr;
 
         case 'id':
 
