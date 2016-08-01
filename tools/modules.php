@@ -467,8 +467,13 @@ function processField($data) {
                     foreach ($value as $k => $v) {
                         if (($v->attributes()['type'] . '') === 'integer') {
                             foreach ($v as $key => $value) {
-                                $arr['enum'] = '1';
-                                $arr['source'] = $v->attributes()['source'] . '';
+                                $attr = $value->attributes();
+                                if ($key === 'max') {
+                                    $arr['max'] = $attr['value'] . '';
+                                }
+                                if ($key === 'min') {
+                                    $arr['min'] = $attr['value'] . '';
+                                }
                             }
                         }
                     }
