@@ -24,7 +24,7 @@ array(
                         'min_length'  => '1',
                         'list'        => 'TARGETTYPE_OPEN_PLATFORM_APP,TARGETTYPE_BRAND',
                         'pattern'     => '{url_pattern}',   
-                        'enum'        => '1',
+                        'enum'        => 'enum',
                         'source'      => 'api_CreativeSelectionType'
                     ),
                     // integer

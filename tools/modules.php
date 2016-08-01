@@ -441,7 +441,7 @@ function processField($data) {
                 if ($key === 'restriction') {
                     foreach ($value as $k => $v) {
                         if (($v->attributes()['type'] . '') === 'enum') {
-                            $arr['enum'] = '1';
+                            $arr['enum'] = 'enum';
                             $arr['source'] = $v->attributes()['source'] . '';
                         }
                     }
@@ -563,10 +563,12 @@ function processField($data) {
                 }
                 if ($key === 'repeated') {
                     $type = ($value->attributes()['type'] . '');
+                    $arr['repeated']['type'] = $type;
                     switch ($type) {
                         case 'string':
                             foreach ($value as $k => $v) {
-                                $type = ($v->attributes()['type'] . '');
+                                $attr = $v->attributes();
+                                $type = $attr['type'] . '';
                                 if ($type === 'string') {
                                     foreach ($v as $k1 => $v1) {
                                         $attr = $v1->attributes();
@@ -582,10 +584,16 @@ function processField($data) {
                                     }
                                 }
                                 if ($type === 'enum') {
-                                    
+                                    $arr['repeated']['enum'] = $attr['type'] . '';
+                                    $arr['repeated']['source'] = $attr['source'] . '';
+
+                                    foreach ($v as $k1 => $v1) {
+                                        if ($k1 === 'itemMaxLength') {
+                                            $arr['repeated']['item_max_length'] = $arr['item_max_length'];
+                                        }
+                                    }
                                 }
                             }
-
                             return $arr;
 
                         case 'integer':
@@ -603,17 +611,29 @@ function processField($data) {
                             return $arr;
 
                         case 'filter_struct':
-                            
-                            break;
+                            foreach ($value as $k => $v) {
+                                foreach ($v as $k1 => $v1) {
+                                    $attr = $v1->attributes();
+                                    if ($k1 === 'itemMaxLength') {
+                                        $arr['repeated']['item_max_length'] = $arr['item_max_length'];
+                                    }
+                                }
+                            }
+                            return $arr;
 
                         case 'creative_struct':
-                            
-                            break;
+                            foreach ($value as $k => $v) {
+                                foreach ($v as $k1 => $v1) {
+                                    $attr = $v1->attributes();
+                                    if ($k1 === 'itemMaxLength') {
+                                        $arr['repeated']['item_max_length'] = $arr['item_max_length'];
+                                    }
+                                }
+                            }
+                            return $arr;
 
                         default: break;
                     }
-                    
-                    
                 }
             }
             return $arr;
