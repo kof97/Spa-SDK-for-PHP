@@ -135,13 +135,7 @@ class GetEstimation {
                 'item_max_length' => '32',
                 'repeated' => array(
                     'type' => 'creative_struct',
-                    
-                    
                     'item_max_length' => '32',
-                    
-                    
-                    
-                    
                 )
             ),
 

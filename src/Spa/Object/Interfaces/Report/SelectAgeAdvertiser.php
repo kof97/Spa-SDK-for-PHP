@@ -108,13 +108,7 @@ class SelectAgeAdvertiser {
                 'item_max_length' => '255',
                 'repeated' => array(
                     'type' => 'string',
-                    
-                    
                     'item_max_length' => '255',
-                    
-                    
-                    
-                    
                 )
             ),
 

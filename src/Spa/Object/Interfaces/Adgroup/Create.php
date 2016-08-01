@@ -170,13 +170,8 @@ class Create {
 
                 'repeated' => array(
                     'type' => 'string',
-                    
-                    
-                    
                     'enum' => 'enum',
                     'source' => 'api_site_set_definition',
-                    
-                    
                 )
             ),
 

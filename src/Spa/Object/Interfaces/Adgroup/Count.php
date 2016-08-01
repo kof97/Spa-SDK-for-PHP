@@ -115,12 +115,7 @@ class Count {
                 'repeated' => array(
                     'type' => 'string',
                     'list' => 'configured_status,system_status',
-                    
                     'item_max_length' => '255',
-                    
-                    
-                    
-                    
                 )
             ),
 

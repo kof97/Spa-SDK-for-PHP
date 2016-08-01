@@ -96,11 +96,6 @@ class Create {
 
                 'repeated' => array(
                     'type' => 'integer',
-                    
-                    
-                    
-                    
-                    
                     'max' => '4200000000',
                     'min' => '1000',
                 )
