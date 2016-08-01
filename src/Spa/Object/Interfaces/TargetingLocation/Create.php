@@ -58,7 +58,29 @@ class Create {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'location_type' => array(
+                'name' => 'location_type',
+            );
+
+            'location_name' => array(
+                'name' => 'location_name',
+            );
+
+            'location_spec' => array(
+                'name' => 'location_spec',
+            );
+
+            'city_id' => array(
+                'name' => 'city_id',
+            );
+;
     }
 
 }

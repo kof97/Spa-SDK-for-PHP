@@ -58,7 +58,17 @@ class Delete {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'adgroup_id' => array(
+                'name' => 'adgroup_id',
+            );
+;
     }
 
 }

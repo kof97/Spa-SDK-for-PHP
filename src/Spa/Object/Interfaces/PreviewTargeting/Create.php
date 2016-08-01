@@ -58,7 +58,21 @@ class Create {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'adgroup_id' => array(
+                'name' => 'adgroup_id',
+            );
+
+            'preview_qq_list' => array(
+                'name' => 'preview_qq_list',
+            );
+;
     }
 
 }

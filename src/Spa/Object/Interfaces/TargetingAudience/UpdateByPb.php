@@ -58,7 +58,29 @@ class UpdateByPb {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'operation_type' => array(
+                'name' => 'operation_type',
+            );
+
+            'data_file' => array(
+                'name' => 'data_file',
+            );
+
+            'file_name' => array(
+                'name' => 'file_name',
+            );
+
+            'file_md5' => array(
+                'name' => 'file_md5',
+            );
+
+            'refs_app_id' => array(
+                'name' => 'refs_app_id',
+            );
+;
     }
 
 }

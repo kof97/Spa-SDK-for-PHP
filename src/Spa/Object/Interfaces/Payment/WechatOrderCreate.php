@@ -58,7 +58,29 @@ class WechatOrderCreate {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'amount' => array(
+                'name' => 'amount',
+            );
+
+            'wechat_appid' => array(
+                'name' => 'wechat_appid',
+            );
+
+            'client_ip' => array(
+                'name' => 'client_ip',
+            );
+
+            'notify_url' => array(
+                'name' => 'notify_url',
+            );
+;
     }
 
 }

@@ -58,7 +58,9 @@ class IndustryTreeForAdgroup {
     }
 
     protected function fieldInfo() {
-
+        
+        array(
+;
     }
 
 }

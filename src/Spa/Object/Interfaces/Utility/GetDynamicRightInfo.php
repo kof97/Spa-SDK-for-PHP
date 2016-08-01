@@ -58,7 +58,13 @@ class GetDynamicRightInfo {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+;
     }
 
 }

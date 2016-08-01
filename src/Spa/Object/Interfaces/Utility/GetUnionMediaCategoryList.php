@@ -58,7 +58,9 @@ class GetUnionMediaCategoryList {
     }
 
     protected function fieldInfo() {
-
+        
+        array(
+;
     }
 
 }

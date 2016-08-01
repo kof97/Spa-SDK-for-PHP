@@ -58,7 +58,25 @@ class UpdateCustomAudience {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'rule_id' => array(
+                'name' => 'rule_id',
+            );
+
+            'rule_name' => array(
+                'name' => 'rule_name',
+            );
+
+            'description' => array(
+                'name' => 'description',
+            );
+;
     }
 
 }

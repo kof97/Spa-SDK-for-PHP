@@ -58,7 +58,29 @@ class QqOrderCreate {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'amount' => array(
+                'name' => 'amount',
+            );
+
+            'qq' => array(
+                'name' => 'qq',
+            );
+
+            'client_ip' => array(
+                'name' => 'client_ip',
+            );
+
+            'notify_url' => array(
+                'name' => 'notify_url',
+            );
+;
     }
 
 }

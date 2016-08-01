@@ -58,7 +58,21 @@ class Preview {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'image_id' => array(
+                'name' => 'image_id',
+            );
+
+            'sign' => array(
+                'name' => 'sign',
+            );
+;
     }
 
 }

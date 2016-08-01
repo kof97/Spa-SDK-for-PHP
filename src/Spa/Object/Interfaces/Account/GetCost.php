@@ -58,7 +58,17 @@ class GetCost {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'date' => array(
+                'name' => 'date',
+            );
+;
     }
 
 }

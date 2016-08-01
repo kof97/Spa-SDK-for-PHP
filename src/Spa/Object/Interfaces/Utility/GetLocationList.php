@@ -58,7 +58,13 @@ class GetLocationList {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'region_id' => array(
+                'name' => 'region_id',
+            );
+;
     }
 
 }

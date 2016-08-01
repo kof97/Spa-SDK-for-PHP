@@ -58,7 +58,9 @@ class GetIndustryList {
     }
 
     protected function fieldInfo() {
-
+        
+        array(
+;
     }
 
 }

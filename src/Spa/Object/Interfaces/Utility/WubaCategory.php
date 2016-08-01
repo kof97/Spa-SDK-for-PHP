@@ -58,7 +58,9 @@ class WubaCategory {
     }
 
     protected function fieldInfo() {
-
+        
+        array(
+;
     }
 
 }

@@ -58,7 +58,25 @@ class Create {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'image_file' => array(
+                'name' => 'image_file',
+            );
+
+            'image_signature' => array(
+                'name' => 'image_signature',
+            );
+
+            'outer_image_id' => array(
+                'name' => 'outer_image_id',
+            );
+;
     }
 
 }

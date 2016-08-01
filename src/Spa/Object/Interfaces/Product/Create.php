@@ -58,7 +58,29 @@ class Create {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'product_refs_id' => array(
+                'name' => 'product_refs_id',
+            );
+
+            'product_name' => array(
+                'name' => 'product_name',
+            );
+
+            'product_type' => array(
+                'name' => 'product_type',
+            );
+
+            'product_info' => array(
+                'name' => 'product_info',
+            );
+;
     }
 
 }

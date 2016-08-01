@@ -58,7 +58,21 @@ class WechatOrderQuery {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'wechat_appid' => array(
+                'name' => 'wechat_appid',
+            );
+
+            'out_trade_no' => array(
+                'name' => 'out_trade_no',
+            );
+;
     }
 
 }

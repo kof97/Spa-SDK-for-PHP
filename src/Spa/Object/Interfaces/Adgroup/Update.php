@@ -58,7 +58,77 @@ class Update {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'adgroup_id' => array(
+                'name' => 'adgroup_id',
+            );
+
+            'targeting_id' => array(
+                'name' => 'targeting_id',
+            );
+
+            'adgroup_name' => array(
+                'name' => 'adgroup_name',
+            );
+
+            'bid_amount' => array(
+                'name' => 'bid_amount',
+            );
+
+            'begin_date' => array(
+                'name' => 'begin_date',
+            );
+
+            'end_date' => array(
+                'name' => 'end_date',
+            );
+
+            'time_series' => array(
+                'name' => 'time_series',
+            );
+
+            'creative_selection_type' => array(
+                'name' => 'creative_selection_type',
+            );
+
+            'configured_status' => array(
+                'name' => 'configured_status',
+            );
+
+            'customized_category' => array(
+                'name' => 'customized_category',
+            );
+
+            'min_impression_include' => array(
+                'name' => 'min_impression_include',
+            );
+
+            'max_impression_include' => array(
+                'name' => 'max_impression_include',
+            );
+
+            'click_tracking_url' => array(
+                'name' => 'click_tracking_url',
+            );
+
+            'subordinate_product_refs_id' => array(
+                'name' => 'subordinate_product_refs_id',
+            );
+
+            'dynamic_creative_recommend_type' => array(
+                'name' => 'dynamic_creative_recommend_type',
+            );
+
+            'total_budget' => array(
+                'name' => 'total_budget',
+            );
+;
     }
 
 }

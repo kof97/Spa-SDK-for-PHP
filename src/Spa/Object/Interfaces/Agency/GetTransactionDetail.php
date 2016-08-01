@@ -58,7 +58,25 @@ class GetTransactionDetail {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'account_type' => array(
+                'name' => 'account_type',
+            );
+
+            'date_range' => array(
+                'name' => 'date_range',
+            );
+
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+;
     }
 
 }

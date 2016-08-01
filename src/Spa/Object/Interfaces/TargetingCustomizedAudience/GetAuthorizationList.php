@@ -58,7 +58,25 @@ class GetAuthorizationList {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'filter' => array(
+                'name' => 'filter',
+            );
+
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+;
     }
 
 }

@@ -58,7 +58,29 @@ class Update {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'targeting_id' => array(
+                'name' => 'targeting_id',
+            );
+
+            'targeting_name' => array(
+                'name' => 'targeting_name',
+            );
+
+            'description' => array(
+                'name' => 'description',
+            );
+
+            'targeting_setting' => array(
+                'name' => 'targeting_setting',
+            );
+;
     }
 
 }

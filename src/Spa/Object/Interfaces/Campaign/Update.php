@@ -58,7 +58,45 @@ class Update {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'campaign_id' => array(
+                'name' => 'campaign_id',
+            );
+
+            'campaign_name' => array(
+                'name' => 'campaign_name',
+            );
+
+            'daily_budget' => array(
+                'name' => 'daily_budget',
+            );
+
+            'total_budget' => array(
+                'name' => 'total_budget',
+            );
+
+            'speed_mode' => array(
+                'name' => 'speed_mode',
+            );
+
+            'retainability_in_feeds' => array(
+                'name' => 'retainability_in_feeds',
+            );
+
+            'max_impression_include' => array(
+                'name' => 'max_impression_include',
+            );
+
+            'configured_status' => array(
+                'name' => 'configured_status',
+            );
+;
     }
 
 }

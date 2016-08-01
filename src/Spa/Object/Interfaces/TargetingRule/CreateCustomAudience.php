@@ -58,7 +58,25 @@ class CreateCustomAudience {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'rule_name' => array(
+                'name' => 'rule_name',
+            );
+
+            'rule_type' => array(
+                'name' => 'rule_type',
+            );
+
+            'description' => array(
+                'name' => 'description',
+            );
+;
     }
 
 }

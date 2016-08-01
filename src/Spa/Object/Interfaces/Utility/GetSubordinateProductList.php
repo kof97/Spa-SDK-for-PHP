@@ -58,7 +58,21 @@ class GetSubordinateProductList {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'product_refs_id' => array(
+                'name' => 'product_refs_id',
+            );
+
+            'product_type' => array(
+                'name' => 'product_type',
+            );
+;
     }
 
 }

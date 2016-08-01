@@ -58,7 +58,17 @@ class GetEstimationByTargetingAudience {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'combine_rule' => array(
+                'name' => 'combine_rule',
+            );
+;
     }
 
 }

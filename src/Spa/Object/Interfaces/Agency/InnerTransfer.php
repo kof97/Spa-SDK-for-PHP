@@ -58,7 +58,29 @@ class InnerTransfer {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'account_type_from' => array(
+                'name' => 'account_type_from',
+            );
+
+            'account_type_to' => array(
+                'name' => 'account_type_to',
+            );
+
+            'amount' => array(
+                'name' => 'amount',
+            );
+
+            'external_bill_no' => array(
+                'name' => 'external_bill_no',
+            );
+
+            'memo' => array(
+                'name' => 'memo',
+            );
+;
     }
 
 }

@@ -58,7 +58,21 @@ class Count {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'where' => array(
+                'name' => 'where',
+            );
+
+            'group_by' => array(
+                'name' => 'group_by',
+            );
+;
     }
 
 }

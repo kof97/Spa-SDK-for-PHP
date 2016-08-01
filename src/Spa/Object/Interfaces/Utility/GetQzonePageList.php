@@ -58,7 +58,13 @@ class GetQzonePageList {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'qq' => array(
+                'name' => 'qq',
+            );
+;
     }
 
 }

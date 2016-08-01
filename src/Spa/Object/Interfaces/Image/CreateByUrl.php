@@ -58,7 +58,21 @@ class CreateByUrl {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'image_url' => array(
+                'name' => 'image_url',
+            );
+
+            'outer_image_id' => array(
+                'name' => 'outer_image_id',
+            );
+;
     }
 
 }

@@ -58,7 +58,17 @@ class Delete {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'campaign_id' => array(
+                'name' => 'campaign_id',
+            );
+;
     }
 
 }

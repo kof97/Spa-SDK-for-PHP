@@ -58,7 +58,9 @@ class GetBusinessInterestList {
     }
 
     protected function fieldInfo() {
-
+        
+        array(
+;
     }
 
 }

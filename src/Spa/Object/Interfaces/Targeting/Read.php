@@ -58,7 +58,17 @@ class Read {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'targeting_id' => array(
+                'name' => 'targeting_id',
+            );
+;
     }
 
 }

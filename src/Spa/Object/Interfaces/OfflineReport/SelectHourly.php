@@ -58,7 +58,21 @@ class SelectHourly {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'task' => array(
+                'name' => 'task',
+            );
+
+            'date' => array(
+                'name' => 'date',
+            );
+
+            'hour' => array(
+                'name' => 'hour',
+            );
+;
     }
 
 }

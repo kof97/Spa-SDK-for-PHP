@@ -257,7 +257,9 @@ EOF;
 function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name) {
     $arr = array();
     $method = strtoupper($method);
-    $field_info = '';
+    $field_info = '
+        array(
+';
 
     foreach ($interface as $key => $value) {
         if ($key === 'request') {
@@ -270,6 +272,13 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $arr['extendType'] = $extendType;
                 $arr['require'] = $require;
                 $arr['name'] = $name;
+
+                $field_info .= "
+            '$name' => array(
+                'name' => '$name',
+            );
+";
+//var_dump($arr);
 
             }
         }
@@ -336,7 +345,7 @@ class $interface_class {
     }
 
     protected function fieldInfo() {
-
+        $field_info;
     }
 
 }

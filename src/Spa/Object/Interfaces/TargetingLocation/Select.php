@@ -58,7 +58,25 @@ class Select {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+
+            'filter' => array(
+                'name' => 'filter',
+            );
+;
     }
 
 }

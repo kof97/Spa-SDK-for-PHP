@@ -58,7 +58,17 @@ class ReadFileStatus {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'file_id' => array(
+                'name' => 'file_id',
+            );
+;
     }
 
 }

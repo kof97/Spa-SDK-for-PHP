@@ -58,7 +58,17 @@ class SelectDaily {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'task' => array(
+                'name' => 'task',
+            );
+
+            'date' => array(
+                'name' => 'date',
+            );
+;
     }
 
 }

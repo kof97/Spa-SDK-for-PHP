@@ -58,7 +58,17 @@ class CreativePreview {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'creative_id' => array(
+                'name' => 'creative_id',
+            );
+;
     }
 
 }

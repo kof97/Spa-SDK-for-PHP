@@ -58,7 +58,25 @@ class Create {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'media_file' => array(
+                'name' => 'media_file',
+            );
+
+            'media_signature' => array(
+                'name' => 'media_signature',
+            );
+
+            'media_description' => array(
+                'name' => 'media_description',
+            );
+;
     }
 
 }

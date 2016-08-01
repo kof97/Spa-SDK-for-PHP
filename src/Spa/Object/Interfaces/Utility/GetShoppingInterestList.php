@@ -58,7 +58,9 @@ class GetShoppingInterestList {
     }
 
     protected function fieldInfo() {
-
+        
+        array(
+;
     }
 
 }

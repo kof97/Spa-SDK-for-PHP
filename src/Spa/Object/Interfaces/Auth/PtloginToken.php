@@ -58,7 +58,29 @@ class PtloginToken {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'app_id' => array(
+                'name' => 'app_id',
+            );
+
+            'app_key' => array(
+                'name' => 'app_key',
+            );
+
+            'qq' => array(
+                'name' => 'qq',
+            );
+
+            'skey' => array(
+                'name' => 'skey',
+            );
+
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+;
     }
 
 }

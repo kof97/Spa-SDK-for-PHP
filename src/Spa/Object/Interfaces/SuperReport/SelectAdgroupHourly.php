@@ -58,7 +58,41 @@ class SelectAdgroupHourly {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'date' => array(
+                'name' => 'date',
+            );
+
+            'filter' => array(
+                'name' => 'filter',
+            );
+
+            'order_by' => array(
+                'name' => 'order_by',
+            );
+
+            'group_by' => array(
+                'name' => 'group_by',
+            );
+
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+
+            'report_only' => array(
+                'name' => 'report_only',
+            );
+;
     }
 
 }

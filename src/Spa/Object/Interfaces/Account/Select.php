@@ -58,7 +58,13 @@ class Select {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+;
     }
 
 }

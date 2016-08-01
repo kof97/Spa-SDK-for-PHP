@@ -58,7 +58,29 @@ class Authorize {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'audience_id' => array(
+                'name' => 'audience_id',
+            );
+
+            'authorized_advertiser_id' => array(
+                'name' => 'authorized_advertiser_id',
+            );
+
+            'operation_type' => array(
+                'name' => 'operation_type',
+            );
+
+            'description' => array(
+                'name' => 'description',
+            );
+;
     }
 
 }

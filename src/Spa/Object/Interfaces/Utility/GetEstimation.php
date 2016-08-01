@@ -58,7 +58,25 @@ class GetEstimation {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'targeting_setting' => array(
+                'name' => 'targeting_setting',
+            );
+
+            'adgroup_setting' => array(
+                'name' => 'adgroup_setting',
+            );
+
+            'creative_setting' => array(
+                'name' => 'creative_setting',
+            );
+;
     }
 
 }

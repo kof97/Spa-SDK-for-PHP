@@ -58,7 +58,17 @@ class QqOrderQuery {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'out_trade_no' => array(
+                'name' => 'out_trade_no',
+            );
+;
     }
 
 }

@@ -58,7 +58,17 @@ class GetAdvertiserList {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+;
     }
 
 }

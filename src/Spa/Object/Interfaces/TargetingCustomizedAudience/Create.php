@@ -58,7 +58,33 @@ class Create {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'audience_name' => array(
+                'name' => 'audience_name',
+            );
+
+            'data_type' => array(
+                'name' => 'data_type',
+            );
+
+            'data_file' => array(
+                'name' => 'data_file',
+            );
+
+            'file_md5' => array(
+                'name' => 'file_md5',
+            );
+
+            'description' => array(
+                'name' => 'description',
+            );
+;
     }
 
 }

@@ -58,7 +58,17 @@ class ReadCustomAudience {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'rule_id' => array(
+                'name' => 'rule_id',
+            );
+;
     }
 
 }

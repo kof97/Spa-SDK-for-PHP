@@ -58,7 +58,21 @@ class GetAccessToken {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'app_id' => array(
+                'name' => 'app_id',
+            );
+
+            'app_key' => array(
+                'name' => 'app_key',
+            );
+
+            'authorization_code' => array(
+                'name' => 'authorization_code',
+            );
+;
     }
 
 }

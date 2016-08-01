@@ -58,7 +58,29 @@ class SelectAdvertiserDaily {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'date_range' => array(
+                'name' => 'date_range',
+            );
+
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+
+            'group_by' => array(
+                'name' => 'group_by',
+            );
+;
     }
 
 }

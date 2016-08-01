@@ -58,7 +58,13 @@ class GetCreativeTemplateRefs {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'creative_template_id' => array(
+                'name' => 'creative_template_id',
+            );
+;
     }
 
 }

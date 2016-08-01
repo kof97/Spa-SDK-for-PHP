@@ -58,7 +58,33 @@ class GetDailyInvoice {
     }
 
     protected function fieldInfo() {
+        
+        array(
 
+            'advertiser_id' => array(
+                'name' => 'advertiser_id',
+            );
+
+            'account_type' => array(
+                'name' => 'account_type',
+            );
+
+            'trade_type' => array(
+                'name' => 'trade_type',
+            );
+
+            'date_range' => array(
+                'name' => 'date_range',
+            );
+
+            'page' => array(
+                'name' => 'page',
+            );
+
+            'page_size' => array(
+                'name' => 'page_size',
+            );
+;
     }
 
 }
