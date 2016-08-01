@@ -65,29 +65,59 @@ class SetDailyBudget {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'campaign_id' => array(
                 'name' => 'campaign_id',
                 'extendType' => 'campaign_id',
                 'require' => 'yes',
-                'type' => 'id','description' => '推广计划Id',
+                'type' => 'id',
+                'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '9223372036854775807',
+                'min' => '1',
+                'name' => 'campaign_id',
+            );
 
             'daily_budget' => array(
                 'name' => 'daily_budget',
                 'extendType' => 'daily_budget',
                 'require' => 'yes',
-                'type' => 'integer','description' => '日消耗限额，单位为分',
+                'type' => 'integer',
+                'description' => '日消耗限额，单位为分',
                 'restraint' => '大于5000，且小于400000000',
                 'errormsg' => '日消耗限额不正确',
-                );
-
+                
+                
+                
+                
+                
+                
+                'max' => '400000000',
+                'min' => '5000',
+                'name' => 'daily_budget',
+            );
+;
     }
 
 }

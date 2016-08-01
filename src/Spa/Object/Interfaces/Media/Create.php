@@ -65,39 +65,78 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'media_file' => array(
                 'name' => 'media_file',
                 'extendType' => 'media_file',
                 'require' => 'yes',
-                'type' => '',);
+                'type' => '',
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                'name' => 'media_file',
+            );
 
             'media_signature' => array(
                 'name' => 'media_signature',
                 'extendType' => 'media_signature',
                 'require' => 'yes',
-                'type' => 'string','description' => '媒体签名，目前使用媒体的md5值',
+                'type' => 'string',
+                'description' => '媒体签名，目前使用媒体的md5值',
                 'restraint' => '32字符',
                 'errormsg' => '媒体签名不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-                );
+                
+                
+                
+                
+                
+                
+                'name' => 'media_signature',
+            );
 
             'media_description' => array(
                 'name' => 'media_description',
                 'extendType' => 'media_description',
                 'require' => 'no',
-                'type' => 'string','description' => '流媒体描述',
+                'type' => 'string',
+                'description' => '流媒体描述',
                 'restraint' => '小于255字符',
                 'errormsg' => '流媒体描述错误',
                 'max_length' => '255',
                 'min_length' => '0',
-                );
-
+                
+                
+                
+                
+                
+                
+                'name' => 'media_description',
+            );
+;
     }
 
 }

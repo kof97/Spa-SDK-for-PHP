@@ -65,20 +65,40 @@ class Read {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'location_id' => array(
                 'name' => 'location_id',
                 'extendType' => 'location_id',
                 'require' => 'yes',
-                'type' => 'id','description' => '自定义打点id',
+                'type' => 'id',
+                'description' => '自定义打点id',
                 'restraint' => '自定义打点id',
                 'errormsg' => '自定义打点id不正确',
-                );
-
+                
+                
+                
+                
+                
+                
+                'max' => '9223372036854775807',
+                'min' => '1',
+                'name' => 'location_id',
+            );
+;
     }
 
 }

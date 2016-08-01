@@ -65,49 +65,97 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'location_type' => array(
                 'name' => 'location_type',
                 'extendType' => 'location_type',
                 'require' => 'yes',
-                'type' => 'string','description' => '商圈类型',
+                'type' => 'string',
+                'description' => '商圈类型',
                 'restraint' => '商圈类型',
+                
+                
+                
+                
+                
                 'enum' => 'enum',
                 'source' => 'api_location_type',
-                );
+                
+                
+                'name' => 'location_type',
+            );
 
             'location_name' => array(
                 'name' => 'location_name',
                 'extendType' => 'location_name',
                 'require' => 'yes',
-                'type' => 'string','description' => '自定义打点名称',
+                'type' => 'string',
+                'description' => '自定义打点名称',
                 'restraint' => '小于等于60个英文字符，同一账户下名称不允许重复。',
                 'errormsg' => '自定义打点名称错误',
                 'max_length' => '60',
                 'min_length' => '1',
-                );
+                
+                
+                
+                
+                
+                
+                'name' => 'location_name',
+            );
 
             'location_spec' => array(
                 'name' => 'location_spec',
                 'extendType' => 'location_spec',
                 'require' => 'yes',
-                'type' => 'struct','description' => '商圈具体配置信息',
+                'type' => 'struct',
+                'description' => '商圈具体配置信息',
                 'restraint' => '商圈具体配置信息',
-                );
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                'name' => 'location_spec',
+            );
 
             'city_id' => array(
                 'name' => 'city_id',
                 'extendType' => 'integer',
                 'require' => 'yes',
-                'type' => 'number','description' => '整数',
+                'type' => 'number',
+                'description' => '整数',
                 'restraint' => '大于0小于2^63',
                 'errormsg' => '非有效整数',
-                );
-
+                
+                
+                
+                
+                
+                
+                'max' => '9223372036854775807',
+                'min' => '1',
+                'name' => 'city_id',
+            );
+;
     }
 
 }

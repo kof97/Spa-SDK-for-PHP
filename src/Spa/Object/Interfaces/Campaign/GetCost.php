@@ -65,32 +65,59 @@ class GetCost {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'campaign_id' => array(
                 'name' => 'campaign_id',
                 'extendType' => 'campaign_id',
                 'require' => 'yes',
-                'type' => 'id','description' => '推广计划Id',
+                'type' => 'id',
+                'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '9223372036854775807',
+                'min' => '1',
+                'name' => 'campaign_id',
+            );
 
             'date' => array(
                 'name' => 'date',
                 'extendType' => 'date',
                 'require' => 'yes',
-                'type' => 'string','description' => '查询时间',
+                'type' => 'string',
+                'description' => '查询时间',
                 'restraint' => '日期格式，如2014-03-01',
                 'errormsg' => '查询时间不正确',
                 'max_length' => '10',
                 'min_length' => '10',
+                
                 'pattern' => '{date_pattern}',
-                );
-
+                
+                
+                
+                
+                'name' => 'date',
+            );
+;
     }
 
 }

@@ -65,20 +65,40 @@ class CreativePreview {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'creative_id' => array(
                 'name' => 'creative_id',
                 'extendType' => 'creative_id',
                 'require' => 'yes',
-                'type' => 'id','description' => '广告素材Id',
+                'type' => 'id',
+                'description' => '广告素材Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '广告素材Id不正确',
-                );
-
+                
+                
+                
+                
+                
+                
+                'max' => '9223372036854775807',
+                'min' => '1',
+                'name' => 'creative_id',
+            );
+;
     }
 
 }

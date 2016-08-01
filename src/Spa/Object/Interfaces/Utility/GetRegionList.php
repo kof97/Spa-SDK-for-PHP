@@ -60,7 +60,7 @@ class GetRegionList {
     protected function fieldInfo() {
         
         array(
-
+;
     }
 
 }

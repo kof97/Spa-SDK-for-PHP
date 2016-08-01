@@ -65,33 +65,59 @@ class CreateByUrl {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'image_url' => array(
                 'name' => 'image_url',
                 'extendType' => 'image_url',
                 'require' => 'yes',
-                'type' => 'string','description' => '图片地址',
+                'type' => 'string',
+                'description' => '图片地址',
+                
                 'errormsg' => '图片地址不正确',
                 'max_length' => '1024',
                 'min_length' => '1',
+                
                 'pattern' => '{url_pattern}',
-                );
+                
+                
+                
+                
+                'name' => 'image_url',
+            );
 
             'outer_image_id' => array(
                 'name' => 'outer_image_id',
                 'extendType' => 'outer_image_id',
                 'require' => 'no',
-                'type' => 'string','description' => '外部图片id',
+                'type' => 'string',
+                'description' => '外部图片id',
                 'restraint' => '1024字符内',
                 'errormsg' => '外部图片id不正确',
                 'max_length' => '1024',
                 'min_length' => '1',
-                );
-
+                
+                
+                
+                
+                
+                
+                'name' => 'outer_image_id',
+            );
+;
     }
 
 }

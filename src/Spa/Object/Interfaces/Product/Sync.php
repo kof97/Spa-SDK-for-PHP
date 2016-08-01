@@ -65,63 +65,116 @@ class Sync {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer','description' => '广告主ID',
+                'type' => 'integer',
+                'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                );
+                
+                
+                
+                
+                
+                
+                'max' => '4294967296',
+                'min' => '0',
+                'name' => 'advertiser_id',
+            );
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
                 'extendType' => 'product_refs_id',
                 'require' => 'yes',
-                'type' => 'string','description' => '标的物Id',
+                'type' => 'string',
+                'description' => '标的物Id',
                 'restraint' => '小于128个英文字符',
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                );
+                
+                
+                
+                
+                
+                
+                'name' => 'product_refs_id',
+            );
 
             'product_name' => array(
                 'name' => 'product_name',
                 'extendType' => 'product_name',
                 'require' => 'yes',
-                'type' => 'string','description' => '标的物名称',
+                'type' => 'string',
+                'description' => '标的物名称',
                 'restraint' => '小于255个英文字符',
                 'errormsg' => '标的物名称不正确',
                 'max_length' => '255',
                 'min_length' => '1',
-                );
+                
+                
+                
+                
+                
+                
+                'name' => 'product_name',
+            );
 
             'product_type' => array(
                 'name' => 'product_type',
                 'extendType' => 'product_type',
                 'require' => 'yes',
-                'type' => 'string','description' => '标的物类型',
+                'type' => 'string',
+                'description' => '标的物类型',
                 'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
                 'errormsg' => '标的物类型不正确',
+                
+                
                 'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
+                
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-                );
+                
+                
+                'name' => 'product_type',
+            );
 
             'product_info' => array(
                 'name' => 'product_info',
                 'extendType' => 'product_info',
                 'require' => 'no',
-                'type' => 'struct','description' => '标的物详细信息',
+                'type' => 'struct',
+                'description' => '标的物详细信息',
                 'restraint' => '详见 [link href="ec_info"]京东、拍拍店铺、标的物[/link]',
                 'errormsg' => '京东购物行为不正确',
-                );
+                
+                
+                
+                
+                
+                
+                
+                
+                'name' => 'product_info',
+            );
 
             'outer_version' => array(
                 'name' => 'outer_version',
                 'extendType' => 'outer_version',
                 'require' => 'no',
-                'type' => 'integer','description' => '调用方数据版本',
+                'type' => 'integer',
+                'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                );
-
+                
+                
+                
+                
+                
+                
+                
+                
+                'name' => 'outer_version',
+            );
+;
     }
 
 }
