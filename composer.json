@@ -1,0 +1,14 @@
+{
+    "name": "spa/spa-php-sdk",
+    "description": "Spa SDK for PHP",
+    "keywords": ["spa", "sdk"],
+    "authors": [
+        {
+            "name": "Arno",
+            "email": "1048434786@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^5.3|^7.0.3"
+    }
+}
