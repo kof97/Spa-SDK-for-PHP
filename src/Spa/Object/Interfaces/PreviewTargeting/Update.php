@@ -92,6 +92,14 @@ class Update {
                 'description' => '广告预览QQ列表',
                 'restraint' => 'json格式的数组，例如[111,222,333]',
                 'errormsg' => '预览QQ列表错误',
+                'repeated' => array(
+                    
+                    
+                    
+                    
+                    
+
+                )
             ),
 
         );

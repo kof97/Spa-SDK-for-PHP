@@ -92,6 +92,14 @@ class GetFileList {
                 'restraint' => '过滤条件结构',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
+                'repeated' => array(
+                    
+                    
+                    'item_max_length' => '255',
+                    
+                    
+
+                )
             ),
 
             'page' => array(

@@ -119,6 +119,14 @@ class SelectAdvertiserHourly {
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
                 'item_max_length' => '255',
+                'repeated' => array(
+                    
+                    
+                    'item_max_length' => '255',
+                    
+                    
+
+                )
             ),
 
         );

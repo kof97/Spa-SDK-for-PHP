@@ -175,6 +175,14 @@ class Sync {
                 'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
                 'errormsg' => '投放站点集合不正确',
                 'item_max_length' => '255',
+                'repeated' => array(
+                    
+                    
+                    'item_max_length' => '255',
+                    'enum' => 'enum',
+                    'source' => 'api_site_set_definition',
+
+                )
             ),
 
             'time_series' => array(

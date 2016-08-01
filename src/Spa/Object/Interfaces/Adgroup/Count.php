@@ -110,6 +110,14 @@ class Count {
                 'errormsg' => '聚合字段不正确',
                 'list' => 'configured_status,system_status',
                 'item_max_length' => '255',
+                'repeated' => array(
+                    'list' => 'configured_status,system_status',
+                    
+                    'item_max_length' => '255',
+                    
+                    
+
+                )
             ),
 
         );

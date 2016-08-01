@@ -82,6 +82,14 @@ class Select {
                 'restraint' => '支持字段: image_signature，image_id, image_width, image_height',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
+                'repeated' => array(
+                    
+                    
+                    'item_max_length' => '255',
+                    
+                    
+
+                )
             ),
 
             'page' => array(

@@ -321,6 +321,41 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
 
                 }
 
+                $repeat = '';
+                $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
+                if ($repeated) {
+                    $repeat_type = isset($repeated['type']) ? "'type' => '" . $repeated['type'] . "'," : '';
+                    $repeat_list = isset($repeated['list']) ? "'list' => '" . $repeated['list'] . "'," : '';
+                    $repeat_pattern = isset($repeated['pattern']) ? "'pattern' => '" . $repeated['pattern'] . "'," : '';
+                    $repeat_item_max_length = isset($repeated['item_max_length']) ? "'item_max_length' => '" . $repeated['item_max_length'] . "'," : '';
+                    $repeat_max = isset($repeated['max']) ? "'max' => '" . $repeated['max'] . "'," : '';
+                    $repeat_min = isset($repeated['min']) ? "'min' => '" . $repeated['min'] . "'," : '';
+                    $repeat_enum = isset($repeated['enum']) ? "'enum' => '" . $repeated['enum'] . "'," : '';
+                    $repeat_source = isset($repeated['source']) ? "'source' => '" . $repeated['source'] . "'," : '';
+
+                    $repeat = "
+                'repeated' => array(
+                    $repeat_type
+                    $repeat_list
+                    $repeat_pattern
+                    $repeat_item_max_length
+                    $repeat_enum
+                    $repeat_source
+                    $repeat_max
+                    $repeat_min
+                )";
+
+                    $pattern = "\r\n                    \r\n";
+                    while (strpos($field_info, $pattern) != false) {
+                        $field_info = str_replace($pattern, "\r\n", $field_info);
+                    }
+                }
+
+
+
+
+
+
                 $field_info .= "
             '$name' => array(
                 'name' => '$name',
@@ -340,6 +375,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $min
                 $item_max_length
                 $element
+                $repeat
             ),
 ";
 
@@ -347,8 +383,6 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 while (strpos($field_info, $pattern) != false) {
                     $field_info = str_replace($pattern, "\r\n", $field_info);
                 }
-//var_dump($arr);
-
             }
         }
     }
