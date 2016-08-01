@@ -65,10 +65,11 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Create {
                 'name' => 'audience_name',
                 'extendType' => 'audience_name',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '人群名称',
                 'restraint' => '1-32个字符，不区分中英文',
                 'errormsg' => '人群名称错误',
-                'name' => 'audience_name',
+                'max_length' => '96',
                 'name' => 'audience_name',
             );
 
@@ -87,10 +89,11 @@ class Create {
                 'name' => 'data_type',
                 'extendType' => 'data_type',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '号码类型',
-                'restraint' => '详见 [link href='dmp_audience_data_type']DMP自定义人群号码类型[/link]',
+                'restraint' => '详见 [link href="dmp_audience_data_type"]DMP自定义人群号码类型[/link]',
                 'errormsg' => '人群号码类型错误',
-                'name' => 'data_type',
+                ,
                 'name' => 'data_type',
             );
 
@@ -98,10 +101,11 @@ class Create {
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'yes',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'data_file',
+                ,
                 'name' => 'data_file',
             );
 
@@ -109,10 +113,11 @@ class Create {
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '上传文件的内容md5',
                 'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
                 'errormsg' => '上传文件的内容md5不正确',
-                'name' => 'file_md5',
+                'max_length' => '32',
                 'name' => 'file_md5',
             );
 
@@ -120,10 +125,11 @@ class Create {
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '描述',
                 'restraint' => '0-100个字符',
                 'errormsg' => '描述不正确',
-                'name' => 'description',
+                'max_length' => '300',
                 'name' => 'description',
             );
 ;

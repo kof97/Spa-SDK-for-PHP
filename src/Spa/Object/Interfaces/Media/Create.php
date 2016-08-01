@@ -65,10 +65,11 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Create {
                 'name' => 'media_file',
                 'extendType' => 'media_file',
                 'require' => 'yes',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'media_file',
+                ,
                 'name' => 'media_file',
             );
 
@@ -87,10 +89,11 @@ class Create {
                 'name' => 'media_signature',
                 'extendType' => 'media_signature',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '媒体签名，目前使用媒体的md5值',
                 'restraint' => '32字符',
                 'errormsg' => '媒体签名不正确',
-                'name' => 'media_signature',
+                'max_length' => '32',
                 'name' => 'media_signature',
             );
 
@@ -98,10 +101,11 @@ class Create {
                 'name' => 'media_description',
                 'extendType' => 'media_description',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '流媒体描述',
                 'restraint' => '小于255字符',
                 'errormsg' => '流媒体描述错误',
-                'name' => 'media_description',
+                'max_length' => '255',
                 'name' => 'media_description',
             );
 ;

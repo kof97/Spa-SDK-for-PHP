@@ -65,10 +65,11 @@ class GetLocationList {
                 'name' => 'region_id',
                 'extendType' => 'region_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '城市ID',
                 'restraint' => '城市ID是六位的数字',
                 'errormsg' => '城市ID不正确',
-                'name' => 'region_id',
+                ,
                 'name' => 'region_id',
             );
 ;

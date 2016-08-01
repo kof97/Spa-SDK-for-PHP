@@ -65,10 +65,11 @@ class Upload {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Upload {
                 'name' => 'data_source',
                 'extendType' => 'data_source',
                 'require' => 'yes',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'data_source',
+                ,
                 'name' => 'data_source',
             );
 
@@ -87,10 +89,11 @@ class Upload {
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '上传文件的内容md5',
-                'restraint' => '',
+                ,
                 'errormsg' => '上传文件的内容md5不正确',
-                'name' => 'file_md5',
+                'max_length' => '32',
                 'name' => 'file_md5',
             );
 ;

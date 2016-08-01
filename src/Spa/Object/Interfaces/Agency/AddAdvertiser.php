@@ -65,10 +65,11 @@ class AddAdvertiser {
                 'name' => 'corporation_name',
                 'extendType' => 'advertiser.corporation_name',
                 'require' => 'yes',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'corporation_name',
+                ,
                 'name' => 'corporation_name',
             );
 
@@ -76,10 +77,11 @@ class AddAdvertiser {
                 'name' => 'certification_image_id',
                 'extendType' => 'image_id',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '图片签名，目前使用图片的md5值',
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
-                'name' => 'certification_image_id',
+                'max_length' => '64',
                 'name' => 'certification_image_id',
             );
 
@@ -87,10 +89,11 @@ class AddAdvertiser {
                 'name' => 'industry_id',
                 'extendType' => 'industry_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '最细一级行业分类（最细有3级）',
-                'restraint' => '详见 [link href='industry_id']新行业分类[/link]',
+                'restraint' => '详见 [link href="industry_id"]新行业分类[/link]',
                 'errormsg' => '行业分类不正确',
-                'name' => 'industry_id',
+                ,
                 'name' => 'industry_id',
             );
 
@@ -98,10 +101,11 @@ class AddAdvertiser {
                 'name' => 'outer_advertiser_id',
                 'extendType' => 'advertiser.outer_advertiser_id',
                 'require' => 'no',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'outer_advertiser_id',
+                ,
                 'name' => 'outer_advertiser_id',
             );
 
@@ -109,10 +113,11 @@ class AddAdvertiser {
                 'name' => 'qualification_image_id_list',
                 'extendType' => 'advertiser.image_id_list',
                 'require' => 'no',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'qualification_image_id_list',
+                ,
                 'name' => 'qualification_image_id_list',
             );
 
@@ -120,10 +125,11 @@ class AddAdvertiser {
                 'name' => 'ad_qualification_image_id_list',
                 'extendType' => 'advertiser.image_id_list',
                 'require' => 'no',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'ad_qualification_image_id_list',
+                ,
                 'name' => 'ad_qualification_image_id_list',
             );
 
@@ -131,10 +137,11 @@ class AddAdvertiser {
                 'name' => 'website',
                 'extendType' => 'advertiser.website',
                 'require' => 'yes',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'website',
+                ,
                 'name' => 'website',
             );
 
@@ -142,10 +149,11 @@ class AddAdvertiser {
                 'name' => 'icp_image_id',
                 'extendType' => 'image_id',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '图片签名，目前使用图片的md5值',
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
-                'name' => 'icp_image_id',
+                'max_length' => '64',
                 'name' => 'icp_image_id',
             );
 
@@ -153,10 +161,11 @@ class AddAdvertiser {
                 'name' => 'corporation_image_name',
                 'extendType' => 'advertiser.corporation_image_name',
                 'require' => 'no',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'corporation_image_name',
+                ,
                 'name' => 'corporation_image_name',
             );
 
@@ -164,10 +173,11 @@ class AddAdvertiser {
                 'name' => 'contact_person_telephone',
                 'extendType' => 'advertiser.contact_person_telephone',
                 'require' => 'no',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'contact_person_telephone',
+                ,
                 'name' => 'contact_person_telephone',
             );
 
@@ -175,10 +185,11 @@ class AddAdvertiser {
                 'name' => 'contact_person_mobile',
                 'extendType' => 'advertiser.contact_person_mobile',
                 'require' => 'no',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'contact_person_mobile',
+                ,
                 'name' => 'contact_person_mobile',
             );
 ;

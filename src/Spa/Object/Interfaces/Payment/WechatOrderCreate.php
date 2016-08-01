@@ -65,10 +65,11 @@ class WechatOrderCreate {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class WechatOrderCreate {
                 'name' => 'amount',
                 'extendType' => 'amount',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '支付金额',
                 'restraint' => '单位为分,限额100000-1000000',
                 'errormsg' => '支付金额错误',
-                'name' => 'amount',
+                ,
                 'name' => 'amount',
             );
 
@@ -87,10 +89,11 @@ class WechatOrderCreate {
                 'name' => 'wechat_appid',
                 'extendType' => 'wechat_appid',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '微信开放平台账户appid',
                 'restraint' => '在开放平台查看，标识申请的应用',
                 'errormsg' => '微信开放平台账户appid错误',
-                'name' => 'wechat_appid',
+                'max_length' => '32',
                 'name' => 'wechat_appid',
             );
 
@@ -98,10 +101,11 @@ class WechatOrderCreate {
                 'name' => 'client_ip',
                 'extendType' => 'client_ip',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '客户端IP',
                 'restraint' => 'APP支付的客户端IP',
                 'errormsg' => '客户端IP',
-                'name' => 'client_ip',
+                'max_length' => '20',
                 'name' => 'client_ip',
             );
 
@@ -109,10 +113,11 @@ class WechatOrderCreate {
                 'name' => 'notify_url',
                 'extendType' => 'notify_url',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '成功支付通知地址',
                 'restraint' => '由开发者自定义，微信支付成功之后，广点通后台通知（POST）开发者服务器（notify_url）支付结果，参数：out_trade_no=订单号,pay_type=WX',
                 'errormsg' => '通知地址错误',
-                'name' => 'notify_url',
+                'max_length' => '1024',
                 'name' => 'notify_url',
             );
 ;

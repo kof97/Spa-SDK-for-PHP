@@ -65,10 +65,11 @@ class SetDailyBudget {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class SetDailyBudget {
                 'name' => 'campaign_id',
                 'extendType' => 'campaign_id',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                'name' => 'campaign_id',
+                ,
                 'name' => 'campaign_id',
             );
 
@@ -87,10 +89,11 @@ class SetDailyBudget {
                 'name' => 'daily_budget',
                 'extendType' => 'daily_budget',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '日消耗限额，单位为分',
                 'restraint' => '大于5000，且小于400000000',
                 'errormsg' => '日消耗限额不正确',
-                'name' => 'daily_budget',
+                ,
                 'name' => 'daily_budget',
             );
 ;

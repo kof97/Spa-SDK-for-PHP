@@ -65,10 +65,11 @@ class Select {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Select {
                 'name' => 'audience_type',
                 'extendType' => 'audience_type',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '人群类型，如：Meta、Combine、Lookalike',
-                'restraint' => '详见 [link href='audience_type']人群类型[/link]',
+                'restraint' => '详见 [link href="audience_type"]人群类型[/link]',
                 'errormsg' => '人群类型不正确',
-                'name' => 'audience_type',
+                ,
                 'name' => 'audience_type',
             );
 
@@ -87,10 +89,11 @@ class Select {
                 'name' => 'filter',
                 'extendType' => 'filter',
                 'require' => 'no',
+                'type' => 'array',
                 'description' => '若此字段不传，或传空则视为无限制条件。参见：高级条件',
                 'restraint' => '过滤条件结构',
                 'errormsg' => '过滤条件不正确',
-                'name' => 'filter',
+                ,
                 'name' => 'filter',
             );
 
@@ -98,10 +101,11 @@ class Select {
                 'name' => 'order_by',
                 'extendType' => 'order_by',
                 'require' => 'no',
+                'type' => 'struct',
                 'description' => '排序规则',
                 'restraint' => '当前支持根据audience_id或user_count排序',
                 'errormsg' => '排序参数不正确',
-                'name' => 'order_by',
+                ,
                 'name' => 'order_by',
             );
 
@@ -109,10 +113,11 @@ class Select {
                 'name' => 'page',
                 'extendType' => 'page',
                 'require' => 'no',
+                'type' => 'integer',
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                'name' => 'page',
+                ,
                 'name' => 'page',
             );
 
@@ -120,10 +125,11 @@ class Select {
                 'name' => 'page_size',
                 'extendType' => 'page_size',
                 'require' => 'no',
+                'type' => 'integer',
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                'name' => 'page_size',
+                ,
                 'name' => 'page_size',
             );
 ;

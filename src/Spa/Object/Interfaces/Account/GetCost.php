@@ -65,10 +65,11 @@ class GetCost {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class GetCost {
                 'name' => 'date',
                 'extendType' => 'date',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '查询时间',
                 'restraint' => '日期格式，如2014-03-01',
                 'errormsg' => '查询时间不正确',
-                'name' => 'date',
+                'max_length' => '10',
                 'name' => 'date',
             );
 ;

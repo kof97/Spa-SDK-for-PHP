@@ -65,10 +65,11 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Create {
                 'name' => 'targeting_name',
                 'extendType' => 'targeting_name',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '定向名称',
                 'restraint' => '小于等于120个英文字符，同一账户下名称不允许重复。',
                 'errormsg' => '定向名称不正确',
-                'name' => 'targeting_name',
+                'max_length' => '120',
                 'name' => 'targeting_name',
             );
 
@@ -87,10 +89,11 @@ class Create {
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '定向描述',
                 'restraint' => '小于250个英文字符',
                 'errormsg' => '定向描述不正确',
-                'name' => 'description',
+                'max_length' => '250',
                 'name' => 'description',
             );
 
@@ -98,10 +101,11 @@ class Create {
                 'name' => 'ui_visibility',
                 'extendType' => 'ui_visibility',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '定向包类型',
-                'restraint' => '详见 [link href='ui_visibility']定向包类型[/link]',
+                'restraint' => '详见 [link href="ui_visibility"]定向包类型[/link]',
                 'errormsg' => '定向包类型不正确',
-                'name' => 'ui_visibility',
+                ,
                 'name' => 'ui_visibility',
             );
 
@@ -109,10 +113,11 @@ class Create {
                 'name' => 'targeting_setting',
                 'extendType' => 'write_targeting_setting',
                 'require' => 'no',
+                'type' => 'struct',
                 'description' => '定向详细设置',
                 'restraint' => '存放所有定向条件',
                 'errormsg' => '定向详细设置不正确',
-                'name' => 'targeting_setting',
+                ,
                 'name' => 'targeting_setting',
             );
 
@@ -120,10 +125,11 @@ class Create {
                 'name' => 'outer_targeting_id',
                 'extendType' => 'outer_targeting_id',
                 'require' => 'no',
+                'type' => 'id',
                 'description' => '外部广告定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告定向Id不正确',
-                'name' => 'outer_targeting_id',
+                ,
                 'name' => 'outer_targeting_id',
             );
 ;

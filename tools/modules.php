@@ -273,10 +273,22 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $arr['require'] = $require;
                 $arr['name'] = $name;
 
-                $description = isset($arr['description']) ? "'description' => '" . $arr['description'] . "'" : '';
-                $restraint = isset($arr['restraint']) ? "'restraint' => '" . $arr['restraint'] . "'" : '';
-                $errormsg = isset($arr['errormsg']) ? "'errormsg' => '" . $arr['errormsg'] . "'" : '';
-                $description = isset($arr['description']) ? "'description' => '" . $arr['description'] . "'" : '';
+                $type = isset($arr['type']) ? $arr['type'] : null;
+
+                $description = isset($arr['description']) ? $arr['description'] : null;
+                $description = str_replace('\'', '"', $description);
+                $description = $description ? "'description' => '" . $description . "'" : '';
+
+                $restraint = isset($arr['restraint']) ? $arr['restraint'] : null;
+                $restraint = str_replace('\'', '"', $restraint);
+                $restraint = $restraint ? "'restraint' => '" . $restraint . "'" : '';
+
+                $errormsg = isset($arr['errormsg']) ? $arr['errormsg'] : null;
+                $errormsg = str_replace('\'', '"', $errormsg);
+                $errormsg = $errormsg ? "'errormsg' => '" . $errormsg . "'" : '';
+
+                
+                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'" : '';
 
 
                 $field_info .= "
@@ -284,10 +296,11 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 'name' => '$name',
                 'extendType' => '$extendType',
                 'require' => '$require',
+                'type' => '$type',
                 $description,
                 $restraint,
                 $errormsg,
-                'name' => '$name',
+                $max_length,
                 'name' => '$name',
             );
 ";

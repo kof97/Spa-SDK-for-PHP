@@ -65,10 +65,11 @@ class GetAccessToken {
                 'name' => 'app_id',
                 'extendType' => 'app_id',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '合作方APP ID',
                 'restraint' => '小于32字符',
                 'errormsg' => '合作方APP ID不正确',
-                'name' => 'app_id',
+                'max_length' => '32',
                 'name' => 'app_id',
             );
 
@@ -76,10 +77,11 @@ class GetAccessToken {
                 'name' => 'app_key',
                 'extendType' => 'app_key',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '密钥APP KEY',
                 'restraint' => '小于32字符',
                 'errormsg' => '密钥APP KEY不正确',
-                'name' => 'app_key',
+                'max_length' => '32',
                 'name' => 'app_key',
             );
 
@@ -87,10 +89,11 @@ class GetAccessToken {
                 'name' => 'authorization_code',
                 'extendType' => 'authorization_code',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => 'authorization_code，用于换取access_token',
                 'restraint' => '不大于64个英文字符',
                 'errormsg' => 'authorization_code不正确',
-                'name' => 'authorization_code',
+                'max_length' => '64',
                 'name' => 'authorization_code',
             );
 ;

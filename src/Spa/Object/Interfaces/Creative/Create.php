@@ -65,10 +65,11 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Create {
                 'name' => 'campaign_id',
                 'extendType' => 'campaign_id',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                'name' => 'campaign_id',
+                ,
                 'name' => 'campaign_id',
             );
 
@@ -87,10 +89,11 @@ class Create {
                 'name' => 'adgroup_id',
                 'extendType' => 'adgroup_id',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '广告组Id',
-                'restraint' => '',
+                ,
                 'errormsg' => '广告组Id不正确',
-                'name' => 'adgroup_id',
+                ,
                 'name' => 'adgroup_id',
             );
 
@@ -98,10 +101,11 @@ class Create {
                 'name' => 'creative_name',
                 'extendType' => 'creative_name',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '素材名称',
                 'restraint' => '小于120个英文字符，同一账户下名称不允许重复。',
                 'errormsg' => '素材名称不正确',
-                'name' => 'creative_name',
+                'max_length' => '120',
                 'name' => 'creative_name',
             );
 
@@ -109,10 +113,11 @@ class Create {
                 'name' => 'creative_template_id',
                 'extendType' => 'creative_template_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '素材规格Id',
-                'restraint' => '详见 [link href='creative_template_id']素材规格Id[/link]',
+                'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
                 'errormsg' => '素材规格Id不正确',
-                'name' => 'creative_template_id',
+                ,
                 'name' => 'creative_template_id',
             );
 
@@ -120,10 +125,11 @@ class Create {
                 'name' => 'creative_elements',
                 'extendType' => 'creative_elements',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '素材元素',
                 'restraint' => '不超过4096个字符',
                 'errormsg' => '素材元素不正确',
-                'name' => 'creative_elements',
+                'max_length' => '4096',
                 'name' => 'creative_elements',
             );
 
@@ -131,10 +137,11 @@ class Create {
                 'name' => 'destination_url',
                 'extendType' => 'destination_url',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '素材目标url',
                 'restraint' => '小于1023个英文字符',
                 'errormsg' => '素材目标url不正确',
-                'name' => 'destination_url',
+                'max_length' => '1023',
                 'name' => 'destination_url',
             );
 
@@ -142,10 +149,11 @@ class Create {
                 'name' => 'impression_tracking_url',
                 'extendType' => 'impression_tracking_url',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '曝光监控地址',
                 'restraint' => '小于1023个英文字符',
                 'errormsg' => '曝光监控地址不正确',
-                'name' => 'impression_tracking_url',
+                'max_length' => '1023',
                 'name' => 'impression_tracking_url',
             );
 
@@ -153,10 +161,11 @@ class Create {
                 'name' => 'dynamic_creative_template_id',
                 'extendType' => 'dynamic_creative_template_id',
                 'require' => 'no',
+                'type' => 'id',
                 'description' => '动态创意模板ID（仅动态创意特性允许使用）',
                 'restraint' => '小于2^63',
                 'errormsg' => '动态创意模板ID不正确',
-                'name' => 'dynamic_creative_template_id',
+                ,
                 'name' => 'dynamic_creative_template_id',
             );
 
@@ -164,10 +173,11 @@ class Create {
                 'name' => 'dynamic_creative_material_label',
                 'extendType' => 'dynamic_creative_material_label',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '动态创意模板物料标签（仅动态创意特性允许使用）',
                 'restraint' => '小于120个英文字符',
                 'errormsg' => '动态创意模板物料标签不正确',
-                'name' => 'dynamic_creative_material_label',
+                'max_length' => '120',
                 'name' => 'dynamic_creative_material_label',
             );
 
@@ -175,10 +185,11 @@ class Create {
                 'name' => 'outer_creative_id',
                 'extendType' => 'outer_creative_id',
                 'require' => 'no',
+                'type' => 'id',
                 'description' => '外部广告素材Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告素材Id不正确',
-                'name' => 'outer_creative_id',
+                ,
                 'name' => 'outer_creative_id',
             );
 
@@ -186,10 +197,11 @@ class Create {
                 'name' => 'configured_status',
                 'extendType' => 'configured_status',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '用户状态',
-                'restraint' => '',
+                ,
                 'errormsg' => '用户状态不正确',
-                'name' => 'configured_status',
+                ,
                 'name' => 'configured_status',
             );
 ;

@@ -65,10 +65,11 @@ class Delete {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Delete {
                 'name' => 'audience_id',
                 'extendType' => 'audience_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-                'name' => 'audience_id',
+                ,
                 'name' => 'audience_id',
             );
 ;

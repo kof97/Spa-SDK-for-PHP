@@ -65,10 +65,11 @@ class UpdateByPb {
                 'name' => 'operation_type',
                 'extendType' => 'audience_operation_type',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '操作类型，包括APPEND、REDUCE',
-                'restraint' => '详见 [link href='api_audience_option_type']操作类型[/link]',
+                'restraint' => '详见 [link href="api_audience_option_type"]操作类型[/link]',
                 'errormsg' => '操作类型不正确',
-                'name' => 'operation_type',
+                ,
                 'name' => 'operation_type',
             );
 
@@ -76,10 +77,11 @@ class UpdateByPb {
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'yes',
+                'type' => '',
                 ,
                 ,
                 ,
-                'name' => 'data_file',
+                ,
                 'name' => 'data_file',
             );
 
@@ -87,10 +89,11 @@ class UpdateByPb {
                 'name' => 'file_name',
                 'extendType' => 'file_name',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '文件名称',
                 'restraint' => '小于32字符',
                 'errormsg' => '文件名称不正确',
-                'name' => 'file_name',
+                'max_length' => '256',
                 'name' => 'file_name',
             );
 
@@ -98,10 +101,11 @@ class UpdateByPb {
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '上传文件的内容md5',
                 'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
                 'errormsg' => '上传文件的内容md5不正确',
-                'name' => 'file_md5',
+                'max_length' => '32',
                 'name' => 'file_md5',
             );
 
@@ -109,10 +113,11 @@ class UpdateByPb {
                 'name' => 'refs_app_id',
                 'extendType' => 'refs_app_id',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => 'OpenId对应的AppId',
                 'restraint' => '1-128个字符',
                 'errormsg' => 'AppId不正确',
-                'name' => 'refs_app_id',
+                'max_length' => '128',
                 'name' => 'refs_app_id',
             );
 ;

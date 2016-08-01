@@ -65,10 +65,11 @@ class WechatOrderQuery {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class WechatOrderQuery {
                 'name' => 'wechat_appid',
                 'extendType' => 'wechat_appid',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '微信开放平台账户appid',
                 'restraint' => '在开放平台查看，标识申请的应用',
                 'errormsg' => '微信开放平台账户appid错误',
-                'name' => 'wechat_appid',
+                'max_length' => '32',
                 'name' => 'wechat_appid',
             );
 
@@ -87,10 +89,11 @@ class WechatOrderQuery {
                 'name' => 'out_trade_no',
                 'extendType' => 'out_trade_no',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '订单号码',
                 'restraint' => '最多32个字符',
                 'errormsg' => '订单号码错误',
-                'name' => 'out_trade_no',
+                'max_length' => '32',
                 'name' => 'out_trade_no',
             );
 ;

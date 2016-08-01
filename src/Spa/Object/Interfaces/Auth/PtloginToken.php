@@ -65,10 +65,11 @@ class PtloginToken {
                 'name' => 'app_id',
                 'extendType' => 'app_id',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '合作方APP ID',
                 'restraint' => '小于32字符',
                 'errormsg' => '合作方APP ID不正确',
-                'name' => 'app_id',
+                'max_length' => '32',
                 'name' => 'app_id',
             );
 
@@ -76,10 +77,11 @@ class PtloginToken {
                 'name' => 'app_key',
                 'extendType' => 'app_key',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '密钥APP KEY',
                 'restraint' => '小于32字符',
                 'errormsg' => '密钥APP KEY不正确',
-                'name' => 'app_key',
+                'max_length' => '32',
                 'name' => 'app_key',
             );
 
@@ -87,10 +89,11 @@ class PtloginToken {
                 'name' => 'qq',
                 'extendType' => 'qq',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '登录QQ号码',
                 'restraint' => '小于2^63',
                 'errormsg' => '登录QQ号码不正确',
-                'name' => 'qq',
+                ,
                 'name' => 'qq',
             );
 
@@ -98,10 +101,11 @@ class PtloginToken {
                 'name' => 'skey',
                 'extendType' => 'skey',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '密钥APP KEY',
                 'restraint' => '小于64字符',
                 'errormsg' => 'skey不正确',
-                'name' => 'skey',
+                'max_length' => '64',
                 'name' => 'skey',
             );
 
@@ -109,10 +113,11 @@ class PtloginToken {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 ;

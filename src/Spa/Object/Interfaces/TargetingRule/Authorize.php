@@ -65,10 +65,11 @@ class Authorize {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Authorize {
                 'name' => 'operation_type',
                 'extendType' => 'operation_type',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '操作类型',
-                'restraint' => '详见 [link href='operation_type']操作类型[/link]',
+                'restraint' => '详见 [link href="operation_type"]操作类型[/link]',
                 'errormsg' => '操作类型不正确',
-                'name' => 'operation_type',
+                ,
                 'name' => 'operation_type',
             );
 
@@ -87,10 +89,11 @@ class Authorize {
                 'name' => 'rule_id',
                 'extendType' => 'rule_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                'name' => 'rule_id',
+                ,
                 'name' => 'rule_id',
             );
 
@@ -98,10 +101,11 @@ class Authorize {
                 'name' => 'to_advertiser_id',
                 'extendType' => 'to_advertiser_id',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '广告主Id（子客户）',
                 'restraint' => '广告主Id（子客户）',
                 'errormsg' => '广告主Id（子客户）不正确',
-                'name' => 'to_advertiser_id',
+                ,
                 'name' => 'to_advertiser_id',
             );
 
@@ -109,10 +113,11 @@ class Authorize {
                 'name' => 'to_rule_id',
                 'extendType' => 'to_rule_id',
                 'require' => 'no',
+                'type' => 'integer',
                 'description' => '授权后，子客户的规则id；删除授权时必填',
                 'restraint' => '删除授权时为必填',
                 'errormsg' => '被授权的规则id不正确',
-                'name' => 'to_rule_id',
+                ,
                 'name' => 'to_rule_id',
             );
 
@@ -120,10 +125,11 @@ class Authorize {
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '受众描述',
                 'restraint' => '不超过250个英文字符',
                 'errormsg' => '受众描述不正确',
-                'name' => 'description',
+                'max_length' => '250',
                 'name' => 'description',
             );
 ;

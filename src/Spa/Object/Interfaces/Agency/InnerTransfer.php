@@ -65,10 +65,11 @@ class InnerTransfer {
                 'name' => 'account_type_from',
                 'extendType' => 'account_type_from',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '转出的账户类型',
-                'restraint' => '见 [link href='account_type_map']账户类型定义[/link]',
+                'restraint' => '见 [link href="account_type_map"]账户类型定义[/link]',
                 'errormsg' => '账户类型不正确',
-                'name' => 'account_type_from',
+                ,
                 'name' => 'account_type_from',
             );
 
@@ -76,10 +77,11 @@ class InnerTransfer {
                 'name' => 'account_type_to',
                 'extendType' => 'account_type_to',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '转入的账户类型',
-                'restraint' => '见 [link href='account_type_map']账户类型定义[/link]',
+                'restraint' => '见 [link href="account_type_map"]账户类型定义[/link]',
                 'errormsg' => '账户类型不正确',
-                'name' => 'account_type_to',
+                ,
                 'name' => 'account_type_to',
             );
 
@@ -87,10 +89,11 @@ class InnerTransfer {
                 'name' => 'amount',
                 'extendType' => 'amount',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '金额',
                 'restraint' => '单位为分',
                 'errormsg' => '金额不正确',
-                'name' => 'amount',
+                ,
                 'name' => 'amount',
             );
 
@@ -98,10 +101,11 @@ class InnerTransfer {
                 'name' => 'external_bill_no',
                 'extendType' => 'external_bill_no',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '外部订单号',
                 'restraint' => '不超过35字符，需要有调用方标示前缀，且要保证在同一个广告主下唯一，如jdzt-xxx-xxx',
                 'errormsg' => '外部订单号不正确',
-                'name' => 'external_bill_no',
+                'max_length' => '35',
                 'name' => 'external_bill_no',
             );
 
@@ -109,10 +113,11 @@ class InnerTransfer {
                 'name' => 'memo',
                 'extendType' => 'memo',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '备注信息',
                 'restraint' => '不超过64个英文字符',
                 'errormsg' => '备注信息不正确',
-                'name' => 'memo',
+                'max_length' => '64',
                 'name' => 'memo',
             );
 ;

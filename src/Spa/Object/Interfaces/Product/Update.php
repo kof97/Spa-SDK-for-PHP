@@ -65,10 +65,11 @@ class Update {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Update {
                 'name' => 'product_refs_id',
                 'extendType' => 'product_refs_id',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '标的物Id',
                 'restraint' => '小于128个英文字符',
                 'errormsg' => '标的物Id不正确',
-                'name' => 'product_refs_id',
+                'max_length' => '128',
                 'name' => 'product_refs_id',
             );
 
@@ -87,10 +89,11 @@ class Update {
                 'name' => 'product_name',
                 'extendType' => 'product_name',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '标的物名称',
                 'restraint' => '小于255个英文字符',
                 'errormsg' => '标的物名称不正确',
-                'name' => 'product_name',
+                'max_length' => '255',
                 'name' => 'product_name',
             );
 
@@ -98,10 +101,11 @@ class Update {
                 'name' => 'product_type',
                 'extendType' => 'product_type',
                 'require' => 'yes',
+                'type' => 'string',
                 'description' => '标的物类型',
-                'restraint' => '详见 [link href='product_type']标的物类型[/link]',
+                'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
                 'errormsg' => '标的物类型不正确',
-                'name' => 'product_type',
+                ,
                 'name' => 'product_type',
             );
 
@@ -109,10 +113,11 @@ class Update {
                 'name' => 'product_info',
                 'extendType' => 'product_info',
                 'require' => 'no',
+                'type' => 'struct',
                 'description' => '标的物详细信息',
-                'restraint' => '详见 [link href='ec_info']京东、拍拍店铺、标的物[/link]',
+                'restraint' => '详见 [link href="ec_info"]京东、拍拍店铺、标的物[/link]',
                 'errormsg' => '京东购物行为不正确',
-                'name' => 'product_info',
+                ,
                 'name' => 'product_info',
             );
 ;

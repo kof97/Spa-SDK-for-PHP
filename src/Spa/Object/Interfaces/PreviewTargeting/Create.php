@@ -65,10 +65,11 @@ class Create {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class Create {
                 'name' => 'adgroup_id',
                 'extendType' => 'adgroup_id',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '广告组Id',
-                'restraint' => '',
+                ,
                 'errormsg' => '广告组Id不正确',
-                'name' => 'adgroup_id',
+                ,
                 'name' => 'adgroup_id',
             );
 
@@ -87,10 +89,11 @@ class Create {
                 'name' => 'preview_qq_list',
                 'extendType' => 'preview_qq_list',
                 'require' => 'yes',
+                'type' => 'array',
                 'description' => '广告预览QQ列表',
                 'restraint' => 'json格式的数组，例如[111,222,333]',
                 'errormsg' => '预览QQ列表错误',
-                'name' => 'preview_qq_list',
+                ,
                 'name' => 'preview_qq_list',
             );
 ;

@@ -65,10 +65,11 @@ class ReadCustomAudience {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class ReadCustomAudience {
                 'name' => 'rule_id',
                 'extendType' => 'rule_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                'name' => 'rule_id',
+                ,
                 'name' => 'rule_id',
             );
 ;

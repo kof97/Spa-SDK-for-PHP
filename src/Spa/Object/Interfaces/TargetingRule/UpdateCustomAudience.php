@@ -65,10 +65,11 @@ class UpdateCustomAudience {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class UpdateCustomAudience {
                 'name' => 'rule_id',
                 'extendType' => 'rule_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                'name' => 'rule_id',
+                ,
                 'name' => 'rule_id',
             );
 
@@ -87,10 +89,11 @@ class UpdateCustomAudience {
                 'name' => 'rule_name',
                 'extendType' => 'rule_name',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '规则名称',
                 'restraint' => '不超过90个英文字符',
                 'errormsg' => '规则名称不正确',
-                'name' => 'rule_name',
+                'max_length' => '90',
                 'name' => 'rule_name',
             );
 
@@ -98,10 +101,11 @@ class UpdateCustomAudience {
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
+                'type' => 'string',
                 'description' => '受众描述',
                 'restraint' => '不超过250个英文字符',
                 'errormsg' => '受众描述不正确',
-                'name' => 'description',
+                'max_length' => '250',
                 'name' => 'description',
             );
 ;

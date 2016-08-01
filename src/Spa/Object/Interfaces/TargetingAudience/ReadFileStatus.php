@@ -65,10 +65,11 @@ class ReadFileStatus {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
+                'type' => 'integer',
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                'name' => 'advertiser_id',
+                ,
                 'name' => 'advertiser_id',
             );
 
@@ -76,10 +77,11 @@ class ReadFileStatus {
                 'name' => 'file_id',
                 'extendType' => 'file_id',
                 'require' => 'yes',
+                'type' => 'id',
                 'description' => '文件Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '文件Id不正确',
-                'name' => 'file_id',
+                ,
                 'name' => 'file_id',
             );
 ;
