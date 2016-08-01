@@ -267,7 +267,10 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $require = $v->attributes()['require'] . '';
 
                 $arr = getExtendTypeInfo($data, $mod_name, $interface_name, $extendType);
-//var_dump($arr);
+                $arr['extendType'] = $extendType;
+                $arr['require'] = $require;
+                $arr['name'] = $name;
+
             }
         }
     }
