@@ -69,12 +69,6 @@ class Update {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -86,14 +80,7 @@ class Update {
                 'require' => 'yes',
                 'type' => 'id',
                 'description' => '广告组Id',
-                
                 'errormsg' => '广告组Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'adgroup_id',
@@ -107,12 +94,6 @@ class Update {
                 'description' => '定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '定向Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'targeting_id',
@@ -128,12 +109,6 @@ class Update {
                 'errormsg' => '广告组名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'adgroup_name',
             );
 
@@ -145,14 +120,6 @@ class Update {
                 'description' => '广告出价，单位为分',
                 'restraint' => '广告出价，单位为分',
                 'errormsg' => '广告出价不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'bid_amount',
             );
 
@@ -166,12 +133,7 @@ class Update {
                 'errormsg' => '开始投放时间不正确',
                 'max_length' => '10',
                 'min_length' => '10',
-                
                 'pattern' => '{date_pattern}',
-                
-                
-                
-                
                 'name' => 'begin_date',
             );
 
@@ -185,12 +147,7 @@ class Update {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '10',
                 'min_length' => '10',
-                
                 'pattern' => '{date_pattern}',
-                
-                
-                
-                
                 'name' => 'end_date',
             );
 
@@ -204,12 +161,6 @@ class Update {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '336',
                 'min_length' => '336',
-                
-                
-                
-                
-                
-                
                 'name' => 'time_series',
             );
 
@@ -221,14 +172,8 @@ class Update {
                 'description' => '素材播放模式',
                 'restraint' => '详见 [link href="creative_selection_type"]素材播放模式[/link]',
                 'errormsg' => '素材播放模式不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_CreativeSelectionType',
-                
-                
                 'name' => 'creative_selection_type',
             );
 
@@ -238,16 +183,9 @@ class Update {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '用户状态',
-                
                 'errormsg' => '用户状态不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                
-                
                 'name' => 'configured_status',
             );
 
@@ -261,12 +199,6 @@ class Update {
                 'errormsg' => '自定义分类不正确',
                 'max_length' => '200',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'customized_category',
             );
 
@@ -278,12 +210,6 @@ class Update {
                 'description' => '最低曝光频次',
                 'restraint' => '大于等于0、小于等于1000',
                 'errormsg' => '最低曝光频次不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000',
                 'min' => '0',
                 'name' => 'min_impression_include',
@@ -297,12 +223,6 @@ class Update {
                 'description' => '最高曝光频次',
                 'restraint' => '大于等于0、小于等于1000',
                 'errormsg' => '最高曝光频次不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000',
                 'min' => '0',
                 'name' => 'max_impression_include',
@@ -318,12 +238,7 @@ class Update {
                 'errormsg' => '监控链接错误',
                 'max_length' => '1024',
                 'min_length' => '0',
-                
                 'pattern' => '/.*/',
-                
-                
-                
-                
                 'name' => 'click_tracking_url',
             );
 
@@ -337,12 +252,6 @@ class Update {
                 'errormsg' => '子标的物id错误',
                 'max_length' => '128',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'subordinate_product_refs_id',
             );
 
@@ -354,12 +263,6 @@ class Update {
                 'description' => '产品推荐方式',
                 'restraint' => '允许值可通过接口utility/get_dynamic_right_info获取',
                 'errormsg' => '产品推荐方式错误',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '0',
                 'name' => 'dynamic_creative_recommend_type',
@@ -370,17 +273,6 @@ class Update {
                 'extendType' => 'campaign.total_budget',
                 'require' => 'no',
                 'type' => '',
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'total_budget',
             );
 ;

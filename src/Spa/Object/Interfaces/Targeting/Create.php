@@ -69,12 +69,6 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -90,12 +84,6 @@ class Create {
                 'errormsg' => '定向名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'targeting_name',
             );
 
@@ -109,12 +97,6 @@ class Create {
                 'errormsg' => '定向描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'description',
             );
 
@@ -126,14 +108,8 @@ class Create {
                 'description' => '定向包类型',
                 'restraint' => '详见 [link href="ui_visibility"]定向包类型[/link]',
                 'errormsg' => '定向包类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_u_i_visibility',
-                
-                
                 'name' => 'ui_visibility',
             );
 
@@ -145,14 +121,6 @@ class Create {
                 'description' => '定向详细设置',
                 'restraint' => '存放所有定向条件',
                 'errormsg' => '定向详细设置不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'targeting_setting',
             );
 
@@ -164,12 +132,6 @@ class Create {
                 'description' => '外部广告定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告定向Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'outer_targeting_id',

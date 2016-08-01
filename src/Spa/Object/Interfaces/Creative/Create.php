@@ -69,12 +69,6 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,12 +82,6 @@ class Create {
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'campaign_id',
@@ -105,14 +93,7 @@ class Create {
                 'require' => 'yes',
                 'type' => 'id',
                 'description' => '广告组Id',
-                
                 'errormsg' => '广告组Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'adgroup_id',
@@ -128,12 +109,6 @@ class Create {
                 'errormsg' => '素材名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'creative_name',
             );
 
@@ -145,14 +120,6 @@ class Create {
                 'description' => '素材规格Id',
                 'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
                 'errormsg' => '素材规格Id不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'creative_template_id',
             );
 
@@ -166,12 +133,7 @@ class Create {
                 'errormsg' => '素材元素不正确',
                 'max_length' => '4096',
                 'min_length' => '1',
-                
                 'pattern' => '/.*/',
-                
-                
-                
-                
                 'name' => 'creative_elements',
             );
 
@@ -185,12 +147,7 @@ class Create {
                 'errormsg' => '素材目标url不正确',
                 'max_length' => '1023',
                 'min_length' => '1',
-                
                 'pattern' => '{url_pattern}',
-                
-                
-                
-                
                 'name' => 'destination_url',
             );
 
@@ -204,12 +161,7 @@ class Create {
                 'errormsg' => '曝光监控地址不正确',
                 'max_length' => '1023',
                 'min_length' => '0',
-                
                 'pattern' => '{url_pattern}',
-                
-                
-                
-                
                 'name' => 'impression_tracking_url',
             );
 
@@ -221,12 +173,6 @@ class Create {
                 'description' => '动态创意模板ID（仅动态创意特性允许使用）',
                 'restraint' => '小于2^63',
                 'errormsg' => '动态创意模板ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'dynamic_creative_template_id',
@@ -242,12 +188,6 @@ class Create {
                 'errormsg' => '动态创意模板物料标签不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'dynamic_creative_material_label',
             );
 
@@ -259,12 +199,6 @@ class Create {
                 'description' => '外部广告素材Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告素材Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'outer_creative_id',
@@ -276,16 +210,9 @@ class Create {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '用户状态',
-                
                 'errormsg' => '用户状态不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                
-                
                 'name' => 'configured_status',
             );
 ;

@@ -69,12 +69,6 @@ class Sync {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,12 +82,6 @@ class Sync {
                 'description' => '外部广告主Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告主Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'outer_advertiser_id',
@@ -109,12 +97,6 @@ class Sync {
                 'errormsg' => '公司名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'corporation_name',
             );
 
@@ -128,12 +110,6 @@ class Sync {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'certification_image_id',
             );
 
@@ -145,12 +121,6 @@ class Sync {
                 'description' => '最细一级行业分类（最细有3级）',
                 'restraint' => '详见 [link href="industry_id"]新行业分类[/link]',
                 'errormsg' => '行业分类不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000000000000',
                 'min' => '0',
                 'name' => 'industry_id',
@@ -164,12 +134,6 @@ class Sync {
                 'description' => '日限额，单位为分',
                 'restraint' => '0 – 1000000000，0表示不限，单位为分',
                 'errormsg' => '日消耗限额不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000000000',
                 'min' => '0',
                 'name' => 'daily_budget',
@@ -184,14 +148,6 @@ class Sync {
 0个',
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'qualification_image_id_list',
             );
 
@@ -204,14 +160,6 @@ class Sync {
 0个',
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'ad_qualification_image_id_list',
             );
 
@@ -225,12 +173,7 @@ class Sync {
                 'errormsg' => '推广站点地址不正确',
                 'max_length' => '255',
                 'min_length' => '1',
-                
                 'pattern' => '{url_pattern}',
-                
-                
-                
-                
                 'name' => 'website',
             );
 
@@ -244,12 +187,6 @@ class Sync {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'icp_image_id',
             );
 
@@ -263,12 +200,6 @@ class Sync {
                 'errormsg' => '品牌名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'corporation_image_name',
             );
 
@@ -282,12 +213,7 @@ class Sync {
                 'errormsg' => '联系人电话号码不正确',
                 'max_length' => '20',
                 'min_length' => '0',
-                
                 'pattern' => '/^[0-9]{3,4}\-[0-9]{6,8}(\-[0-9]{1,8})?$/',
-                
-                
-                
-                
                 'name' => 'contact_person_telephone',
             );
 
@@ -301,12 +227,7 @@ class Sync {
                 'errormsg' => '联系人手机号码不正确',
                 'max_length' => '20',
                 'min_length' => '0',
-                
                 'pattern' => '/^\+?[0-9]{6,13}$/',
-                
-                
-                
-                
                 'name' => 'contact_person_mobile',
             );
 
@@ -318,14 +239,6 @@ class Sync {
                 'description' => '广告主扩展信息',
                 'restraint' => '详见 [link href="outer_extend_info"]广告主扩展信息[/link]',
                 'errormsg' => '广告主扩展信息不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'outer_extend_info',
             );
 
@@ -337,14 +250,6 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'outer_version',
             );
 ;

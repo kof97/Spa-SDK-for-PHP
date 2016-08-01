@@ -69,12 +69,6 @@ class ReadCustomAudience {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,14 +82,6 @@ class ReadCustomAudience {
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'rule_id',
             );
 ;

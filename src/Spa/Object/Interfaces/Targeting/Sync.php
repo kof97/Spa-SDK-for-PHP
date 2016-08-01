@@ -69,12 +69,6 @@ class Sync {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,12 +82,6 @@ class Sync {
                 'description' => '定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '定向Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'targeting_id',
@@ -109,12 +97,6 @@ class Sync {
                 'errormsg' => '定向名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'targeting_name',
             );
 
@@ -126,14 +108,8 @@ class Sync {
                 'description' => '定向包类型',
                 'restraint' => '详见 [link href="ui_visibility"]定向包类型[/link]',
                 'errormsg' => '定向包类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_u_i_visibility',
-                
-                
                 'name' => 'ui_visibility',
             );
 
@@ -147,12 +123,6 @@ class Sync {
                 'errormsg' => '定向描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'description',
             );
 
@@ -164,14 +134,6 @@ class Sync {
                 'description' => '定向详细设置',
                 'restraint' => '存放所有定向条件',
                 'errormsg' => '定向详细设置不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'targeting_setting',
             );
 
@@ -183,14 +145,9 @@ class Sync {
                 'description' => '定向状态',
                 'restraint' => '可选值：AD_STATUS_NORMAL, AD_STATUS_DELETED',
                 'errormsg' => '定向状态不正确',
-                
-                
                 'list' => 'AD_STATUS_NORMAL,AD_STATUS_DELETED',
-                
                 'enum' => 'enum',
                 'source' => 'api_sync_configured_status',
-                
-                
                 'name' => 'configured_status',
             );
 
@@ -202,12 +159,6 @@ class Sync {
                 'description' => '外部广告定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告定向Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'outer_targeting_id',
@@ -221,14 +172,6 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'outer_version',
             );
 ;

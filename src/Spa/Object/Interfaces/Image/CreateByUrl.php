@@ -69,12 +69,6 @@ class CreateByUrl {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -86,16 +80,10 @@ class CreateByUrl {
                 'require' => 'yes',
                 'type' => 'string',
                 'description' => '图片地址',
-                
                 'errormsg' => '图片地址不正确',
                 'max_length' => '1024',
                 'min_length' => '1',
-                
                 'pattern' => '{url_pattern}',
-                
-                
-                
-                
                 'name' => 'image_url',
             );
 
@@ -109,12 +97,6 @@ class CreateByUrl {
                 'errormsg' => '外部图片id不正确',
                 'max_length' => '1024',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'outer_image_id',
             );
 ;

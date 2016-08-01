@@ -69,12 +69,6 @@ class Authorize {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,14 +82,8 @@ class Authorize {
                 'description' => '操作类型',
                 'restraint' => '详见 [link href="operation_type"]操作类型[/link]',
                 'errormsg' => '操作类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_operation_type',
-                
-                
                 'name' => 'operation_type',
             );
 
@@ -107,14 +95,6 @@ class Authorize {
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'rule_id',
             );
 
@@ -126,12 +106,6 @@ class Authorize {
                 'description' => '广告主Id（子客户）',
                 'restraint' => '广告主Id（子客户）',
                 'errormsg' => '广告主Id（子客户）不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'to_advertiser_id',
@@ -145,14 +119,6 @@ class Authorize {
                 'description' => '授权后，子客户的规则id；删除授权时必填',
                 'restraint' => '删除授权时为必填',
                 'errormsg' => '被授权的规则id不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'to_rule_id',
             );
 
@@ -166,12 +132,6 @@ class Authorize {
                 'errormsg' => '受众描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'description',
             );
 ;

@@ -69,12 +69,6 @@ class Update {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,12 +82,6 @@ class Update {
                 'description' => '广告素材Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '广告素材Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'creative_id',
@@ -109,12 +97,6 @@ class Update {
                 'errormsg' => '素材名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'creative_name',
             );
 
@@ -126,14 +108,6 @@ class Update {
                 'description' => '素材规格Id',
                 'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
                 'errormsg' => '素材规格Id不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'creative_template_id',
             );
 
@@ -147,12 +121,7 @@ class Update {
                 'errormsg' => '素材元素不正确',
                 'max_length' => '4096',
                 'min_length' => '1',
-                
                 'pattern' => '/.*/',
-                
-                
-                
-                
                 'name' => 'creative_elements',
             );
 
@@ -166,12 +135,7 @@ class Update {
                 'errormsg' => '素材目标url不正确',
                 'max_length' => '1023',
                 'min_length' => '1',
-                
                 'pattern' => '{url_pattern}',
-                
-                
-                
-                
                 'name' => 'destination_url',
             );
 
@@ -185,12 +149,7 @@ class Update {
                 'errormsg' => '曝光监控地址不正确',
                 'max_length' => '1023',
                 'min_length' => '0',
-                
                 'pattern' => '{url_pattern}',
-                
-                
-                
-                
                 'name' => 'impression_tracking_url',
             );
 
@@ -202,12 +161,6 @@ class Update {
                 'description' => '动态创意模板ID（仅动态创意特性允许使用）',
                 'restraint' => '小于2^63',
                 'errormsg' => '动态创意模板ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'dynamic_creative_template_id',
@@ -223,12 +176,6 @@ class Update {
                 'errormsg' => '动态创意模板物料标签不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'dynamic_creative_material_label',
             );
 
@@ -238,16 +185,9 @@ class Update {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '用户状态',
-                
                 'errormsg' => '用户状态不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                
-                
                 'name' => 'configured_status',
             );
 ;

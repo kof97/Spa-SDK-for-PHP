@@ -320,6 +320,11 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 'name' => '$name',
             );
 ";
+
+                $pattern = "\r\n                \r\n";
+                while (strpos($field_info, $pattern) != false) {
+                    $field_info = str_replace($pattern, "\r\n", $field_info);
+                }
 //var_dump($arr);
 
             }

@@ -69,14 +69,8 @@ class UpdateByPb {
                 'description' => '操作类型，包括APPEND、REDUCE',
                 'restraint' => '详见 [link href="api_audience_option_type"]操作类型[/link]',
                 'errormsg' => '操作类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_audience_operation_type',
-                
-                
                 'name' => 'operation_type',
             );
 
@@ -85,17 +79,6 @@ class UpdateByPb {
                 'extendType' => 'data_file',
                 'require' => 'yes',
                 'type' => '',
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'data_file',
             );
 
@@ -109,12 +92,6 @@ class UpdateByPb {
                 'errormsg' => '文件名称不正确',
                 'max_length' => '256',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'file_name',
             );
 
@@ -128,12 +105,6 @@ class UpdateByPb {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-                
-                
-                
-                
-                
-                
                 'name' => 'file_md5',
             );
 
@@ -147,12 +118,6 @@ class UpdateByPb {
                 'errormsg' => 'AppId不正确',
                 'max_length' => '128',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'refs_app_id',
             );
 ;

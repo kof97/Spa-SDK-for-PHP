@@ -69,14 +69,8 @@ class SelectDaily {
                 'description' => '任务',
                 'restraint' => '例如：TASK_CLICKDETAILS,详见 [link href="task"]离线任务[/link]',
                 'errormsg' => '任务不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_task',
-                
-                
                 'name' => 'task',
             );
 
@@ -90,12 +84,7 @@ class SelectDaily {
                 'errormsg' => '查询时间不正确',
                 'max_length' => '10',
                 'min_length' => '10',
-                
                 'pattern' => '{date_pattern}',
-                
-                
-                
-                
                 'name' => 'date',
             );
 ;

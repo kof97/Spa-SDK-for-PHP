@@ -69,12 +69,6 @@ class Upload {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -85,17 +79,6 @@ class Upload {
                 'extendType' => 'data_source',
                 'require' => 'yes',
                 'type' => '',
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'data_source',
             );
 
@@ -105,16 +88,9 @@ class Upload {
                 'require' => 'yes',
                 'type' => 'string',
                 'description' => '上传文件的内容md5',
-                
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-                
-                
-                
-                
-                
-                
                 'name' => 'file_md5',
             );
 ;

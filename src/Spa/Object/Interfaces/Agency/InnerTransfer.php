@@ -69,14 +69,8 @@ class InnerTransfer {
                 'description' => '转出的账户类型',
                 'restraint' => '见 [link href="account_type_map"]账户类型定义[/link]',
                 'errormsg' => '账户类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-                
-                
                 'name' => 'account_type_from',
             );
 
@@ -88,14 +82,8 @@ class InnerTransfer {
                 'description' => '转入的账户类型',
                 'restraint' => '见 [link href="account_type_map"]账户类型定义[/link]',
                 'errormsg' => '账户类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-                
-                
                 'name' => 'account_type_to',
             );
 
@@ -107,12 +95,6 @@ class InnerTransfer {
                 'description' => '金额',
                 'restraint' => '单位为分',
                 'errormsg' => '金额不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '2000000000',
                 'min' => '1',
                 'name' => 'amount',
@@ -128,12 +110,7 @@ class InnerTransfer {
                 'errormsg' => '外部订单号不正确',
                 'max_length' => '35',
                 'min_length' => '1',
-                
                 'pattern' => '/^[0-9a-z\-_]{10,35}$/',
-                
-                
-                
-                
                 'name' => 'external_bill_no',
             );
 
@@ -147,12 +124,7 @@ class InnerTransfer {
                 'errormsg' => '备注信息不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                
                 'pattern' => '{memo_pattern}',
-                
-                
-                
-                
                 'name' => 'memo',
             );
 ;

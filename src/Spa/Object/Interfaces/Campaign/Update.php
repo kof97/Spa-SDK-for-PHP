@@ -69,12 +69,6 @@ class Update {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,12 +82,6 @@ class Update {
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'campaign_id',
@@ -109,12 +97,6 @@ class Update {
                 'errormsg' => '推广计划名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'campaign_name',
             );
 
@@ -126,12 +108,6 @@ class Update {
                 'description' => '日消耗限额，单位为分',
                 'restraint' => '大于5000，且小于400000000',
                 'errormsg' => '日消耗限额不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '400000000',
                 'min' => '5000',
                 'name' => 'daily_budget',
@@ -145,12 +121,6 @@ class Update {
                 'description' => '总消耗限额，单位为分',
                 'restraint' => '大于5000，且小于20000000000',
                 'errormsg' => '总消耗限额不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '20000000000',
                 'min' => '5000',
                 'name' => 'total_budget',
@@ -164,14 +134,8 @@ class Update {
                 'description' => '标准投放类型',
                 'restraint' => '详见 [link href="speed_mode"]标准投放类型[/link]',
                 'errormsg' => '标准投放类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_speed_mode',
-                
-                
                 'name' => 'speed_mode',
             );
 
@@ -183,14 +147,8 @@ class Update {
                 'description' => '沉淀模式',
                 'restraint' => 'NO：不支持，YES：支持',
                 'errormsg' => '沉淀模式不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_boolean',
-                
-                
                 'name' => 'retainability_in_feeds',
             );
 
@@ -202,12 +160,6 @@ class Update {
                 'description' => '最高曝光频次',
                 'restraint' => '大于等于0、小于等于1000',
                 'errormsg' => '最高曝光频次不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000',
                 'min' => '0',
                 'name' => 'max_impression_include',
@@ -219,16 +171,9 @@ class Update {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '用户状态',
-                
                 'errormsg' => '用户状态不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                
-                
                 'name' => 'configured_status',
             );
 ;

@@ -69,12 +69,6 @@ class GetTransactionDetail {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,14 +82,8 @@ class GetTransactionDetail {
                 'description' => '账户类型',
                 'restraint' => '见 [link href="account_type_map"]账户类型定义[/link]',
                 'errormsg' => '账户类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-                
-                
                 'name' => 'account_type',
             );
 
@@ -107,14 +95,6 @@ class GetTransactionDetail {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'date_range',
             );
 
@@ -126,12 +106,6 @@ class GetTransactionDetail {
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '99999',
                 'min' => '1',
                 'name' => 'page',
@@ -145,12 +119,6 @@ class GetTransactionDetail {
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '100',
                 'min' => '1',
                 'name' => 'page_size',

@@ -69,12 +69,6 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -88,12 +82,6 @@ class Create {
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'campaign_id',
@@ -107,12 +95,6 @@ class Create {
                 'description' => '定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '定向Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'targeting_id',
@@ -128,12 +110,6 @@ class Create {
                 'errormsg' => '广告组名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'adgroup_name',
             );
 
@@ -145,14 +121,8 @@ class Create {
                 'description' => '扣费方式，如CPD、CPM',
                 'restraint' => '详见 [link href="bid_type"]扣费方式[/link]',
                 'errormsg' => '扣费方式不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_cost_type',
-                
-                
                 'name' => 'bid_type',
             );
 
@@ -164,14 +134,6 @@ class Create {
                 'description' => '广告出价，单位为分',
                 'restraint' => '广告出价，单位为分',
                 'errormsg' => '广告出价不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'bid_amount',
             );
 
@@ -185,12 +147,7 @@ class Create {
                 'errormsg' => '开始投放时间不正确',
                 'max_length' => '10',
                 'min_length' => '10',
-                
                 'pattern' => '{date_pattern}',
-                
-                
-                
-                
                 'name' => 'begin_date',
             );
 
@@ -204,12 +161,7 @@ class Create {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '10',
                 'min_length' => '10',
-                
                 'pattern' => '{date_pattern}',
-                
-                
-                
-                
                 'name' => 'end_date',
             );
 
@@ -221,14 +173,7 @@ class Create {
                 'description' => '投放站点集合',
                 'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
                 'errormsg' => '投放站点集合不正确',
-                
-                
                 'list' => 'SITE_SET_QZONE,SITE_SET_PENGYOU,SITE_SET_QQCLIENT,SITE_SET_TUAN,SITE_SET_MEISHI,SITE_SET_PIAO,SITE_SET_MUSIC,SITE_SET_MOBILE_UNION,SITE_SET_QQCOM,SITE_SET_MAIL,SITE_SET_WECHAT,SITE_SET_YINGYONGBAO_MOBILE,SITE_SET_PC_UNION,SITE_SET_YINGYONGBAO_PC,SITE_SET_MOBILE_INNER',
-                
-                
-                
-                
-                
                 'name' => 'site_set',
             );
 
@@ -240,12 +185,6 @@ class Create {
                 'description' => '外部广告Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'outer_adgroup_id',
@@ -261,12 +200,6 @@ class Create {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '336',
                 'min_length' => '336',
-                
-                
-                
-                
-                
-                
                 'name' => 'time_series',
             );
 
@@ -278,14 +211,9 @@ class Create {
                 'description' => '标的物类型',
                 'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
                 'errormsg' => '标的物类型不正确',
-                
-                
                 'list' => 'PRODUCT_TYPE_LINK,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED,PRODUCT_TYPE_LINK_WECHAT,PRODUCT_TYPE_LINK_MOBILE_QQ_MP',
-                
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-                
-                
                 'name' => 'product_type',
             );
 
@@ -299,12 +227,6 @@ class Create {
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'product_refs_id',
             );
 
@@ -318,12 +240,6 @@ class Create {
                 'errormsg' => '子标的物id错误',
                 'max_length' => '128',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'subordinate_product_refs_id',
             );
 
@@ -335,14 +251,8 @@ class Create {
                 'description' => '素材播放模式',
                 'restraint' => '详见 [link href="creative_selection_type"]素材播放模式[/link]',
                 'errormsg' => '素材播放模式不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_CreativeSelectionType',
-                
-                
                 'name' => 'creative_selection_type',
             );
 
@@ -356,12 +266,6 @@ class Create {
                 'errormsg' => '自定义分类不正确',
                 'max_length' => '200',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'customized_category',
             );
 
@@ -373,12 +277,6 @@ class Create {
                 'description' => '最低曝光频次',
                 'restraint' => '大于等于0、小于等于1000',
                 'errormsg' => '最低曝光频次不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000',
                 'min' => '0',
                 'name' => 'min_impression_include',
@@ -392,12 +290,6 @@ class Create {
                 'description' => '最高曝光频次',
                 'restraint' => '大于等于0、小于等于1000',
                 'errormsg' => '最高曝光频次不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '1000',
                 'min' => '0',
                 'name' => 'max_impression_include',
@@ -413,12 +305,7 @@ class Create {
                 'errormsg' => '监控链接错误',
                 'max_length' => '1024',
                 'min_length' => '0',
-                
                 'pattern' => '/.*/',
-                
-                
-                
-                
                 'name' => 'click_tracking_url',
             );
 
@@ -430,14 +317,8 @@ class Create {
                 'description' => '广告类型，支持普通广告、集装箱广告和动态创意广告',
                 'restraint' => '详见 [link href="creative_combination_type"]广告类型[/link]',
                 'errormsg' => '广告类型不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_ad_group_creative_combination_type',
-                
-                
                 'name' => 'creative_combination_type',
             );
 
@@ -449,12 +330,6 @@ class Create {
                 'description' => '产品推荐方式',
                 'restraint' => '允许值可通过接口utility/get_dynamic_right_info获取',
                 'errormsg' => '产品推荐方式错误',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '0',
                 'name' => 'dynamic_creative_recommend_type',
@@ -466,16 +341,9 @@ class Create {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '用户状态',
-                
                 'errormsg' => '用户状态不正确',
-                
-                
-                
-                
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                
-                
                 'name' => 'configured_status',
             );
 
@@ -484,17 +352,6 @@ class Create {
                 'extendType' => 'campaign.total_budget',
                 'require' => 'no',
                 'type' => '',
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'total_budget',
             );
 ;

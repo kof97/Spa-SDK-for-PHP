@@ -69,12 +69,6 @@ class Read {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -90,12 +84,6 @@ class Read {
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                
-                
-                
-                
-                
-                
                 'name' => 'product_refs_id',
             );
 
@@ -107,14 +95,9 @@ class Read {
                 'description' => '标的物类型',
                 'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
                 'errormsg' => '标的物类型不正确',
-                
-                
                 'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
-                
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-                
-                
                 'name' => 'product_type',
             );
 ;

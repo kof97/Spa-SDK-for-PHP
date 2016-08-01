@@ -69,12 +69,6 @@ class Delete {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -86,14 +80,7 @@ class Delete {
                 'require' => 'yes',
                 'type' => 'id',
                 'description' => '广告组Id',
-                
                 'errormsg' => '广告组Id不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '9223372036854775807',
                 'min' => '1',
                 'name' => 'adgroup_id',

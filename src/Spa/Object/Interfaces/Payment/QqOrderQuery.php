@@ -69,12 +69,6 @@ class QqOrderQuery {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -90,12 +84,6 @@ class QqOrderQuery {
                 'errormsg' => '订单号码错误',
                 'max_length' => '32',
                 'min_length' => '1',
-                
-                
-                
-                
-                
-                
                 'name' => 'out_trade_no',
             );
 ;

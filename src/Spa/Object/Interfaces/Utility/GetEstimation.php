@@ -69,12 +69,6 @@ class GetEstimation {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                
-                
-                
                 'max' => '4294967296',
                 'min' => '0',
                 'name' => 'advertiser_id',
@@ -85,17 +79,6 @@ class GetEstimation {
                 'extendType' => 'targeting.read_targeting_setting',
                 'require' => 'no',
                 'type' => '',
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'targeting_setting',
             );
 
@@ -107,14 +90,6 @@ class GetEstimation {
                 'description' => '广告组信息所组成的对象',
                 'restraint' => '小于1024英文字符，支持字段time_series, site_set, bid_type, bid, product_refs_id, product_type，示例：{"bid_type":"COSTTYPE_CPC", "product_type": "PRODUCT_TYPE_LINK"}',
                 'errormsg' => '广告组信息不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'adgroup_setting',
             );
 
@@ -126,14 +101,6 @@ class GetEstimation {
                 'description' => '素材信息所组成的对象',
                 'restraint' => '小于1024英文字符，支持字段creative_template_id，[{"creative_template_id":1},{"creative_template_id":2}]',
                 'errormsg' => '素材信息不正确',
-                
-                
-                
-                
-                
-                
-                
-                
                 'name' => 'creative_setting',
             );
 ;
