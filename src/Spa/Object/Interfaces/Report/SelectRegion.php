@@ -57,7 +57,32 @@ class SelectRegion {
         $data = $this->fieldInfo();
 
         foreach ($params as $key => $value) {
-            
+            $type = $data[$key]['type'];
+            switch ($type) {
+                case 'string':
+                    
+                    break;
+
+                case 'integer':
+                    
+                    break;
+
+                case 'id':
+
+                case 'number':
+                    
+                    break;
+
+                case 'struct':
+                    
+                    break;
+
+                case 'array':
+                    
+                    break;
+
+                default: break;
+            }
         }
     }
 
@@ -181,5 +206,3 @@ class SelectRegion {
 }
 
 //end of script
-
-

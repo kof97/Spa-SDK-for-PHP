@@ -57,8 +57,8 @@ class $interface_class {
     	\$data = \$this->fieldInfo();
 
     	foreach (\$params as \$key => \$value) {
-    		$type = \$data[\$key]['type'];
-    		switch ($type) {
+    		\$type = \$data[\$key]['type'];
+    		switch (\$type) {
     			case 'string':
     				
     				break;
