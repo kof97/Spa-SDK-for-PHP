@@ -57,9 +57,8 @@ class GetShoppingInterestList {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
         );
     }

@@ -57,9 +57,8 @@ class AddAdvertiser {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'corporation_name' => array(
                 'name' => 'corporation_name',

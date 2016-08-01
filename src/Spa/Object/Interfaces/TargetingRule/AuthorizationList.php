@@ -57,9 +57,8 @@ class AuthorizationList {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',

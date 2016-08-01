@@ -57,9 +57,8 @@ class GetOpenid {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'app_id' => array(
                 'name' => 'app_id',

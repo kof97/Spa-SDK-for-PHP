@@ -57,9 +57,8 @@ class UpdateByPb {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'operation_type' => array(
                 'name' => 'operation_type',

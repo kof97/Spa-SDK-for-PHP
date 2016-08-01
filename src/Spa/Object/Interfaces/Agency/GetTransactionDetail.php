@@ -57,9 +57,8 @@ class GetTransactionDetail {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'account_type' => array(
                 'name' => 'account_type',

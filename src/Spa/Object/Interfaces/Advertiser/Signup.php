@@ -57,9 +57,8 @@ class Signup {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'customer_registration_type' => array(
                 'name' => 'customer_registration_type',

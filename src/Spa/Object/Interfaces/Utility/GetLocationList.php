@@ -57,9 +57,8 @@ class GetLocationList {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'region_id' => array(
                 'name' => 'region_id',

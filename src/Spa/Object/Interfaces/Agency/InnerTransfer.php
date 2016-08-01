@@ -57,9 +57,8 @@ class InnerTransfer {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'account_type_from' => array(
                 'name' => 'account_type_from',

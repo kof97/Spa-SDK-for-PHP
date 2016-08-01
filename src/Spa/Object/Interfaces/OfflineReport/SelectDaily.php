@@ -57,9 +57,8 @@ class SelectDaily {
 
     }
 
-    protected function fieldInfo() {
-        return 
-        array(
+    public function fieldInfo() {
+        return array(
 
             'task' => array(
                 'name' => 'task',
