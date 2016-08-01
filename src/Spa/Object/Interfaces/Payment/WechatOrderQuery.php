@@ -69,7 +69,9 @@ class WechatOrderQuery {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class WechatOrderQuery {
                 'restraint' => '在开放平台查看，标识申请的应用',
                 'errormsg' => '微信开放平台账户appid错误',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'wechat_appid',
             );
 
@@ -94,6 +98,8 @@ class WechatOrderQuery {
                 'restraint' => '最多32个字符',
                 'errormsg' => '订单号码错误',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'out_trade_no',
             );
 ;

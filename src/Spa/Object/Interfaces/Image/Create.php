@@ -69,7 +69,9 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -78,10 +80,12 @@ class Create {
                 'extendType' => 'image_file',
                 'require' => 'yes',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'image_file',
             );
 
@@ -94,6 +98,8 @@ class Create {
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'image_signature',
             );
 
@@ -106,6 +112,8 @@ class Create {
                 'restraint' => '1024字符内',
                 'errormsg' => '外部图片id不正确',
                 'max_length' => '1024',
+                'min_length' => '1',
+                
                 'name' => 'outer_image_id',
             );
 ;

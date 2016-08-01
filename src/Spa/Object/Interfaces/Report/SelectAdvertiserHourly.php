@@ -69,7 +69,9 @@ class SelectAdvertiserHourly {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class SelectAdvertiserHourly {
                 'restraint' => '日期格式，如2014-03-01',
                 'errormsg' => '查询时间不正确',
                 'max_length' => '10',
+                'min_length' => '10',
+                
                 'name' => 'date',
             );
 
@@ -93,7 +97,9 @@ class SelectAdvertiserHourly {
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                ,
+                
+                
+                
                 'name' => 'page',
             );
 
@@ -105,7 +111,9 @@ class SelectAdvertiserHourly {
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                ,
+                
+                
+                
                 'name' => 'page_size',
             );
 
@@ -117,7 +125,9 @@ class SelectAdvertiserHourly {
                 'description' => '聚合参数，例：["date"]',
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
-                ,
+                
+                
+                
                 'name' => 'group_by',
             );
 ;

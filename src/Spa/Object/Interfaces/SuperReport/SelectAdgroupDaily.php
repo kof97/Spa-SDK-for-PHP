@@ -69,7 +69,9 @@ class SelectAdgroupDaily {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class SelectAdgroupDaily {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-                ,
+                
+                
+                
                 'name' => 'date_range',
             );
 
@@ -93,7 +97,9 @@ class SelectAdgroupDaily {
                 'description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
                 'errormsg' => '过滤条件不正确',
-                ,
+                
+                
+                
                 'name' => 'filter',
             );
 
@@ -105,7 +111,9 @@ class SelectAdgroupDaily {
                 'description' => '排序参数,默认按日期降序',
                 'restraint' => '见 [link href="order_by"]排序规则定义[/link]',
                 'errormsg' => '排序参数不正确',
-                ,
+                
+                
+                
                 'name' => 'order_by',
             );
 
@@ -117,7 +125,9 @@ class SelectAdgroupDaily {
                 'description' => '聚合参数',
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合参数不正确',
-                ,
+                
+                
+                
                 'name' => 'group_by',
             );
 
@@ -129,7 +139,9 @@ class SelectAdgroupDaily {
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                ,
+                
+                
+                
                 'name' => 'page',
             );
 
@@ -141,7 +153,9 @@ class SelectAdgroupDaily {
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                ,
+                
+                
+                
                 'name' => 'page_size',
             );
 ;

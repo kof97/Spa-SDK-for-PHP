@@ -69,7 +69,9 @@ class ReadFileStatus {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class ReadFileStatus {
                 'description' => '文件Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '文件Id不正确',
-                ,
+                
+                
+                
                 'name' => 'file_id',
             );
 ;

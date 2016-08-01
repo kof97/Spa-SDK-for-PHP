@@ -69,7 +69,9 @@ class Read {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class Read {
                 'description' => '自定义打点id',
                 'restraint' => '自定义打点id',
                 'errormsg' => '自定义打点id不正确',
-                ,
+                
+                
+                
                 'name' => 'location_id',
             );
 ;

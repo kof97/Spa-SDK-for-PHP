@@ -70,6 +70,8 @@ class GetAccessToken {
                 'restraint' => '小于32字符',
                 'errormsg' => '合作方APP ID不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'app_id',
             );
 
@@ -82,6 +84,8 @@ class GetAccessToken {
                 'restraint' => '小于32字符',
                 'errormsg' => '密钥APP KEY不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'app_key',
             );
 
@@ -94,6 +98,8 @@ class GetAccessToken {
                 'restraint' => '不大于64个英文字符',
                 'errormsg' => 'authorization_code不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'authorization_code',
             );
 ;

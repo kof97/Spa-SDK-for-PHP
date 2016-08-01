@@ -69,7 +69,9 @@ class GetLocationList {
                 'description' => '城市ID',
                 'restraint' => '城市ID是六位的数字',
                 'errormsg' => '城市ID不正确',
-                ,
+                
+                
+                
                 'name' => 'region_id',
             );
 ;

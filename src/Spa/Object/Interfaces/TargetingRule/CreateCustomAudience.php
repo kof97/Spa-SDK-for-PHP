@@ -69,7 +69,9 @@ class CreateCustomAudience {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class CreateCustomAudience {
                 'restraint' => '不超过90个英文字符',
                 'errormsg' => '规则名称不正确',
                 'max_length' => '90',
+                'min_length' => '1',
+                
                 'name' => 'rule_name',
             );
 
@@ -93,7 +97,9 @@ class CreateCustomAudience {
                 'description' => '号码类型',
                 'restraint' => '详见 [link href="custom_audience_rule_type"]号码类型列表[/link]',
                 'errormsg' => '号码类型不正确',
-                ,
+                
+                
+                
                 'name' => 'rule_type',
             );
 
@@ -106,6 +112,8 @@ class CreateCustomAudience {
                 'restraint' => '不超过250个英文字符',
                 'errormsg' => '受众描述不正确',
                 'max_length' => '250',
+                'min_length' => '0',
+                
                 'name' => 'description',
             );
 ;

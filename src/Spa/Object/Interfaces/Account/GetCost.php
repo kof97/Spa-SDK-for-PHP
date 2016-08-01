@@ -69,7 +69,9 @@ class GetCost {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class GetCost {
                 'restraint' => '日期格式，如2014-03-01',
                 'errormsg' => '查询时间不正确',
                 'max_length' => '10',
+                'min_length' => '10',
+                
                 'name' => 'date',
             );
 ;

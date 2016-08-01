@@ -70,6 +70,8 @@ class Ptlogin {
                 'restraint' => '小于32字符',
                 'errormsg' => '合作方APP ID不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'app_id',
             );
 
@@ -82,6 +84,8 @@ class Ptlogin {
                 'restraint' => '小于32字符',
                 'errormsg' => '密钥APP KEY不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'app_key',
             );
 
@@ -93,7 +97,9 @@ class Ptlogin {
                 'description' => '登录QQ号码',
                 'restraint' => '小于2^63',
                 'errormsg' => '登录QQ号码不正确',
-                ,
+                
+                
+                
                 'name' => 'qq',
             );
 
@@ -106,6 +112,8 @@ class Ptlogin {
                 'restraint' => '小于64字符',
                 'errormsg' => 'skey不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'skey',
             );
 ;

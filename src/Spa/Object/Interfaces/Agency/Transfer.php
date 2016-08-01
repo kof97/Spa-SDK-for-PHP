@@ -69,7 +69,9 @@ class Transfer {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class Transfer {
                 'description' => '账户类型',
                 'restraint' => '见 [link href="account_type_map"]账户类型定义[/link]',
                 'errormsg' => '账户类型不正确',
-                ,
+                
+                
+                
                 'name' => 'account_type',
             );
 
@@ -93,7 +97,9 @@ class Transfer {
                 'description' => '金额',
                 'restraint' => '单位为分',
                 'errormsg' => '金额不正确',
-                ,
+                
+                
+                
                 'name' => 'amount',
             );
 
@@ -106,6 +112,8 @@ class Transfer {
                 'restraint' => '不超过35字符，需要有调用方标示前缀，且要保证在同一个广告主下唯一，如jdzt-xxx-xxx',
                 'errormsg' => '外部订单号不正确',
                 'max_length' => '35',
+                'min_length' => '1',
+                
                 'name' => 'external_bill_no',
             );
 
@@ -118,6 +126,8 @@ class Transfer {
                 'restraint' => '不超过64个英文字符',
                 'errormsg' => '备注信息不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'memo',
             );
 
@@ -130,6 +140,8 @@ class Transfer {
                 'restraint' => '大于等于0，且小于end_time',
                 'errormsg' => '开始投放时间不正确',
                 'max_length' => '10',
+                'min_length' => '10',
+                
                 'name' => 'expire_date',
             );
 ;

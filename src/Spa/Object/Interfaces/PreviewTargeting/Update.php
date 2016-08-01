@@ -69,7 +69,9 @@ class Update {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -79,9 +81,11 @@ class Update {
                 'require' => 'yes',
                 'type' => 'id',
                 'description' => '广告组Id',
-                ,
+                
                 'errormsg' => '广告组Id不正确',
-                ,
+                
+                
+                
                 'name' => 'adgroup_id',
             );
 
@@ -93,7 +97,9 @@ class Update {
                 'description' => '广告预览QQ列表',
                 'restraint' => 'json格式的数组，例如[111,222,333]',
                 'errormsg' => '预览QQ列表错误',
-                ,
+                
+                
+                
                 'name' => 'preview_qq_list',
             );
 ;

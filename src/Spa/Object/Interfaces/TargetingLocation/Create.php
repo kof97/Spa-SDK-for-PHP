@@ -69,7 +69,9 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -80,8 +82,10 @@ class Create {
                 'type' => 'string',
                 'description' => '商圈类型',
                 'restraint' => '商圈类型',
-                ,
-                ,
+                
+                
+                
+                
                 'name' => 'location_type',
             );
 
@@ -94,6 +98,8 @@ class Create {
                 'restraint' => '小于等于60个英文字符，同一账户下名称不允许重复。',
                 'errormsg' => '自定义打点名称错误',
                 'max_length' => '60',
+                'min_length' => '1',
+                
                 'name' => 'location_name',
             );
 
@@ -104,8 +110,10 @@ class Create {
                 'type' => 'struct',
                 'description' => '商圈具体配置信息',
                 'restraint' => '商圈具体配置信息',
-                ,
-                ,
+                
+                
+                
+                
                 'name' => 'location_spec',
             );
 
@@ -117,7 +125,9 @@ class Create {
                 'description' => '整数',
                 'restraint' => '大于0小于2^63',
                 'errormsg' => '非有效整数',
-                ,
+                
+                
+                
                 'name' => 'city_id',
             );
 ;

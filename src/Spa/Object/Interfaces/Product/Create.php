@@ -69,7 +69,9 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class Create {
                 'restraint' => '小于128个英文字符',
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
+                'min_length' => '0',
+                
                 'name' => 'product_refs_id',
             );
 
@@ -94,6 +98,8 @@ class Create {
                 'restraint' => '小于255个英文字符',
                 'errormsg' => '标的物名称不正确',
                 'max_length' => '255',
+                'min_length' => '1',
+                
                 'name' => 'product_name',
             );
 
@@ -105,7 +111,9 @@ class Create {
                 'description' => '标的物类型',
                 'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
                 'errormsg' => '标的物类型不正确',
-                ,
+                
+                
+                'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
                 'name' => 'product_type',
             );
 
@@ -117,7 +125,9 @@ class Create {
                 'description' => '标的物详细信息',
                 'restraint' => '详见 [link href="ec_info"]京东、拍拍店铺、标的物[/link]',
                 'errormsg' => '京东购物行为不正确',
-                ,
+                
+                
+                
                 'name' => 'product_info',
             );
 ;

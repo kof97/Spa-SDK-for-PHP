@@ -69,7 +69,9 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class Create {
                 'restraint' => '小于120个英文字符，不可与名下其他推广计划重名',
                 'errormsg' => '推广计划名称不正确',
                 'max_length' => '120',
+                'min_length' => '1',
+                
                 'name' => 'campaign_name',
             );
 
@@ -93,7 +97,9 @@ class Create {
                 'description' => '推广计划类型',
                 'restraint' => '详见 [link href="campaign_type"]推广计划类型[/link]',
                 'errormsg' => '推广计划类型不正确',
-                ,
+                
+                
+                
                 'name' => 'campaign_type',
             );
 
@@ -105,7 +111,9 @@ class Create {
                 'description' => '日消耗限额，单位为分',
                 'restraint' => '大于5000，且小于400000000',
                 'errormsg' => '日消耗限额不正确',
-                ,
+                
+                
+                
                 'name' => 'daily_budget',
             );
 
@@ -117,7 +125,9 @@ class Create {
                 'description' => '总消耗限额，单位为分',
                 'restraint' => '大于5000，且小于20000000000',
                 'errormsg' => '总消耗限额不正确',
-                ,
+                
+                
+                
                 'name' => 'total_budget',
             );
 
@@ -129,7 +139,9 @@ class Create {
                 'description' => '标准投放类型',
                 'restraint' => '详见 [link href="speed_mode"]标准投放类型[/link]',
                 'errormsg' => '标准投放类型不正确',
-                ,
+                
+                
+                
                 'name' => 'speed_mode',
             );
 
@@ -141,7 +153,9 @@ class Create {
                 'description' => '每日购买PV量',
                 'restraint' => '大于1000小于42亿',
                 'errormsg' => '每日购买PV量不正确',
-                ,
+                
+                
+                
                 'name' => 'pv_demanded',
             );
 
@@ -153,7 +167,9 @@ class Create {
                 'description' => '外部推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部推广计划Id不正确',
-                ,
+                
+                
+                
                 'name' => 'outer_campaign_id',
             );
 
@@ -165,7 +181,9 @@ class Create {
                 'description' => '沉淀模式',
                 'restraint' => 'NO：不支持，YES：支持',
                 'errormsg' => '沉淀模式不正确',
-                ,
+                
+                
+                
                 'name' => 'retainability_in_feeds',
             );
 
@@ -177,7 +195,9 @@ class Create {
                 'description' => '最高曝光频次',
                 'restraint' => '大于等于0、小于等于1000',
                 'errormsg' => '最高曝光频次不正确',
-                ,
+                
+                
+                
                 'name' => 'max_impression_include',
             );
 
@@ -187,9 +207,11 @@ class Create {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '用户状态',
-                ,
+                
                 'errormsg' => '用户状态不正确',
-                ,
+                
+                
+                
                 'name' => 'configured_status',
             );
 ;

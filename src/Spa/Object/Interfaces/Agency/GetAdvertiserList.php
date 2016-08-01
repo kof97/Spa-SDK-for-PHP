@@ -69,7 +69,9 @@ class GetAdvertiserList {
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                ,
+                
+                
+                
                 'name' => 'page',
             );
 
@@ -81,7 +83,9 @@ class GetAdvertiserList {
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                ,
+                
+                
+                
                 'name' => 'page_size',
             );
 ;

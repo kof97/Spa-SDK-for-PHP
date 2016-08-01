@@ -66,10 +66,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.corporation_name',
                 'require' => 'yes',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'corporation_name',
             );
 
@@ -82,6 +84,8 @@ class AddAdvertiser {
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'certification_image_id',
             );
 
@@ -93,7 +97,9 @@ class AddAdvertiser {
                 'description' => '最细一级行业分类（最细有3级）',
                 'restraint' => '详见 [link href="industry_id"]新行业分类[/link]',
                 'errormsg' => '行业分类不正确',
-                ,
+                
+                
+                
                 'name' => 'industry_id',
             );
 
@@ -102,10 +108,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.outer_advertiser_id',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'outer_advertiser_id',
             );
 
@@ -114,10 +122,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.image_id_list',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'qualification_image_id_list',
             );
 
@@ -126,10 +136,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.image_id_list',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'ad_qualification_image_id_list',
             );
 
@@ -138,10 +150,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.website',
                 'require' => 'yes',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'website',
             );
 
@@ -154,6 +168,8 @@ class AddAdvertiser {
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'icp_image_id',
             );
 
@@ -162,10 +178,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.corporation_image_name',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'corporation_image_name',
             );
 
@@ -174,10 +192,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.contact_person_telephone',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'contact_person_telephone',
             );
 
@@ -186,10 +206,12 @@ class AddAdvertiser {
                 'extendType' => 'advertiser.contact_person_mobile',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'contact_person_mobile',
             );
 ;

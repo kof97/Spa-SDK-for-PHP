@@ -69,7 +69,9 @@ class Create {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class Create {
                 'restraint' => '1-32个字符，不区分中英文',
                 'errormsg' => '人群名称错误',
                 'max_length' => '96',
+                'min_length' => '1',
+                
                 'name' => 'audience_name',
             );
 
@@ -93,7 +97,9 @@ class Create {
                 'description' => '人群类型，如：Meta、Combine、Lookalike',
                 'restraint' => '详见 [link href="audience_type"]人群类型[/link]',
                 'errormsg' => '人群类型不正确',
-                ,
+                
+                
+                
                 'name' => 'audience_type',
             );
 
@@ -105,7 +111,9 @@ class Create {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-                ,
+                
+                
+                
                 'name' => 'parent_audience_id',
             );
 
@@ -117,7 +125,9 @@ class Create {
                 'description' => '号码类型',
                 'restraint' => '详见 [link href="dmp_audience_data_type"]自定义人群号码类型[/link]',
                 'errormsg' => '人群号码类型错误',
-                ,
+                
+                
+                
                 'name' => 'data_type',
             );
 
@@ -126,10 +136,12 @@ class Create {
                 'extendType' => 'data_file',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'data_file',
             );
 
@@ -142,6 +154,8 @@ class Create {
                 'restraint' => '小于32字符',
                 'errormsg' => '文件名称不正确',
                 'max_length' => '256',
+                'min_length' => '1',
+                
                 'name' => 'file_name',
             );
 
@@ -154,6 +168,8 @@ class Create {
                 'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
+                'min_length' => '32',
+                
                 'name' => 'file_md5',
             );
 
@@ -166,6 +182,8 @@ class Create {
                 'restraint' => '不超过64000个字符，且不超过3层',
                 'errormsg' => '组合规则不正确',
                 'max_length' => '64000',
+                'min_length' => '1',
+                
                 'name' => 'combine_rule',
             );
 
@@ -177,7 +195,9 @@ class Create {
                 'description' => '人群类型，如：Meta、Combine、Lookalike',
                 'restraint' => '详见 [link href="audience_type"]人群类型[/link]',
                 'errormsg' => '人群类型不正确',
-                ,
+                
+                
+                
                 'name' => 'seed_audience_type',
             );
 
@@ -189,7 +209,9 @@ class Create {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-                ,
+                
+                
+                
                 'name' => 'seed_audience_id',
             );
 
@@ -201,7 +223,9 @@ class Create {
                 'description' => '扩展倍数',
                 'restraint' => '限1-100倍，且最多扩展到3000万覆盖人群',
                 'errormsg' => '扩展倍数不正确',
-                ,
+                
+                
+                
                 'name' => 'magnification',
             );
 
@@ -214,6 +238,8 @@ class Create {
                 'restraint' => '不超过64000个字符，且不超过3层',
                 'errormsg' => '组合规则不正确',
                 'max_length' => '64000',
+                'min_length' => '1',
+                
                 'name' => 'combine_rule',
             );
 
@@ -226,6 +252,8 @@ class Create {
                 'restraint' => '0-100个字符',
                 'errormsg' => '描述不正确',
                 'max_length' => '300',
+                'min_length' => '1',
+                
                 'name' => 'description',
             );
 
@@ -238,6 +266,8 @@ class Create {
                 'restraint' => '1-128个字符',
                 'errormsg' => 'AppId不正确',
                 'max_length' => '128',
+                'min_length' => '1',
+                
                 'name' => 'refs_app_id',
             );
 
@@ -249,7 +279,9 @@ class Create {
                 'description' => '外部人群规则Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部人群规则Id不正确',
-                ,
+                
+                
+                
                 'name' => 'outer_audience_id',
             );
 ;

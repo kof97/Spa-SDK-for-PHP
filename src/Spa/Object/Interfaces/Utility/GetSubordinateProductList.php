@@ -69,7 +69,9 @@ class GetSubordinateProductList {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -78,10 +80,12 @@ class GetSubordinateProductList {
                 'extendType' => 'product.product_refs_id',
                 'require' => 'yes',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'product_refs_id',
             );
 
@@ -90,10 +94,12 @@ class GetSubordinateProductList {
                 'extendType' => 'product.product_type',
                 'require' => 'yes',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'product_type',
             );
 ;

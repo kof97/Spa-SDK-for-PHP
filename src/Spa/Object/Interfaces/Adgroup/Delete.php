@@ -69,7 +69,9 @@ class Delete {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -79,9 +81,11 @@ class Delete {
                 'require' => 'yes',
                 'type' => 'id',
                 'description' => '广告组Id',
-                ,
+                
                 'errormsg' => '广告组Id不正确',
-                ,
+                
+                
+                
                 'name' => 'adgroup_id',
             );
 ;

@@ -69,7 +69,9 @@ class GetFileList {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class GetFileList {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-                ,
+                
+                
+                
                 'name' => 'audience_id',
             );
 
@@ -93,7 +97,9 @@ class GetFileList {
                 'description' => '若此字段不传，或传空则视为无限制条件。参见：高级条件',
                 'restraint' => '过滤条件结构',
                 'errormsg' => '过滤条件不正确',
-                ,
+                
+                
+                
                 'name' => 'filter',
             );
 
@@ -105,7 +111,9 @@ class GetFileList {
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                ,
+                
+                
+                
                 'name' => 'page',
             );
 
@@ -117,7 +125,9 @@ class GetFileList {
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                ,
+                
+                
+                
                 'name' => 'page_size',
             );
 ;

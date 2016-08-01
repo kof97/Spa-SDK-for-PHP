@@ -69,7 +69,9 @@ class Preview {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -82,6 +84,8 @@ class Preview {
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'image_id',
             );
 
@@ -94,6 +98,8 @@ class Preview {
                 'restraint' => '图片签名',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '32',
+                'min_length' => '32',
+                
                 'name' => 'sign',
             );
 ;

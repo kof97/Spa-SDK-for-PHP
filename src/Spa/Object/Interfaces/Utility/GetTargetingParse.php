@@ -69,7 +69,9 @@ class GetTargetingParse {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class GetTargetingParse {
                 'description' => '定向Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '定向Id不正确',
-                ,
+                
+                
+                
                 'name' => 'targeting_id',
             );
 
@@ -90,10 +94,12 @@ class GetTargetingParse {
                 'extendType' => 'targeting.read_targeting_setting',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'targeting_setting',
             );
 ;

@@ -69,7 +69,9 @@ class WechatOrderCreate {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class WechatOrderCreate {
                 'description' => '支付金额',
                 'restraint' => '单位为分,限额100000-1000000',
                 'errormsg' => '支付金额错误',
-                ,
+                
+                
+                
                 'name' => 'amount',
             );
 
@@ -94,6 +98,8 @@ class WechatOrderCreate {
                 'restraint' => '在开放平台查看，标识申请的应用',
                 'errormsg' => '微信开放平台账户appid错误',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'wechat_appid',
             );
 
@@ -106,6 +112,8 @@ class WechatOrderCreate {
                 'restraint' => 'APP支付的客户端IP',
                 'errormsg' => '客户端IP',
                 'max_length' => '20',
+                'min_length' => '1',
+                
                 'name' => 'client_ip',
             );
 
@@ -118,6 +126,8 @@ class WechatOrderCreate {
                 'restraint' => '由开发者自定义，微信支付成功之后，广点通后台通知（POST）开发者服务器（notify_url）支付结果，参数：out_trade_no=订单号,pay_type=WX',
                 'errormsg' => '通知地址错误',
                 'max_length' => '1024',
+                'min_length' => '0',
+                
                 'name' => 'notify_url',
             );
 ;

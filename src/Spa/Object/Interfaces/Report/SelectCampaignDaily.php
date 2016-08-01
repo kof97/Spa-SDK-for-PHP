@@ -69,7 +69,9 @@ class SelectCampaignDaily {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class SelectCampaignDaily {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-                ,
+                
+                
+                
                 'name' => 'date_range',
             );
 
@@ -93,7 +97,9 @@ class SelectCampaignDaily {
                 'description' => '如[2001,2002,2003,2004]，可不填',
                 'restraint' => '数量不能不超过200个',
                 'errormsg' => '推广计划ID列表不正确',
-                ,
+                
+                
+                
                 'name' => 'campaign_id_list',
             );
 
@@ -105,7 +111,9 @@ class SelectCampaignDaily {
                 'description' => '聚合参数，例：["date"]',
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
-                ,
+                
+                
+                
                 'name' => 'group_by',
             );
 
@@ -117,7 +125,9 @@ class SelectCampaignDaily {
                 'description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                ,
+                
+                
+                
                 'name' => 'page',
             );
 
@@ -129,7 +139,9 @@ class SelectCampaignDaily {
                 'description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                ,
+                
+                
+                
                 'name' => 'page_size',
             );
 ;

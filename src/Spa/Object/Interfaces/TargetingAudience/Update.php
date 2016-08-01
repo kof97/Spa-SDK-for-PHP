@@ -69,7 +69,9 @@ class Update {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class Update {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-                ,
+                
+                
+                
                 'name' => 'audience_id',
             );
 
@@ -94,6 +98,8 @@ class Update {
                 'restraint' => '1-32个字符，不区分中英文',
                 'errormsg' => '人群名称错误',
                 'max_length' => '96',
+                'min_length' => '1',
+                
                 'name' => 'audience_name',
             );
 
@@ -106,6 +112,8 @@ class Update {
                 'restraint' => '0-100个字符',
                 'errormsg' => '描述不正确',
                 'max_length' => '300',
+                'min_length' => '1',
+                
                 'name' => 'description',
             );
 
@@ -117,7 +125,9 @@ class Update {
                 'description' => '操作类型，包括APPEND、REDUCE',
                 'restraint' => '详见 [link href="api_audience_option_type"]操作类型[/link]',
                 'errormsg' => '操作类型不正确',
-                ,
+                
+                
+                
                 'name' => 'operation_type',
             );
 
@@ -129,7 +139,9 @@ class Update {
                 'description' => '号码类型',
                 'restraint' => '详见 [link href="dmp_audience_data_type"]自定义人群号码类型[/link]',
                 'errormsg' => '人群号码类型错误',
-                ,
+                
+                
+                
                 'name' => 'data_type',
             );
 
@@ -138,10 +150,12 @@ class Update {
                 'extendType' => 'data_file',
                 'require' => 'no',
                 'type' => '',
-                ,
-                ,
-                ,
-                ,
+                
+                
+                
+                
+                
+                
                 'name' => 'data_file',
             );
 
@@ -154,6 +168,8 @@ class Update {
                 'restraint' => '小于32字符',
                 'errormsg' => '文件名称不正确',
                 'max_length' => '256',
+                'min_length' => '1',
+                
                 'name' => 'file_name',
             );
 
@@ -166,6 +182,8 @@ class Update {
                 'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
+                'min_length' => '32',
+                
                 'name' => 'file_md5',
             );
 
@@ -178,6 +196,8 @@ class Update {
                 'restraint' => '1-128个字符',
                 'errormsg' => 'AppId不正确',
                 'max_length' => '128',
+                'min_length' => '1',
+                
                 'name' => 'refs_app_id',
             );
 ;

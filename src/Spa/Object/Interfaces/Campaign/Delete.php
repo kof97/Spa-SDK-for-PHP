@@ -69,7 +69,9 @@ class Delete {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class Delete {
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                ,
+                
+                
+                
                 'name' => 'campaign_id',
             );
 ;

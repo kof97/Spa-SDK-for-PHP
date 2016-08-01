@@ -69,7 +69,9 @@ class Sync {
                 'description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                ,
+                
+                
+                
                 'name' => 'advertiser_id',
             );
 
@@ -81,7 +83,9 @@ class Sync {
                 'description' => '广告素材Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '广告素材Id不正确',
-                ,
+                
+                
+                
                 'name' => 'creative_id',
             );
 
@@ -93,7 +97,9 @@ class Sync {
                 'description' => '外部广告素材Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部广告素材Id不正确',
-                ,
+                
+                
+                
                 'name' => 'outer_creative_id',
             );
 
@@ -105,7 +111,9 @@ class Sync {
                 'description' => '推广计划Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '推广计划Id不正确',
-                ,
+                
+                
+                
                 'name' => 'campaign_id',
             );
 
@@ -115,9 +123,11 @@ class Sync {
                 'require' => 'yes',
                 'type' => 'id',
                 'description' => '广告组Id',
-                ,
+                
                 'errormsg' => '广告组Id不正确',
-                ,
+                
+                
+                
                 'name' => 'adgroup_id',
             );
 
@@ -130,6 +140,8 @@ class Sync {
                 'restraint' => '小于120个英文字符，同一账户下名称不允许重复。',
                 'errormsg' => '素材名称不正确',
                 'max_length' => '120',
+                'min_length' => '1',
+                
                 'name' => 'creative_name',
             );
 
@@ -141,7 +153,9 @@ class Sync {
                 'description' => '资源状态',
                 'restraint' => '可选值：AD_STATUS_NORMAL, AD_STATUS_SUSPEND, AD_STATUS_DELETED',
                 'errormsg' => '资源状态不正确',
-                ,
+                
+                
+                
                 'name' => 'configured_status',
             );
 
@@ -153,7 +167,9 @@ class Sync {
                 'description' => '素材规格Id',
                 'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
                 'errormsg' => '素材规格Id不正确',
-                ,
+                
+                
+                
                 'name' => 'creative_template_id',
             );
 
@@ -166,6 +182,8 @@ class Sync {
                 'restraint' => '不超过4096个字符',
                 'errormsg' => '素材元素不正确',
                 'max_length' => '4096',
+                'min_length' => '1',
+                
                 'name' => 'creative_elements',
             );
 
@@ -178,6 +196,8 @@ class Sync {
                 'restraint' => '小于1023个英文字符',
                 'errormsg' => '素材目标url不正确',
                 'max_length' => '1023',
+                'min_length' => '1',
+                
                 'name' => 'destination_url',
             );
 
@@ -190,6 +210,8 @@ class Sync {
                 'restraint' => '小于1023个英文字符',
                 'errormsg' => '曝光监控地址不正确',
                 'max_length' => '1023',
+                'min_length' => '0',
+                
                 'name' => 'impression_tracking_url',
             );
 
@@ -201,7 +223,9 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                ,
+                
+                
+                
                 'name' => 'outer_version',
             );
 ;

@@ -69,7 +69,9 @@ class Signup {
                 'description' => '广告主类型',
                 'restraint' => '见   [link href="customer_registration_type"]广告主类型定义[/link]',
                 'errormsg' => '广告主类型不正确',
-                ,
+                
+                
+                
                 'name' => 'customer_registration_type',
             );
 
@@ -81,7 +83,9 @@ class Signup {
                 'description' => '推广方类型',
                 'restraint' => '见   [link href="target_type"]推广方类型[/link]',
                 'errormsg' => '推广方类型不正确',
-                ,
+                
+                
+                'list' => 'TARGETTYPE_OPEN_PLATFORM_APP,TARGETTYPE_BRAND',
                 'name' => 'product_type_set',
             );
 
@@ -93,7 +97,9 @@ class Signup {
                 'description' => '登录名',
                 'restraint' => '小于42亿',
                 'errormsg' => '登录名不正确',
-                ,
+                
+                
+                
                 'name' => 'login_name',
             );
 
@@ -106,6 +112,8 @@ class Signup {
                 'restraint' => '小于90个英文字符',
                 'errormsg' => '广告主名称不正确',
                 'max_length' => '90',
+                'min_length' => '1',
+                
                 'name' => 'advertiser_name',
             );
 
@@ -118,6 +126,8 @@ class Signup {
                 'restraint' => '小于120个英文字符',
                 'errormsg' => '公司名称不正确',
                 'max_length' => '120',
+                'min_length' => '1',
+                
                 'name' => 'corporation_name',
             );
 
@@ -130,6 +140,8 @@ class Signup {
                 'restraint' => '小于32个英文字符',
                 'errormsg' => '营业执照/企业资质证明图片id不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'certification_image_id',
             );
 
@@ -141,7 +153,9 @@ class Signup {
                 'description' => '最细一级行业分类（最细有3级）',
                 'restraint' => '详见 [link href="industry_id"]新行业分类[/link]',
                 'errormsg' => '行业分类不正确',
-                ,
+                
+                
+                
                 'name' => 'industry_id',
             );
 
@@ -154,7 +168,9 @@ class Signup {
 0个',
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
-                ,
+                
+                
+                
                 'name' => 'qualification_image_id_list',
             );
 
@@ -167,6 +183,8 @@ class Signup {
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '推广站点地址不正确',
                 'max_length' => '255',
+                'min_length' => '1',
+                
                 'name' => 'website',
             );
 
@@ -179,6 +197,8 @@ class Signup {
                 'restraint' => '网站名称小于64个英文字符',
                 'errormsg' => '网站名称不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'site_name',
             );
 
@@ -191,6 +211,8 @@ class Signup {
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
+                'min_length' => '1',
+                
                 'name' => 'icp_image_id',
             );
 
@@ -202,7 +224,9 @@ class Signup {
                 'description' => '身份证明',
                 'restraint' => '当 广告主组织类型为 CUSTOMER_REGISTIONTYPE_INDIVIDUAL时，需要提供身份证和个人半身照，结构如{"identification_image_id":"574656","photo_image_id":"77368"}',
                 'errormsg' => '身份证明不正确',
-                ,
+                
+                
+                
                 'name' => 'individual_qualification',
             );
 
@@ -215,6 +239,8 @@ class Signup {
                 'restraint' => '联系人姓名小于32个英文字符',
                 'errormsg' => '联系人姓名不正确',
                 'max_length' => '32',
+                'min_length' => '1',
+                
                 'name' => 'contact_person',
             );
 
@@ -227,6 +253,8 @@ class Signup {
                 'restraint' => '联系人email小于255个英文字符',
                 'errormsg' => '联系人email不正确',
                 'max_length' => '255',
+                'min_length' => '1',
+                
                 'name' => 'contact_person_email',
             );
 
@@ -239,6 +267,8 @@ class Signup {
                 'restraint' => '例如：+8613900000000 或 13900000000',
                 'errormsg' => '联系人手机号码不正确',
                 'max_length' => '20',
+                'min_length' => '0',
+                
                 'name' => 'contact_person_mobile',
             );
 
@@ -251,6 +281,8 @@ class Signup {
                 'restraint' => '例如：0755-86013388',
                 'errormsg' => '联系人电话号码不正确',
                 'max_length' => '20',
+                'min_length' => '0',
+                
                 'name' => 'contact_person_telephone',
             );
 
@@ -262,7 +294,9 @@ class Signup {
                 'description' => '联系人QQ',
                 'restraint' => '小于42亿',
                 'errormsg' => '联系人QQ不正确',
-                ,
+                
+                
+                
                 'name' => 'contact_person_qq',
             );
 
@@ -275,6 +309,8 @@ class Signup {
                 'restraint' => '联系地址小于255个英文字符',
                 'errormsg' => '联系地址不正确',
                 'max_length' => '255',
+                'min_length' => '1',
+                
                 'name' => 'address',
             );
 
@@ -284,9 +320,11 @@ class Signup {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '企业营业执照注册号',
-                ,
+                
                 'errormsg' => '企业营业执照注册号不正确',
                 'max_length' => '18',
+                'min_length' => '1',
+                
                 'name' => 'corporate_reg_no',
             );
 
@@ -296,9 +334,11 @@ class Signup {
                 'require' => 'no',
                 'type' => 'string',
                 'description' => '身份证号码',
-                ,
+                
                 'errormsg' => '身份证号码不正确',
                 'max_length' => '18',
+                'min_length' => '1',
+                
                 'name' => 'legal_person_id',
             );
 ;

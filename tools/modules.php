@@ -277,18 +277,22 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
 
                 $description = isset($arr['description']) ? $arr['description'] : null;
                 $description = str_replace('\'', '"', $description);
-                $description = $description ? "'description' => '" . $description . "'" : '';
+                $description = $description ? "'description' => '" . $description . "'," : '';
 
                 $restraint = isset($arr['restraint']) ? $arr['restraint'] : null;
                 $restraint = str_replace('\'', '"', $restraint);
-                $restraint = $restraint ? "'restraint' => '" . $restraint . "'" : '';
+                $restraint = $restraint ? "'restraint' => '" . $restraint . "'," : '';
 
                 $errormsg = isset($arr['errormsg']) ? $arr['errormsg'] : null;
                 $errormsg = str_replace('\'', '"', $errormsg);
-                $errormsg = $errormsg ? "'errormsg' => '" . $errormsg . "'" : '';
+                $errormsg = $errormsg ? "'errormsg' => '" . $errormsg . "'," : '';
 
                 
-                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'" : '';
+                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
+                $min_length = isset($arr['min_length']) ? "'min_length' => '" . $arr['min_length'] . "'," : '';
+                $list = isset($arr['list']) ? "'list' => '" . $arr['list'] . "'," : '';
+                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
+                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
 
 
                 $field_info .= "
@@ -297,10 +301,12 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 'extendType' => '$extendType',
                 'require' => '$require',
                 'type' => '$type',
-                $description,
-                $restraint,
-                $errormsg,
-                $max_length,
+                $description
+                $restraint
+                $errormsg
+                $max_length
+                $min_length
+                $list
                 'name' => '$name',
             );
 ";
