@@ -108,8 +108,7 @@ class Create {
                         'name' => 'location_type_circle',
                         'extendType' => 'location_type_circle',
                         'require' => 'yes',
-                    )
-
+                    ),
                 ),
             );
 

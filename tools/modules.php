@@ -314,8 +314,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                         $ele_name
                         $ele_extendType
                         $ele_require
-                    )
-";
+                    ),";
                     }
                     $element .= "
                 ),";

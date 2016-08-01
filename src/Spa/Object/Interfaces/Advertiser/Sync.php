@@ -233,26 +233,22 @@ class Sync {
                         'name' => 'id',
                         'extendType' => 'outer_extend_info_id',
                         'require' => 'no',
-                    )
-
+                    ),
                     'name' => array(
                         'name' => 'name',
                         'extendType' => 'outer_extend_info_name',
                         'require' => 'no',
-                    )
-
+                    ),
                     'category_id' => array(
                         'name' => 'category_id',
                         'extendType' => 'outer_extend_info_category_id',
                         'require' => 'no',
-                    )
-
+                    ),
                     'category_name' => array(
                         'name' => 'category_name',
                         'extendType' => 'outer_extend_info_category_name',
                         'require' => 'no',
-                    )
-
+                    ),
                 ),
             );
 

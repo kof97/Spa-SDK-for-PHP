@@ -86,14 +86,12 @@ class SelectCampaignDaily {
                         'name' => 'start_date',
                         'extendType' => 'start_date',
                         'require' => 'yes',
-                    )
-
+                    ),
                     'end_date' => array(
                         'name' => 'end_date',
                         'extendType' => 'end_date',
                         'require' => 'yes',
-                    )
-
+                    ),
                 ),
             );
 
@@ -121,20 +119,17 @@ class SelectCampaignDaily {
                         'name' => 'cpc',
                         'extendType' => 'cpc',
                         'require' => 'no',
-                    )
-
+                    ),
                     'cost' => array(
                         'name' => 'cost',
                         'extendType' => 'cost',
                         'require' => 'no',
-                    )
-
+                    ),
                     'impression' => array(
                         'name' => 'impression',
                         'extendType' => 'impression',
                         'require' => 'no',
-                    )
-
+                    ),
                 ),
             );
 

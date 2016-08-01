@@ -86,20 +86,17 @@ class Count {
                         'name' => 'configured_status',
                         'extendType' => 'configured_status',
                         'require' => 'no',
-                    )
-
+                    ),
                     'system_status' => array(
                         'name' => 'system_status',
                         'extendType' => 'system_status',
                         'require' => 'no',
-                    )
-
+                    ),
                     'adgroup_name' => array(
                         'name' => 'adgroup_name',
                         'extendType' => 'adgroup_name',
                         'require' => 'no',
-                    )
-
+                    ),
                 ),
             );
 

@@ -110,20 +110,17 @@ class SelectCampaignHourly {
                         'name' => 'cpc',
                         'extendType' => 'cpc',
                         'require' => 'no',
-                    )
-
+                    ),
                     'cost' => array(
                         'name' => 'cost',
                         'extendType' => 'cost',
                         'require' => 'no',
-                    )
-
+                    ),
                     'impression' => array(
                         'name' => 'impression',
                         'extendType' => 'impression',
                         'require' => 'no',
-                    )
-
+                    ),
                 ),
             );
 

@@ -109,14 +109,12 @@ class Select {
                         'name' => 'audience_id',
                         'extendType' => 'audience_id_order_by',
                         'require' => 'no',
-                    )
-
+                    ),
                     'user_count' => array(
                         'name' => 'user_count',
                         'extendType' => 'user_count_order_by',
                         'require' => 'no',
-                    )
-
+                    ),
                 ),
             );
 

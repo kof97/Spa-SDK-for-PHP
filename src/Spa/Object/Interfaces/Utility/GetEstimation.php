@@ -93,38 +93,32 @@ class GetEstimation {
                         'name' => 'bid_type',
                         'extendType' => 'adgroup.bid_type',
                         'require' => 'no',
-                    )
-
+                    ),
                     'bid_amount' => array(
                         'name' => 'bid_amount',
                         'extendType' => 'adgroup.bid_amount',
                         'require' => 'no',
-                    )
-
+                    ),
                     'site_set' => array(
                         'name' => 'site_set',
                         'extendType' => 'site_set',
                         'require' => 'no',
-                    )
-
+                    ),
                     'time_series' => array(
                         'name' => 'time_series',
                         'extendType' => 'adgroup.time_series',
                         'require' => 'no',
-                    )
-
+                    ),
                     'product_type' => array(
                         'name' => 'product_type',
                         'extendType' => 'product_type',
                         'require' => 'no',
-                    )
-
+                    ),
                     'product_refs_id' => array(
                         'name' => 'product_refs_id',
                         'extendType' => 'product_refs_id',
                         'require' => 'no',
-                    )
-
+                    ),
                 ),
             );
 

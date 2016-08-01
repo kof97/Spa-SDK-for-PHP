@@ -86,14 +86,12 @@ class SelectAgeAdvertiser {
                         'name' => 'start_date',
                         'extendType' => 'start_date',
                         'require' => 'yes',
-                    )
-
+                    ),
                     'end_date' => array(
                         'name' => 'end_date',
                         'extendType' => 'end_date',
                         'require' => 'yes',
-                    )
-
+                    ),
                 ),
             );
 

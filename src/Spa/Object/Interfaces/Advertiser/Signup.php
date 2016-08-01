@@ -208,14 +208,12 @@ class Signup {
                         'name' => 'identification_image_id',
                         'extendType' => 'identification_image_id',
                         'require' => 'yes',
-                    )
-
+                    ),
                     'photo_image_id' => array(
                         'name' => 'photo_image_id',
                         'extendType' => 'photo_image_id',
                         'require' => 'yes',
-                    )
-
+                    ),
                 ),
             );
 
