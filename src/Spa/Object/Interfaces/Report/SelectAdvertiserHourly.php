@@ -63,21 +63,56 @@ class SelectAdvertiserHourly {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'date' => array(
+                'name' => 'date',
+                'extendType' => 'date',
+                'require' => 'yes',
+                'description' => '查询时间',
+                'restraint' => '日期格式，如2014-03-01',
+                'errormsg' => '查询时间不正确',
+                'name' => 'date',
                 'name' => 'date',
             );
 
             'page' => array(
                 'name' => 'page',
+                'extendType' => 'page',
+                'require' => 'no',
+                'description' => '搜索页码',
+                'restraint' => '大于等于1，若不传则视为1',
+                'errormsg' => '页码不正确',
+                'name' => 'page',
+                'name' => 'page',
             );
 
             'page_size' => array(
                 'name' => 'page_size',
+                'extendType' => 'page_size',
+                'require' => 'no',
+                'description' => '一页显示的数据条数',
+                'restraint' => '大于等于1，且小于100，若不传则视为10',
+                'errormsg' => '每页显示条数不正确',
+                'name' => 'page_size',
+                'name' => 'page_size',
             );
 
             'group_by' => array(
+                'name' => 'group_by',
+                'extendType' => 'group_by',
+                'require' => 'no',
+                'description' => '聚合参数，例：["date"]',
+                'restraint' => '见 [link href='group_by']聚合规则定义[/link]',
+                'errormsg' => '聚合字段不正确',
+                'name' => 'group_by',
                 'name' => 'group_by',
             );
 ;

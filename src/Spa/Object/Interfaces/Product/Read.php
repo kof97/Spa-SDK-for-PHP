@@ -63,13 +63,34 @@ class Read {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
+                'extendType' => 'product_refs_id',
+                'require' => 'yes',
+                'description' => '标的物Id',
+                'restraint' => '小于128个英文字符',
+                'errormsg' => '标的物Id不正确',
+                'name' => 'product_refs_id',
+                'name' => 'product_refs_id',
             );
 
             'product_type' => array(
+                'name' => 'product_type',
+                'extendType' => 'product_type',
+                'require' => 'yes',
+                'description' => '标的物类型',
+                'restraint' => '详见 [link href='product_type']标的物类型[/link]',
+                'errormsg' => '标的物类型不正确',
+                'name' => 'product_type',
                 'name' => 'product_type',
             );
 ;

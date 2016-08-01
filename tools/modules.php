@@ -273,8 +273,21 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $arr['require'] = $require;
                 $arr['name'] = $name;
 
+                $description = isset($arr['description']) ? "'description' => '" . $arr['description'] . "'" : '';
+                $restraint = isset($arr['restraint']) ? "'restraint' => '" . $arr['restraint'] . "'" : '';
+                $errormsg = isset($arr['errormsg']) ? "'errormsg' => '" . $arr['errormsg'] . "'" : '';
+                $description = isset($arr['description']) ? "'description' => '" . $arr['description'] . "'" : '';
+
+
                 $field_info .= "
             '$name' => array(
+                'name' => '$name',
+                'extendType' => '$extendType',
+                'require' => '$require',
+                $description,
+                $restraint,
+                $errormsg,
+                'name' => '$name',
                 'name' => '$name',
             );
 ";

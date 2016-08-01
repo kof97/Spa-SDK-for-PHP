@@ -63,9 +63,23 @@ class Delete {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'targeting_id' => array(
+                'name' => 'targeting_id',
+                'extendType' => 'targeting_id',
+                'require' => 'yes',
+                'description' => '定向Id',
+                'restraint' => '小于2^63',
+                'errormsg' => '定向Id不正确',
+                'name' => 'targeting_id',
                 'name' => 'targeting_id',
             );
 ;

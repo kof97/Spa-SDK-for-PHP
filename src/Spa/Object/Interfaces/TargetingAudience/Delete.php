@@ -63,9 +63,23 @@ class Delete {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'audience_id' => array(
+                'name' => 'audience_id',
+                'extendType' => 'audience_id',
+                'require' => 'yes',
+                'description' => '人群规则id',
+                'restraint' => '人群规则id',
+                'errormsg' => '人群规则id不正确',
+                'name' => 'audience_id',
                 'name' => 'audience_id',
             );
 ;

@@ -63,6 +63,13 @@ class GetQzonePageList {
 
             'qq' => array(
                 'name' => 'qq',
+                'extendType' => 'qq',
+                'require' => 'yes',
+                'description' => '登录QQ号码',
+                'restraint' => '小于2^63',
+                'errormsg' => '登录QQ号码不正确',
+                'name' => 'qq',
+                'name' => 'qq',
             );
 ;
     }

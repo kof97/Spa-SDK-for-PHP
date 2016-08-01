@@ -63,21 +63,56 @@ class GetFileList {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'audience_id' => array(
+                'name' => 'audience_id',
+                'extendType' => 'audience_id',
+                'require' => 'yes',
+                'description' => '人群规则id',
+                'restraint' => '人群规则id',
+                'errormsg' => '人群规则id不正确',
+                'name' => 'audience_id',
                 'name' => 'audience_id',
             );
 
             'filter' => array(
                 'name' => 'filter',
+                'extendType' => 'filter',
+                'require' => 'no',
+                'description' => '若此字段不传，或传空则视为无限制条件。参见：高级条件',
+                'restraint' => '过滤条件结构',
+                'errormsg' => '过滤条件不正确',
+                'name' => 'filter',
+                'name' => 'filter',
             );
 
             'page' => array(
                 'name' => 'page',
+                'extendType' => 'page',
+                'require' => 'no',
+                'description' => '搜索页码',
+                'restraint' => '大于等于1，若不传则视为1',
+                'errormsg' => '页码不正确',
+                'name' => 'page',
+                'name' => 'page',
             );
 
             'page_size' => array(
+                'name' => 'page_size',
+                'extendType' => 'page_size',
+                'require' => 'no',
+                'description' => '一页显示的数据条数',
+                'restraint' => '大于等于1，且小于100，若不传则视为10',
+                'errormsg' => '每页显示条数不正确',
+                'name' => 'page_size',
                 'name' => 'page_size',
             );
 ;

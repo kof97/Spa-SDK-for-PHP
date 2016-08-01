@@ -63,9 +63,23 @@ class SelectDaily {
 
             'task' => array(
                 'name' => 'task',
+                'extendType' => 'task',
+                'require' => 'yes',
+                'description' => '任务',
+                'restraint' => '例如：TASK_CLICKDETAILS,详见 [link href='task']离线任务[/link]',
+                'errormsg' => '任务不正确',
+                'name' => 'task',
+                'name' => 'task',
             );
 
             'date' => array(
+                'name' => 'date',
+                'extendType' => 'date',
+                'require' => 'yes',
+                'description' => '查询时间',
+                'restraint' => '日期格式，如2014-03-01',
+                'errormsg' => '查询时间不正确',
+                'name' => 'date',
                 'name' => 'date',
             );
 ;

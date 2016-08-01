@@ -63,9 +63,23 @@ class Info {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'media_id' => array(
+                'name' => 'media_id',
+                'extendType' => 'media_id',
+                'require' => 'yes',
+                'description' => '媒体Id',
+                'restraint' => '小于2^63',
+                'errormsg' => '媒体Id不正确',
+                'name' => 'media_id',
                 'name' => 'media_id',
             );
 ;

@@ -63,13 +63,34 @@ class Upload {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'data_source' => array(
                 'name' => 'data_source',
+                'extendType' => 'data_source',
+                'require' => 'yes',
+                ,
+                ,
+                ,
+                'name' => 'data_source',
+                'name' => 'data_source',
             );
 
             'file_md5' => array(
+                'name' => 'file_md5',
+                'extendType' => 'file_md5',
+                'require' => 'yes',
+                'description' => '上传文件的内容md5',
+                'restraint' => '',
+                'errormsg' => '上传文件的内容md5不正确',
+                'name' => 'file_md5',
                 'name' => 'file_md5',
             );
 ;

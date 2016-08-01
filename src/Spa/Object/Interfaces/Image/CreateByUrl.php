@@ -63,13 +63,34 @@ class CreateByUrl {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'image_url' => array(
                 'name' => 'image_url',
+                'extendType' => 'image_url',
+                'require' => 'yes',
+                'description' => '图片地址',
+                'restraint' => '',
+                'errormsg' => '图片地址不正确',
+                'name' => 'image_url',
+                'name' => 'image_url',
             );
 
             'outer_image_id' => array(
+                'name' => 'outer_image_id',
+                'extendType' => 'outer_image_id',
+                'require' => 'no',
+                'description' => '外部图片id',
+                'restraint' => '1024字符内',
+                'errormsg' => '外部图片id不正确',
+                'name' => 'outer_image_id',
                 'name' => 'outer_image_id',
             );
 ;

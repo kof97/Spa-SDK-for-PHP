@@ -63,17 +63,45 @@ class CreateCustomAudience {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'rule_name' => array(
+                'name' => 'rule_name',
+                'extendType' => 'rule_name',
+                'require' => 'yes',
+                'description' => '规则名称',
+                'restraint' => '不超过90个英文字符',
+                'errormsg' => '规则名称不正确',
+                'name' => 'rule_name',
                 'name' => 'rule_name',
             );
 
             'rule_type' => array(
                 'name' => 'rule_type',
+                'extendType' => 'rule_type',
+                'require' => 'yes',
+                'description' => '号码类型',
+                'restraint' => '详见 [link href='custom_audience_rule_type']号码类型列表[/link]',
+                'errormsg' => '号码类型不正确',
+                'name' => 'rule_type',
+                'name' => 'rule_type',
             );
 
             'description' => array(
+                'name' => 'description',
+                'extendType' => 'description',
+                'require' => 'no',
+                'description' => '受众描述',
+                'restraint' => '不超过250个英文字符',
+                'errormsg' => '受众描述不正确',
+                'name' => 'description',
                 'name' => 'description',
             );
 ;

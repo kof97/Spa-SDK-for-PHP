@@ -63,13 +63,34 @@ class GetSubordinateProductList {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
+                'extendType' => 'product.product_refs_id',
+                'require' => 'yes',
+                ,
+                ,
+                ,
+                'name' => 'product_refs_id',
+                'name' => 'product_refs_id',
             );
 
             'product_type' => array(
+                'name' => 'product_type',
+                'extendType' => 'product.product_type',
+                'require' => 'yes',
+                ,
+                ,
+                ,
+                'name' => 'product_type',
                 'name' => 'product_type',
             );
 ;

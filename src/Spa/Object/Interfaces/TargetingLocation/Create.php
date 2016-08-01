@@ -63,21 +63,56 @@ class Create {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'location_type' => array(
+                'name' => 'location_type',
+                'extendType' => 'location_type',
+                'require' => 'yes',
+                'description' => '商圈类型',
+                'restraint' => '商圈类型',
+                ,
+                'name' => 'location_type',
                 'name' => 'location_type',
             );
 
             'location_name' => array(
                 'name' => 'location_name',
+                'extendType' => 'location_name',
+                'require' => 'yes',
+                'description' => '自定义打点名称',
+                'restraint' => '小于等于60个英文字符，同一账户下名称不允许重复。',
+                'errormsg' => '自定义打点名称错误',
+                'name' => 'location_name',
+                'name' => 'location_name',
             );
 
             'location_spec' => array(
                 'name' => 'location_spec',
+                'extendType' => 'location_spec',
+                'require' => 'yes',
+                'description' => '商圈具体配置信息',
+                'restraint' => '商圈具体配置信息',
+                ,
+                'name' => 'location_spec',
+                'name' => 'location_spec',
             );
 
             'city_id' => array(
+                'name' => 'city_id',
+                'extendType' => 'integer',
+                'require' => 'yes',
+                'description' => '整数',
+                'restraint' => '大于0小于2^63',
+                'errormsg' => '非有效整数',
+                'name' => 'city_id',
                 'name' => 'city_id',
             );
 ;

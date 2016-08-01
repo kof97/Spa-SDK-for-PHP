@@ -63,9 +63,23 @@ class Read {
 
             'advertiser_id' => array(
                 'name' => 'advertiser_id',
+                'extendType' => 'advertiser_id',
+                'require' => 'yes',
+                'description' => '广告主ID',
+                'restraint' => '详见附录',
+                'errormsg' => '广告主ID不正确',
+                'name' => 'advertiser_id',
+                'name' => 'advertiser_id',
             );
 
             'adgroup_id' => array(
+                'name' => 'adgroup_id',
+                'extendType' => 'adgroup_id',
+                'require' => 'yes',
+                'description' => '广告组Id',
+                'restraint' => '',
+                'errormsg' => '广告组Id不正确',
+                'name' => 'adgroup_id',
                 'name' => 'adgroup_id',
             );
 ;

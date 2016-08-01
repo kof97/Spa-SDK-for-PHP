@@ -63,17 +63,45 @@ class Ptlogin {
 
             'app_id' => array(
                 'name' => 'app_id',
+                'extendType' => 'app_id',
+                'require' => 'yes',
+                'description' => '合作方APP ID',
+                'restraint' => '小于32字符',
+                'errormsg' => '合作方APP ID不正确',
+                'name' => 'app_id',
+                'name' => 'app_id',
             );
 
             'app_key' => array(
+                'name' => 'app_key',
+                'extendType' => 'app_key',
+                'require' => 'yes',
+                'description' => '密钥APP KEY',
+                'restraint' => '小于32字符',
+                'errormsg' => '密钥APP KEY不正确',
+                'name' => 'app_key',
                 'name' => 'app_key',
             );
 
             'qq' => array(
                 'name' => 'qq',
+                'extendType' => 'qq',
+                'require' => 'yes',
+                'description' => '登录QQ号码',
+                'restraint' => '小于2^63',
+                'errormsg' => '登录QQ号码不正确',
+                'name' => 'qq',
+                'name' => 'qq',
             );
 
             'skey' => array(
+                'name' => 'skey',
+                'extendType' => 'skey',
+                'require' => 'yes',
+                'description' => '密钥APP KEY',
+                'restraint' => '小于64字符',
+                'errormsg' => 'skey不正确',
+                'name' => 'skey',
                 'name' => 'skey',
             );
 ;

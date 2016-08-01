@@ -63,6 +63,13 @@ class GetOpenid {
 
             'app_id' => array(
                 'name' => 'app_id',
+                'extendType' => 'app_id',
+                'require' => 'yes',
+                'description' => '合作方APP ID',
+                'restraint' => '小于32字符',
+                'errormsg' => '合作方APP ID不正确',
+                'name' => 'app_id',
+                'name' => 'app_id',
             );
 ;
     }
