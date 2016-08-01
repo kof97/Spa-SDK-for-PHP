@@ -63,15 +63,19 @@ array(
                     ),
                     // array
                     'location' => array(
-                        'extendType'  => 'location',
-                        'require'     => 'no',
-                        'type'        => 'string',
-                        'description' => '广告主类型',
-                        'restraint'   => "见 [link href='customer_registration_type']广告主类型定义[/link]",
-                        'errormsg'    => '广告主类型不正确',
-                        'max_size'    => '90',
-                        'min_size'    => '1',
-                        'repeated'    => array()
+                        'extendType'      => 'location',
+                        'require'         => 'no',
+                        'type'            => 'string',
+                        'description'     => '广告主类型',
+                        'restraint'       => "见 [link href='']广告主类型定义[/link]",
+                        'errormsg'        => '广告主类型不正确',
+                        'list'            => 'date,adgroup_id',
+                        'max_size'        => '90',
+                        'min_size'        => '1',
+                        'item_max_length' => '1',
+                        'repeated'        => array(
+
+                        )
                     )
                 )
             )

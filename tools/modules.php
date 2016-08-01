@@ -497,7 +497,7 @@ function processField($data) {
                         $arr['errormsg'] = $attr['value'] . '';
                     }
 
-                    $arr['max'] = '2^64';
+                    $arr['max'] = '9223372036854775807';
                     $arr['min'] = '1';
                 }
             }
@@ -533,7 +533,55 @@ function processField($data) {
             return $arr;
 
         case 'array':
-        
+            foreach ($data as $key => $value) {
+                if ($key === 'attribute') {
+                    $attr = $value->attributes();
+                    if (($attr['name'] . '') === 'description') {
+                        $arr['description'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'restraint') {
+                        $arr['restraint'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'errormsg') {
+                        $arr['errormsg'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'max_size') {
+                        $arr['max_size'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'min_size') {
+                        $arr['min_size'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'item_max_length') {
+                        $arr['item_max_length'] = $attr['value'] . '';
+                    }
+                }
+                if ($key === 'repeated') {
+                    foreach ($value as $k => $v) {
+                        $type = ($v->attributes()['type'] . '');
+                        switch ($type) {
+                            case 'string':
+                                var_dump($type);
+                                break;
+                            
+                            case 'integer':
+                                
+                                break;
+
+                            case 'filter_struct':
+                                
+                                break;
+
+                            case 'creative_struct':
+                                
+                                break;
+
+                            default: break;
+                        }
+                    }
+                    
+                }
+            }
+            return $arr;
 
         default:
 
