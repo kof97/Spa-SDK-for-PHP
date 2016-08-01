@@ -698,9 +698,7 @@ function processField($data) {
             }
             return $arr;
 
-        default:
-
-            break;
+        default: break;
     }
 
 }
