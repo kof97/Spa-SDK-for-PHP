@@ -71,7 +71,7 @@ class Signup {
                 'errormsg' => '广告主类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_customer_registration_type',
-            );
+            ),
 
             'product_type_set' => array(
                 'name' => 'product_type_set',
@@ -84,7 +84,7 @@ class Signup {
                 'list' => 'TARGETTYPE_OPEN_PLATFORM_APP,TARGETTYPE_BRAND',
                 'enum' => 'enum',
                 'source' => 'api_target_type',
-            );
+            ),
 
             'login_name' => array(
                 'name' => 'login_name',
@@ -96,7 +96,7 @@ class Signup {
                 'errormsg' => '登录名不正确',
                 'max' => '4294967295',
                 'min' => '10000',
-            );
+            ),
 
             'advertiser_name' => array(
                 'name' => 'advertiser_name',
@@ -108,7 +108,7 @@ class Signup {
                 'errormsg' => '广告主名称不正确',
                 'max_length' => '90',
                 'min_length' => '1',
-            );
+            ),
 
             'corporation_name' => array(
                 'name' => 'corporation_name',
@@ -120,7 +120,7 @@ class Signup {
                 'errormsg' => '公司名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'certification_image_id' => array(
                 'name' => 'certification_image_id',
@@ -132,7 +132,7 @@ class Signup {
                 'errormsg' => '营业执照/企业资质证明图片id不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'industry_id' => array(
                 'name' => 'industry_id',
@@ -144,7 +144,7 @@ class Signup {
                 'errormsg' => '行业分类不正确',
                 'max' => '1000000000000',
                 'min' => '0',
-            );
+            ),
 
             'qualification_image_id_list' => array(
                 'name' => 'qualification_image_id_list',
@@ -156,7 +156,7 @@ class Signup {
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'website' => array(
                 'name' => 'website',
@@ -169,7 +169,7 @@ class Signup {
                 'max_length' => '255',
                 'min_length' => '1',
                 'pattern' => '{url_pattern}',
-            );
+            ),
 
             'site_name' => array(
                 'name' => 'site_name',
@@ -181,7 +181,7 @@ class Signup {
                 'errormsg' => '网站名称不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-            );
+            ),
 
             'icp_image_id' => array(
                 'name' => 'icp_image_id',
@@ -193,7 +193,7 @@ class Signup {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-            );
+            ),
 
             'individual_qualification' => array(
                 'name' => 'individual_qualification',
@@ -215,7 +215,7 @@ class Signup {
                         'require' => 'yes',
                     ),
                 ),
-            );
+            ),
 
             'contact_person' => array(
                 'name' => 'contact_person',
@@ -227,7 +227,7 @@ class Signup {
                 'errormsg' => '联系人姓名不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'contact_person_email' => array(
                 'name' => 'contact_person_email',
@@ -240,7 +240,7 @@ class Signup {
                 'max_length' => '255',
                 'min_length' => '1',
                 'pattern' => '/^\w+([\-\+\.]\w+)*@\w+([\-\.]\w+)*\.\w+([\-\.]\w+)*$/i',
-            );
+            ),
 
             'contact_person_mobile' => array(
                 'name' => 'contact_person_mobile',
@@ -253,7 +253,7 @@ class Signup {
                 'max_length' => '20',
                 'min_length' => '0',
                 'pattern' => '/^\+?[0-9]{6,13}$/',
-            );
+            ),
 
             'contact_person_telephone' => array(
                 'name' => 'contact_person_telephone',
@@ -266,7 +266,7 @@ class Signup {
                 'max_length' => '20',
                 'min_length' => '0',
                 'pattern' => '/^[0-9]{3,4}\-[0-9]{6,8}(\-[0-9]{1,8})?$/',
-            );
+            ),
 
             'contact_person_qq' => array(
                 'name' => 'contact_person_qq',
@@ -278,7 +278,7 @@ class Signup {
                 'errormsg' => '联系人QQ不正确',
                 'max' => '4294967295',
                 'min' => '10000',
-            );
+            ),
 
             'address' => array(
                 'name' => 'address',
@@ -290,7 +290,7 @@ class Signup {
                 'errormsg' => '联系地址不正确',
                 'max_length' => '255',
                 'min_length' => '1',
-            );
+            ),
 
             'corporate_reg_no' => array(
                 'name' => 'corporate_reg_no',
@@ -302,7 +302,7 @@ class Signup {
                 'max_length' => '18',
                 'min_length' => '1',
                 'pattern' => '/^[a-z0-9-]{1,18}$/i',
-            );
+            ),
 
             'legal_person_id' => array(
                 'name' => 'legal_person_id',
@@ -314,8 +314,8 @@ class Signup {
                 'max_length' => '18',
                 'min_length' => '1',
                 'pattern' => '/(^(\d{15}|\d{18}|\d{17}(x|X))$)/',
-            );
-;
+            ),
+
     }
 
 }

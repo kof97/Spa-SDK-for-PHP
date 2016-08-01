@@ -71,7 +71,7 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'location_type' => array(
                 'name' => 'location_type',
@@ -82,7 +82,7 @@ class Create {
                 'restraint' => '商圈类型',
                 'enum' => 'enum',
                 'source' => 'api_location_type',
-            );
+            ),
 
             'location_name' => array(
                 'name' => 'location_name',
@@ -94,7 +94,7 @@ class Create {
                 'errormsg' => '自定义打点名称错误',
                 'max_length' => '60',
                 'min_length' => '1',
-            );
+            ),
 
             'location_spec' => array(
                 'name' => 'location_spec',
@@ -110,7 +110,7 @@ class Create {
                         'require' => 'yes',
                     ),
                 ),
-            );
+            ),
 
             'city_id' => array(
                 'name' => 'city_id',
@@ -122,8 +122,8 @@ class Create {
                 'errormsg' => '非有效整数',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

@@ -71,7 +71,7 @@ class Sync {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'targeting_id' => array(
                 'name' => 'targeting_id',
@@ -83,7 +83,7 @@ class Sync {
                 'errormsg' => '定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'targeting_name' => array(
                 'name' => 'targeting_name',
@@ -95,7 +95,7 @@ class Sync {
                 'errormsg' => '定向名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'ui_visibility' => array(
                 'name' => 'ui_visibility',
@@ -107,7 +107,7 @@ class Sync {
                 'errormsg' => '定向包类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_u_i_visibility',
-            );
+            ),
 
             'description' => array(
                 'name' => 'description',
@@ -119,7 +119,7 @@ class Sync {
                 'errormsg' => '定向描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-            );
+            ),
 
             'targeting_setting' => array(
                 'name' => 'targeting_setting',
@@ -311,7 +311,7 @@ class Sync {
                         'require' => 'no',
                     ),
                 ),
-            );
+            ),
 
             'configured_status' => array(
                 'name' => 'configured_status',
@@ -324,7 +324,7 @@ class Sync {
                 'list' => 'AD_STATUS_NORMAL,AD_STATUS_DELETED',
                 'enum' => 'enum',
                 'source' => 'api_sync_configured_status',
-            );
+            ),
 
             'outer_targeting_id' => array(
                 'name' => 'outer_targeting_id',
@@ -336,7 +336,7 @@ class Sync {
                 'errormsg' => '外部广告定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'outer_version' => array(
                 'name' => 'outer_version',
@@ -346,8 +346,8 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-            );
-;
+            ),
+
     }
 
 }

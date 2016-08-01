@@ -71,7 +71,7 @@ class Update {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'campaign_id' => array(
                 'name' => 'campaign_id',
@@ -83,7 +83,7 @@ class Update {
                 'errormsg' => '推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'campaign_name' => array(
                 'name' => 'campaign_name',
@@ -95,7 +95,7 @@ class Update {
                 'errormsg' => '推广计划名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'daily_budget' => array(
                 'name' => 'daily_budget',
@@ -107,7 +107,7 @@ class Update {
                 'errormsg' => '日消耗限额不正确',
                 'max' => '400000000',
                 'min' => '5000',
-            );
+            ),
 
             'total_budget' => array(
                 'name' => 'total_budget',
@@ -119,7 +119,7 @@ class Update {
                 'errormsg' => '总消耗限额不正确',
                 'max' => '20000000000',
                 'min' => '5000',
-            );
+            ),
 
             'speed_mode' => array(
                 'name' => 'speed_mode',
@@ -131,7 +131,7 @@ class Update {
                 'errormsg' => '标准投放类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_speed_mode',
-            );
+            ),
 
             'retainability_in_feeds' => array(
                 'name' => 'retainability_in_feeds',
@@ -143,7 +143,7 @@ class Update {
                 'errormsg' => '沉淀模式不正确',
                 'enum' => 'enum',
                 'source' => 'api_boolean',
-            );
+            ),
 
             'max_impression_include' => array(
                 'name' => 'max_impression_include',
@@ -155,7 +155,7 @@ class Update {
                 'errormsg' => '最高曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-            );
+            ),
 
             'configured_status' => array(
                 'name' => 'configured_status',
@@ -166,8 +166,8 @@ class Update {
                 'errormsg' => '用户状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-            );
-;
+            ),
+
     }
 
 }

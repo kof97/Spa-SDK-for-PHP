@@ -71,7 +71,7 @@ class GetAdvertiserList {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -83,8 +83,8 @@ class GetAdvertiserList {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

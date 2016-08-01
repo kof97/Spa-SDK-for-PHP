@@ -71,7 +71,7 @@ class GetFileList {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'audience_id' => array(
                 'name' => 'audience_id',
@@ -81,7 +81,7 @@ class GetFileList {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-            );
+            ),
 
             'filter' => array(
                 'name' => 'filter',
@@ -92,7 +92,7 @@ class GetFileList {
                 'restraint' => '过滤条件结构',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'page' => array(
                 'name' => 'page',
@@ -104,7 +104,7 @@ class GetFileList {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -116,8 +116,8 @@ class GetFileList {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

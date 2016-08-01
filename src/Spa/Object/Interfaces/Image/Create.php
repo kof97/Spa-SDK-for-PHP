@@ -71,14 +71,14 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'image_file' => array(
                 'name' => 'image_file',
                 'extendType' => 'image_file',
                 'require' => 'yes',
                 'type' => '',
-            );
+            ),
 
             'image_signature' => array(
                 'name' => 'image_signature',
@@ -90,7 +90,7 @@ class Create {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'outer_image_id' => array(
                 'name' => 'outer_image_id',
@@ -102,8 +102,8 @@ class Create {
                 'errormsg' => '外部图片id不正确',
                 'max_length' => '1024',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

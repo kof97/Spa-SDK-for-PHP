@@ -71,7 +71,7 @@ class Update {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'audience_id' => array(
                 'name' => 'audience_id',
@@ -81,7 +81,7 @@ class Update {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-            );
+            ),
 
             'audience_name' => array(
                 'name' => 'audience_name',
@@ -93,7 +93,7 @@ class Update {
                 'errormsg' => '人群名称错误',
                 'max_length' => '96',
                 'min_length' => '1',
-            );
+            ),
 
             'description' => array(
                 'name' => 'description',
@@ -105,7 +105,7 @@ class Update {
                 'errormsg' => '描述不正确',
                 'max_length' => '300',
                 'min_length' => '1',
-            );
+            ),
 
             'operation_type' => array(
                 'name' => 'operation_type',
@@ -117,7 +117,7 @@ class Update {
                 'errormsg' => '操作类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_audience_operation_type',
-            );
+            ),
 
             'data_type' => array(
                 'name' => 'data_type',
@@ -129,14 +129,14 @@ class Update {
                 'errormsg' => '人群号码类型错误',
                 'enum' => 'enum',
                 'source' => 'api_audience_data_type',
-            );
+            ),
 
             'data_file' => array(
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'no',
                 'type' => '',
-            );
+            ),
 
             'file_name' => array(
                 'name' => 'file_name',
@@ -148,7 +148,7 @@ class Update {
                 'errormsg' => '文件名称不正确',
                 'max_length' => '256',
                 'min_length' => '1',
-            );
+            ),
 
             'file_md5' => array(
                 'name' => 'file_md5',
@@ -160,7 +160,7 @@ class Update {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-            );
+            ),
 
             'refs_app_id' => array(
                 'name' => 'refs_app_id',
@@ -172,8 +172,8 @@ class Update {
                 'errormsg' => 'AppId不正确',
                 'max_length' => '128',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

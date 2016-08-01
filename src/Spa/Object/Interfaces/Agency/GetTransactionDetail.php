@@ -71,7 +71,7 @@ class GetTransactionDetail {
                 'errormsg' => '账户类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-            );
+            ),
 
             'date_range' => array(
                 'name' => 'date_range',
@@ -93,7 +93,7 @@ class GetTransactionDetail {
                         'require' => 'yes',
                     ),
                 ),
-            );
+            ),
 
             'page' => array(
                 'name' => 'page',
@@ -105,7 +105,7 @@ class GetTransactionDetail {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -117,8 +117,8 @@ class GetTransactionDetail {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

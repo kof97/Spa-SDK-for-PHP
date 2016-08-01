@@ -71,7 +71,7 @@ class GetAuthorizationList {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'filter' => array(
                 'name' => 'filter',
@@ -82,7 +82,7 @@ class GetAuthorizationList {
                 'restraint' => '过滤条件结构',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'page' => array(
                 'name' => 'page',
@@ -94,7 +94,7 @@ class GetAuthorizationList {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -106,8 +106,8 @@ class GetAuthorizationList {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

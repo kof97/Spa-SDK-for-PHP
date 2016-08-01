@@ -71,7 +71,7 @@ class SelectCampaignHourly {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'date' => array(
                 'name' => 'date',
@@ -84,7 +84,7 @@ class SelectCampaignHourly {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
+            ),
 
             'filter' => array(
                 'name' => 'filter',
@@ -95,7 +95,7 @@ class SelectCampaignHourly {
                 'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'order_by' => array(
                 'name' => 'order_by',
@@ -122,7 +122,7 @@ class SelectCampaignHourly {
                         'require' => 'no',
                     ),
                 ),
-            );
+            ),
 
             'group_by' => array(
                 'name' => 'group_by',
@@ -133,7 +133,7 @@ class SelectCampaignHourly {
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合参数不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'page' => array(
                 'name' => 'page',
@@ -145,7 +145,7 @@ class SelectCampaignHourly {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -157,8 +157,8 @@ class SelectCampaignHourly {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

@@ -71,7 +71,7 @@ class SelectAdvertiserHourly {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'date' => array(
                 'name' => 'date',
@@ -84,7 +84,7 @@ class SelectAdvertiserHourly {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
+            ),
 
             'page' => array(
                 'name' => 'page',
@@ -96,7 +96,7 @@ class SelectAdvertiserHourly {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -108,7 +108,7 @@ class SelectAdvertiserHourly {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
+            ),
 
             'group_by' => array(
                 'name' => 'group_by',
@@ -119,8 +119,8 @@ class SelectAdvertiserHourly {
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
                 'item_max_length' => '255',
-            );
-;
+            ),
+
     }
 
 }

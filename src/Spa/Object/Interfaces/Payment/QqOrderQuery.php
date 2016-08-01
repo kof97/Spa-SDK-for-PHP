@@ -71,7 +71,7 @@ class QqOrderQuery {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'out_trade_no' => array(
                 'name' => 'out_trade_no',
@@ -83,8 +83,8 @@ class QqOrderQuery {
                 'errormsg' => '订单号码错误',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

@@ -71,7 +71,7 @@ class InnerTransfer {
                 'errormsg' => '账户类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-            );
+            ),
 
             'account_type_to' => array(
                 'name' => 'account_type_to',
@@ -83,7 +83,7 @@ class InnerTransfer {
                 'errormsg' => '账户类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-            );
+            ),
 
             'amount' => array(
                 'name' => 'amount',
@@ -95,7 +95,7 @@ class InnerTransfer {
                 'errormsg' => '金额不正确',
                 'max' => '2000000000',
                 'min' => '1',
-            );
+            ),
 
             'external_bill_no' => array(
                 'name' => 'external_bill_no',
@@ -108,7 +108,7 @@ class InnerTransfer {
                 'max_length' => '35',
                 'min_length' => '1',
                 'pattern' => '/^[0-9a-z\-_]{10,35}$/',
-            );
+            ),
 
             'memo' => array(
                 'name' => 'memo',
@@ -121,8 +121,8 @@ class InnerTransfer {
                 'max_length' => '64',
                 'min_length' => '1',
                 'pattern' => '{memo_pattern}',
-            );
-;
+            ),
+
     }
 
 }

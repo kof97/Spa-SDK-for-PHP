@@ -71,7 +71,7 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'audience_name' => array(
                 'name' => 'audience_name',
@@ -83,7 +83,7 @@ class Create {
                 'errormsg' => '人群名称错误',
                 'max_length' => '96',
                 'min_length' => '1',
-            );
+            ),
 
             'audience_type' => array(
                 'name' => 'audience_type',
@@ -95,7 +95,7 @@ class Create {
                 'errormsg' => '人群类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_audience_type',
-            );
+            ),
 
             'parent_audience_id' => array(
                 'name' => 'parent_audience_id',
@@ -105,7 +105,7 @@ class Create {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-            );
+            ),
 
             'data_type' => array(
                 'name' => 'data_type',
@@ -117,14 +117,14 @@ class Create {
                 'errormsg' => '人群号码类型错误',
                 'enum' => 'enum',
                 'source' => 'api_audience_data_type',
-            );
+            ),
 
             'data_file' => array(
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'no',
                 'type' => '',
-            );
+            ),
 
             'file_name' => array(
                 'name' => 'file_name',
@@ -136,7 +136,7 @@ class Create {
                 'errormsg' => '文件名称不正确',
                 'max_length' => '256',
                 'min_length' => '1',
-            );
+            ),
 
             'file_md5' => array(
                 'name' => 'file_md5',
@@ -148,7 +148,7 @@ class Create {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-            );
+            ),
 
             'combine_rule' => array(
                 'name' => 'combine_rule',
@@ -161,7 +161,7 @@ class Create {
                 'max_length' => '64000',
                 'min_length' => '1',
                 'pattern' => '/.*/',
-            );
+            ),
 
             'seed_audience_type' => array(
                 'name' => 'seed_audience_type',
@@ -173,7 +173,7 @@ class Create {
                 'errormsg' => '人群类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_audience_type',
-            );
+            ),
 
             'seed_audience_id' => array(
                 'name' => 'seed_audience_id',
@@ -183,7 +183,7 @@ class Create {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-            );
+            ),
 
             'magnification' => array(
                 'name' => 'magnification',
@@ -195,7 +195,7 @@ class Create {
                 'errormsg' => '扩展倍数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
+            ),
 
             'combine_rule' => array(
                 'name' => 'combine_rule',
@@ -208,7 +208,7 @@ class Create {
                 'max_length' => '64000',
                 'min_length' => '1',
                 'pattern' => '/.*/',
-            );
+            ),
 
             'description' => array(
                 'name' => 'description',
@@ -220,7 +220,7 @@ class Create {
                 'errormsg' => '描述不正确',
                 'max_length' => '300',
                 'min_length' => '1',
-            );
+            ),
 
             'refs_app_id' => array(
                 'name' => 'refs_app_id',
@@ -232,7 +232,7 @@ class Create {
                 'errormsg' => 'AppId不正确',
                 'max_length' => '128',
                 'min_length' => '1',
-            );
+            ),
 
             'outer_audience_id' => array(
                 'name' => 'outer_audience_id',
@@ -242,8 +242,8 @@ class Create {
                 'description' => '外部人群规则Id',
                 'restraint' => '小于2^63',
                 'errormsg' => '外部人群规则Id不正确',
-            );
-;
+            ),
+
     }
 
 }

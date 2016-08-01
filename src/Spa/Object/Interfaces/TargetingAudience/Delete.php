@@ -71,7 +71,7 @@ class Delete {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'audience_id' => array(
                 'name' => 'audience_id',
@@ -81,8 +81,8 @@ class Delete {
                 'description' => '人群规则id',
                 'restraint' => '人群规则id',
                 'errormsg' => '人群规则id不正确',
-            );
-;
+            ),
+
     }
 
 }

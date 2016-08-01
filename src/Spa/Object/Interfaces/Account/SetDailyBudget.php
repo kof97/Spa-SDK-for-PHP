@@ -71,7 +71,7 @@ class SetDailyBudget {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'daily_budget' => array(
                 'name' => 'daily_budget',
@@ -83,8 +83,8 @@ class SetDailyBudget {
                 'errormsg' => '日消耗限额不正确',
                 'max' => '1000000000',
                 'min' => '5000',
-            );
-;
+            ),
+
     }
 
 }

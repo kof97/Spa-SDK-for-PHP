@@ -71,7 +71,7 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'campaign_id' => array(
                 'name' => 'campaign_id',
@@ -83,7 +83,7 @@ class Create {
                 'errormsg' => '推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'adgroup_id' => array(
                 'name' => 'adgroup_id',
@@ -94,7 +94,7 @@ class Create {
                 'errormsg' => '广告组Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'creative_name' => array(
                 'name' => 'creative_name',
@@ -106,7 +106,7 @@ class Create {
                 'errormsg' => '素材名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'creative_template_id' => array(
                 'name' => 'creative_template_id',
@@ -116,7 +116,7 @@ class Create {
                 'description' => '素材规格Id',
                 'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
                 'errormsg' => '素材规格Id不正确',
-            );
+            ),
 
             'creative_elements' => array(
                 'name' => 'creative_elements',
@@ -129,7 +129,7 @@ class Create {
                 'max_length' => '4096',
                 'min_length' => '1',
                 'pattern' => '/.*/',
-            );
+            ),
 
             'destination_url' => array(
                 'name' => 'destination_url',
@@ -142,7 +142,7 @@ class Create {
                 'max_length' => '1023',
                 'min_length' => '1',
                 'pattern' => '{url_pattern}',
-            );
+            ),
 
             'impression_tracking_url' => array(
                 'name' => 'impression_tracking_url',
@@ -155,7 +155,7 @@ class Create {
                 'max_length' => '1023',
                 'min_length' => '0',
                 'pattern' => '{url_pattern}',
-            );
+            ),
 
             'dynamic_creative_template_id' => array(
                 'name' => 'dynamic_creative_template_id',
@@ -167,7 +167,7 @@ class Create {
                 'errormsg' => '动态创意模板ID不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'dynamic_creative_material_label' => array(
                 'name' => 'dynamic_creative_material_label',
@@ -179,7 +179,7 @@ class Create {
                 'errormsg' => '动态创意模板物料标签不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'outer_creative_id' => array(
                 'name' => 'outer_creative_id',
@@ -191,7 +191,7 @@ class Create {
                 'errormsg' => '外部广告素材Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'configured_status' => array(
                 'name' => 'configured_status',
@@ -202,8 +202,8 @@ class Create {
                 'errormsg' => '用户状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-            );
-;
+            ),
+
     }
 
 }

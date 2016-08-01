@@ -71,7 +71,7 @@ class GetAccessToken {
                 'errormsg' => '合作方APP ID不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'app_key' => array(
                 'name' => 'app_key',
@@ -83,7 +83,7 @@ class GetAccessToken {
                 'errormsg' => '密钥APP KEY不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'authorization_code' => array(
                 'name' => 'authorization_code',
@@ -95,8 +95,8 @@ class GetAccessToken {
                 'errormsg' => 'authorization_code不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

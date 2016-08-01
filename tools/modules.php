@@ -318,6 +318,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                     }
                     $element .= "
                 ),";
+
                 }
 
                 $field_info .= "
@@ -339,7 +340,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $min
                 $item_max_length
                 $element
-            );
+            ),
 ";
 
                 $pattern = "\r\n                \r\n";
@@ -413,7 +414,7 @@ class $interface_class {
     }
 
     protected function fieldInfo() {
-        $field_info;
+        $field_info
     }
 
 }

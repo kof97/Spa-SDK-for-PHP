@@ -71,7 +71,7 @@ class SelectDaily {
                 'errormsg' => '任务不正确',
                 'enum' => 'enum',
                 'source' => 'api_task',
-            );
+            ),
 
             'date' => array(
                 'name' => 'date',
@@ -84,8 +84,8 @@ class SelectDaily {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
-;
+            ),
+
     }
 
 }

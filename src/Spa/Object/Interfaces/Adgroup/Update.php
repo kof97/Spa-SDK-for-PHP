@@ -71,7 +71,7 @@ class Update {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'adgroup_id' => array(
                 'name' => 'adgroup_id',
@@ -82,7 +82,7 @@ class Update {
                 'errormsg' => '广告组Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'targeting_id' => array(
                 'name' => 'targeting_id',
@@ -94,7 +94,7 @@ class Update {
                 'errormsg' => '定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'adgroup_name' => array(
                 'name' => 'adgroup_name',
@@ -106,7 +106,7 @@ class Update {
                 'errormsg' => '广告组名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'bid_amount' => array(
                 'name' => 'bid_amount',
@@ -116,7 +116,7 @@ class Update {
                 'description' => '广告出价，单位为分',
                 'restraint' => '广告出价，单位为分',
                 'errormsg' => '广告出价不正确',
-            );
+            ),
 
             'begin_date' => array(
                 'name' => 'begin_date',
@@ -129,7 +129,7 @@ class Update {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
+            ),
 
             'end_date' => array(
                 'name' => 'end_date',
@@ -142,7 +142,7 @@ class Update {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
+            ),
 
             'time_series' => array(
                 'name' => 'time_series',
@@ -154,7 +154,7 @@ class Update {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '336',
                 'min_length' => '336',
-            );
+            ),
 
             'creative_selection_type' => array(
                 'name' => 'creative_selection_type',
@@ -166,7 +166,7 @@ class Update {
                 'errormsg' => '素材播放模式不正确',
                 'enum' => 'enum',
                 'source' => 'api_CreativeSelectionType',
-            );
+            ),
 
             'configured_status' => array(
                 'name' => 'configured_status',
@@ -177,7 +177,7 @@ class Update {
                 'errormsg' => '用户状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-            );
+            ),
 
             'customized_category' => array(
                 'name' => 'customized_category',
@@ -189,7 +189,7 @@ class Update {
                 'errormsg' => '自定义分类不正确',
                 'max_length' => '200',
                 'min_length' => '0',
-            );
+            ),
 
             'min_impression_include' => array(
                 'name' => 'min_impression_include',
@@ -201,7 +201,7 @@ class Update {
                 'errormsg' => '最低曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-            );
+            ),
 
             'max_impression_include' => array(
                 'name' => 'max_impression_include',
@@ -213,7 +213,7 @@ class Update {
                 'errormsg' => '最高曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-            );
+            ),
 
             'click_tracking_url' => array(
                 'name' => 'click_tracking_url',
@@ -226,7 +226,7 @@ class Update {
                 'max_length' => '1024',
                 'min_length' => '0',
                 'pattern' => '/.*/',
-            );
+            ),
 
             'subordinate_product_refs_id' => array(
                 'name' => 'subordinate_product_refs_id',
@@ -238,7 +238,7 @@ class Update {
                 'errormsg' => '子标的物id错误',
                 'max_length' => '128',
                 'min_length' => '0',
-            );
+            ),
 
             'dynamic_creative_recommend_type' => array(
                 'name' => 'dynamic_creative_recommend_type',
@@ -250,15 +250,15 @@ class Update {
                 'errormsg' => '产品推荐方式错误',
                 'max' => '9223372036854775807',
                 'min' => '0',
-            );
+            ),
 
             'total_budget' => array(
                 'name' => 'total_budget',
                 'extendType' => 'campaign.total_budget',
                 'require' => 'no',
                 'type' => '',
-            );
-;
+            ),
+
     }
 
 }

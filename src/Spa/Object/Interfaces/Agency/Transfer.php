@@ -71,7 +71,7 @@ class Transfer {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'account_type' => array(
                 'name' => 'account_type',
@@ -83,7 +83,7 @@ class Transfer {
                 'errormsg' => '账户类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_account_type_map',
-            );
+            ),
 
             'amount' => array(
                 'name' => 'amount',
@@ -95,7 +95,7 @@ class Transfer {
                 'errormsg' => '金额不正确',
                 'max' => '2000000000',
                 'min' => '1',
-            );
+            ),
 
             'external_bill_no' => array(
                 'name' => 'external_bill_no',
@@ -108,7 +108,7 @@ class Transfer {
                 'max_length' => '35',
                 'min_length' => '1',
                 'pattern' => '/^[0-9a-z\-_]{10,35}$/',
-            );
+            ),
 
             'memo' => array(
                 'name' => 'memo',
@@ -121,7 +121,7 @@ class Transfer {
                 'max_length' => '64',
                 'min_length' => '1',
                 'pattern' => '{memo_pattern}',
-            );
+            ),
 
             'expire_date' => array(
                 'name' => 'expire_date',
@@ -134,8 +134,8 @@ class Transfer {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
-;
+            ),
+
     }
 
 }

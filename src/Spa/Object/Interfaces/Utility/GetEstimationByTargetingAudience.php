@@ -71,15 +71,15 @@ class GetEstimationByTargetingAudience {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'combine_rule' => array(
                 'name' => 'combine_rule',
                 'extendType' => 'targeting_audience.combine_rule',
                 'require' => 'yes',
                 'type' => '',
-            );
-;
+            ),
+
     }
 
 }

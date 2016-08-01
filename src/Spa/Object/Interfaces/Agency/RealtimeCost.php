@@ -60,7 +60,7 @@ class RealtimeCost {
     protected function fieldInfo() {
         
         array(
-;
+
     }
 
 }

@@ -60,7 +60,7 @@ class GetAppCategoryList {
     protected function fieldInfo() {
         
         array(
-;
+
     }
 
 }

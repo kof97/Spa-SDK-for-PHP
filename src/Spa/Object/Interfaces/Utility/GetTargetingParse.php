@@ -71,7 +71,7 @@ class GetTargetingParse {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'targeting_id' => array(
                 'name' => 'targeting_id',
@@ -83,15 +83,15 @@ class GetTargetingParse {
                 'errormsg' => '定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'targeting_setting' => array(
                 'name' => 'targeting_setting',
                 'extendType' => 'targeting.read_targeting_setting',
                 'require' => 'no',
                 'type' => '',
-            );
-;
+            ),
+
     }
 
 }

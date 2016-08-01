@@ -71,7 +71,7 @@ class Update {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'targeting_id' => array(
                 'name' => 'targeting_id',
@@ -83,7 +83,7 @@ class Update {
                 'errormsg' => '定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'targeting_name' => array(
                 'name' => 'targeting_name',
@@ -95,7 +95,7 @@ class Update {
                 'errormsg' => '定向名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'description' => array(
                 'name' => 'description',
@@ -107,7 +107,7 @@ class Update {
                 'errormsg' => '定向描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-            );
+            ),
 
             'targeting_setting' => array(
                 'name' => 'targeting_setting',
@@ -299,8 +299,8 @@ class Update {
                         'require' => 'no',
                     ),
                 ),
-            );
-;
+            ),
+
     }
 
 }

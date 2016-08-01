@@ -71,14 +71,14 @@ class GetEstimation {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'targeting_setting' => array(
                 'name' => 'targeting_setting',
                 'extendType' => 'targeting.read_targeting_setting',
                 'require' => 'no',
                 'type' => '',
-            );
+            ),
 
             'adgroup_setting' => array(
                 'name' => 'adgroup_setting',
@@ -120,7 +120,7 @@ class GetEstimation {
                         'require' => 'no',
                     ),
                 ),
-            );
+            ),
 
             'creative_setting' => array(
                 'name' => 'creative_setting',
@@ -131,8 +131,8 @@ class GetEstimation {
                 'restraint' => '小于1024英文字符，支持字段creative_template_id，[{"creative_template_id":1},{"creative_template_id":2}]',
                 'errormsg' => '素材信息不正确',
                 'item_max_length' => '32',
-            );
-;
+            ),
+
     }
 
 }

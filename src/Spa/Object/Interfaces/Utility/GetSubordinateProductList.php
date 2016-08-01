@@ -71,22 +71,22 @@ class GetSubordinateProductList {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
                 'extendType' => 'product.product_refs_id',
                 'require' => 'yes',
                 'type' => '',
-            );
+            ),
 
             'product_type' => array(
                 'name' => 'product_type',
                 'extendType' => 'product.product_type',
                 'require' => 'yes',
                 'type' => '',
-            );
-;
+            ),
+
     }
 
 }

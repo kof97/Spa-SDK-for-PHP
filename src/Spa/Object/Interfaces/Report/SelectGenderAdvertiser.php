@@ -71,7 +71,7 @@ class SelectGenderAdvertiser {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'date_range' => array(
                 'name' => 'date_range',
@@ -93,7 +93,7 @@ class SelectGenderAdvertiser {
                         'require' => 'yes',
                     ),
                 ),
-            );
+            ),
 
             'group_by' => array(
                 'name' => 'group_by',
@@ -104,7 +104,7 @@ class SelectGenderAdvertiser {
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'page' => array(
                 'name' => 'page',
@@ -116,7 +116,7 @@ class SelectGenderAdvertiser {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-            );
+            ),
 
             'page_size' => array(
                 'name' => 'page_size',
@@ -128,8 +128,8 @@ class SelectGenderAdvertiser {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-            );
-;
+            ),
+
     }
 
 }

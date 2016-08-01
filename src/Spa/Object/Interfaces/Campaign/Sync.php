@@ -71,7 +71,7 @@ class Sync {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'campaign_id' => array(
                 'name' => 'campaign_id',
@@ -83,7 +83,7 @@ class Sync {
                 'errormsg' => '推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'outer_campaign_id' => array(
                 'name' => 'outer_campaign_id',
@@ -95,7 +95,7 @@ class Sync {
                 'errormsg' => '外部推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'campaign_name' => array(
                 'name' => 'campaign_name',
@@ -107,7 +107,7 @@ class Sync {
                 'errormsg' => '推广计划名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-            );
+            ),
 
             'campaign_type' => array(
                 'name' => 'campaign_type',
@@ -119,14 +119,14 @@ class Sync {
                 'errormsg' => '推广计划类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_campaign_type',
-            );
+            ),
 
             'daily_budget' => array(
                 'name' => 'daily_budget',
                 'extendType' => 'account.unlimited_daily_budget',
                 'require' => 'yes',
                 'type' => '',
-            );
+            ),
 
             'configured_status' => array(
                 'name' => 'configured_status',
@@ -138,7 +138,7 @@ class Sync {
                 'errormsg' => '资源状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_sync_configured_status',
-            );
+            ),
 
             'begin_date' => array(
                 'name' => 'begin_date',
@@ -151,7 +151,7 @@ class Sync {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
+            ),
 
             'end_date' => array(
                 'name' => 'end_date',
@@ -164,7 +164,7 @@ class Sync {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-            );
+            ),
 
             'site_set' => array(
                 'name' => 'site_set',
@@ -175,14 +175,14 @@ class Sync {
                 'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
                 'errormsg' => '投放站点集合不正确',
                 'item_max_length' => '255',
-            );
+            ),
 
             'time_series' => array(
                 'name' => 'time_series',
                 'extendType' => 'adgroup.time_series',
                 'require' => 'no',
                 'type' => '',
-            );
+            ),
 
             'speed_mode' => array(
                 'name' => 'speed_mode',
@@ -194,7 +194,7 @@ class Sync {
                 'errormsg' => '标准投放类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_speed_mode',
-            );
+            ),
 
             'outer_version' => array(
                 'name' => 'outer_version',
@@ -204,8 +204,8 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-            );
-;
+            ),
+
     }
 
 }

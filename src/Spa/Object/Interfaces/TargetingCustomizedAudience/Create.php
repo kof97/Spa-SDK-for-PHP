@@ -71,7 +71,7 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'audience_name' => array(
                 'name' => 'audience_name',
@@ -83,7 +83,7 @@ class Create {
                 'errormsg' => '人群名称错误',
                 'max_length' => '96',
                 'min_length' => '1',
-            );
+            ),
 
             'data_type' => array(
                 'name' => 'data_type',
@@ -95,14 +95,14 @@ class Create {
                 'errormsg' => '人群号码类型错误',
                 'enum' => 'enum',
                 'source' => 'ApiAudienceDataType',
-            );
+            ),
 
             'data_file' => array(
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'yes',
                 'type' => '',
-            );
+            ),
 
             'file_md5' => array(
                 'name' => 'file_md5',
@@ -114,7 +114,7 @@ class Create {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-            );
+            ),
 
             'description' => array(
                 'name' => 'description',
@@ -126,8 +126,8 @@ class Create {
                 'errormsg' => '描述不正确',
                 'max_length' => '300',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

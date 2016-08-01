@@ -71,7 +71,7 @@ class Ptlogin {
                 'errormsg' => '合作方APP ID不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'app_key' => array(
                 'name' => 'app_key',
@@ -83,7 +83,7 @@ class Ptlogin {
                 'errormsg' => '密钥APP KEY不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-            );
+            ),
 
             'qq' => array(
                 'name' => 'qq',
@@ -95,7 +95,7 @@ class Ptlogin {
                 'errormsg' => '登录QQ号码不正确',
                 'max' => '9200000000000000000',
                 'min' => '10000',
-            );
+            ),
 
             'skey' => array(
                 'name' => 'skey',
@@ -107,8 +107,8 @@ class Ptlogin {
                 'errormsg' => 'skey不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

@@ -71,7 +71,7 @@ class Read {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'image_id' => array(
                 'name' => 'image_id',
@@ -83,8 +83,8 @@ class Read {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-            );
-;
+            ),
+
     }
 
 }

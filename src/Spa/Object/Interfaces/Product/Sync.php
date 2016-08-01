@@ -71,7 +71,7 @@ class Sync {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
@@ -83,7 +83,7 @@ class Sync {
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-            );
+            ),
 
             'product_name' => array(
                 'name' => 'product_name',
@@ -95,7 +95,7 @@ class Sync {
                 'errormsg' => '标的物名称不正确',
                 'max_length' => '255',
                 'min_length' => '1',
-            );
+            ),
 
             'product_type' => array(
                 'name' => 'product_type',
@@ -108,7 +108,7 @@ class Sync {
                 'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-            );
+            ),
 
             'product_info' => array(
                 'name' => 'product_info',
@@ -130,7 +130,7 @@ class Sync {
                         'require' => 'no',
                     ),
                 ),
-            );
+            ),
 
             'outer_version' => array(
                 'name' => 'outer_version',
@@ -140,8 +140,8 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-            );
-;
+            ),
+
     }
 
 }

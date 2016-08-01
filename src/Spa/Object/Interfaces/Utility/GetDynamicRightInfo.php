@@ -71,8 +71,8 @@ class GetDynamicRightInfo {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
-;
+            ),
+
     }
 
 }

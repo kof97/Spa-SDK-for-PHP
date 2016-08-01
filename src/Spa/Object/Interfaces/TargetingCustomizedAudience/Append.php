@@ -71,7 +71,7 @@ class Append {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'audience_id' => array(
                 'name' => 'audience_id',
@@ -81,14 +81,14 @@ class Append {
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-            );
+            ),
 
             'data_file' => array(
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'yes',
                 'type' => '',
-            );
+            ),
 
             'file_md5' => array(
                 'name' => 'file_md5',
@@ -100,8 +100,8 @@ class Append {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-            );
-;
+            ),
+
     }
 
 }

@@ -71,7 +71,7 @@ class Update {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'adgroup_id' => array(
                 'name' => 'adgroup_id',
@@ -82,7 +82,7 @@ class Update {
                 'errormsg' => '广告组Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-            );
+            ),
 
             'preview_qq_list' => array(
                 'name' => 'preview_qq_list',
@@ -92,8 +92,8 @@ class Update {
                 'description' => '广告预览QQ列表',
                 'restraint' => 'json格式的数组，例如[111,222,333]',
                 'errormsg' => '预览QQ列表错误',
-            );
-;
+            ),
+
     }
 
 }

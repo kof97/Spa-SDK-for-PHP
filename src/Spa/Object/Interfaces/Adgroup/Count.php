@@ -71,7 +71,7 @@ class Count {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-            );
+            ),
 
             'where' => array(
                 'name' => 'where',
@@ -98,7 +98,7 @@ class Count {
                         'require' => 'no',
                     ),
                 ),
-            );
+            ),
 
             'group_by' => array(
                 'name' => 'group_by',
@@ -110,8 +110,8 @@ class Count {
                 'errormsg' => '聚合字段不正确',
                 'list' => 'configured_status,system_status',
                 'item_max_length' => '255',
-            );
-;
+            ),
+
     }
 
 }
