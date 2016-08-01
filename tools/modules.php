@@ -501,12 +501,37 @@ function processField($data) {
                     $arr['min'] = '1';
                 }
             }
-            var_dump($arr);
             return $arr;
 
         case 'struct':
-            //var_dump($type);
-            break;
+            $arr['element'] = array();
+            foreach ($data as $key => $value) {
+                if ($key === 'attribute') {
+                    $attr = $value->attributes();
+                    if (($attr['name'] . '') === 'description') {
+                        $arr['description'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'restraint') {
+                        $arr['restraint'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'errormsg') {
+                        $arr['errormsg'] = $attr['value'] . '';
+                    }
+                }
+                if ($key === 'element') {
+                    $attr = $value->attributes();
+                    $name = $attr['name'] . '';
+                    $extendType = $attr['type'] . '';
+                    $require = $attr['require'] . '';
+                    $arr['element'][$name] = array(
+                                                'name'       => $name,
+                                                'extendType' => $extendType,
+                                                'require'    => $require
+                                            );
+                }
+            }
+            var_dump($arr);
+            return $arr;
 
         default:
 
