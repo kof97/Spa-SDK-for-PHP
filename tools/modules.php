@@ -530,8 +530,10 @@ function processField($data) {
                                             );
                 }
             }
-            var_dump($arr);
             return $arr;
+
+        case 'array':
+        
 
         default:
 
