@@ -58,7 +58,11 @@ array(
                         'restraint'   => '',
                         'errormsg'    => '分页配置信息不正确',
                         'element'     => array(
-
+                            'name' => array(
+                                'name'       => $name,
+                                'extendType' => $extendType,
+                                'require'    => $require
+                            )
                         )
                     ),
                     // array
@@ -70,6 +74,7 @@ array(
                         'restraint'       => "见 [link href='']广告主类型定义[/link]",
                         'errormsg'        => '广告主类型不正确',
                         'list'            => 'date,adgroup_id',
+                        'pattern'         => 'pattern',
                         'max_size'        => '90',
                         'min_size'        => '1',
                         'item_max_length' => '1',

@@ -545,6 +545,12 @@ function processField($data) {
                     if (($attr['name'] . '') === 'errormsg') {
                         $arr['errormsg'] = $attr['value'] . '';
                     }
+                    if (($attr['name'] . '') === 'list') {
+                        $arr['list'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'pattern') {
+                        $arr['pattern'] = $attr['value'] . '';
+                    }
                     if (($attr['name'] . '') === 'max_size') {
                         $arr['max_size'] = $attr['value'] . '';
                     }
@@ -556,28 +562,57 @@ function processField($data) {
                     }
                 }
                 if ($key === 'repeated') {
-                    foreach ($value as $k => $v) {
-                        $type = ($v->attributes()['type'] . '');
-                        switch ($type) {
-                            case 'string':
-                                var_dump($type);
-                                break;
+                    $type = ($value->attributes()['type'] . '');
+                    switch ($type) {
+                        case 'string':
+                            foreach ($value as $k => $v) {
+                                $type = ($v->attributes()['type'] . '');
+                                if ($type === 'string') {
+                                    foreach ($v as $k1 => $v1) {
+                                        $attr = $v1->attributes();
+                                        if (($attr['value'] . '') === '@item_max_length') {
+                                            $arr['repeated']['item_max_length'] = $arr['item_max_length'];
+                                        }
+                                        if (($attr['value'] . '') === '@list') {
+                                            $arr['repeated']['list'] = $arr['list'];
+                                        }
+                                        if (($attr['value'] . '') === '@pattern') {
+                                            $arr['repeated']['pattern'] = $arr['pattern'];
+                                        }
+                                    }
+                                }
+                                if ($type === 'enum') {
+                                    
+                                }
+                            }
+
+                            return $arr;
+
+                        case 'integer':
+                            foreach ($value as $k => $v) {
+                                foreach ($v as $k1 => $v1) {
+                                    $attr = $v1->attributes();
+                                    if ($k1 === 'max') {
+                                        $arr['repeated']['max'] = $attr['value'] . '';
+                                    }
+                                    if ($k1 === 'min') {
+                                        $arr['repeated']['min'] = $attr['value'] . '';
+                                    }
+                                }
+                            }
+                            return $arr;
+
+                        case 'filter_struct':
                             
-                            case 'integer':
-                                
-                                break;
+                            break;
 
-                            case 'filter_struct':
-                                
-                                break;
+                        case 'creative_struct':
+                            
+                            break;
 
-                            case 'creative_struct':
-                                
-                                break;
-
-                            default: break;
-                        }
+                        default: break;
                     }
+                    
                     
                 }
             }
