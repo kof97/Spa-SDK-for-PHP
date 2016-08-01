@@ -65,16 +65,11 @@ class CheckPaipaiWhiteList {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
-;
+                );
+
     }
 
 }

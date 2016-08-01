@@ -65,58 +65,44 @@ class CreateCustomAudience {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
+                );
 
             'rule_name' => array(
                 'name' => 'rule_name',
                 'extendType' => 'rule_name',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '规则名称',
+                'type' => 'string','description' => '规则名称',
                 'restraint' => '不超过90个英文字符',
                 'errormsg' => '规则名称不正确',
                 'max_length' => '90',
                 'min_length' => '1',
-                
-                'name' => 'rule_name',
-            );
+                );
 
             'rule_type' => array(
                 'name' => 'rule_type',
                 'extendType' => 'rule_type',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '号码类型',
+                'type' => 'string','description' => '号码类型',
                 'restraint' => '详见 [link href="custom_audience_rule_type"]号码类型列表[/link]',
                 'errormsg' => '号码类型不正确',
-                
-                
-                
-                'name' => 'rule_type',
-            );
+                'enum' => 'enum',
+                'source' => 'api_custom_audience_rule_type',
+                );
 
             'description' => array(
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '受众描述',
+                'type' => 'string','description' => '受众描述',
                 'restraint' => '不超过250个英文字符',
                 'errormsg' => '受众描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                
-                'name' => 'description',
-            );
-;
+                );
+
     }
 
 }

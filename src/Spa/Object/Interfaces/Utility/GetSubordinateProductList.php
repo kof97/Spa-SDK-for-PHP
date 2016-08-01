@@ -65,44 +65,23 @@ class GetSubordinateProductList {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
+                );
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
                 'extendType' => 'product.product_refs_id',
                 'require' => 'yes',
-                'type' => '',
-                
-                
-                
-                
-                
-                
-                'name' => 'product_refs_id',
-            );
+                'type' => '',);
 
             'product_type' => array(
                 'name' => 'product_type',
                 'extendType' => 'product.product_type',
                 'require' => 'yes',
-                'type' => '',
-                
-                
-                
-                
-                
-                
-                'name' => 'product_type',
-            );
-;
+                'type' => '',);
+
     }
 
 }

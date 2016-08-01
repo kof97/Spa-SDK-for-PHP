@@ -60,7 +60,7 @@ class GetFinancialOverview {
     protected function fieldInfo() {
         
         array(
-;
+
     }
 
 }

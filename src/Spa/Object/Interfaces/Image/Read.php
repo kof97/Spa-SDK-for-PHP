@@ -65,30 +65,22 @@ class Read {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
+                );
 
             'image_id' => array(
                 'name' => 'image_id',
                 'extendType' => 'image_id',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '图片签名，目前使用图片的md5值',
+                'type' => 'string','description' => '图片签名，目前使用图片的md5值',
                 'restraint' => '32字符',
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                
-                'name' => 'image_id',
-            );
-;
+                );
+
     }
 
 }

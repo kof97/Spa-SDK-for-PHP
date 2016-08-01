@@ -65,44 +65,34 @@ class Read {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
+                );
 
             'product_refs_id' => array(
                 'name' => 'product_refs_id',
                 'extendType' => 'product_refs_id',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '标的物Id',
+                'type' => 'string','description' => '标的物Id',
                 'restraint' => '小于128个英文字符',
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                
-                'name' => 'product_refs_id',
-            );
+                );
 
             'product_type' => array(
                 'name' => 'product_type',
                 'extendType' => 'product_type',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '标的物类型',
+                'type' => 'string','description' => '标的物类型',
                 'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
                 'errormsg' => '标的物类型不正确',
-                
-                
                 'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
-                'name' => 'product_type',
-            );
-;
+                'enum' => 'enum',
+                'source' => 'api_product_type',
+                );
+
     }
 
 }

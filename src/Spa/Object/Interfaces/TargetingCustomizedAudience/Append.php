@@ -65,58 +65,37 @@ class Append {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
+                );
 
             'audience_id' => array(
                 'name' => 'audience_id',
                 'extendType' => 'audience_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '规则id',
+                'type' => 'integer','description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                
-                
-                
-                'name' => 'audience_id',
-            );
+                );
 
             'data_file' => array(
                 'name' => 'data_file',
                 'extendType' => 'data_file',
                 'require' => 'yes',
-                'type' => '',
-                
-                
-                
-                
-                
-                
-                'name' => 'data_file',
-            );
+                'type' => '',);
 
             'file_md5' => array(
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '上传文件的内容md5',
+                'type' => 'string','description' => '上传文件的内容md5',
                 'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-                
-                'name' => 'file_md5',
-            );
-;
+                );
+
     }
 
 }

@@ -65,58 +65,38 @@ class Select {
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'integer','description' => '广告主ID',
                 'restraint' => '详见附录',
                 'errormsg' => '广告主ID不正确',
-                
-                
-                
-                'name' => 'advertiser_id',
-            );
+                );
 
             'page' => array(
                 'name' => 'page',
                 'extendType' => 'page',
                 'require' => 'no',
-                'type' => 'integer',
-                'description' => '搜索页码',
+                'type' => 'integer','description' => '搜索页码',
                 'restraint' => '大于等于1，若不传则视为1',
                 'errormsg' => '页码不正确',
-                
-                
-                
-                'name' => 'page',
-            );
+                );
 
             'page_size' => array(
                 'name' => 'page_size',
                 'extendType' => 'page_size',
                 'require' => 'no',
-                'type' => 'integer',
-                'description' => '一页显示的数据条数',
+                'type' => 'integer','description' => '一页显示的数据条数',
                 'restraint' => '大于等于1，且小于100，若不传则视为10',
                 'errormsg' => '每页显示条数不正确',
-                
-                
-                
-                'name' => 'page_size',
-            );
+                );
 
             'filter' => array(
                 'name' => 'filter',
                 'extendType' => 'filter',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '过滤条件',
+                'type' => 'array','description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。可选过滤字段：location_name',
                 'errormsg' => '过滤条件不正确',
-                
-                
-                
-                'name' => 'filter',
-            );
-;
+                );
+
     }
 
 }
