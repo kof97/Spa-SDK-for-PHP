@@ -273,17 +273,17 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $arr['require'] = $require;
                 $arr['name'] = $name;
 
-                $type = isset($arr['type']) ? $arr['type'] : null;
+                $type = isset($arr['type']) ? $arr['type'] : '';
 
-                $description = isset($arr['description']) ? $arr['description'] : null;
+                $description = isset($arr['description']) ? $arr['description'] : '';
                 $description = str_replace('\'', '"', $description);
                 $description = $description ? "'description' => '" . $description . "'," : '';
 
-                $restraint = isset($arr['restraint']) ? $arr['restraint'] : null;
+                $restraint = isset($arr['restraint']) ? $arr['restraint'] : '';
                 $restraint = str_replace('\'', '"', $restraint);
                 $restraint = $restraint ? "'restraint' => '" . $restraint . "'," : '';
 
-                $errormsg = isset($arr['errormsg']) ? $arr['errormsg'] : null;
+                $errormsg = isset($arr['errormsg']) ? $arr['errormsg'] : '';
                 $errormsg = str_replace('\'', '"', $errormsg);
                 $errormsg = $errormsg ? "'errormsg' => '" . $errormsg . "'," : '';
 
@@ -291,6 +291,11 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
                 $min_length = isset($arr['min_length']) ? "'min_length' => '" . $arr['min_length'] . "'," : '';
                 $list = isset($arr['list']) ? "'list' => '" . $arr['list'] . "'," : '';
+                $pattern = isset($arr['pattern']) ? "'pattern' => '" . $arr['pattern'] . "'," : '';
+                $enum = isset($arr['enum']) ? "'enum' => '" . $arr['enum'] . "'," : '';
+                $source = isset($arr['source']) ? "'source' => '" . $arr['source'] . "'," : '';
+                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
+                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
                 $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
                 $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
 
@@ -307,6 +312,9 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $max_length
                 $min_length
                 $list
+                $pattern
+                $enum
+                $source
                 'name' => '$name',
             );
 ";
