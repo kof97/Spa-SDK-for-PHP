@@ -53,8 +53,12 @@ class SelectRegion {
         return $response;
     }
 
-    protected function validateField() {
+    protected function validateField($params) {
+        $data = $this->fieldInfo();
 
+        foreach ($params as $key => $value) {
+            
+        }
     }
 
     public function fieldInfo() {
@@ -177,4 +181,5 @@ class SelectRegion {
 }
 
 //end of script
+
 

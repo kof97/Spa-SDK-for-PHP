@@ -53,8 +53,12 @@ class CheckPaipaiWhiteList {
         return $response;
     }
 
-    protected function validateField() {
+    protected function validateField($params) {
+        $data = $this->fieldInfo();
 
+        foreach ($params as $key => $value) {
+            
+        }
     }
 
     public function fieldInfo() {
@@ -78,4 +82,5 @@ class CheckPaipaiWhiteList {
 }
 
 //end of script
+
 
