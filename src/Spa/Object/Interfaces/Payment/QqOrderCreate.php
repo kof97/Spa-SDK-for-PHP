@@ -71,7 +71,6 @@ class QqOrderCreate {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'amount' => array(
@@ -84,7 +83,6 @@ class QqOrderCreate {
                 'errormsg' => '支付金额错误',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'amount',
             );
 
             'qq' => array(
@@ -97,7 +95,6 @@ class QqOrderCreate {
                 'errormsg' => '登录QQ号码不正确',
                 'max' => '9200000000000000000',
                 'min' => '10000',
-                'name' => 'qq',
             );
 
             'client_ip' => array(
@@ -111,7 +108,6 @@ class QqOrderCreate {
                 'max_length' => '20',
                 'min_length' => '1',
                 'pattern' => '/^(\d{1,3}\.){3}\d{1,3}(:\d{1,5})?$/',
-                'name' => 'client_ip',
             );
 
             'notify_url' => array(
@@ -125,7 +121,6 @@ class QqOrderCreate {
                 'max_length' => '1024',
                 'min_length' => '0',
                 'pattern' => '{url_pattern}',
-                'name' => 'notify_url',
             );
 ;
     }

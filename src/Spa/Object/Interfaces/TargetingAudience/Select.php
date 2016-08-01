@@ -71,7 +71,6 @@ class Select {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'audience_type' => array(
@@ -84,7 +83,6 @@ class Select {
                 'errormsg' => '人群类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_audience_type',
-                'name' => 'audience_type',
             );
 
             'filter' => array(
@@ -96,7 +94,6 @@ class Select {
                 'restraint' => '过滤条件结构',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
-                'name' => 'filter',
             );
 
             'order_by' => array(
@@ -107,7 +104,20 @@ class Select {
                 'description' => '排序规则',
                 'restraint' => '当前支持根据audience_id或user_count排序',
                 'errormsg' => '排序参数不正确',
-                'name' => 'order_by',
+                'element' => array(
+                    'audience_id' => array(
+                        'name' => 'audience_id',
+                        'extendType' => 'audience_id_order_by',
+                        'require' => 'no',
+                    )
+
+                    'user_count' => array(
+                        'name' => 'user_count',
+                        'extendType' => 'user_count_order_by',
+                        'require' => 'no',
+                    )
+
+                ),
             );
 
             'page' => array(
@@ -120,7 +130,6 @@ class Select {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-                'name' => 'page',
             );
 
             'page_size' => array(
@@ -133,7 +142,6 @@ class Select {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-                'name' => 'page_size',
             );
 ;
     }

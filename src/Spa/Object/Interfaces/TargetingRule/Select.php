@@ -71,7 +71,6 @@ class Select {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'filter' => array(
@@ -83,7 +82,6 @@ class Select {
                 'restraint' => '支持: status：EQUALS，rule_name：EQUALS，CONTAINS。若此字段不传，或传空则视为无限制条件。详见[link href="filter"]高级条件[/link]',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
-                'name' => 'filter',
             );
 
             'page' => array(
@@ -96,7 +94,6 @@ class Select {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-                'name' => 'page',
             );
 
             'page_size' => array(
@@ -109,7 +106,6 @@ class Select {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-                'name' => 'page_size',
             );
 ;
     }

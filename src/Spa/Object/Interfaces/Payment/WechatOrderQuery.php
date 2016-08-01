@@ -71,7 +71,6 @@ class WechatOrderQuery {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'wechat_appid' => array(
@@ -84,7 +83,6 @@ class WechatOrderQuery {
                 'errormsg' => '微信开放平台账户appid错误',
                 'max_length' => '32',
                 'min_length' => '1',
-                'name' => 'wechat_appid',
             );
 
             'out_trade_no' => array(
@@ -97,7 +95,6 @@ class WechatOrderQuery {
                 'errormsg' => '订单号码错误',
                 'max_length' => '32',
                 'min_length' => '1',
-                'name' => 'out_trade_no',
             );
 ;
     }

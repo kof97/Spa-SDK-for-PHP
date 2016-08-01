@@ -69,7 +69,6 @@ class GetCreativeTemplateRefs {
                 'description' => '素材规格Id',
                 'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
                 'errormsg' => '素材规格Id不正确',
-                'name' => 'creative_template_id',
             );
 ;
     }

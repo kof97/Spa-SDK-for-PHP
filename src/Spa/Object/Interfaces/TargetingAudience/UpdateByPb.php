@@ -71,7 +71,6 @@ class UpdateByPb {
                 'errormsg' => '操作类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_audience_operation_type',
-                'name' => 'operation_type',
             );
 
             'data_file' => array(
@@ -79,7 +78,6 @@ class UpdateByPb {
                 'extendType' => 'data_file',
                 'require' => 'yes',
                 'type' => '',
-                'name' => 'data_file',
             );
 
             'file_name' => array(
@@ -92,7 +90,6 @@ class UpdateByPb {
                 'errormsg' => '文件名称不正确',
                 'max_length' => '256',
                 'min_length' => '1',
-                'name' => 'file_name',
             );
 
             'file_md5' => array(
@@ -105,7 +102,6 @@ class UpdateByPb {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-                'name' => 'file_md5',
             );
 
             'refs_app_id' => array(
@@ -118,7 +114,6 @@ class UpdateByPb {
                 'errormsg' => 'AppId不正确',
                 'max_length' => '128',
                 'min_length' => '1',
-                'name' => 'refs_app_id',
             );
 ;
     }

@@ -71,7 +71,6 @@ class WechatOrderCreate {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'amount' => array(
@@ -84,7 +83,6 @@ class WechatOrderCreate {
                 'errormsg' => '支付金额错误',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'amount',
             );
 
             'wechat_appid' => array(
@@ -97,7 +95,6 @@ class WechatOrderCreate {
                 'errormsg' => '微信开放平台账户appid错误',
                 'max_length' => '32',
                 'min_length' => '1',
-                'name' => 'wechat_appid',
             );
 
             'client_ip' => array(
@@ -111,7 +108,6 @@ class WechatOrderCreate {
                 'max_length' => '20',
                 'min_length' => '1',
                 'pattern' => '/^(\d{1,3}\.){3}\d{1,3}(:\d{1,5})?$/',
-                'name' => 'client_ip',
             );
 
             'notify_url' => array(
@@ -125,7 +121,6 @@ class WechatOrderCreate {
                 'max_length' => '1024',
                 'min_length' => '0',
                 'pattern' => '{url_pattern}',
-                'name' => 'notify_url',
             );
 ;
     }

@@ -71,7 +71,6 @@ class Delete {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'location_id' => array(
@@ -84,7 +83,6 @@ class Delete {
                 'errormsg' => '自定义打点id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'location_id',
             );
 ;
     }

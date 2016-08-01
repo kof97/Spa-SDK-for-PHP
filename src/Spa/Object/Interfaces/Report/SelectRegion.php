@@ -71,7 +71,6 @@ class SelectRegion {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'date_range' => array(
@@ -82,7 +81,20 @@ class SelectRegion {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-                'name' => 'date_range',
+                'element' => array(
+                    'start_date' => array(
+                        'name' => 'start_date',
+                        'extendType' => 'start_date',
+                        'require' => 'yes',
+                    )
+
+                    'end_date' => array(
+                        'name' => 'end_date',
+                        'extendType' => 'end_date',
+                        'require' => 'yes',
+                    )
+
+                ),
             );
 
             'campaign_id_list' => array(
@@ -94,7 +106,6 @@ class SelectRegion {
                 'restraint' => '数量不能不超过200个',
                 'errormsg' => '推广计划ID列表不正确',
                 'item_max_length' => '255',
-                'name' => 'campaign_id_list',
             );
 
             'adgroup_id_list' => array(
@@ -106,7 +117,6 @@ class SelectRegion {
                 'restraint' => '数量不能不超过200个',
                 'errormsg' => '广告组ID列表不正确',
                 'item_max_length' => '255',
-                'name' => 'adgroup_id_list',
             );
 
             'group_by' => array(
@@ -118,7 +128,6 @@ class SelectRegion {
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
                 'item_max_length' => '255',
-                'name' => 'group_by',
             );
 
             'page' => array(
@@ -131,7 +140,6 @@ class SelectRegion {
                 'errormsg' => '页码不正确',
                 'max' => '99999',
                 'min' => '1',
-                'name' => 'page',
             );
 
             'page_size' => array(
@@ -144,7 +152,6 @@ class SelectRegion {
                 'errormsg' => '每页显示条数不正确',
                 'max' => '100',
                 'min' => '1',
-                'name' => 'page_size',
             );
 ;
     }

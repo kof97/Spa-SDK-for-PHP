@@ -71,7 +71,6 @@ class CreateByUrl {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'image_url' => array(
@@ -84,7 +83,6 @@ class CreateByUrl {
                 'max_length' => '1024',
                 'min_length' => '1',
                 'pattern' => '{url_pattern}',
-                'name' => 'image_url',
             );
 
             'outer_image_id' => array(
@@ -97,7 +95,6 @@ class CreateByUrl {
                 'errormsg' => '外部图片id不正确',
                 'max_length' => '1024',
                 'min_length' => '1',
-                'name' => 'outer_image_id',
             );
 ;
     }

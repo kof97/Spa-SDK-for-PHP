@@ -71,7 +71,6 @@ class Update {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'adgroup_id' => array(
@@ -83,7 +82,6 @@ class Update {
                 'errormsg' => '广告组Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'adgroup_id',
             );
 
             'targeting_id' => array(
@@ -96,7 +94,6 @@ class Update {
                 'errormsg' => '定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'targeting_id',
             );
 
             'adgroup_name' => array(
@@ -109,7 +106,6 @@ class Update {
                 'errormsg' => '广告组名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                'name' => 'adgroup_name',
             );
 
             'bid_amount' => array(
@@ -120,7 +116,6 @@ class Update {
                 'description' => '广告出价，单位为分',
                 'restraint' => '广告出价，单位为分',
                 'errormsg' => '广告出价不正确',
-                'name' => 'bid_amount',
             );
 
             'begin_date' => array(
@@ -134,7 +129,6 @@ class Update {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-                'name' => 'begin_date',
             );
 
             'end_date' => array(
@@ -148,7 +142,6 @@ class Update {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-                'name' => 'end_date',
             );
 
             'time_series' => array(
@@ -161,7 +154,6 @@ class Update {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '336',
                 'min_length' => '336',
-                'name' => 'time_series',
             );
 
             'creative_selection_type' => array(
@@ -174,7 +166,6 @@ class Update {
                 'errormsg' => '素材播放模式不正确',
                 'enum' => 'enum',
                 'source' => 'api_CreativeSelectionType',
-                'name' => 'creative_selection_type',
             );
 
             'configured_status' => array(
@@ -186,7 +177,6 @@ class Update {
                 'errormsg' => '用户状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                'name' => 'configured_status',
             );
 
             'customized_category' => array(
@@ -199,7 +189,6 @@ class Update {
                 'errormsg' => '自定义分类不正确',
                 'max_length' => '200',
                 'min_length' => '0',
-                'name' => 'customized_category',
             );
 
             'min_impression_include' => array(
@@ -212,7 +201,6 @@ class Update {
                 'errormsg' => '最低曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-                'name' => 'min_impression_include',
             );
 
             'max_impression_include' => array(
@@ -225,7 +213,6 @@ class Update {
                 'errormsg' => '最高曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-                'name' => 'max_impression_include',
             );
 
             'click_tracking_url' => array(
@@ -239,7 +226,6 @@ class Update {
                 'max_length' => '1024',
                 'min_length' => '0',
                 'pattern' => '/.*/',
-                'name' => 'click_tracking_url',
             );
 
             'subordinate_product_refs_id' => array(
@@ -252,7 +238,6 @@ class Update {
                 'errormsg' => '子标的物id错误',
                 'max_length' => '128',
                 'min_length' => '0',
-                'name' => 'subordinate_product_refs_id',
             );
 
             'dynamic_creative_recommend_type' => array(
@@ -265,7 +250,6 @@ class Update {
                 'errormsg' => '产品推荐方式错误',
                 'max' => '9223372036854775807',
                 'min' => '0',
-                'name' => 'dynamic_creative_recommend_type',
             );
 
             'total_budget' => array(
@@ -273,7 +257,6 @@ class Update {
                 'extendType' => 'campaign.total_budget',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'total_budget',
             );
 ;
     }

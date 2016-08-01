@@ -71,7 +71,6 @@ class Read {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'product_refs_id' => array(
@@ -84,7 +83,6 @@ class Read {
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                'name' => 'product_refs_id',
             );
 
             'product_type' => array(
@@ -98,7 +96,6 @@ class Read {
                 'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-                'name' => 'product_type',
             );
 ;
     }

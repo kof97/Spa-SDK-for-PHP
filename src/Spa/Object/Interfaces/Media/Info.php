@@ -71,7 +71,6 @@ class Info {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'media_id' => array(
@@ -84,7 +83,6 @@ class Info {
                 'errormsg' => '媒体Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'media_id',
             );
 ;
     }

@@ -71,7 +71,6 @@ class CreateCustomAudience {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'rule_name' => array(
@@ -84,7 +83,6 @@ class CreateCustomAudience {
                 'errormsg' => '规则名称不正确',
                 'max_length' => '90',
                 'min_length' => '1',
-                'name' => 'rule_name',
             );
 
             'rule_type' => array(
@@ -97,7 +95,6 @@ class CreateCustomAudience {
                 'errormsg' => '号码类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_custom_audience_rule_type',
-                'name' => 'rule_type',
             );
 
             'description' => array(
@@ -110,7 +107,6 @@ class CreateCustomAudience {
                 'errormsg' => '受众描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                'name' => 'description',
             );
 ;
     }

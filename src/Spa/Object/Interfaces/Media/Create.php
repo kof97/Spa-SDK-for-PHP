@@ -71,7 +71,6 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'media_file' => array(
@@ -79,7 +78,6 @@ class Create {
                 'extendType' => 'media_file',
                 'require' => 'yes',
                 'type' => '',
-                'name' => 'media_file',
             );
 
             'media_signature' => array(
@@ -92,7 +90,6 @@ class Create {
                 'errormsg' => '媒体签名不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-                'name' => 'media_signature',
             );
 
             'media_description' => array(
@@ -105,7 +102,6 @@ class Create {
                 'errormsg' => '流媒体描述错误',
                 'max_length' => '255',
                 'min_length' => '0',
-                'name' => 'media_description',
             );
 ;
     }

@@ -71,7 +71,6 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'campaign_name' => array(
@@ -84,7 +83,6 @@ class Create {
                 'errormsg' => '推广计划名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                'name' => 'campaign_name',
             );
 
             'campaign_type' => array(
@@ -97,7 +95,6 @@ class Create {
                 'errormsg' => '推广计划类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_campaign_type',
-                'name' => 'campaign_type',
             );
 
             'daily_budget' => array(
@@ -110,7 +107,6 @@ class Create {
                 'errormsg' => '日消耗限额不正确',
                 'max' => '400000000',
                 'min' => '5000',
-                'name' => 'daily_budget',
             );
 
             'total_budget' => array(
@@ -123,7 +119,6 @@ class Create {
                 'errormsg' => '总消耗限额不正确',
                 'max' => '20000000000',
                 'min' => '5000',
-                'name' => 'total_budget',
             );
 
             'speed_mode' => array(
@@ -136,7 +131,6 @@ class Create {
                 'errormsg' => '标准投放类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_speed_mode',
-                'name' => 'speed_mode',
             );
 
             'pv_demanded' => array(
@@ -149,7 +143,6 @@ class Create {
                 'errormsg' => '每日购买PV量不正确',
                 'max' => '4200000000',
                 'min' => '1000',
-                'name' => 'pv_demanded',
             );
 
             'outer_campaign_id' => array(
@@ -162,7 +155,6 @@ class Create {
                 'errormsg' => '外部推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'outer_campaign_id',
             );
 
             'retainability_in_feeds' => array(
@@ -175,7 +167,6 @@ class Create {
                 'errormsg' => '沉淀模式不正确',
                 'enum' => 'enum',
                 'source' => 'api_boolean',
-                'name' => 'retainability_in_feeds',
             );
 
             'max_impression_include' => array(
@@ -188,7 +179,6 @@ class Create {
                 'errormsg' => '最高曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-                'name' => 'max_impression_include',
             );
 
             'configured_status' => array(
@@ -200,7 +190,6 @@ class Create {
                 'errormsg' => '用户状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_configured_status',
-                'name' => 'configured_status',
             );
 ;
     }

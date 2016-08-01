@@ -71,7 +71,6 @@ class GetLocationList {
                 'errormsg' => '城市ID不正确',
                 'max' => '999999',
                 'min' => '0',
-                'name' => 'region_id',
             );
 ;
     }

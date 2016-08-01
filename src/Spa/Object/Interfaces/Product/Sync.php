@@ -71,7 +71,6 @@ class Sync {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'product_refs_id' => array(
@@ -84,7 +83,6 @@ class Sync {
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                'name' => 'product_refs_id',
             );
 
             'product_name' => array(
@@ -97,7 +95,6 @@ class Sync {
                 'errormsg' => '标的物名称不正确',
                 'max_length' => '255',
                 'min_length' => '1',
-                'name' => 'product_name',
             );
 
             'product_type' => array(
@@ -111,7 +108,6 @@ class Sync {
                 'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-                'name' => 'product_type',
             );
 
             'product_info' => array(
@@ -122,7 +118,20 @@ class Sync {
                 'description' => '标的物详细信息',
                 'restraint' => '详见 [link href="ec_info"]京东、拍拍店铺、标的物[/link]',
                 'errormsg' => '京东购物行为不正确',
-                'name' => 'product_info',
+                'element' => array(
+                    'product_type_jd_item' => array(
+                        'name' => 'product_type_jd_item',
+                        'extendType' => 'ec_info',
+                        'require' => 'no',
+                    )
+
+                    'product_type_jd_shop' => array(
+                        'name' => 'product_type_jd_shop',
+                        'extendType' => 'ec_info',
+                        'require' => 'no',
+                    )
+
+                ),
             );
 
             'outer_version' => array(
@@ -133,7 +142,6 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                'name' => 'outer_version',
             );
 ;
     }

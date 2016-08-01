@@ -71,7 +71,6 @@ class UpdateAdvertiser {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'corporation_name' => array(
@@ -79,7 +78,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.corporation_name',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'corporation_name',
             );
 
             'certification_image_id' => array(
@@ -92,7 +90,6 @@ class UpdateAdvertiser {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                'name' => 'certification_image_id',
             );
 
             'industry_id' => array(
@@ -105,7 +102,6 @@ class UpdateAdvertiser {
                 'errormsg' => '行业分类不正确',
                 'max' => '1000000000000',
                 'min' => '0',
-                'name' => 'industry_id',
             );
 
             'qualification_image_id_list' => array(
@@ -113,7 +109,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.image_id_list',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'qualification_image_id_list',
             );
 
             'ad_qualification_image_id_list' => array(
@@ -121,7 +116,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.image_id_list',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'ad_qualification_image_id_list',
             );
 
             'website' => array(
@@ -129,7 +123,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.website',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'website',
             );
 
             'icp_image_id' => array(
@@ -142,7 +135,6 @@ class UpdateAdvertiser {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                'name' => 'icp_image_id',
             );
 
             'corporation_image_name' => array(
@@ -150,7 +142,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.corporation_image_name',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'corporation_image_name',
             );
 
             'contact_person_telephone' => array(
@@ -158,7 +149,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.contact_person_telephone',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'contact_person_telephone',
             );
 
             'contact_person_mobile' => array(
@@ -166,7 +156,6 @@ class UpdateAdvertiser {
                 'extendType' => 'advertiser.contact_person_mobile',
                 'require' => 'no',
                 'type' => '',
-                'name' => 'contact_person_mobile',
             );
 ;
     }

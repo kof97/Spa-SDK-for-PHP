@@ -71,7 +71,6 @@ class Sync {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'adgroup_id' => array(
@@ -83,7 +82,6 @@ class Sync {
                 'errormsg' => '广告组Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'adgroup_id',
             );
 
             'outer_adgroup_id' => array(
@@ -96,7 +94,6 @@ class Sync {
                 'errormsg' => '外部广告Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'outer_adgroup_id',
             );
 
             'campaign_id' => array(
@@ -109,7 +106,6 @@ class Sync {
                 'errormsg' => '推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'campaign_id',
             );
 
             'targeting_id' => array(
@@ -122,7 +118,6 @@ class Sync {
                 'errormsg' => '定向Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'targeting_id',
             );
 
             'adgroup_name' => array(
@@ -135,7 +130,6 @@ class Sync {
                 'errormsg' => '广告组名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                'name' => 'adgroup_name',
             );
 
             'configured_status' => array(
@@ -148,7 +142,6 @@ class Sync {
                 'errormsg' => '资源状态不正确',
                 'enum' => 'enum',
                 'source' => 'api_sync_configured_status',
-                'name' => 'configured_status',
             );
 
             'bid_type' => array(
@@ -161,7 +154,6 @@ class Sync {
                 'errormsg' => '扣费方式不正确',
                 'enum' => 'enum',
                 'source' => 'api_cost_type',
-                'name' => 'bid_type',
             );
 
             'bid_amount' => array(
@@ -172,7 +164,6 @@ class Sync {
                 'description' => '广告出价，单位为分',
                 'restraint' => '广告出价，单位为分',
                 'errormsg' => '广告出价不正确',
-                'name' => 'bid_amount',
             );
 
             'begin_date' => array(
@@ -186,7 +177,6 @@ class Sync {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-                'name' => 'begin_date',
             );
 
             'end_date' => array(
@@ -200,7 +190,6 @@ class Sync {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-                'name' => 'end_date',
             );
 
             'site_set' => array(
@@ -212,7 +201,6 @@ class Sync {
                 'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
                 'errormsg' => '投放站点集合不正确',
                 'list' => 'SITE_SET_QZONE,SITE_SET_PENGYOU,SITE_SET_QQCLIENT,SITE_SET_TUAN,SITE_SET_MEISHI,SITE_SET_PIAO,SITE_SET_MUSIC,SITE_SET_MOBILE_UNION,SITE_SET_QQCOM,SITE_SET_MAIL,SITE_SET_WECHAT,SITE_SET_YINGYONGBAO_MOBILE,SITE_SET_PC_UNION,SITE_SET_YINGYONGBAO_PC,SITE_SET_MOBILE_INNER',
-                'name' => 'site_set',
             );
 
             'time_series' => array(
@@ -225,7 +213,6 @@ class Sync {
                 'errormsg' => '结束投放时间点对应的时间戳不正确',
                 'max_length' => '336',
                 'min_length' => '336',
-                'name' => 'time_series',
             );
 
             'destination_url' => array(
@@ -233,7 +220,6 @@ class Sync {
                 'extendType' => 'creative.destination_url',
                 'require' => 'yes',
                 'type' => '',
-                'name' => 'destination_url',
             );
 
             'product_type' => array(
@@ -247,7 +233,6 @@ class Sync {
                 'list' => 'PRODUCT_TYPE_LINK,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED,PRODUCT_TYPE_LINK_WECHAT,PRODUCT_TYPE_LINK_MOBILE_QQ_MP',
                 'enum' => 'enum',
                 'source' => 'api_product_type',
-                'name' => 'product_type',
             );
 
             'product_refs_id' => array(
@@ -260,7 +245,6 @@ class Sync {
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
                 'min_length' => '0',
-                'name' => 'product_refs_id',
             );
 
             'subordinate_product_refs_id' => array(
@@ -273,7 +257,6 @@ class Sync {
                 'errormsg' => '子标的物id错误',
                 'max_length' => '128',
                 'min_length' => '0',
-                'name' => 'subordinate_product_refs_id',
             );
 
             'creative_selection_type' => array(
@@ -286,7 +269,6 @@ class Sync {
                 'errormsg' => '素材播放模式不正确',
                 'enum' => 'enum',
                 'source' => 'api_CreativeSelectionType',
-                'name' => 'creative_selection_type',
             );
 
             'customized_category' => array(
@@ -299,7 +281,6 @@ class Sync {
                 'errormsg' => '自定义分类不正确',
                 'max_length' => '200',
                 'min_length' => '0',
-                'name' => 'customized_category',
             );
 
             'min_impression_include' => array(
@@ -312,7 +293,6 @@ class Sync {
                 'errormsg' => '最低曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-                'name' => 'min_impression_include',
             );
 
             'max_impression_include' => array(
@@ -325,7 +305,6 @@ class Sync {
                 'errormsg' => '最高曝光频次不正确',
                 'max' => '1000',
                 'min' => '0',
-                'name' => 'max_impression_include',
             );
 
             'click_tracking_url' => array(
@@ -339,7 +318,6 @@ class Sync {
                 'max_length' => '1024',
                 'min_length' => '0',
                 'pattern' => '/.*/',
-                'name' => 'click_tracking_url',
             );
 
             'creative_combination_type' => array(
@@ -352,7 +330,6 @@ class Sync {
                 'errormsg' => '广告类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_ad_group_creative_combination_type',
-                'name' => 'creative_combination_type',
             );
 
             'outer_version' => array(
@@ -363,7 +340,6 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                'name' => 'outer_version',
             );
 ;
     }

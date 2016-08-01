@@ -71,7 +71,6 @@ class GetQzonePageList {
                 'errormsg' => '登录QQ号码不正确',
                 'max' => '9200000000000000000',
                 'min' => '10000',
-                'name' => 'qq',
             );
 ;
     }

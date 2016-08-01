@@ -71,7 +71,6 @@ class UpdateCustomAudience {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'rule_id' => array(
@@ -82,7 +81,6 @@ class UpdateCustomAudience {
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                'name' => 'rule_id',
             );
 
             'rule_name' => array(
@@ -95,7 +93,6 @@ class UpdateCustomAudience {
                 'errormsg' => '规则名称不正确',
                 'max_length' => '90',
                 'min_length' => '1',
-                'name' => 'rule_name',
             );
 
             'description' => array(
@@ -108,7 +105,6 @@ class UpdateCustomAudience {
                 'errormsg' => '受众描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                'name' => 'description',
             );
 ;
     }

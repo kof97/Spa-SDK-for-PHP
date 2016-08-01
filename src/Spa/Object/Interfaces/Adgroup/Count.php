@@ -71,7 +71,6 @@ class Count {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'where' => array(
@@ -82,7 +81,26 @@ class Count {
                 'description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。例{"status":"AD_STATUS_NORMAL"}, 可选过滤字段：status，adgroup_name。',
                 'errormsg' => '过滤条件不正确',
-                'name' => 'where',
+                'element' => array(
+                    'configured_status' => array(
+                        'name' => 'configured_status',
+                        'extendType' => 'configured_status',
+                        'require' => 'no',
+                    )
+
+                    'system_status' => array(
+                        'name' => 'system_status',
+                        'extendType' => 'system_status',
+                        'require' => 'no',
+                    )
+
+                    'adgroup_name' => array(
+                        'name' => 'adgroup_name',
+                        'extendType' => 'adgroup_name',
+                        'require' => 'no',
+                    )
+
+                ),
             );
 
             'group_by' => array(
@@ -95,7 +113,6 @@ class Count {
                 'errormsg' => '聚合字段不正确',
                 'list' => 'configured_status,system_status',
                 'item_max_length' => '255',
-                'name' => 'group_by',
             );
 ;
     }

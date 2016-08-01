@@ -300,6 +300,26 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $max_size = isset($arr['max_size']) ? "'max_size' => '" . $arr['max_size'] . "'," : '';
                 $min_size = isset($arr['min_size']) ? "'min_size' => '" . $arr['min_size'] . "'," : '';
 
+                $element = '';
+                $ele = isset($arr['element']) ? $arr['element'] : null;
+                if ($ele) {
+                    $element = "'element' => array(";
+                    foreach ($ele as $key => $value) {
+                        $ele_name = isset($value['name']) ? "'name' => '" . $value['name'] . "'," : '';
+                        $ele_extendType = isset($value['extendType']) ? "'extendType' => '" . $value['extendType'] . "'," : '';
+                        $ele_require = isset($value['require']) ? "'require' => '" . $value['require'] . "'," : '';
+
+                        $element .= "
+                    '$key' => array(
+                        $ele_name
+                        $ele_extendType
+                        $ele_require
+                    )
+";
+                    }
+                    $element .= "
+                ),";
+                }
 
                 $field_info .= "
             '$name' => array(
@@ -319,7 +339,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $max
                 $min
                 $item_max_length
-                'name' => '$name',
+                $element
             );
 ";
 

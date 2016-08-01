@@ -71,7 +71,6 @@ class GetSubordinateProductList {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'product_refs_id' => array(
@@ -79,7 +78,6 @@ class GetSubordinateProductList {
                 'extendType' => 'product.product_refs_id',
                 'require' => 'yes',
                 'type' => '',
-                'name' => 'product_refs_id',
             );
 
             'product_type' => array(
@@ -87,7 +85,6 @@ class GetSubordinateProductList {
                 'extendType' => 'product.product_type',
                 'require' => 'yes',
                 'type' => '',
-                'name' => 'product_type',
             );
 ;
     }

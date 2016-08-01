@@ -71,7 +71,6 @@ class Upload {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'data_source' => array(
@@ -79,7 +78,6 @@ class Upload {
                 'extendType' => 'data_source',
                 'require' => 'yes',
                 'type' => '',
-                'name' => 'data_source',
             );
 
             'file_md5' => array(
@@ -91,7 +89,6 @@ class Upload {
                 'errormsg' => '上传文件的内容md5不正确',
                 'max_length' => '32',
                 'min_length' => '32',
-                'name' => 'file_md5',
             );
 ;
     }

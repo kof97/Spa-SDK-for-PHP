@@ -71,7 +71,6 @@ class Authorize {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'audience_id' => array(
@@ -82,7 +81,6 @@ class Authorize {
                 'description' => '规则id',
                 'restraint' => '规则id',
                 'errormsg' => '规则id不正确',
-                'name' => 'audience_id',
             );
 
             'authorized_advertiser_id' => array(
@@ -95,7 +93,6 @@ class Authorize {
                 'errormsg' => '授权的广告主Id（子客户）不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'authorized_advertiser_id',
             );
 
             'operation_type' => array(
@@ -108,7 +105,6 @@ class Authorize {
                 'errormsg' => '操作类型不正确',
                 'enum' => 'enum',
                 'source' => 'api_operation_type',
-                'name' => 'operation_type',
             );
 
             'description' => array(
@@ -120,7 +116,6 @@ class Authorize {
                 'errormsg' => '授权描述不正确',
                 'max_length' => '250',
                 'min_length' => '0',
-                'name' => 'description',
             );
 ;
     }

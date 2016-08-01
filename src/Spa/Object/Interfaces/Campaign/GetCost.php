@@ -71,7 +71,6 @@ class GetCost {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'campaign_id' => array(
@@ -84,7 +83,6 @@ class GetCost {
                 'errormsg' => '推广计划Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'campaign_id',
             );
 
             'date' => array(
@@ -98,7 +96,6 @@ class GetCost {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-                'name' => 'date',
             );
 ;
     }

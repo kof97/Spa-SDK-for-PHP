@@ -71,7 +71,6 @@ class Sync {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'outer_advertiser_id' => array(
@@ -84,7 +83,6 @@ class Sync {
                 'errormsg' => '外部广告主Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'outer_advertiser_id',
             );
 
             'corporation_name' => array(
@@ -97,7 +95,6 @@ class Sync {
                 'errormsg' => '公司名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                'name' => 'corporation_name',
             );
 
             'certification_image_id' => array(
@@ -110,7 +107,6 @@ class Sync {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                'name' => 'certification_image_id',
             );
 
             'industry_id' => array(
@@ -123,7 +119,6 @@ class Sync {
                 'errormsg' => '行业分类不正确',
                 'max' => '1000000000000',
                 'min' => '0',
-                'name' => 'industry_id',
             );
 
             'daily_budget' => array(
@@ -136,7 +131,6 @@ class Sync {
                 'errormsg' => '日消耗限额不正确',
                 'max' => '1000000000',
                 'min' => '0',
-                'name' => 'daily_budget',
             );
 
             'qualification_image_id_list' => array(
@@ -149,7 +143,6 @@ class Sync {
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
                 'item_max_length' => '255',
-                'name' => 'qualification_image_id_list',
             );
 
             'ad_qualification_image_id_list' => array(
@@ -162,7 +155,6 @@ class Sync {
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
                 'item_max_length' => '255',
-                'name' => 'ad_qualification_image_id_list',
             );
 
             'website' => array(
@@ -176,7 +168,6 @@ class Sync {
                 'max_length' => '255',
                 'min_length' => '1',
                 'pattern' => '{url_pattern}',
-                'name' => 'website',
             );
 
             'icp_image_id' => array(
@@ -189,7 +180,6 @@ class Sync {
                 'errormsg' => '图片签名不正确',
                 'max_length' => '64',
                 'min_length' => '1',
-                'name' => 'icp_image_id',
             );
 
             'corporation_image_name' => array(
@@ -202,7 +192,6 @@ class Sync {
                 'errormsg' => '品牌名称不正确',
                 'max_length' => '120',
                 'min_length' => '1',
-                'name' => 'corporation_image_name',
             );
 
             'contact_person_telephone' => array(
@@ -216,7 +205,6 @@ class Sync {
                 'max_length' => '20',
                 'min_length' => '0',
                 'pattern' => '/^[0-9]{3,4}\-[0-9]{6,8}(\-[0-9]{1,8})?$/',
-                'name' => 'contact_person_telephone',
             );
 
             'contact_person_mobile' => array(
@@ -230,7 +218,6 @@ class Sync {
                 'max_length' => '20',
                 'min_length' => '0',
                 'pattern' => '/^\+?[0-9]{6,13}$/',
-                'name' => 'contact_person_mobile',
             );
 
             'outer_extend_info' => array(
@@ -241,7 +228,32 @@ class Sync {
                 'description' => '广告主扩展信息',
                 'restraint' => '详见 [link href="outer_extend_info"]广告主扩展信息[/link]',
                 'errormsg' => '广告主扩展信息不正确',
-                'name' => 'outer_extend_info',
+                'element' => array(
+                    'id' => array(
+                        'name' => 'id',
+                        'extendType' => 'outer_extend_info_id',
+                        'require' => 'no',
+                    )
+
+                    'name' => array(
+                        'name' => 'name',
+                        'extendType' => 'outer_extend_info_name',
+                        'require' => 'no',
+                    )
+
+                    'category_id' => array(
+                        'name' => 'category_id',
+                        'extendType' => 'outer_extend_info_category_id',
+                        'require' => 'no',
+                    )
+
+                    'category_name' => array(
+                        'name' => 'category_name',
+                        'extendType' => 'outer_extend_info_category_name',
+                        'require' => 'no',
+                    )
+
+                ),
             );
 
             'outer_version' => array(
@@ -252,7 +264,6 @@ class Sync {
                 'description' => '调用方数据版本',
                 'restraint' => '大于等于0，小于等于2^63',
                 'errormsg' => '调用方数据版本不正确',
-                'name' => 'outer_version',
             );
 ;
     }

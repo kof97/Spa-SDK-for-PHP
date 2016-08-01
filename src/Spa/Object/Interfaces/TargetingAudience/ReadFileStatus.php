@@ -71,7 +71,6 @@ class ReadFileStatus {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'file_id' => array(
@@ -84,7 +83,6 @@ class ReadFileStatus {
                 'errormsg' => '文件Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'file_id',
             );
 ;
     }

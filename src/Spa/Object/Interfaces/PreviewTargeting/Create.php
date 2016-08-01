@@ -71,7 +71,6 @@ class Create {
                 'errormsg' => '广告主ID不正确',
                 'max' => '4294967296',
                 'min' => '0',
-                'name' => 'advertiser_id',
             );
 
             'adgroup_id' => array(
@@ -83,7 +82,6 @@ class Create {
                 'errormsg' => '广告组Id不正确',
                 'max' => '9223372036854775807',
                 'min' => '1',
-                'name' => 'adgroup_id',
             );
 
             'preview_qq_list' => array(
@@ -94,7 +92,6 @@ class Create {
                 'description' => '广告预览QQ列表',
                 'restraint' => 'json格式的数组，例如[111,222,333]',
                 'errormsg' => '预览QQ列表错误',
-                'name' => 'preview_qq_list',
             );
 ;
     }

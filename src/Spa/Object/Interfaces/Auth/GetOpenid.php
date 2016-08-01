@@ -71,7 +71,6 @@ class GetOpenid {
                 'errormsg' => '合作方APP ID不正确',
                 'max_length' => '32',
                 'min_length' => '1',
-                'name' => 'app_id',
             );
 ;
     }

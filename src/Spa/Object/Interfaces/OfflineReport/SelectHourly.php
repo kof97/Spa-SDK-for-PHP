@@ -71,7 +71,6 @@ class SelectHourly {
                 'errormsg' => '任务不正确',
                 'enum' => 'enum',
                 'source' => 'api_task',
-                'name' => 'task',
             );
 
             'date' => array(
@@ -85,7 +84,6 @@ class SelectHourly {
                 'max_length' => '10',
                 'min_length' => '10',
                 'pattern' => '{date_pattern}',
-                'name' => 'date',
             );
 
             'hour' => array(
@@ -98,7 +96,6 @@ class SelectHourly {
                 'errormsg' => '小时不正确',
                 'max' => '23',
                 'min' => '0',
-                'name' => 'hour',
             );
 ;
     }
