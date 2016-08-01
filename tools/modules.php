@@ -479,14 +479,30 @@ function processField($data) {
                     }
                 }
             }
-            var_dump($arr);
             return $arr;
 
         case 'id':
 
         case 'number':
-            //var_dump($type);
-            break;
+            foreach ($data as $key => $value) {
+                if ($key === 'attribute') {
+                    $attr = $value->attributes();
+                    if (($attr['name'] . '') === 'description') {
+                        $arr['description'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'restraint') {
+                        $arr['restraint'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'errormsg') {
+                        $arr['errormsg'] = $attr['value'] . '';
+                    }
+
+                    $arr['max'] = '2^64';
+                    $arr['min'] = '1';
+                }
+            }
+            var_dump($arr);
+            return $arr;
 
         case 'struct':
             //var_dump($type);
