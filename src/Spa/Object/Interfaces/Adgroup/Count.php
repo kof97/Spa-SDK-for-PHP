@@ -94,6 +94,7 @@ class Count {
                 'restraint' => '目前支持configured_status，system_status 例：["status, system_status"]',
                 'errormsg' => '聚合字段不正确',
                 'list' => 'configured_status,system_status',
+                'item_max_length' => '255',
                 'name' => 'group_by',
             );
 ;

@@ -296,7 +296,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $source = isset($arr['source']) ? "'source' => '" . $arr['source'] . "'," : '';
                 $max = isset($arr['max']) ? "'max' => '" . $arr['max'] . "'," : '';
                 $min = isset($arr['min']) ? "'min' => '" . $arr['min'] . "'," : '';
-                $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
+                $item_max_length = isset($arr['item_max_length']) ? "'item_max_length' => '" . $arr['item_max_length'] . "'," : '';
                 $max_length = isset($arr['max_length']) ? "'max_length' => '" . $arr['max_length'] . "'," : '';
 
 
@@ -317,6 +317,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $source
                 $max
                 $min
+                $item_max_length
                 'name' => '$name',
             );
 ";
