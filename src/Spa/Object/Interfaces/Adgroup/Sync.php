@@ -123,7 +123,7 @@ class Sync {
 
         if (isset($data['pattern'])) {
             $pattern = $data['pattern'];
-            
+            var_dump($pattern);
         }
     }
 
