@@ -48,7 +48,7 @@ class $interface_class {
 
     public function send(\$params = array(), \$headers = array()) {
 
-    	\$this->validateField(\$params);
+        \$this->validateField(\$params);
 exit();
         \$response = \$spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers);
 
@@ -56,40 +56,47 @@ exit();
     }
 
     protected function validateField(\$params) {
-    	\$data = \$this->fieldInfo();
+        if (empty(\$params)) {
+            return;
+        }
 
-    	foreach (\$params as \$key => \$value) {
-    		\$type = \$data[\$key]['type'];
-    		switch (\$type) {
-    			case 'string':
-    				
-    				break;
 
-    			case 'integer':
-    				
-    				break;
+        \$data = \$this->fieldInfo();
 
-    			case 'id':
+        foreach (\$params as \$key => \$value) {
+            
 
-    			case 'number':
-    				
-    				break;
+            \$type = \$data[\$key]['type'];
+            switch (\$type) {
+                case 'string':
+                    
+                    break;
 
-    			case 'struct':
-    				
-    				break;
+                case 'integer':
+                    
+                    break;
 
-				case 'array':
-    				
-    				break;
+                case 'id':
 
-       			default: break;
-    		}
-    	}
+                case 'number':
+                    
+                    break;
+
+                case 'struct':
+                    
+                    break;
+
+                case 'array':
+                    
+                    break;
+
+                default: break;
+            }
+        }
     }
 
     public function fieldInfo() {
-    	return $field_info
+        return $field_info
     }
 
 }

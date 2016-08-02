@@ -448,9 +448,16 @@ exit();
     }
 
     protected function validateField(\$params) {
+        if (empty(\$params)) {
+            return;
+        }
+
+
         \$data = \$this->fieldInfo();
 
         foreach (\$params as \$key => \$value) {
+            
+
             \$type = \$data[\$key]['type'];
             switch (\$type) {
                 case 'string':
