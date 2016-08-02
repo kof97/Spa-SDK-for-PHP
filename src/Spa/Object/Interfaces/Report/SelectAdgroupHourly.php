@@ -116,7 +116,7 @@ class SelectAdgroupHourly {
         if (isset($data['list'])) {
             $list = explode(',', $data['list']);
             if (!in_array($value, $list)) {
-                $list = implode($list, ',')
+                $list = implode($list, ',');
                 throw new ParamsException("The value of field '$key' is limited in '$list'");
             }
         }

@@ -28,7 +28,7 @@ $params = array(
 	'configured_status' => 321,
 	'bid_type' => 321,
 	'bid_amount' => 321,
-	'product_type' => 'PRODUCT_TYPE_APP _IOS',
+	'product_type' => 'PRODUCT_TYPE_APP_IOS',
 	'destination_url' => 321,
 
 
