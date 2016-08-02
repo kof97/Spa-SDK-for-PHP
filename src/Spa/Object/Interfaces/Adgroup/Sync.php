@@ -62,6 +62,9 @@ class Sync {
 
         $data = $this->fieldInfo();
 
+        // validate the required field
+        $this->validateRequireField($data, $params);
+
         foreach ($params as $key => $value) {
             if (!isset($data[$key])) {
                 continue;
@@ -93,6 +96,13 @@ class Sync {
 
                 default: break;
             }
+        }
+    }
+
+    protected function validateRequireField($data, $params) {
+        foreach ($data as $key => $value) {
+            var_dump($key);
+            var_dump($value);
         }
     }
 

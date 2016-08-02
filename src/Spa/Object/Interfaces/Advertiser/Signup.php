@@ -62,6 +62,9 @@ class Signup {
 
         $data = $this->fieldInfo();
 
+        // validate the required field
+        $this->validateRequireField($data, $params);
+
         foreach ($params as $key => $value) {
             if (!isset($data[$key])) {
                 continue;
@@ -70,7 +73,7 @@ class Signup {
             $type = $data[$key]['type'];
             switch ($type) {
                 case 'string':
-                    var_dump(321);
+                    
                     break;
 
                 case 'integer':
@@ -96,8 +99,11 @@ class Signup {
         }
     }
 
-    protected function validateRequireField($) {
-
+    protected function validateRequireField($data, $params) {
+        foreach ($data as $key => $value) {
+            var_dump($key);
+            var_dump($value);
+        }
     }
 
     public function fieldInfo() {

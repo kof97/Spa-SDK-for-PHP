@@ -63,7 +63,7 @@ class $interface_class {
         \$data = \$this->fieldInfo();
 
         // validate the required field
-        $this->validateRequireField(\$data, \$params);
+        \$this->validateRequireField(\$data, \$params);
 
         foreach (\$params as \$key => \$value) {
             if (!isset(\$data[\$key])) {
