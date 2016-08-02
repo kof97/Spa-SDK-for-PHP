@@ -101,8 +101,13 @@ class SelectHourly {
 
     protected function validateRequireField($data, $params) {
         foreach ($data as $key => $value) {
-            var_dump($key);
-            var_dump($value);
+            if ($value['require'] === 'no') {
+                continue;
+            }
+
+            var_dump($params[$key]);
+            //var_dump($key);
+            //var_dump($value);
         }
     }
 
