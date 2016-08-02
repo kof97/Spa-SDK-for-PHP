@@ -21,12 +21,15 @@ $test = $spa->getApp();
 
 $params = array(
 	'advertiser_id' => '321',
-	'targeting_name' => '',
-	'description' => 321,
-	'targeting_setting' => 321,
-	'outer_targeting_id' => 321,
-	'targeting_setting' => 321,
-	'targeting_setting' => 321,
+	'adgroup_id' => '321',
+	'campaign_id' => 321,
+	'adgroup_name' => 321,
+	'targeting_id' => 321,
+	'configured_status' => 321,
+	'bid_type' => 321,
+	'bid_amount' => 321,
+	'product_type' => 'PRODUCT_TYPE_APP _IOS',
+	'destination_url' => 321,
 
 
 
@@ -43,7 +46,7 @@ $params = array(
 $modules = $spa->getModules();
 
 
-$response = $modules->targeting->create->send($params);
+$response = $modules->adgroup->sync->send($params);
 var_dump($response);
 //var_dump($modules::ADVERTISER);
 
