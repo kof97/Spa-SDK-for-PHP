@@ -114,9 +114,9 @@ class $interface_class {
         }
 
         if (isset(\$data['list'])) {
-            $list = split(',', \$data['list']);
+            \$list = split(',', \$data['list']);
 
-            var_dump($list);
+            var_dump(\$list);
         }
     }
 

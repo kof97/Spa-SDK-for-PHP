@@ -103,14 +103,20 @@ class AuthorizationList {
         $len = strlen($value);
         if (isset($data['max_length'])) {
             if ($len > ($max_length = $data['max_length'])) {
-                throw new ParamsException("The field '$key' expect the max length is '$max_length'");
+                throw new ParamsException("The length of field '$key' is too long, it expects the length can't more than '$max_length'");
             }
         }
 
         if (isset($data['min_length'])) {
             if ($len < ($min_length = $data['min_length'])) {
-                throw new ParamsException("The field '$key' expect the min length is '$min_length'");
+                throw new ParamsException("The length of field '$key' is too short, it expects the length at least '$min_length'");
             }
+        }
+
+        if (isset($data['list'])) {
+            $list = split(',', $data['list']);
+
+            var_dump($list);
         }
     }
 
