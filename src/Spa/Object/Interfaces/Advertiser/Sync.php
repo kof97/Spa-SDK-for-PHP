@@ -237,6 +237,8 @@ class Sync {
                 'description' => '广告主扩展信息',
                 'restraint' => '详见 [link href="outer_extend_info"]广告主扩展信息[/link]',
                 'errormsg' => '广告主扩展信息不正确',
+                        
+
                 'element' => array(
                     'id' => array(
                         'name' => 'id',
@@ -246,6 +248,9 @@ class Sync {
                         'description' => '商户id',
                         'restraint' => '小于4294967295',
                         'errormsg' => '商户id不正确',
+                        'max' => '4294967295',
+                        'min' => '0',
+
                     ),
                     'name' => array(
                         'name' => 'name',
@@ -255,6 +260,9 @@ class Sync {
                         'description' => '商户名称',
                         'restraint' => '小于128个英文字符',
                         'errormsg' => '商户名称不正确',
+                        'max_length' => '128',
+                        'min_length' => '0',
+
                     ),
                     'category_id' => array(
                         'name' => 'category_id',
@@ -264,6 +272,9 @@ class Sync {
                         'description' => '调用方行业id',
                         'restraint' => '小于4294967295',
                         'errormsg' => '调用方行业id不正确',
+                        'max' => '4294967295',
+                        'min' => '0',
+
                     ),
                     'category_name' => array(
                         'name' => 'category_name',
@@ -273,6 +284,9 @@ class Sync {
                         'description' => '调用方行业名称',
                         'restraint' => '小于128个英文字符',
                         'errormsg' => '调用方行业名称不正确',
+                        'max_length' => '128',
+                        'min_length' => '0',
+
                     ),
                 ),
             ),

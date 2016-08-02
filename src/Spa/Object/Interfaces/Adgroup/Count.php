@@ -80,6 +80,8 @@ class Count {
                 'description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。例{"status":"AD_STATUS_NORMAL"}, 可选过滤字段：status，adgroup_name。',
                 'errormsg' => '过滤条件不正确',
+                        
+
                 'element' => array(
                     'configured_status' => array(
                         'name' => 'configured_status',
@@ -87,8 +89,10 @@ class Count {
                         'require' => 'no',
                         'type' => 'string',
                         'description' => '用户状态',
-                        
                         'errormsg' => '用户状态不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_configured_status',
+
                     ),
                     'system_status' => array(
                         'name' => 'system_status',
@@ -96,8 +100,10 @@ class Count {
                         'require' => 'no',
                         'type' => 'string',
                         'description' => '系统状态',
-                        
                         'errormsg' => '系统状态不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_sys_status',
+
                     ),
                     'adgroup_name' => array(
                         'name' => 'adgroup_name',
@@ -107,6 +113,9 @@ class Count {
                         'description' => '广告组名称',
                         'restraint' => '小于120个英文字符，同一账户下名称不允许重复。',
                         'errormsg' => '广告组名称不正确',
+                        'max_length' => '120',
+                        'min_length' => '1',
+
                     ),
                 ),
             ),

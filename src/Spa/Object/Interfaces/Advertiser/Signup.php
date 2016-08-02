@@ -207,6 +207,8 @@ class Signup {
                 'description' => '身份证明',
                 'restraint' => '当 广告主组织类型为 CUSTOMER_REGISTIONTYPE_INDIVIDUAL时，需要提供身份证和个人半身照，结构如{"identification_image_id":"574656","photo_image_id":"77368"}',
                 'errormsg' => '身份证明不正确',
+                        
+
                 'element' => array(
                     'identification_image_id' => array(
                         'name' => 'identification_image_id',
@@ -216,6 +218,9 @@ class Signup {
                         'description' => '身份证照片id',
                         'restraint' => 'URL小于32个英文字符',
                         'errormsg' => '身份证照片id不正确',
+                        'max_length' => '32',
+                        'min_length' => '1',
+
                     ),
                     'photo_image_id' => array(
                         'name' => 'photo_image_id',
@@ -225,6 +230,9 @@ class Signup {
                         'description' => '半身照图片id',
                         'restraint' => 'URL小于32个英文字符',
                         'errormsg' => '半身照图片id不正确',
+                        'max_length' => '32',
+                        'min_length' => '1',
+
                     ),
                 ),
             ),

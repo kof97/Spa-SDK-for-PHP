@@ -102,6 +102,8 @@ class Create {
                 'type' => 'struct',
                 'description' => '商圈具体配置信息',
                 'restraint' => '商圈具体配置信息',
+                        
+
                 'element' => array(
                     'location_type_circle' => array(
                         'name' => 'location_type_circle',
@@ -109,8 +111,7 @@ class Create {
                         'require' => 'yes',
                         'type' => 'struct',
                         'description' => '经纬度+半径',
-                        
-                        
+
                     ),
                 ),
             ),

@@ -341,6 +341,18 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                         $ele_errormsg = isset($ele_arr['errormsg']) ? $ele_arr['errormsg'] : '';
                         $ele_errormsg = str_replace('\'', '"', $ele_errormsg);
                         $ele_errormsg = $ele_errormsg ? "'errormsg' => '" . $ele_errormsg . "'," : '';
+
+                        $ele_max_length = isset($ele_arr['max_length']) ? "'max_length' => '" . $ele_arr['max_length'] . "'," : '';
+                        $ele_min_length = isset($ele_arr['min_length']) ? "'min_length' => '" . $ele_arr['min_length'] . "'," : '';
+                        $ele_list = isset($ele_arr['list']) ? "'list' => '" . $ele_arr['list'] . "'," : '';
+                        $ele_pattern = isset($ele_arr['pattern']) ? "'pattern' => '" . $ele_arr['pattern'] . "'," : '';
+                        $ele_enum = isset($ele_arr['enum']) ? "'enum' => '" . $ele_arr['enum'] . "'," : '';
+                        $ele_source = isset($ele_arr['source']) ? "'source' => '" . $ele_arr['source'] . "'," : '';
+                        $ele_max = isset($ele_arr['max']) ? "'max' => '" . $ele_arr['max'] . "'," : '';
+                        $ele_min = isset($ele_arr['min']) ? "'min' => '" . $ele_arr['min'] . "'," : '';
+                        $ele_item_max_length = isset($ele_arr['item_max_length']) ? "'item_max_length' => '" . $ele_arr['item_max_length'] . "'," : '';
+                        $ele_max_size = isset($ele_arr['max_size']) ? "'max_size' => '" . $ele_arr['max_size'] . "'," : '';
+                        $ele_min_size = isset($ele_arr['min_size']) ? "'min_size' => '" . $ele_arr['min_size'] . "'," : '';
 var_dump($ele_arr);
 var_dump($value['name']);
                         $element .= "
@@ -352,11 +364,25 @@ var_dump($value['name']);
                         $ele_description
                         $ele_restraint
                         $ele_errormsg
+                        $ele_max_length
+                        $ele_min_length
+                        $ele_list
+                        $ele_pattern
+                        $ele_enum
+                        $ele_source
+                        $ele_max
+                        $ele_min
+                        $ele_item_max_length
+
                     ),";
                     }
                     $element .= "
                 ),";
 
+                    $pattern = "\r\n                        \r\n";
+                    while (strpos($element, $pattern) != false) {
+                        $element = str_replace($pattern, "\r\n", $element);
+                    }
                 }
                 /** ------------------------------------------------------- **/
 

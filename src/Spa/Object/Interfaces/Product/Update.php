@@ -117,6 +117,8 @@ class Update {
                 'description' => '标的物详细信息',
                 'restraint' => '详见 [link href="ec_info"]京东、拍拍店铺、标的物[/link]',
                 'errormsg' => '京东购物行为不正确',
+                        
+
                 'element' => array(
                     'product_type_jd_item' => array(
                         'name' => 'product_type_jd_item',
@@ -125,7 +127,7 @@ class Update {
                         'type' => 'struct',
                         'description' => '电商标的物信息',
                         'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
-                        
+
                     ),
                     'product_type_jd_shop' => array(
                         'name' => 'product_type_jd_shop',
@@ -134,7 +136,7 @@ class Update {
                         'type' => 'struct',
                         'description' => '电商标的物信息',
                         'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
-                        
+
                     ),
                 ),
             ),

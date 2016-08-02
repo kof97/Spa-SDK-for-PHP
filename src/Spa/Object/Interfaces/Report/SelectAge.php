@@ -80,6 +80,8 @@ class SelectAge {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
+                        
+
                 'element' => array(
                     'start_date' => array(
                         'name' => 'start_date',
@@ -89,6 +91,10 @@ class SelectAge {
                         'description' => '开始投放时间点对应的时间戳',
                         'restraint' => '大于等于0，且小于end_time',
                         'errormsg' => '开始投放时间不正确',
+                        'max_length' => '10',
+                        'min_length' => '10',
+                        'pattern' => '{date_pattern}',
+
                     ),
                     'end_date' => array(
                         'name' => 'end_date',
@@ -98,6 +104,10 @@ class SelectAge {
                         'description' => '结束投放时间点对应的时间戳点对应的时间戳',
                         'restraint' => '大于等于今天，且大于begin_time',
                         'errormsg' => '结束投放时间点对应的时间戳不正确',
+                        'max_length' => '10',
+                        'min_length' => '10',
+                        'pattern' => '{date_pattern}',
+
                     ),
                 ),
             ),

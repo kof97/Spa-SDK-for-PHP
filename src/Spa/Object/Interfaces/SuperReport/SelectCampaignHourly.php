@@ -109,6 +109,8 @@ class SelectCampaignHourly {
                 'description' => '排序参数,默认按日期降序',
                 'restraint' => '见 [link href="order_by"]排序规则定义[/link]',
                 'errormsg' => '排序参数不正确',
+                        
+
                 'element' => array(
                     'cpc' => array(
                         'name' => 'cpc',
@@ -118,6 +120,9 @@ class SelectCampaignHourly {
                         'description' => 'cpc',
                         'restraint' => 'cpc',
                         'errormsg' => 'cpc不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_Sortord',
+
                     ),
                     'cost' => array(
                         'name' => 'cost',
@@ -127,6 +132,9 @@ class SelectCampaignHourly {
                         'description' => 'cost',
                         'restraint' => 'cost',
                         'errormsg' => 'cost不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_Sortord',
+
                     ),
                     'impression' => array(
                         'name' => 'impression',
@@ -136,6 +144,9 @@ class SelectCampaignHourly {
                         'description' => 'impression',
                         'restraint' => 'impression',
                         'errormsg' => 'impression不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_Sortord',
+
                     ),
                 ),
             ),
