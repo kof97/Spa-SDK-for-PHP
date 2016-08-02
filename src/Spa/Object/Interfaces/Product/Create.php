@@ -125,6 +125,27 @@ class Create {
                         'type' => 'struct',
                         'description' => '电商标的物信息',
                         'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
+                        'element' => array(
+                    'product_price' => array(
+                        'name' => 'product_price',
+                        'extendType' => 'product_price',
+                        'require' => 'yes',
+                        'type' => 'integer',
+                        'description' => '标的物对应出价',
+                        'restraint' => '大于等于0，且小于9223372036854775807，单位为分',
+                        'errormsg' => '标的物出价错误',
+                    ),
+
+                    'product_meta_class' => array(
+                        'name' => 'product_meta_class',
+                        'extendType' => 'product_meta_class',
+                        'require' => 'yes',
+                        'type' => 'integer',
+                        'description' => '标的物的原始类目',
+                        'restraint' => '大于等于0，且小于9223372036854775807',
+                    ),
+
+                ),
                     ),
 
                     'product_type_jd_shop' => array(
@@ -134,6 +155,27 @@ class Create {
                         'type' => 'struct',
                         'description' => '电商标的物信息',
                         'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
+                        'element' => array(
+                    'product_price' => array(
+                        'name' => 'product_price',
+                        'extendType' => 'product_price',
+                        'require' => 'yes',
+                        'type' => 'integer',
+                        'description' => '标的物对应出价',
+                        'restraint' => '大于等于0，且小于9223372036854775807，单位为分',
+                        'errormsg' => '标的物出价错误',
+                    ),
+
+                    'product_meta_class' => array(
+                        'name' => 'product_meta_class',
+                        'extendType' => 'product_meta_class',
+                        'require' => 'yes',
+                        'type' => 'integer',
+                        'description' => '标的物的原始类目',
+                        'restraint' => '大于等于0，且小于9223372036854775807',
+                    ),
+
+                ),
                     ),
 
                 ),
