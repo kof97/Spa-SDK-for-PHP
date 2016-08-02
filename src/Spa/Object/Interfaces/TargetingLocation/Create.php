@@ -115,13 +115,13 @@ class Create {
                                 'extendType' => 'longitude',
                                 'require' => 'yes',
                             ),
-
+        
                             'latitude' => array(
                                 'name' => 'latitude',
                                 'extendType' => 'latitude',
                                 'require' => 'yes',
                             ),
-
+        
                             'radius' => array(
                                 'name' => 'radius',
                                 'extendType' => 'radius',
@@ -133,7 +133,7 @@ class Create {
                                 'max' => '5000',
                                 'min' => '1000',
                             ),
-
+        
                         ),
                     ),
 

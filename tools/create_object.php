@@ -311,7 +311,9 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $min_size = isset($arr['min_size']) ? "'min_size' => '" . $arr['min_size'] . "'," : '';
 
                 /** ------------------------------------------------------- **/
-                $element = getElements($data, $arr, $mod_name, $interface_name);
+                /* 递归层数 */
+                $flag = 0;
+                $element = getElements($data, $arr, $mod_name, $interface_name, $flag);
                 /** ------------------------------------------------------- **/
 
                 $repeat = '';
@@ -467,7 +469,8 @@ EOF;
 
 }
 
-function getElements($data, $arr, $mod_name, $interface_name) {
+function getElements($data, $arr, $mod_name, $interface_name, $flag) {
+    $flag++;
     $element = '';
     $ele = isset($arr['element']) ? $arr['element'] : null;
     if ($ele) {
@@ -512,7 +515,7 @@ function getElements($data, $arr, $mod_name, $interface_name) {
             $ele_min_size = isset($ele_arr['min_size']) ? "'min_size' => '" . $ele_arr['min_size'] . "'," : '';
 
             // 递归获取 element
-            $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name);
+            $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name, $flag);
 
             $element .= "
                     '$key' => array(
@@ -539,10 +542,39 @@ function getElements($data, $arr, $mod_name, $interface_name) {
         $element .= "
                 ),";
 
-        $pattern = "\r\n                        \r\n";
-        while (strpos($element, $pattern) != false) {
-            $element = str_replace($pattern, "\r\n", $element);
+        switch ($flag) {
+            case '1':
+                $pattern = "\r\n                        \r\n";
+                while (strpos($element, $pattern) != false) {
+                    $element = str_replace($pattern, "\r\n", $element);
+                }
+                break;
+            
+            case '2':
+                $pattern = "\r\n";
+                $element = str_replace($pattern, "\r\n        ", $element);
+                $pattern = "\r\n                                \r\n";
+                while (strpos($element, $pattern) != false) {
+                    $element = str_replace($pattern, "\r\n", $element);
+                }
+                break;
+
+            case '3':
+                $pattern = "\r\n";
+                $element = str_replace($pattern, "\r\n                ", $element);
+                $pattern = "\r\n                                        \r\n";
+                while (strpos($element, $pattern) != false) {
+                    $element = str_replace($pattern, "\r\n", $element);
+                }
+                break;
+
+            case '4':
+                
+                break;
+
+            default: break;
         }
+
     }
 
     return $element;
