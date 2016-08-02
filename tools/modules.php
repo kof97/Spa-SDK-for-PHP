@@ -441,7 +441,7 @@ class $interface_class {
     public function send(\$params = array(), \$headers = array()) {
 
         \$this->validateField(\$params);
-exit();
+
         \$response = \$spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers);
 
         return \$response;
