@@ -23,7 +23,7 @@ class FieldsDetector {
         }
 
         // validate the required field
-        $this->validateRequireField($data, $params);
+        self::validateRequireField($data, $params);
 
         foreach ($params as $key => $value) {
             if (!isset($data[$key])) {
@@ -33,7 +33,7 @@ class FieldsDetector {
             $type = $data[$key]['type'];
             switch ($type) {
                 case 'string':
-                    $this->validateString($data[$key], $key, $value);
+                    self::validateString($data[$key], $key, $value);
                     break;
 
                 case 'integer':
@@ -59,7 +59,7 @@ class FieldsDetector {
         }
     }
 
-    protected function validateString($data, $key, $value) {
+    public static function validateString($data, $key, $value) {
         $len = strlen($value);
         if (isset($data['max_length'])) {
             if ($len > ($max_length = $data['max_length'])) {
@@ -87,7 +87,7 @@ class FieldsDetector {
         }
     }
 
-    protected function validateRequireField($data, $params) {
+    public static function validateRequireField($data, $params) {
         foreach ($data as $key => $value) {
             if ($value['require'] === 'no') {
                 continue;
