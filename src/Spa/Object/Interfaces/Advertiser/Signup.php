@@ -70,7 +70,7 @@ class Signup {
             $type = $data[$key]['type'];
             switch ($type) {
                 case 'string':
-                    
+                    var_dump(321);
                     break;
 
                 case 'integer':
@@ -94,6 +94,10 @@ class Signup {
                 default: break;
             }
         }
+    }
+
+    protected function validateRequireField($) {
+
     }
 
     public function fieldInfo() {
