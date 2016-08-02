@@ -100,7 +100,10 @@ class $interface_class {
     }
 
     protected function validateRequireField(\$data, \$params) {
-
+        foreach (\$data as \$key => \$value) {
+            var_dump(\$key);
+            var_dump(\$value);
+        }
     }
 
     public function fieldInfo() {
