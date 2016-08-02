@@ -47,7 +47,7 @@ class FieldsDetector {
                     break;
 
                 case 'struct':
-                    
+                    self::validateStruct($data[$key], $key, $value);
                     break;
 
                 case 'array':
@@ -102,6 +102,10 @@ class FieldsDetector {
                 throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'");
             }
         }
+    }
+
+    protected static function validateStruct($data, $key, $value) {
+        
     }
 
     protected static function validatePattern($pattern, $key, $value) {
