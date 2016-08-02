@@ -191,30 +191,6 @@ class Create {
                         'description' => '地理位置定向',
                         'restraint' => '存放地理位置定向条件',
                         'errormsg' => '地理位置定向设置不正确',
-                        'element' => array(
-                    'region_type' => array(
-                        'name' => 'region_type',
-                        'extendType' => 'region_type',
-                        'require' => 'no',
-                        'type' => 'string',
-                        'description' => '地域定向类型，包含实时、常驻和旅行',
-                        'restraint' => '详见 [link href="region_type"]地域定向类型[/link]',
-                        'errormsg' => '地域定向类型不正确',
-                        'enum' => 'enum',
-                        'source' => 'api_region_type',
-                    ),
-
-                    'region_value' => array(
-                        'name' => 'region_value',
-                        'extendType' => 'region_value',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => '区域编码',
-                        'restraint' => '详见 [link href="area"]地区[/link]',
-                        'errormsg' => '区域定向不正确',
-                    ),
-
-                ),
                     ),
 
                     'business_interest' => array(
@@ -347,52 +323,6 @@ class Create {
                         'description' => '定制购物行为',
                         'restraint' => '详见 [link href="customized_shopping_behavior"]定制购物行为[/link]，仅限已提供购物行为数据给广点通的广告主使用。',
                         'errormsg' => '定制购物行为不正确',
-                        'element' => array(
-                    'object_type' => array(
-                        'name' => 'object_type',
-                        'extendType' => 'object_type',
-                        'require' => 'no',
-                        'type' => 'string',
-                        'description' => '行为对象的类型',
-                        'restraint' => '类目或店铺',
-                        'errormsg' => '行为对象的类型不正确',
-                        'enum' => 'enum',
-                        'source' => 'api_jd_s_b_object_type',
-                    ),
-
-                    'object_id_list' => array(
-                        'name' => 'object_id_list',
-                        'extendType' => 'object_id_list',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => '行为对象的id',
-                        'restraint' => '类目或店铺id',
-                        'errormsg' => '行为对象的id不正确',
-                        'item_max_length' => '255',
-                    ),
-
-                    'time_window' => array(
-                        'name' => 'time_window',
-                        'extendType' => 'time_window',
-                        'require' => 'no',
-                        'type' => 'string',
-                        'description' => '行为对象有效期',
-                        'restraint' => '分为短期、中期和长期 ',
-                        'errormsg' => '行为对象有效期不正确',
-                        'enum' => 'enum',
-                        'source' => 'api_jd_s_b_time_window',
-                    ),
-
-                    'act_id_list' => array(
-                        'name' => 'act_id_list',
-                        'extendType' => 'act_id_list',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => 'app行为对象的行为',
-                        'errormsg' => '行为对象的行为不正确',
-                    ),
-
-                ),
                     ),
 
                     'media_category_wechat' => array(
@@ -413,53 +343,6 @@ class Create {
                         'description' => 'app行为定向',
                         'restraint' => '详见 [link href="app_behavior"]行为定向[/link]',
                         'errormsg' => 'app行为定向错误',
-                        'element' => array(
-                    'object_type' => array(
-                        'name' => 'object_type',
-                        'extendType' => 'app_behavior_object_type',
-                        'require' => 'no',
-                        'type' => 'string',
-                        'description' => '行为对象的类型',
-                        'restraint' => '可选值为：1、APP类目（APP_CLASS） 2、具体APP（APP_ID）',
-                        'errormsg' => 'app购物行为的类型错误',
-                        'enum' => 'enum',
-                        'source' => 'api_app_action_object_type',
-                    ),
-
-                    'object_id_list' => array(
-                        'name' => 'object_id_list',
-                        'extendType' => 'app_behavior_object_id_list',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => '行为对象的id',
-                        'restraint' => '类目或app id，一次至多可选10个',
-                        'errormsg' => 'app行为对象的id不正确',
-                        'item_max_length' => '255',
-                    ),
-
-                    'time_window' => array(
-                        'name' => 'time_window',
-                        'extendType' => 'app_behavior_time_window',
-                        'require' => 'no',
-                        'type' => 'integer',
-                        'description' => '行为对象的有效期',
-                        'restraint' => '单位天，有效值区间：1~365',
-                        'errormsg' => 'app购物行为的类型错误',
-                        'max' => '365',
-                        'min' => '1',
-                    ),
-
-                    'act_id_list' => array(
-                        'name' => 'act_id_list',
-                        'extendType' => 'app_behavior_act_id_list',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => 'app行为对象的行为',
-                        'errormsg' => '行为对象的行为不正确',
-                        'item_max_length' => '255',
-                    ),
-
-                ),
                     ),
 
                     'ad_placement_id' => array(
@@ -523,19 +406,6 @@ class Create {
                         'description' => '关键词定向',
                         'restraint' => '详见 [link href="keyword"]关键词定向[/link]',
                         'errormsg' => '关键词定向不正确',
-                        'element' => array(
-                    'words' => array(
-                        'name' => 'words',
-                        'extendType' => 'words',
-                        'require' => 'yes',
-                        'type' => 'array',
-                        'description' => '关键词',
-                        'restraint' => '小于或等于30个字节',
-                        'errormsg' => '关键词不正确',
-                        'item_max_length' => '30',
-                    ),
-
-                ),
                     ),
 
                     'media_category_union' => array(
@@ -591,62 +461,6 @@ class Create {
                         'description' => '京东购物行为',
                         'restraint' => '详见 [link href="shopping_behavior_jd"]京东、拍拍购物行为[/link]',
                         'errormsg' => '京东购物行为不正确',
-                        'element' => array(
-                    'object_type' => array(
-                        'name' => 'object_type',
-                        'extendType' => 'object_type',
-                        'require' => 'no',
-                        'type' => 'string',
-                        'description' => '行为对象的类型',
-                        'restraint' => '类目或店铺',
-                        'errormsg' => '行为对象的类型不正确',
-                        'enum' => 'enum',
-                        'source' => 'api_jd_s_b_object_type',
-                    ),
-
-                    'object_id_list' => array(
-                        'name' => 'object_id_list',
-                        'extendType' => 'object_id_list',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => '行为对象的id',
-                        'restraint' => '类目或店铺id',
-                        'errormsg' => '行为对象的id不正确',
-                        'item_max_length' => '255',
-                    ),
-
-                    'time_window' => array(
-                        'name' => 'time_window',
-                        'extendType' => 'time_window',
-                        'require' => 'no',
-                        'type' => 'string',
-                        'description' => '行为对象有效期',
-                        'restraint' => '分为短期、中期和长期 ',
-                        'errormsg' => '行为对象有效期不正确',
-                        'enum' => 'enum',
-                        'source' => 'api_jd_s_b_time_window',
-                    ),
-
-                    'act_id_list' => array(
-                        'name' => 'act_id_list',
-                        'extendType' => 'act_id_list',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => 'app行为对象的行为',
-                        'errormsg' => '行为对象的行为不正确',
-                    ),
-
-                    'data_source' => array(
-                        'name' => 'data_source',
-                        'extendType' => 'data_source',
-                        'require' => 'no',
-                        'type' => 'array',
-                        'description' => '购物行为的数据源',
-                        'restraint' => 'PC、手Q、微信或APP数据源',
-                        'errormsg' => '购物行为的数据源不正确',
-                    ),
-
-                ),
                     ),
 
                     'category_58' => array(

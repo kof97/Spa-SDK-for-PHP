@@ -511,7 +511,7 @@ function getElements($data, $arr, $mod_name, $interface_name) {
             $ele_max_size = isset($ele_arr['max_size']) ? "'max_size' => '" . $ele_arr['max_size'] . "'," : '';
             $ele_min_size = isset($ele_arr['min_size']) ? "'min_size' => '" . $ele_arr['min_size'] . "'," : '';
 
-            $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name);
+            $ele_element = getElements($data, $ele, $mod_name, $interface_name);
 
             $element .= "
                     '$key' => array(
