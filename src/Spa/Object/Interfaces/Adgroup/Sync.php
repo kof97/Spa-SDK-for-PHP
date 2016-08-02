@@ -87,7 +87,12 @@ class Sync {
                 'name' => 'outer_adgroup_id',
                 'extendType' => 'outer_adgroup_id',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'id',
+                'description' => '外部广告Id',
+                'restraint' => '小于2^63',
+                'errormsg' => '外部广告Id不正确',
+                'max' => '9223372036854775807',
+                'min' => '1',
             ),
 
             'campaign_id' => array(
@@ -118,7 +123,12 @@ class Sync {
                 'name' => 'adgroup_name',
                 'extendType' => 'adgroup_name',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '广告组名称',
+                'restraint' => '小于120个英文字符，同一账户下名称不允许重复。',
+                'errormsg' => '广告组名称不正确',
+                'max_length' => '120',
+                'min_length' => '1',
             ),
 
             'configured_status' => array(
@@ -137,14 +147,22 @@ class Sync {
                 'name' => 'bid_type',
                 'extendType' => 'bid_type',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '扣费方式，如CPD、CPM',
+                'restraint' => '详见 [link href="bid_type"]扣费方式[/link]',
+                'errormsg' => '扣费方式不正确',
+                'enum' => 'enum',
+                'source' => 'api_cost_type',
             ),
 
             'bid_amount' => array(
                 'name' => 'bid_amount',
                 'extendType' => 'bid_amount',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'integer',
+                'description' => '广告出价，单位为分',
+                'restraint' => '广告出价，单位为分',
+                'errormsg' => '广告出价不正确',
             ),
 
             'begin_date' => array(
@@ -177,14 +195,30 @@ class Sync {
                 'name' => 'site_set',
                 'extendType' => 'site_set',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'array',
+                'description' => '投放站点集合',
+                'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
+                'errormsg' => '投放站点集合不正确',
+                'list' => 'SITE_SET_QZONE,SITE_SET_PENGYOU,SITE_SET_QQCLIENT,SITE_SET_TUAN,SITE_SET_MEISHI,SITE_SET_PIAO,SITE_SET_MUSIC,SITE_SET_MOBILE_UNION,SITE_SET_QQCOM,SITE_SET_MAIL,SITE_SET_WECHAT,SITE_SET_YINGYONGBAO_MOBILE,SITE_SET_PC_UNION,SITE_SET_YINGYONGBAO_PC,SITE_SET_MOBILE_INNER',
+                    
+
+                'repeated' => array(
+                    'type' => 'string',
+                    'enum' => 'enum',
+                    'source' => 'api_site_set_definition',
+                )
             ),
 
             'time_series' => array(
                 'name' => 'time_series',
                 'extendType' => 'time_series',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '投放时间段，格式为48 * 7位由0和1组成的字符串，也就是以半个小时为最小粒度，0为不投放，1为投放',
+                'restraint' => '等于48*7位字符串，且都是0或1，不传此字段则视为全时段投放',
+                'errormsg' => '结束投放时间点对应的时间戳不正确',
+                'max_length' => '336',
+                'min_length' => '336',
             ),
 
             'destination_url' => array(

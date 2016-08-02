@@ -83,7 +83,11 @@ class Upload {
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '上传文件的内容md5',
+                'errormsg' => '上传文件的内容md5不正确',
+                'max_length' => '32',
+                'min_length' => '32',
             ),
 
         );

@@ -88,7 +88,13 @@ class Read {
                 'name' => 'product_type',
                 'extendType' => 'product_type',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '标的物类型',
+                'restraint' => '详见 [link href="product_type"]标的物类型[/link]',
+                'errormsg' => '标的物类型不正确',
+                'list' => 'PRODUCT_TYPE_APP_ANDROID_OPEN_PLATFORM,PRODUCT_TYPE_APP_IOS,PRODUCT_TYPE_QZONE_PAGE_INDEX,PRODUCT_TYPE_QZONE_PAGE_ARTICLE,PRODUCT_TYPE_QZONE_PAGE_IFRAMED',
+                'enum' => 'enum',
+                'source' => 'api_product_type',
             ),
 
         );

@@ -76,7 +76,12 @@ class QqOrderCreate {
                 'name' => 'amount',
                 'extendType' => 'amount',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'id',
+                'description' => '支付金额',
+                'restraint' => '单位为分,限额100000-1000000',
+                'errormsg' => '支付金额错误',
+                'max' => '9223372036854775807',
+                'min' => '1',
             ),
 
             'qq' => array(
@@ -95,14 +100,26 @@ class QqOrderCreate {
                 'name' => 'client_ip',
                 'extendType' => 'client_ip',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '客户端IP',
+                'restraint' => 'APP支付的客户端IP',
+                'errormsg' => '客户端IP',
+                'max_length' => '20',
+                'min_length' => '1',
+                'pattern' => '/^(\d{1,3}\.){3}\d{1,3}(:\d{1,5})?$/',
             ),
 
             'notify_url' => array(
                 'name' => 'notify_url',
                 'extendType' => 'notify_url',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '成功支付通知地址',
+                'restraint' => '由开发者自定义，微信支付成功之后，广点通后台通知（POST）开发者服务器（notify_url）支付结果，参数：out_trade_no=订单号,pay_type=WX',
+                'errormsg' => '通知地址错误',
+                'max_length' => '1024',
+                'min_length' => '0',
+                'pattern' => '{url_pattern}',
             ),
 
         );

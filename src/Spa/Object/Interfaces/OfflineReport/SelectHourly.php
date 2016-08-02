@@ -64,7 +64,12 @@ class SelectHourly {
                 'name' => 'task',
                 'extendType' => 'task',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '任务',
+                'restraint' => '例如：TASK_CLICKDETAILS,详见 [link href="task"]离线任务[/link]',
+                'errormsg' => '任务不正确',
+                'enum' => 'enum',
+                'source' => 'api_task',
             ),
 
             'date' => array(
@@ -84,7 +89,12 @@ class SelectHourly {
                 'name' => 'hour',
                 'extendType' => 'hour',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'integer',
+                'description' => '小时(0-23)',
+                'restraint' => '1',
+                'errormsg' => '小时不正确',
+                'max' => '23',
+                'min' => '0',
             ),
 
         );

@@ -261,13 +261,35 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
 ';
 
     foreach ($interface as $key => $value) {
+
         if ($key === 'request') {
+if ($mod_name == 'adgroup') {
+    //var_dump($key);
+    var_dump($interface_name);
+    if ($interface_name == 'sync') {
+
+        //var_dump(($value));
+    }  
+}
+
             foreach ($value as $k => $v) {
+if ($mod_name == 'adgroup') {
+    if ($interface_name == 'sync') {
+
+        var_dump(count($value));
+        //var_dump($v);
+    }  
+}
                 $name = $v->attributes()['name'] . '';
+
                 // extendType 有继承其他模块的情况，重选 mod
-                $t = explode('.', $v->attributes()['type'] . '');
-                $extendType = array_pop($t);
-                $mod_name = implode($t, '');
+                $extendType = $v->attributes()['type'] . '';
+                if (strpos($extendType, '.') !== false) {
+                    $t = explode('.', $extendType);
+                    $extendType = array_pop($t);
+                    $mod_name = implode($t, '');
+                }
+
                 $require = $v->attributes()['require'] . '';
 
                 $arr = getExtendTypeInfo($data, $mod_name, $interface_name, $extendType);
@@ -347,12 +369,18 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                     $repeat_min
                 )";
 
+
                     $pattern = "\r\n                    \r\n";
                     while (strpos($repeat, $pattern) != false) {
                         $repeat = str_replace($pattern, "\r\n", $repeat);
                     }
                 }
-
+if ($name === 'product_type') {
+    //var_dump($mod_name);
+    //var_dump($interface_name);
+    //var_dump($type);
+    //var_dump("\r\n");
+}
                 $field_info .= "
             '$name' => array(
                 'name' => '$name',

@@ -76,14 +76,24 @@ class CreateByUrl {
                 'name' => 'image_url',
                 'extendType' => 'image_url',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '图片地址',
+                'errormsg' => '图片地址不正确',
+                'max_length' => '1024',
+                'min_length' => '1',
+                'pattern' => '{url_pattern}',
             ),
 
             'outer_image_id' => array(
                 'name' => 'outer_image_id',
                 'extendType' => 'outer_image_id',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '外部图片id',
+                'restraint' => '1024字符内',
+                'errormsg' => '外部图片id不正确',
+                'max_length' => '1024',
+                'min_length' => '1',
             ),
 
         );

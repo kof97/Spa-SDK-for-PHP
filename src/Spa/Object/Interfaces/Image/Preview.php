@@ -88,7 +88,12 @@ class Preview {
                 'name' => 'sign',
                 'extendType' => 'sign',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '图片签名',
+                'restraint' => '图片签名',
+                'errormsg' => '图片签名不正确',
+                'max_length' => '32',
+                'min_length' => '32',
             ),
 
         );

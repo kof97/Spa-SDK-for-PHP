@@ -76,7 +76,12 @@ class QqOrderQuery {
                 'name' => 'out_trade_no',
                 'extendType' => 'out_trade_no',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '订单号码',
+                'restraint' => '最多32个字符',
+                'errormsg' => '订单号码错误',
+                'max_length' => '32',
+                'min_length' => '1',
             ),
 
         );

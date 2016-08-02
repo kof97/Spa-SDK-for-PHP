@@ -122,7 +122,12 @@ class GetAllTransactionDetail {
                 'name' => 'no_page',
                 'extendType' => 'no_page',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'integer',
+                'description' => '不分页',
+                'restraint' => '传递这个参数，则忽略分页参数，获取时间范围内的全部记录',
+                'errormsg' => '参数（no_page）不正确',
+                'max' => '1',
+                'min' => '0',
             ),
 
         );

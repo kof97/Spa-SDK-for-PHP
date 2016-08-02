@@ -88,7 +88,12 @@ class GetDailyInvoice {
                 'name' => 'trade_type',
                 'extendType' => 'trade_type',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '交易类型',
+                'restraint' => '见 [link href="trade_type"]交易类型[/link]',
+                'errormsg' => '交易类型不正确',
+                'enum' => 'enum',
+                'source' => 'api_trade_type',
             ),
 
             'date_range' => array(

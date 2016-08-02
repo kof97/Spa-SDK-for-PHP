@@ -88,7 +88,12 @@ class Sync {
                 'name' => 'outer_campaign_id',
                 'extendType' => 'outer_campaign_id',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'id',
+                'description' => '外部推广计划Id',
+                'restraint' => '小于2^63',
+                'errormsg' => '外部推广计划Id不正确',
+                'max' => '9223372036854775807',
+                'min' => '1',
             ),
 
             'campaign_name' => array(
@@ -107,7 +112,12 @@ class Sync {
                 'name' => 'campaign_type',
                 'extendType' => 'campaign_type',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '推广计划类型',
+                'restraint' => '详见 [link href="campaign_type"]推广计划类型[/link]',
+                'errormsg' => '推广计划类型不正确',
+                'enum' => 'enum',
+                'source' => 'api_campaign_type',
             ),
 
             'daily_budget' => array(

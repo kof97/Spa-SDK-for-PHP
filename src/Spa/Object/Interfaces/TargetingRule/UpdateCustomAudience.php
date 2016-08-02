@@ -86,14 +86,24 @@ class UpdateCustomAudience {
                 'name' => 'rule_name',
                 'extendType' => 'rule_name',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '规则名称',
+                'restraint' => '不超过90个英文字符',
+                'errormsg' => '规则名称不正确',
+                'max_length' => '90',
+                'min_length' => '1',
             ),
 
             'description' => array(
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '受众描述',
+                'restraint' => '不超过250个英文字符',
+                'errormsg' => '受众描述不正确',
+                'max_length' => '250',
+                'min_length' => '0',
             ),
 
         );

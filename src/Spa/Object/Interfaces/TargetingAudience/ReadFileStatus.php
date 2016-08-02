@@ -76,7 +76,12 @@ class ReadFileStatus {
                 'name' => 'file_id',
                 'extendType' => 'file_id',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'id',
+                'description' => '文件Id',
+                'restraint' => '小于2^63',
+                'errormsg' => '文件Id不正确',
+                'max' => '9223372036854775807',
+                'min' => '1',
             ),
 
         );

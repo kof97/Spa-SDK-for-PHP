@@ -83,14 +83,24 @@ class Create {
                 'name' => 'media_signature',
                 'extendType' => 'media_signature',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '媒体签名，目前使用媒体的md5值',
+                'restraint' => '32字符',
+                'errormsg' => '媒体签名不正确',
+                'max_length' => '32',
+                'min_length' => '1',
             ),
 
             'media_description' => array(
                 'name' => 'media_description',
                 'extendType' => 'media_description',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '流媒体描述',
+                'restraint' => '小于255字符',
+                'errormsg' => '流媒体描述错误',
+                'max_length' => '255',
+                'min_length' => '0',
             ),
 
         );

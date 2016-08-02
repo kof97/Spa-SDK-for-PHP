@@ -100,7 +100,17 @@ class Select {
                 'name' => 'filter',
                 'extendType' => 'filter',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'array',
+                'description' => '过滤条件',
+                'restraint' => '若此字段不传，或传空则视为无限制条件。可选过滤字段：location_name',
+                'errormsg' => '过滤条件不正确',
+                    
+
+                'item_max_length' => '255',
+                'repeated' => array(
+                    'type' => 'filter_struct',
+                    'item_max_length' => '255',
+                )
             ),
 
         );
