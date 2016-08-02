@@ -88,7 +88,7 @@ class FieldsDetector {
 
     protected static function validatePattern($pattern, $key, $value) {
         switch ($pattern) {
-            case '{url_pattern}':
+            case '{url_ pattern}':
                 //$regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
                 $regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
                 break;
@@ -103,8 +103,8 @@ class FieldsDetector {
                 
                 break;
 
-            case '{date_pattern}':
-                
+            case '{url_pattern}':
+                $regex = '/^((?:19|20)\d\d)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/';
                 break;
 
             default:
