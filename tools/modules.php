@@ -394,7 +394,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
 
 namespace Spa\Object\Interfaces\\$mod_class;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class $interface_class
@@ -498,7 +498,7 @@ class $interface_class {
             }
 
             if (!isset(\$params[\$key])) {
-                throw new Exception("Expect the required params '\$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '\$key' that you didn't provide");
                 
             }
         }

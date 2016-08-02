@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Creative;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class Read
@@ -106,7 +106,7 @@ class Read {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

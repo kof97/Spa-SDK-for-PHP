@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\TargetingAudience;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class GetFileList
@@ -106,7 +106,7 @@ class GetFileList {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

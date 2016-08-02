@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Auth;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class GetAccessToken
@@ -106,7 +106,7 @@ class GetAccessToken {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Targeting;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class Update
@@ -106,7 +106,7 @@ class Update {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

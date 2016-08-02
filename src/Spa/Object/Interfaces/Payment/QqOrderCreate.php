@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Payment;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class QqOrderCreate
@@ -106,7 +106,7 @@ class QqOrderCreate {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

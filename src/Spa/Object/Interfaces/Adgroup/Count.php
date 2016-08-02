@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Adgroup;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class Count
@@ -106,7 +106,7 @@ class Count {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

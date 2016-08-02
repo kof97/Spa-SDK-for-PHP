@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Report;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class SelectAge
@@ -106,7 +106,7 @@ class SelectAge {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

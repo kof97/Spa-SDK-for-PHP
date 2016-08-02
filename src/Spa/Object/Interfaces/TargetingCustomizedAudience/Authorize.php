@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\TargetingCustomizedAudience;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class Authorize
@@ -106,7 +106,7 @@ class Authorize {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Agency;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class AddAdvertiser
@@ -106,7 +106,7 @@ class AddAdvertiser {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

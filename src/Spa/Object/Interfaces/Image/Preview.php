@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Image;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class Preview
@@ -106,7 +106,7 @@ class Preview {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\TargetingLocation;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class Select
@@ -106,7 +106,7 @@ class Select {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }

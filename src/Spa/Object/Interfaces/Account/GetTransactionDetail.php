@@ -2,7 +2,7 @@
 
 namespace Spa\Object\Interfaces\Account;
 
-
+use Spa\Exceptions\ParamsException;
 
 /**
  * Class GetTransactionDetail
@@ -106,7 +106,7 @@ class GetTransactionDetail {
             }
 
             if (!isset($params[$key])) {
-                throw new Exception("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide");
                 
             }
         }
