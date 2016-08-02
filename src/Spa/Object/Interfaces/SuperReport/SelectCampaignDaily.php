@@ -95,6 +95,7 @@ class SelectCampaignDaily {
                         'pattern' => '{date_pattern}',
 
                     ),
+
                     'end_date' => array(
                         'name' => 'end_date',
                         'extendType' => 'end_date',
@@ -108,6 +109,7 @@ class SelectCampaignDaily {
                         'pattern' => '{date_pattern}',
 
                     ),
+
                 ),
             ),
 
@@ -149,6 +151,7 @@ class SelectCampaignDaily {
                         'source' => 'api_Sortord',
 
                     ),
+
                     'cost' => array(
                         'name' => 'cost',
                         'extendType' => 'cost',
@@ -161,6 +164,7 @@ class SelectCampaignDaily {
                         'source' => 'api_Sortord',
 
                     ),
+
                     'impression' => array(
                         'name' => 'impression',
                         'extendType' => 'impression',
@@ -173,6 +177,7 @@ class SelectCampaignDaily {
                         'source' => 'api_Sortord',
 
                     ),
+
                 ),
             ),
 

@@ -251,6 +251,7 @@ class Sync {
                         'min' => '0',
 
                     ),
+
                     'name' => array(
                         'name' => 'name',
                         'extendType' => 'outer_extend_info_name',
@@ -263,6 +264,7 @@ class Sync {
                         'min_length' => '0',
 
                     ),
+
                     'category_id' => array(
                         'name' => 'category_id',
                         'extendType' => 'outer_extend_info_category_id',
@@ -275,6 +277,7 @@ class Sync {
                         'min' => '0',
 
                     ),
+
                     'category_name' => array(
                         'name' => 'category_name',
                         'extendType' => 'outer_extend_info_category_name',
@@ -287,6 +290,7 @@ class Sync {
                         'min_length' => '0',
 
                     ),
+
                 ),
             ),
 

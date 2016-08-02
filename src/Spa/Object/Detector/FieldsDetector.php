@@ -30,32 +30,36 @@ class FieldsDetector {
                 continue;
             }
 
-            $type = $data[$key]['type'];
-            switch ($type) {
-                case 'string':
-                    self::validateString($data[$key], $key, $value);
-                    continue;
+            self::validateBasicType($data[$key], $key, $value);
+        }
+    }
 
-                case 'integer':
-                    self::validateInteger($data[$key], $key, $value);
-                    continue;
+    protected static function validateBasicType($data, $key, $value) {
+        $type = $data['type'];
+        switch ($type) {
+            case 'string':
+                self::validateString($data, $key, $value);
+                continue;
 
-                case 'id':
+            case 'integer':
+                self::validateInteger($data, $key, $value);
+                continue;
 
-                case 'number':
-                    self::validateInteger($data[$key], $key, $value);
-                    break;
+            case 'id':
 
-                case 'struct':
-                    self::validateStruct($data[$key], $key, $value);
-                    break;
+            case 'number':
+                self::validateInteger($data, $key, $value);
+                break;
 
-                case 'array':
-                    
-                    break;
+            case 'struct':
+                self::validateStruct($data, $key, $value);
+                break;
 
-                default: break;
-            }
+            case 'array':
+                
+                break;
+
+            default: break;
         }
     }
 
@@ -114,9 +118,8 @@ class FieldsDetector {
             $element = $data['element'];
             $struct_name = $data['name'];
 
-            foreach ($element as $key => $value) {
-                var_dump($key);
-                var_dump($value);
+            foreach ($value as $key => $v) {
+                self::validateBasicType($element[$key], $key, $v);
             }
         }
         
@@ -127,6 +130,7 @@ class FieldsDetector {
             case '{url_pattern}':
                 //$regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
                 $regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
+                $err_msg = "The value of field '$key', '$value' is not a validate value, It needs to like 'https://github.com'";
                 break;
             
             case '{age_pattern}':
@@ -142,17 +146,19 @@ class FieldsDetector {
             case '{date_pattern}':
                 // 2016-12-11
                 $regex = '/^((?:19|20)\d\d)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/';
+                $err_msg = "The value of field '$key', '$value' is not a validate value, It needs to like '2016-12-11'";
                 break;
 
             default:
                 $regex = $pattern;
+                $err_msg = "The value of field '$key', '$value' is not a validate value";
                 break;
         }
 
         $res = preg_match($regex, $value);
 
         if (!$res) {
-            throw new ParamsException("The value of field '$key', '$value' is not a validate value");
+            throw new ParamsException($err_msg);
         }
     }
 

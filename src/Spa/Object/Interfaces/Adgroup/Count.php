@@ -93,6 +93,7 @@ class Count {
                         'source' => 'api_configured_status',
 
                     ),
+
                     'system_status' => array(
                         'name' => 'system_status',
                         'extendType' => 'system_status',
@@ -104,6 +105,7 @@ class Count {
                         'source' => 'api_sys_status',
 
                     ),
+
                     'adgroup_name' => array(
                         'name' => 'adgroup_name',
                         'extendType' => 'adgroup_name',
@@ -116,6 +118,7 @@ class Count {
                         'min_length' => '1',
 
                     ),
+
                 ),
             ),
 

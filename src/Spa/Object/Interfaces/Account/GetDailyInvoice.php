@@ -119,6 +119,7 @@ class GetDailyInvoice {
                         'pattern' => '{date_pattern}',
 
                     ),
+
                     'end_date' => array(
                         'name' => 'end_date',
                         'extendType' => 'end_date',
@@ -132,6 +133,7 @@ class GetDailyInvoice {
                         'pattern' => '{date_pattern}',
 
                     ),
+
                 ),
             ),
 

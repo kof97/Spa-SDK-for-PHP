@@ -123,6 +123,7 @@ class SelectCampaignHourly {
                         'source' => 'api_Sortord',
 
                     ),
+
                     'cost' => array(
                         'name' => 'cost',
                         'extendType' => 'cost',
@@ -135,6 +136,7 @@ class SelectCampaignHourly {
                         'source' => 'api_Sortord',
 
                     ),
+
                     'impression' => array(
                         'name' => 'impression',
                         'extendType' => 'impression',
@@ -147,6 +149,7 @@ class SelectCampaignHourly {
                         'source' => 'api_Sortord',
 
                     ),
+
                 ),
             ),
 

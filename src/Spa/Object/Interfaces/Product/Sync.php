@@ -128,6 +128,7 @@ class Sync {
                         'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
 
                     ),
+
                     'product_type_jd_shop' => array(
                         'name' => 'product_type_jd_shop',
                         'extendType' => 'ec_info',
@@ -137,6 +138,7 @@ class Sync {
                         'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
 
                     ),
+
                 ),
             ),
 

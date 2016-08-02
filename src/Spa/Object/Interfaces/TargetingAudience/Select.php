@@ -122,6 +122,7 @@ class Select {
                         'source' => 'api_Sortord',
 
                     ),
+
                     'user_count' => array(
                         'name' => 'user_count',
                         'extendType' => 'user_count_order_by',
@@ -134,6 +135,7 @@ class Select {
                         'source' => 'api_Sortord',
 
                     ),
+
                 ),
             ),
 

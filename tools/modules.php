@@ -373,7 +373,8 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                         $ele_min
                         $ele_item_max_length
 
-                    ),";
+                    ),
+";
                     }
                     $element .= "
                 ),";

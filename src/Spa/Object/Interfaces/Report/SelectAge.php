@@ -95,6 +95,7 @@ class SelectAge {
                         'pattern' => '{date_pattern}',
 
                     ),
+
                     'end_date' => array(
                         'name' => 'end_date',
                         'extendType' => 'end_date',
@@ -108,6 +109,7 @@ class SelectAge {
                         'pattern' => '{date_pattern}',
 
                     ),
+
                 ),
             ),
 

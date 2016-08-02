@@ -142,6 +142,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'gender' => array(
                         'name' => 'gender',
                         'extendType' => 'gender',
@@ -153,6 +154,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'location' => array(
                         'name' => 'location',
                         'extendType' => 'location',
@@ -163,6 +165,7 @@ class Sync {
                         'errormsg' => '商圈定向不正确',
 
                     ),
+
                     'user_os' => array(
                         'name' => 'user_os',
                         'extendType' => 'user_os',
@@ -174,6 +177,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'network_type' => array(
                         'name' => 'network_type',
                         'extendType' => 'network_type',
@@ -185,6 +189,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'network_operator' => array(
                         'name' => 'network_operator',
                         'extendType' => 'network_operator',
@@ -196,6 +201,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'region' => array(
                         'name' => 'region',
                         'extendType' => 'region',
@@ -206,6 +212,7 @@ class Sync {
                         'errormsg' => '地理位置定向设置不正确',
 
                     ),
+
                     'business_interest' => array(
                         'name' => 'business_interest',
                         'extendType' => 'business_interest',
@@ -216,6 +223,7 @@ class Sync {
                         'errormsg' => '商业兴趣定向不正确',
 
                     ),
+
                     'online_scenario' => array(
                         'name' => 'online_scenario',
                         'extendType' => 'online_scenario',
@@ -227,6 +235,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'education' => array(
                         'name' => 'education',
                         'extendType' => 'education',
@@ -238,6 +247,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'paying_user_type' => array(
                         'name' => 'paying_user_type',
                         'extendType' => 'paying_user_type',
@@ -249,6 +259,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'dressing_index' => array(
                         'name' => 'dressing_index',
                         'extendType' => 'dressing_index',
@@ -260,6 +271,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'uv_index' => array(
                         'name' => 'uv_index',
                         'extendType' => 'uv_index',
@@ -271,6 +283,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'makeup_index' => array(
                         'name' => 'makeup_index',
                         'extendType' => 'makeup_index',
@@ -282,6 +295,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'climate' => array(
                         'name' => 'climate',
                         'extendType' => 'climate',
@@ -293,6 +307,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'temperature' => array(
                         'name' => 'temperature',
                         'extendType' => 'temperature',
@@ -305,6 +320,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'app_install_status' => array(
                         'name' => 'app_install_status',
                         'extendType' => 'app_install_status',
@@ -316,6 +332,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'device_price' => array(
                         'name' => 'device_price',
                         'extendType' => 'device_price',
@@ -328,6 +345,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'customized_shopping_behavior' => array(
                         'name' => 'customized_shopping_behavior',
                         'extendType' => 'customized_shopping_behavior',
@@ -338,6 +356,7 @@ class Sync {
                         'errormsg' => '定制购物行为不正确',
 
                     ),
+
                     'media_category_wechat' => array(
                         'name' => 'media_category_wechat',
                         'extendType' => 'media_category_wechat',
@@ -348,6 +367,7 @@ class Sync {
                         'errormsg' => '微信流量分类定向不正确',
 
                     ),
+
                     'app_behavior' => array(
                         'name' => 'app_behavior',
                         'extendType' => 'app_behavior',
@@ -358,6 +378,7 @@ class Sync {
                         'errormsg' => 'app行为定向错误',
 
                     ),
+
                     'ad_placement_id' => array(
                         'name' => 'ad_placement_id',
                         'extendType' => 'ad_placement_id',
@@ -368,6 +389,7 @@ class Sync {
                         'errormsg' => '广告位(id)定向错误',
 
                     ),
+
                     'relationship_status' => array(
                         'name' => 'relationship_status',
                         'extendType' => 'relationship_status',
@@ -379,6 +401,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'shopping_capability' => array(
                         'name' => 'shopping_capability',
                         'extendType' => 'shopping_capability',
@@ -390,6 +413,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'customized_audience' => array(
                         'name' => 'customized_audience',
                         'extendType' => 'customized_audience',
@@ -401,6 +425,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'mobile_qq_media_follower' => array(
                         'name' => 'mobile_qq_media_follower',
                         'extendType' => 'mobile_qq_media_follower',
@@ -411,6 +436,7 @@ class Sync {
                         'errormsg' => '手Q粉丝定向不正确',
 
                     ),
+
                     'keyword' => array(
                         'name' => 'keyword',
                         'extendType' => 'keyword',
@@ -421,6 +447,7 @@ class Sync {
                         'errormsg' => '关键词定向不正确',
 
                     ),
+
                     'media_category_union' => array(
                         'name' => 'media_category_union',
                         'extendType' => 'media_category_union',
@@ -431,6 +458,7 @@ class Sync {
                         'errormsg' => '移动媒体定向错误',
 
                     ),
+
                     'living_status' => array(
                         'name' => 'living_status',
                         'extendType' => 'living_status',
@@ -442,6 +470,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'residential_community_price' => array(
                         'name' => 'residential_community_price',
                         'extendType' => 'residential_community_price',
@@ -454,6 +483,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'birthday_ahead_days' => array(
                         'name' => 'birthday_ahead_days',
                         'extendType' => 'birthday_ahead_days',
@@ -466,6 +496,7 @@ class Sync {
                         'item_max_length' => '10',
 
                     ),
+
                     'shopping_behavior_jd' => array(
                         'name' => 'shopping_behavior_jd',
                         'extendType' => 'shopping_behavior_jd',
@@ -476,6 +507,7 @@ class Sync {
                         'errormsg' => '京东购物行为不正确',
 
                     ),
+
                     'category_58' => array(
                         'name' => 'category_58',
                         'extendType' => 'category_58',
@@ -486,6 +518,7 @@ class Sync {
                         'errormsg' => '58类目定向不正确',
 
                     ),
+
                     'qq_wallet_user' => array(
                         'name' => 'qq_wallet_user',
                         'extendType' => 'qq_wallet_user',
@@ -497,6 +530,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'qq_wallet_shop' => array(
                         'name' => 'qq_wallet_shop',
                         'extendType' => 'qq_wallet_shop',
@@ -508,6 +542,7 @@ class Sync {
                         'item_max_length' => '255',
 
                     ),
+
                     'media_category_mobile_qq' => array(
                         'name' => 'media_category_mobile_qq',
                         'extendType' => 'media_category_mobile_qq',
@@ -518,6 +553,7 @@ class Sync {
                         'errormsg' => '手Q兴趣部落分类定向不正确',
 
                     ),
+
                 ),
             ),
 

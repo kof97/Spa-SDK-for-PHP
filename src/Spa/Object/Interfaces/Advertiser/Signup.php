@@ -221,6 +221,7 @@ class Signup {
                         'min_length' => '1',
 
                     ),
+
                     'photo_image_id' => array(
                         'name' => 'photo_image_id',
                         'extendType' => 'photo_image_id',
@@ -233,6 +234,7 @@ class Signup {
                         'min_length' => '1',
 
                     ),
+
                 ),
             ),
 
