@@ -101,14 +101,14 @@ class WechatOrderCreate {
 
     protected function validateString($data, $key, $value) {
         $len = strlen($value);
-        if (isset(($max_length = $data['max_length'])) {
-            if ($len > $max_length) {
+        if (isset($data['max_length'])) {
+            if ($len > ($max_length = $data['max_length'])) {
                 throw new ParamsException("The field '$key' expect the max length is '$max_length'");
             }
         }
 
-        if (isset(($min_length = $data['min_length'])) {
-            if ($len < $min_length) {
+        if (isset($data['min_length'])) {
+            if ($len < ($min_length = $data['min_length'])) {
                 throw new ParamsException("The field '$key' expect the min length is '$min_length'");
             }
         }
