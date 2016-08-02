@@ -37,7 +37,7 @@ class FieldsDetector {
                     break;
 
                 case 'integer':
-                    
+                    self::validateInteger($data[$key], $key, $value);
                     break;
 
                 case 'id':
@@ -63,13 +63,13 @@ class FieldsDetector {
         $len = strlen($value);
         if (isset($data['max_length'])) {
             if ($len > ($max_length = $data['max_length'])) {
-                throw new ParamsException("The length of field '$key' is too long, it expects the length can't more than '$max_length'");
+                throw new ParamsException("Error in '$value', the length of field '$key' is too long, it expects the length can't more than '$max_length'");
             }
         }
 
         if (isset($data['min_length'])) {
             if ($len < ($min_length = $data['min_length'])) {
-                throw new ParamsException("The length of field '$key' is too short, it expects the length at least '$min_length'");
+                throw new ParamsException("Error in '$value', the length of field '$key' is too short, it expects the length at least '$min_length'");
             }
         }
 
@@ -77,7 +77,7 @@ class FieldsDetector {
             $list = explode(',', $data['list']);
             if (!in_array($value, $list)) {
                 $list = implode($list, ',');
-                throw new ParamsException("The value of field '$key' is limited in '$list'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is limited in '$list'");
             }
         }
 
@@ -86,16 +86,36 @@ class FieldsDetector {
         }
     }
 
+    protected static function validateInteger($data, $key, $value) {
+        var_dump($value);
+        var_dump(intval($value));
+        if ($value . '' !== intval($value) . '') {
+            throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
+        }
+var_dump($data);
+        if (isset($data['max'])) {
+            if ($value > ($max = $data['max'])) {
+                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value can't more than '$max'");
+            }
+        }
+
+        if (isset($data['min'])) {
+            if ($value < ($min = $data['min'])) {
+                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value at least '$min'");
+            }
+        }
+    }
+
     protected static function validatePattern($pattern, $key, $value) {
         switch ($pattern) {
-            case '{url_ pattern}':
+            case '{url_pattern}':
                 //$regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
                 $regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
                 break;
             
             case '{age_pattern}':
-                if ($value !== intval($value) . '') {
-                    throw new ParamsException("The value of field '$key' needs the type int");
+                if ($value . '' !== intval($value) . '') {
+                    throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
                 }
                 return;
 
@@ -103,7 +123,7 @@ class FieldsDetector {
                 
                 break;
 
-            case '{url_pattern}':
+            case '{date_pattern}':
                 $regex = '/^((?:19|20)\d\d)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/';
                 break;
 
