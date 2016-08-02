@@ -263,33 +263,10 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
     foreach ($interface as $key => $value) {
 
         if ($key === 'request') {
-
-
-//if ($mod_name == 'adgroup') {
-//    //var_dump($key);
-//    //var_dump($interface_name);
-//    if ($interface_name == 'sync') {
-//
-//        var_dump(count($value));
-//        exit;
-//    }  
-//}
- //echo '------';
             foreach ($value as $k => $v) {
 
                 $name = $v->attributes()['name'] . '';
 
-//if ($interface_name == 'sync') {
-//    var_dump($mod_name);
-//    var_dump($interface_name);
-//}
-//if ($mod_name == 'adgroup') {
-//    if ($interface_name == 'sync') {
-//        // var_dump(count($value));
-//        // var_dump($name);
-//        //var_dump($v);
-//    }  
-//}
                 // extendType 有继承其他模块的情况，重选 mod
                 $extendType = $v->attributes()['type'] . '';
                 $ext_mod_name = $mod_name;
