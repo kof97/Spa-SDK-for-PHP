@@ -43,7 +43,7 @@ class FieldsDetector {
                 case 'id':
 
                 case 'number':
-                    
+                    self::validateInteger($data[$key], $key, $value);
                     break;
 
                 case 'struct':
@@ -93,13 +93,13 @@ class FieldsDetector {
 
         if (isset($data['max'])) {
             if ($value >= ($max = $data['max'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value can't more than '$max'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'");
             }
         }
 
         if (isset($data['min'])) {
             if ($value <= ($min = $data['min'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value at least '$min'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'");
             }
         }
     }
@@ -122,6 +122,7 @@ class FieldsDetector {
                 break;
 
             case '{date_pattern}':
+                // 2016-12-11
                 $regex = '/^((?:19|20)\d\d)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/';
                 break;
 

@@ -53,7 +53,7 @@ array(
                     'conf' => array(
                         'extendType'  => 'conf',
                         'require'     => 'yes',
-                        'type'        => 'id',
+                        'type'        => 'struct',
                         'description' => '分页配置信息',
                         'restraint'   => '',
                         'errormsg'    => '分页配置信息不正确',
@@ -69,7 +69,7 @@ array(
                     'location' => array(
                         'extendType'      => 'location',
                         'require'         => 'no',
-                        'type'            => 'string',
+                        'type'            => 'array',
                         'description'     => '广告主类型',
                         'restraint'       => "见 [link href='']广告主类型定义[/link]",
                         'errormsg'        => '广告主类型不正确',

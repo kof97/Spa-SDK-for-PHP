@@ -20,8 +20,8 @@ $spa = new Spa\Spa($conf);
 $test = $spa->getApp();
 
 $params = array(
-	'advertiser_id' => '0',
-	'adgroup_id' => '321',
+	'advertiser_id' => '10',
+	'adgroup_id' => '922311112',
 	'campaign_id' => 321,
 	'adgroup_name' => 321,
 	'targeting_id' => 321,
