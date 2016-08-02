@@ -73,7 +73,7 @@ class $interface_class {
             \$type = \$data[\$key]['type'];
             switch (\$type) {
                 case 'string':
-                    
+                    \$this->validateString(\$data[\$key], \$value);
                     break;
 
                 case 'integer':
@@ -109,6 +109,10 @@ class $interface_class {
                 throw new ParamsException("Expect the required params '\$key' that you didn't provide");
             }
         }
+    }
+
+    protected function validateString(\$data, \$value) {
+
     }
 
     public function fieldInfo() {
