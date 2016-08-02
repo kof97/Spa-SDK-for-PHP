@@ -60,11 +60,12 @@ class GetOpenid {
             return;
         }
 
-
         $data = $this->fieldInfo();
 
         foreach ($params as $key => $value) {
-            
+            if (!isset($data[$key])) {
+                continue;
+            }
 
             $type = $data[$key]['type'];
             switch ($type) {
