@@ -82,8 +82,40 @@ class FieldsDetector {
         }
 
         if (isset($data['pattern'])) {
-            $pattern = $data['pattern'];
-            var_dump($pattern);
+            self::validatePattern($data['pattern'], $key, $value);
+        }
+    }
+
+    protected static function validatePattern($pattern, $key, $value) {
+        switch ($pattern) {
+            case '{url_pattern}':
+                //$regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
+                $regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
+                break;
+            
+            case '{age_pattern}':
+                if ($value !== intval($value) . '') {
+                    throw new ParamsException("The value of field '$key' needs the type int");
+                }
+                return;
+
+            case '{memo_pattern}':
+                
+                break;
+
+            case '{date_pattern}':
+                
+                break;
+
+            default:
+                $regex = $pattern;
+                break;
+        }
+
+        $res = preg_match($regex, $value);
+
+        if (!$res) {
+            throw new ParamsException("The value of field '$key', '$value' is not a validate value");
         }
     }
 

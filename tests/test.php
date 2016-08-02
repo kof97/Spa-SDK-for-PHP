@@ -29,10 +29,9 @@ $params = array(
 	'bid_type' => 321,
 	'bid_amount' => 321,
 	'product_type' => 'PRODUCT_TYPE_APP_IOS',
-	'destination_url' => 321,
+	'destination_url' => 'http://localhost/spa-php-sdk/tests/test.php',
 	'image_url' => 321,
-	'destination_url' => 321,
-	'destination_url' => 321,
+
 
 
 
