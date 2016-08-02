@@ -392,7 +392,6 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
 
 namespace Spa\Object\Interfaces\\$mod_class;
 
-use Spa\Exceptions\ParamsException;
 use Spa\Object\Detector\FieldsDetector;
 
 /**

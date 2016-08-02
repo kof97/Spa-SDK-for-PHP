@@ -2,7 +2,6 @@
 
 namespace Spa\Object\Interfaces\OfflineReport;
 
-use Spa\Exceptions\ParamsException;
 use Spa\Object\Detector\FieldsDetector;
 
 /**

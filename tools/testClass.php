@@ -2,7 +2,6 @@
 
 namespace Spa\Object\Interfaces\\$mod_class;
 
-use Spa\Exceptions\ParamsException;
 use Spa\Object\Detector\FieldsDetector;
 
 /**

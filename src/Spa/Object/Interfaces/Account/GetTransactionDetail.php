@@ -2,7 +2,6 @@
 
 namespace Spa\Object\Interfaces\Account;
 
-use Spa\Exceptions\ParamsException;
 use Spa\Object\Detector\FieldsDetector;
 
 /**

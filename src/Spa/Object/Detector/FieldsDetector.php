@@ -59,7 +59,7 @@ class FieldsDetector {
         }
     }
 
-    public static function validateString($data, $key, $value) {
+    protected static function validateString($data, $key, $value) {
         $len = strlen($value);
         if (isset($data['max_length'])) {
             if ($len > ($max_length = $data['max_length'])) {
@@ -87,7 +87,7 @@ class FieldsDetector {
         }
     }
 
-    public static function validateRequireField($data, $params) {
+    protected static function validateRequireField($data, $params) {
         foreach ($data as $key => $value) {
             if ($value['require'] === 'no') {
                 continue;
