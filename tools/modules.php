@@ -510,6 +510,11 @@ class $interface_class {
                 throw new ParamsException("The value of field '\$key' is limited in '\$list'");
             }
         }
+
+        if (isset(\$data['pattern'])) {
+            \$pattern = \$data['pattern'];
+            
+        }
     }
 
     protected function validateRequireField(\$data, \$params) {

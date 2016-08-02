@@ -123,6 +123,7 @@ class $interface_class {
 
         if (isset(\$data['pattern'])) {
             \$pattern = \$data['pattern'];
+            
         }
     }
 
