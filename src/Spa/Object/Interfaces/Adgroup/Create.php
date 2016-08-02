@@ -165,7 +165,6 @@ class Create {
                 'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
                 'errormsg' => '投放站点集合不正确',
                 'list' => 'SITE_SET_QZONE,SITE_SET_PENGYOU,SITE_SET_QQCLIENT,SITE_SET_TUAN,SITE_SET_MEISHI,SITE_SET_PIAO,SITE_SET_MUSIC,SITE_SET_MOBILE_UNION,SITE_SET_QQCOM,SITE_SET_MAIL,SITE_SET_WECHAT,SITE_SET_YINGYONGBAO_MOBILE,SITE_SET_PC_UNION,SITE_SET_YINGYONGBAO_PC,SITE_SET_MOBILE_INNER',
-                    
 
                 'repeated' => array(
                     'type' => 'string',

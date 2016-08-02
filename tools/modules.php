@@ -394,6 +394,10 @@ if ($name === 'product_type') {
                 while (strpos($field_info, $pattern) != false) {
                     $field_info = str_replace($pattern, "\r\n", $field_info);
                 }
+                $pattern = "\r\n                    \r\n";
+                while (strpos($field_info, $pattern) != false) {
+                    $field_info = str_replace($pattern, "\r\n", $field_info);
+                }
             }
         }
     }

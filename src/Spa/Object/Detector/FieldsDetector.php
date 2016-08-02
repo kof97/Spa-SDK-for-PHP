@@ -105,6 +105,17 @@ class FieldsDetector {
     }
 
     protected static function validateStruct($data, $key, $value) {
+        $value = strtr($value, "'", "\"");
+        $value = (array)json_decode($value);
+
+        self::validateRequireField($data, $value);
+
+        if (isset($data['element'])) {
+            $element = $data['element'];
+            
+            var_dump($value);
+            var_dump($element);
+        }
         
     }
 
@@ -143,12 +154,22 @@ class FieldsDetector {
     }
 
     protected static function validateRequireField($data, $params) {
+        $from_element = 0;
+        if (isset($data['element'])) {
+            $element_name = $data['name'];
+            $data = $data['element'];
+            $from_element = 1;
+        }
+
         foreach ($data as $key => $value) {
             if ($value['require'] === 'no') {
                 continue;
             }
 
             if (!isset($params[$key])) {
+                if ($from_element) {
+                    throw new ParamsException("Expect the required params '$key' in the element '$element_name' that you didn't provide");
+                }
                 throw new ParamsException("Expect the required params '$key' that you didn't provide");
             }
         }

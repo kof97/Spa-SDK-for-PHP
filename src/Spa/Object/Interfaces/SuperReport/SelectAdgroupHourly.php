@@ -93,7 +93,6 @@ class SelectAdgroupHourly {
                 'description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
                 'errormsg' => '过滤条件不正确',
-                    
 
                 'item_max_length' => '255',
                 'repeated' => array(
@@ -137,7 +136,6 @@ class SelectAdgroupHourly {
                 'description' => '聚合参数',
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合参数不正确',
-                    
 
                 'item_max_length' => '255',
                 'repeated' => array(

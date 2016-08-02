@@ -21,7 +21,7 @@ $test = $spa->getApp();
 
 $params = array(
 	'advertiser_id' => '10',
-	'adgroup_id' => '922311112',
+	'date_range' => '{"start_date":"2014-03-01","end_date":\'2014-04-02\'}',
 	'campaign_id' => 321,
 	'adgroup_name' => 321,
 	'targeting_id' => 321,
@@ -48,9 +48,9 @@ $params = array(
 $modules = $spa->getModules();
 
 
-$response = $modules->adgroup->sync->send($params);
+$response = $modules->super_report->select_adgroup_daily->send($params);
 //$res = $modules->image->create_by_url->send($params);
-var_dump($response);
+//var_dump($response);
 //var_dump($modules::ADVERTISER);
 
 //var_dump($spa->getClient()->getBaseUrl());
