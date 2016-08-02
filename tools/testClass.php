@@ -105,9 +105,10 @@ class $interface_class {
                 continue;
             }
 
-            var_dump(\$params[\$key]);
-            //var_dump(\$key);
-            //var_dump(\$value);
+            if (!isset(\$params[\$key])) {
+                throw new Exception("Expect the required params '\$key' that you didn't provide");
+                
+            }
         }
     }
 

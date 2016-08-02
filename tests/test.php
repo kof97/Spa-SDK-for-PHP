@@ -20,8 +20,8 @@ $spa = new Spa\Spa($conf);
 $test = $spa->getApp();
 
 $params = array(
-	'customer_registration_type' => '321',
-	'aaaa' => 321,
+	'advertiser_id' => '321',
+	'targeting_na1me' => 321,
 	'bbbb' => 321,
 	'ssss' => 321,
 
@@ -40,7 +40,7 @@ $params = array(
 $modules = $spa->getModules();
 
 
-$response = $modules->advertiser->signup->send($params);
+$response = $modules->targeting->create->send($params);
 var_dump($response);
 //var_dump($modules::ADVERTISER);
 

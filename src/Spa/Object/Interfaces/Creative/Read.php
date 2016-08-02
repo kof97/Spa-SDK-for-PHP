@@ -106,8 +106,8 @@ class Read {
             }
 
             var_dump($params[$key]);
-            //var_dump($key);
-            //var_dump($value);
+            var_dump($key);
+            var_dump($params);
         }
     }
 
