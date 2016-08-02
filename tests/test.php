@@ -49,7 +49,7 @@ $modules = $spa->getModules();
 
 
 $response = $modules->adgroup->sync->send($params);
-$res = $modules->image->create_by_url->send($params);
+//$res = $modules->image->create_by_url->send($params);
 var_dump($response);
 //var_dump($modules::ADVERTISER);
 

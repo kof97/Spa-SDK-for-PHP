@@ -34,11 +34,11 @@ class FieldsDetector {
             switch ($type) {
                 case 'string':
                     self::validateString($data[$key], $key, $value);
-                    break;
+                    continue;
 
                 case 'integer':
                     self::validateInteger($data[$key], $key, $value);
-                    break;
+                    continue;
 
                 case 'id':
 
@@ -87,20 +87,18 @@ class FieldsDetector {
     }
 
     protected static function validateInteger($data, $key, $value) {
-        var_dump($value);
-        var_dump(intval($value));
         if ($value . '' !== intval($value) . '') {
             throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
         }
-var_dump($data);
+
         if (isset($data['max'])) {
-            if ($value > ($max = $data['max'])) {
+            if ($value >= ($max = $data['max'])) {
                 throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value can't more than '$max'");
             }
         }
 
         if (isset($data['min'])) {
-            if ($value < ($min = $data['min'])) {
+            if ($value <= ($min = $data['min'])) {
                 throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value at least '$min'");
             }
         }
