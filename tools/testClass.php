@@ -73,7 +73,7 @@ class $interface_class {
             \$type = \$data[\$key]['type'];
             switch (\$type) {
                 case 'string':
-                    \$this->validateString(\$data[\$key], \$value);
+                    \$this->validateString(\$data[\$key], \$key, \$value);
                     break;
 
                 case 'integer':
@@ -99,6 +99,21 @@ class $interface_class {
         }
     }
 
+    protected function validateString(\$data, \$key, \$value) {
+        \$len = strlen(\$value);
+        if (isset((\$max_length = \$data['max_length'])) {
+            if (\$len > \$max_length) {
+                throw new ParamsException("The field '\$key' expect the max length is '\$max_length'");
+            }
+        }
+
+        if (isset((\$min_length = \$data['min_length'])) {
+            if (\$len < \$min_length) {
+                throw new ParamsException("The field '\$key' expect the min length is '\$min_length'");
+            }
+        }
+    }
+
     protected function validateRequireField(\$data, \$params) {
         foreach (\$data as \$key => \$value) {
             if (\$value['require'] === 'no') {
@@ -109,10 +124,6 @@ class $interface_class {
                 throw new ParamsException("Expect the required params '\$key' that you didn't provide");
             }
         }
-    }
-
-    protected function validateString(\$data, \$value) {
-
     }
 
     public function fieldInfo() {

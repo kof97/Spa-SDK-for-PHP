@@ -112,7 +112,9 @@ class Create {
     }
 
     protected function validateString($data, $value) {
-
+        
+        var_dump($data);
+        var_dump($value);
     }
 
     public function fieldInfo() {
