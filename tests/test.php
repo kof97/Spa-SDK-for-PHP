@@ -20,7 +20,7 @@ $spa = new Spa\Spa($conf);
 $test = $spa->getApp();
 
 $params = array(
-	'adsf' => 321,
+	'customer_registration_type' => '321',
 	'aaaa' => 321,
 	'bbbb' => 321,
 	'ssss' => 321,
@@ -40,8 +40,8 @@ $params = array(
 $modules = $spa->getModules();
 
 
-
-var_dump($modules->advertiser->signup->send($params));
+$response = $modules->advertiser->signup->send($params);
+//var_dump();
 //var_dump($modules::ADVERTISER);
 
 //var_dump($spa->getClient()->getBaseUrl());

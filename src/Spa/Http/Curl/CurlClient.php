@@ -134,7 +134,7 @@ class CurlClient implements ClientInterface {
 	 * @return array
 	 */
 	protected function analyzeResponse() {
-		$parts = explode("\r\n\r\n", $this->curlResponse, 2);
+		$parts = explode("\r\n\r\n", $this->curlResponse);
 
 		$response_body = array_pop($parts);
 		$response_headers = implode('', $parts);
