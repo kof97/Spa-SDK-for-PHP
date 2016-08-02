@@ -50,7 +50,7 @@ class SetDailyBudget {
 
         $this->validateField($params);
 
-        $response = $spa->sendRequest($this->method, $this->endpoint, $params, $headers);
+        $response = $this->spa->sendRequest($this->method, $this->endpoint, $params, $headers);
 
         return $response;
     }
