@@ -237,7 +237,6 @@ class Sync {
                 'description' => '广告主扩展信息',
                 'restraint' => '详见 [link href="outer_extend_info"]广告主扩展信息[/link]',
                 'errormsg' => '广告主扩展信息不正确',
-
                 'element' => array(
                     'id' => array(
                         'name' => 'id',
@@ -249,7 +248,6 @@ class Sync {
                         'errormsg' => '商户id不正确',
                         'max' => '4294967295',
                         'min' => '0',
-
                     ),
 
                     'name' => array(
@@ -262,7 +260,6 @@ class Sync {
                         'errormsg' => '商户名称不正确',
                         'max_length' => '128',
                         'min_length' => '0',
-
                     ),
 
                     'category_id' => array(
@@ -275,7 +272,6 @@ class Sync {
                         'errormsg' => '调用方行业id不正确',
                         'max' => '4294967295',
                         'min' => '0',
-
                     ),
 
                     'category_name' => array(
@@ -288,7 +284,6 @@ class Sync {
                         'errormsg' => '调用方行业名称不正确',
                         'max_length' => '128',
                         'min_length' => '0',
-
                     ),
 
                 ),

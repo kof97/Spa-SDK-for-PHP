@@ -80,7 +80,6 @@ class SelectAdgroupDaily {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-
                 'element' => array(
                     'start_date' => array(
                         'name' => 'start_date',
@@ -93,7 +92,6 @@ class SelectAdgroupDaily {
                         'max_length' => '10',
                         'min_length' => '10',
                         'pattern' => '{date_pattern}',
-
                     ),
 
                     'end_date' => array(
@@ -107,7 +105,6 @@ class SelectAdgroupDaily {
                         'max_length' => '10',
                         'min_length' => '10',
                         'pattern' => '{date_pattern}',
-
                     ),
 
                 ),
@@ -137,7 +134,6 @@ class SelectAdgroupDaily {
                 'description' => '排序参数,默认按日期降序',
                 'restraint' => '见 [link href="order_by"]排序规则定义[/link]',
                 'errormsg' => '排序参数不正确',
-
                 'element' => array(
                     'cpc' => array(
                         'name' => 'cpc',
@@ -149,7 +145,6 @@ class SelectAdgroupDaily {
                         'errormsg' => 'cpc不正确',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
-
                     ),
 
                     'cost' => array(
@@ -162,7 +157,6 @@ class SelectAdgroupDaily {
                         'errormsg' => 'cost不正确',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
-
                     ),
 
                     'impression' => array(
@@ -175,7 +169,6 @@ class SelectAdgroupDaily {
                         'errormsg' => 'impression不正确',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
-
                     ),
 
                 ),

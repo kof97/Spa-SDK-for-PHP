@@ -108,7 +108,6 @@ class Select {
                 'description' => '排序规则',
                 'restraint' => '当前支持根据audience_id或user_count排序',
                 'errormsg' => '排序参数不正确',
-
                 'element' => array(
                     'audience_id' => array(
                         'name' => 'audience_id',
@@ -120,7 +119,6 @@ class Select {
                         'errormsg' => 'audience_id_order_by不正确',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
-
                     ),
 
                     'user_count' => array(
@@ -133,7 +131,6 @@ class Select {
                         'errormsg' => 'user_count_order_by不正确',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
-
                     ),
 
                 ),

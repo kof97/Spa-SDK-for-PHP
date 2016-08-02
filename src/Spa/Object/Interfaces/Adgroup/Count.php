@@ -80,7 +80,6 @@ class Count {
                 'description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。例{"status":"AD_STATUS_NORMAL"}, 可选过滤字段：status，adgroup_name。',
                 'errormsg' => '过滤条件不正确',
-
                 'element' => array(
                     'configured_status' => array(
                         'name' => 'configured_status',
@@ -91,7 +90,6 @@ class Count {
                         'errormsg' => '用户状态不正确',
                         'enum' => 'enum',
                         'source' => 'api_configured_status',
-
                     ),
 
                     'system_status' => array(
@@ -103,7 +101,6 @@ class Count {
                         'errormsg' => '系统状态不正确',
                         'enum' => 'enum',
                         'source' => 'api_sys_status',
-
                     ),
 
                     'adgroup_name' => array(
@@ -116,7 +113,6 @@ class Count {
                         'errormsg' => '广告组名称不正确',
                         'max_length' => '120',
                         'min_length' => '1',
-
                     ),
 
                 ),

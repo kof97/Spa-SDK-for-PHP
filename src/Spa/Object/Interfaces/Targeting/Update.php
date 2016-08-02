@@ -116,7 +116,6 @@ class Update {
                 'description' => '定向详细设置',
                 'restraint' => '存放所有定向条件',
                 'errormsg' => '定向详细设置不正确',
-
                 'element' => array(
                     'age' => array(
                         'name' => 'age',
@@ -128,7 +127,6 @@ class Update {
                         'errormsg' => '年龄定向不正确',
                         'pattern' => '{age_pattern}',
                         'item_max_length' => '255',
-
                     ),
 
                     'gender' => array(
@@ -140,7 +138,6 @@ class Update {
                         'restraint' => '详见 [link href="gender"]性别[/link]',
                         'errormsg' => '性别定向不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'location' => array(
@@ -151,7 +148,6 @@ class Update {
                         'description' => '商圈定向',
                         'restraint' => '详见 [link href="location"]商圈[/link]',
                         'errormsg' => '商圈定向不正确',
-
                     ),
 
                     'user_os' => array(
@@ -163,7 +159,6 @@ class Update {
                         'restraint' => '详见 [link href="user_os"]操作系统[/link]',
                         'errormsg' => '操作系统定向不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'network_type' => array(
@@ -175,7 +170,6 @@ class Update {
                         'restraint' => '详见 [link href="network_type"]联网方式定向[/link]',
                         'errormsg' => '联网方式定向不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'network_operator' => array(
@@ -187,7 +181,6 @@ class Update {
                         'restraint' => '详见 [link href="network_operator"]移动运营商[/link]',
                         'errormsg' => '移动运营商定向不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'region' => array(
@@ -198,7 +191,30 @@ class Update {
                         'description' => '地理位置定向',
                         'restraint' => '存放地理位置定向条件',
                         'errormsg' => '地理位置定向设置不正确',
+                        'element' => array(
+                    'region_type' => array(
+                        'name' => 'region_type',
+                        'extendType' => 'region_type',
+                        'require' => 'no',
+                        'type' => 'string',
+                        'description' => '地域定向类型，包含实时、常驻和旅行',
+                        'restraint' => '详见 [link href="region_type"]地域定向类型[/link]',
+                        'errormsg' => '地域定向类型不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_region_type',
+                    ),
 
+                    'region_value' => array(
+                        'name' => 'region_value',
+                        'extendType' => 'region_value',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => '区域编码',
+                        'restraint' => '详见 [link href="area"]地区[/link]',
+                        'errormsg' => '区域定向不正确',
+                    ),
+
+                ),
                     ),
 
                     'business_interest' => array(
@@ -209,7 +225,6 @@ class Update {
                         'description' => '商业兴趣定向',
                         'restraint' => '详见 [link href="business_interest"]商业兴趣[/link]',
                         'errormsg' => '商业兴趣定向不正确',
-
                     ),
 
                     'online_scenario' => array(
@@ -221,7 +236,6 @@ class Update {
                         'restraint' => '详见 [link href="online_scenario"]上网场景[/link]',
                         'errormsg' => '上网场景不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'education' => array(
@@ -233,7 +247,6 @@ class Update {
                         'restraint' => '详见  [link href="education"]用户学历[/link]',
                         'errormsg' => '用户学历不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'paying_user_type' => array(
@@ -245,7 +258,6 @@ class Update {
                         'restraint' => '详见  [link href="paying_user_type"]付费用户[/link]',
                         'errormsg' => '付费用户不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'dressing_index' => array(
@@ -257,7 +269,6 @@ class Update {
                         'restraint' => '详见  [link href="dressing_index"]穿衣指数[/link]',
                         'errormsg' => '穿衣指数不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'uv_index' => array(
@@ -269,7 +280,6 @@ class Update {
                         'restraint' => '详见  [link href="uv_index"]紫外线指数[/link]',
                         'errormsg' => '紫外线指数不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'makeup_index' => array(
@@ -281,7 +291,6 @@ class Update {
                         'restraint' => '详见  [link href="makeup_index"]化妆指数[/link]',
                         'errormsg' => '化妆指数不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'climate' => array(
@@ -293,7 +302,6 @@ class Update {
                         'restraint' => '详见  [link href="climate"]气象[/link]',
                         'errormsg' => '气象不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'temperature' => array(
@@ -306,7 +314,6 @@ class Update {
                         'errormsg' => '温度不正确',
                         'pattern' => '{age_pattern}',
                         'item_max_length' => '255',
-
                     ),
 
                     'app_install_status' => array(
@@ -318,7 +325,6 @@ class Update {
                         'restraint' => '详见  [link href="app_install_status"]应用用户[/link]',
                         'errormsg' => '应用用户不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'device_price' => array(
@@ -331,7 +337,6 @@ class Update {
                         'errormsg' => '设备价格不正确',
                         'pattern' => '{age_pattern}',
                         'item_max_length' => '255',
-
                     ),
 
                     'customized_shopping_behavior' => array(
@@ -342,7 +347,52 @@ class Update {
                         'description' => '定制购物行为',
                         'restraint' => '详见 [link href="customized_shopping_behavior"]定制购物行为[/link]，仅限已提供购物行为数据给广点通的广告主使用。',
                         'errormsg' => '定制购物行为不正确',
+                        'element' => array(
+                    'object_type' => array(
+                        'name' => 'object_type',
+                        'extendType' => 'object_type',
+                        'require' => 'no',
+                        'type' => 'string',
+                        'description' => '行为对象的类型',
+                        'restraint' => '类目或店铺',
+                        'errormsg' => '行为对象的类型不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_jd_s_b_object_type',
+                    ),
 
+                    'object_id_list' => array(
+                        'name' => 'object_id_list',
+                        'extendType' => 'object_id_list',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => '行为对象的id',
+                        'restraint' => '类目或店铺id',
+                        'errormsg' => '行为对象的id不正确',
+                        'item_max_length' => '255',
+                    ),
+
+                    'time_window' => array(
+                        'name' => 'time_window',
+                        'extendType' => 'time_window',
+                        'require' => 'no',
+                        'type' => 'string',
+                        'description' => '行为对象有效期',
+                        'restraint' => '分为短期、中期和长期 ',
+                        'errormsg' => '行为对象有效期不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_jd_s_b_time_window',
+                    ),
+
+                    'act_id_list' => array(
+                        'name' => 'act_id_list',
+                        'extendType' => 'act_id_list',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => 'app行为对象的行为',
+                        'errormsg' => '行为对象的行为不正确',
+                    ),
+
+                ),
                     ),
 
                     'media_category_wechat' => array(
@@ -353,7 +403,6 @@ class Update {
                         'description' => '微信流量分类定向',
                         'restraint' => '详见 [link href="media_category_wechat"]微信流量分类[/link]，仅限京东、微信使用',
                         'errormsg' => '微信流量分类定向不正确',
-
                     ),
 
                     'app_behavior' => array(
@@ -364,7 +413,53 @@ class Update {
                         'description' => 'app行为定向',
                         'restraint' => '详见 [link href="app_behavior"]行为定向[/link]',
                         'errormsg' => 'app行为定向错误',
+                        'element' => array(
+                    'object_type' => array(
+                        'name' => 'object_type',
+                        'extendType' => 'app_behavior_object_type',
+                        'require' => 'no',
+                        'type' => 'string',
+                        'description' => '行为对象的类型',
+                        'restraint' => '可选值为：1、APP类目（APP_CLASS） 2、具体APP（APP_ID）',
+                        'errormsg' => 'app购物行为的类型错误',
+                        'enum' => 'enum',
+                        'source' => 'api_app_action_object_type',
+                    ),
 
+                    'object_id_list' => array(
+                        'name' => 'object_id_list',
+                        'extendType' => 'app_behavior_object_id_list',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => '行为对象的id',
+                        'restraint' => '类目或app id，一次至多可选10个',
+                        'errormsg' => 'app行为对象的id不正确',
+                        'item_max_length' => '255',
+                    ),
+
+                    'time_window' => array(
+                        'name' => 'time_window',
+                        'extendType' => 'app_behavior_time_window',
+                        'require' => 'no',
+                        'type' => 'integer',
+                        'description' => '行为对象的有效期',
+                        'restraint' => '单位天，有效值区间：1~365',
+                        'errormsg' => 'app购物行为的类型错误',
+                        'max' => '365',
+                        'min' => '1',
+                    ),
+
+                    'act_id_list' => array(
+                        'name' => 'act_id_list',
+                        'extendType' => 'app_behavior_act_id_list',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => 'app行为对象的行为',
+                        'errormsg' => '行为对象的行为不正确',
+                        'item_max_length' => '255',
+                    ),
+
+                ),
                     ),
 
                     'ad_placement_id' => array(
@@ -375,7 +470,6 @@ class Update {
                         'description' => '广告位(id)定向',
                         'restraint' => '小于4200000000',
                         'errormsg' => '广告位(id)定向错误',
-
                     ),
 
                     'relationship_status' => array(
@@ -387,7 +481,6 @@ class Update {
                         'restraint' => '详见 [link href="relationship_status"]婚恋状态[/link]',
                         'errormsg' => '婚恋状态不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'shopping_capability' => array(
@@ -399,7 +492,6 @@ class Update {
                         'restraint' => '详见 [link href="shopping_capability"]消费能力[/link]',
                         'errormsg' => '婚恋状态不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'customized_audience' => array(
@@ -411,7 +503,6 @@ class Update {
                         'restraint' => '传入targeting_rule/create_custom_audience创建成功返回的规则id,至多使用10个',
                         'errormsg' => '自定义人群不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'mobile_qq_media_follower' => array(
@@ -422,7 +513,6 @@ class Update {
                         'description' => '手Q粉丝定向',
                         'restraint' => '正数为该公众账号的粉丝，负数为非该公众账号的粉丝',
                         'errormsg' => '手Q粉丝定向不正确',
-
                     ),
 
                     'keyword' => array(
@@ -433,7 +523,19 @@ class Update {
                         'description' => '关键词定向',
                         'restraint' => '详见 [link href="keyword"]关键词定向[/link]',
                         'errormsg' => '关键词定向不正确',
+                        'element' => array(
+                    'words' => array(
+                        'name' => 'words',
+                        'extendType' => 'words',
+                        'require' => 'yes',
+                        'type' => 'array',
+                        'description' => '关键词',
+                        'restraint' => '小于或等于30个字节',
+                        'errormsg' => '关键词不正确',
+                        'item_max_length' => '30',
+                    ),
 
+                ),
                     ),
 
                     'media_category_union' => array(
@@ -444,7 +546,6 @@ class Update {
                         'description' => '移动媒体定向',
                         'restraint' => '详见 [link href="media_category_union"]移动媒体定向[/link]',
                         'errormsg' => '移动媒体定向错误',
-
                     ),
 
                     'living_status' => array(
@@ -456,7 +557,6 @@ class Update {
                         'restraint' => '详见 [link href="living_status"]生活状态[/link]',
                         'errormsg' => '生活状态不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'residential_community_price' => array(
@@ -469,7 +569,6 @@ class Update {
                         'errormsg' => '居民社区价格不正确',
                         'pattern' => '/^\d{1,6}\~\d{1,6}$/',
                         'item_max_length' => '255',
-
                     ),
 
                     'birthday_ahead_days' => array(
@@ -482,7 +581,6 @@ class Update {
                         'errormsg' => '生日定向错误',
                         'pattern' => '/0~(\d)+/',
                         'item_max_length' => '10',
-
                     ),
 
                     'shopping_behavior_jd' => array(
@@ -493,7 +591,62 @@ class Update {
                         'description' => '京东购物行为',
                         'restraint' => '详见 [link href="shopping_behavior_jd"]京东、拍拍购物行为[/link]',
                         'errormsg' => '京东购物行为不正确',
+                        'element' => array(
+                    'object_type' => array(
+                        'name' => 'object_type',
+                        'extendType' => 'object_type',
+                        'require' => 'no',
+                        'type' => 'string',
+                        'description' => '行为对象的类型',
+                        'restraint' => '类目或店铺',
+                        'errormsg' => '行为对象的类型不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_jd_s_b_object_type',
+                    ),
 
+                    'object_id_list' => array(
+                        'name' => 'object_id_list',
+                        'extendType' => 'object_id_list',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => '行为对象的id',
+                        'restraint' => '类目或店铺id',
+                        'errormsg' => '行为对象的id不正确',
+                        'item_max_length' => '255',
+                    ),
+
+                    'time_window' => array(
+                        'name' => 'time_window',
+                        'extendType' => 'time_window',
+                        'require' => 'no',
+                        'type' => 'string',
+                        'description' => '行为对象有效期',
+                        'restraint' => '分为短期、中期和长期 ',
+                        'errormsg' => '行为对象有效期不正确',
+                        'enum' => 'enum',
+                        'source' => 'api_jd_s_b_time_window',
+                    ),
+
+                    'act_id_list' => array(
+                        'name' => 'act_id_list',
+                        'extendType' => 'act_id_list',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => 'app行为对象的行为',
+                        'errormsg' => '行为对象的行为不正确',
+                    ),
+
+                    'data_source' => array(
+                        'name' => 'data_source',
+                        'extendType' => 'data_source',
+                        'require' => 'no',
+                        'type' => 'array',
+                        'description' => '购物行为的数据源',
+                        'restraint' => 'PC、手Q、微信或APP数据源',
+                        'errormsg' => '购物行为的数据源不正确',
+                    ),
+
+                ),
                     ),
 
                     'category_58' => array(
@@ -504,7 +657,6 @@ class Update {
                         'description' => '58类目定向',
                         'restraint' => '详见 [link href="wuba_category"]58类目定向[/link]，仅限58同城使用',
                         'errormsg' => '58类目定向不正确',
-
                     ),
 
                     'qq_wallet_user' => array(
@@ -516,7 +668,6 @@ class Update {
                         'restraint' => '详见 [link href="api_qq_wallet_user"]QQ钱包用户标签[/link]',
                         'errormsg' => 'QQ钱包用户标签定向不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'qq_wallet_shop' => array(
@@ -528,7 +679,6 @@ class Update {
                         'restraint' => '详见 [link href="api_qq_wallet_shop"]QQ钱包商铺标签[/link]',
                         'errormsg' => 'QQ钱包商铺标签定向不正确',
                         'item_max_length' => '255',
-
                     ),
 
                     'media_category_mobile_qq' => array(
@@ -539,7 +689,6 @@ class Update {
                         'description' => '手Q兴趣部落分类定向',
                         'restraint' => '详见 [link href="media_category_mobile_qq"]手Q兴趣部落分类[/link]',
                         'errormsg' => '手Q兴趣部落分类定向不正确',
-
                     ),
 
                 ),

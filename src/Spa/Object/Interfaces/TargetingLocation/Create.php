@@ -102,7 +102,6 @@ class Create {
                 'type' => 'struct',
                 'description' => '商圈具体配置信息',
                 'restraint' => '商圈具体配置信息',
-
                 'element' => array(
                     'location_type_circle' => array(
                         'name' => 'location_type_circle',
@@ -110,7 +109,32 @@ class Create {
                         'require' => 'yes',
                         'type' => 'struct',
                         'description' => '经纬度+半径',
+                        'element' => array(
+                    'longitude' => array(
+                        'name' => 'longitude',
+                        'extendType' => 'longitude',
+                        'require' => 'yes',
+                    ),
 
+                    'latitude' => array(
+                        'name' => 'latitude',
+                        'extendType' => 'latitude',
+                        'require' => 'yes',
+                    ),
+
+                    'radius' => array(
+                        'name' => 'radius',
+                        'extendType' => 'radius',
+                        'require' => 'yes',
+                        'type' => 'integer',
+                        'description' => '半径，单位米',
+                        'restraint' => '大于等于1000，小于等于5000',
+                        'errormsg' => '半径错误',
+                        'max' => '5000',
+                        'min' => '1000',
+                    ),
+
+                ),
                     ),
 
                 ),
