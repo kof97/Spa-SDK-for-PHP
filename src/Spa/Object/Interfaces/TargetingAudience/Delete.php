@@ -153,10 +153,7 @@ class Delete {
                 'name' => 'audience_id',
                 'extendType' => 'audience_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '人群规则id',
-                'restraint' => '人群规则id',
-                'errormsg' => '人群规则id不正确',
+                'type' => '',
             ),
 
         );

@@ -166,61 +166,21 @@ class SelectAdgroupHourly {
                 'name' => 'filter',
                 'extendType' => 'filter',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '过滤条件',
-                'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
-                'errormsg' => '过滤条件不正确',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'filter_struct',
-                    'item_max_length' => '255',
-                )
+                'type' => '',
             ),
 
             'order_by' => array(
                 'name' => 'order_by',
                 'extendType' => 'order_by',
                 'require' => 'no',
-                'type' => 'struct',
-                'description' => '排序参数,默认按日期降序',
-                'restraint' => '见 [link href="order_by"]排序规则定义[/link]',
-                'errormsg' => '排序参数不正确',
-                'element' => array(
-                    'cpc' => array(
-                        'name' => 'cpc',
-                        'extendType' => 'cpc',
-                        'require' => 'no',
-                    ),
-                    'cost' => array(
-                        'name' => 'cost',
-                        'extendType' => 'cost',
-                        'require' => 'no',
-                    ),
-                    'impression' => array(
-                        'name' => 'impression',
-                        'extendType' => 'impression',
-                        'require' => 'no',
-                    ),
-                ),
+                'type' => '',
             ),
 
             'group_by' => array(
                 'name' => 'group_by',
                 'extendType' => 'group_by',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '聚合参数',
-                'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
-                'errormsg' => '聚合参数不正确',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'string',
-                    'item_max_length' => '255',
-                )
+                'type' => '',
             ),
 
             'page' => array(
@@ -251,12 +211,7 @@ class SelectAdgroupHourly {
                 'name' => 'report_only',
                 'extendType' => 'report_only',
                 'require' => 'no',
-                'type' => 'integer',
-                'description' => '是否过滤无曝光的数据',
-                'restraint' => 'true或false,默认不过滤',
-                'errormsg' => '参数（report_only）不正确',
-                'max' => '1',
-                'min' => '0',
+                'type' => '',
             ),
 
         );

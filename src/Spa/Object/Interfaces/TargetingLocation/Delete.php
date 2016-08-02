@@ -153,12 +153,7 @@ class Delete {
                 'name' => 'location_id',
                 'extendType' => 'location_id',
                 'require' => 'yes',
-                'type' => 'id',
-                'description' => '自定义打点id',
-                'restraint' => '自定义打点id',
-                'errormsg' => '自定义打点id不正确',
-                'max' => '9223372036854775807',
-                'min' => '1',
+                'type' => '',
             ),
 
         );

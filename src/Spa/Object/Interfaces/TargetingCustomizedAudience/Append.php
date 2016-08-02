@@ -153,10 +153,7 @@ class Append {
                 'name' => 'audience_id',
                 'extendType' => 'audience_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '规则id',
-                'restraint' => '规则id',
-                'errormsg' => '规则id不正确',
+                'type' => '',
             ),
 
             'data_file' => array(
@@ -170,12 +167,7 @@ class Append {
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '上传文件的内容md5',
-                'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
-                'errormsg' => '上传文件的内容md5不正确',
-                'max_length' => '32',
-                'min_length' => '32',
+                'type' => '',
             ),
 
         );

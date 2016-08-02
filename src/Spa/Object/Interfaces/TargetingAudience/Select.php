@@ -153,51 +153,21 @@ class Select {
                 'name' => 'audience_type',
                 'extendType' => 'audience_type',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '人群类型，如：Meta、Combine、Lookalike',
-                'restraint' => '详见 [link href="audience_type"]人群类型[/link]',
-                'errormsg' => '人群类型不正确',
-                'enum' => 'enum',
-                'source' => 'api_audience_type',
+                'type' => '',
             ),
 
             'filter' => array(
                 'name' => 'filter',
                 'extendType' => 'filter',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '若此字段不传，或传空则视为无限制条件。参见：高级条件',
-                'restraint' => '过滤条件结构',
-                'errormsg' => '过滤条件不正确',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'filter_struct',
-                    'item_max_length' => '255',
-                )
+                'type' => '',
             ),
 
             'order_by' => array(
                 'name' => 'order_by',
                 'extendType' => 'order_by',
                 'require' => 'no',
-                'type' => 'struct',
-                'description' => '排序规则',
-                'restraint' => '当前支持根据audience_id或user_count排序',
-                'errormsg' => '排序参数不正确',
-                'element' => array(
-                    'audience_id' => array(
-                        'name' => 'audience_id',
-                        'extendType' => 'audience_id_order_by',
-                        'require' => 'no',
-                    ),
-                    'user_count' => array(
-                        'name' => 'user_count',
-                        'extendType' => 'user_count_order_by',
-                        'require' => 'no',
-                    ),
-                ),
+                'type' => '',
             ),
 
             'page' => array(

@@ -164,17 +164,7 @@ class Update {
                 'name' => 'preview_qq_list',
                 'extendType' => 'preview_qq_list',
                 'require' => 'yes',
-                'type' => 'array',
-                'description' => '广告预览QQ列表',
-                'restraint' => 'json格式的数组，例如[111,222,333]',
-                'errormsg' => '预览QQ列表错误',
-                    
-
-                'repeated' => array(
-                    'type' => 'integer',
-                    'max' => '4200000000',
-                    'min' => '1000',
-                )
+                'type' => '',
             ),
 
         );

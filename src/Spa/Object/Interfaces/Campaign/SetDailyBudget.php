@@ -165,12 +165,7 @@ class SetDailyBudget {
                 'name' => 'daily_budget',
                 'extendType' => 'daily_budget',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '日消耗限额，单位为分',
-                'restraint' => '大于5000，且小于400000000',
-                'errormsg' => '日消耗限额不正确',
-                'max' => '400000000',
-                'min' => '5000',
+                'type' => '',
             ),
 
         );

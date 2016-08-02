@@ -30,6 +30,9 @@ $params = array(
 	'bid_amount' => 321,
 	'product_type' => 'PRODUCT_TYPE_APP_IOS',
 	'destination_url' => 321,
+	'image_url' => 321,
+	'destination_url' => 321,
+	'destination_url' => 321,
 
 
 
@@ -47,7 +50,8 @@ $modules = $spa->getModules();
 
 
 $response = $modules->adgroup->sync->send($params);
-var_dump($response);
+$res = $modules->image->create_by_url->send($params);
+var_dump($res);
 //var_dump($modules::ADVERTISER);
 
 //var_dump($spa->getClient()->getBaseUrl());

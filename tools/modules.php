@@ -264,7 +264,10 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
         if ($key === 'request') {
             foreach ($value as $k => $v) {
                 $name = $v->attributes()['name'] . '';
-                $extendType = $v->attributes()['type'] . '';
+                // extendType 有继承其他模块的情况，重选 mod
+                $t = explode('.', $v->attributes()['type'] . '');
+                $extendType = array_pop($t);
+                $mod_name = implode($t, '');
                 $require = $v->attributes()['require'] . '';
 
                 $arr = getExtendTypeInfo($data, $mod_name, $interface_name, $extendType);
@@ -349,11 +352,6 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                         $repeat = str_replace($pattern, "\r\n", $repeat);
                     }
                 }
-
-
-
-
-
 
                 $field_info .= "
             '$name' => array(

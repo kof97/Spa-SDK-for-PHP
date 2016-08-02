@@ -153,24 +153,14 @@ class Create {
                 'name' => 'audience_name',
                 'extendType' => 'audience_name',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '人群名称',
-                'restraint' => '1-32个字符，不区分中英文',
-                'errormsg' => '人群名称错误',
-                'max_length' => '96',
-                'min_length' => '1',
+                'type' => '',
             ),
 
             'data_type' => array(
                 'name' => 'data_type',
                 'extendType' => 'data_type',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '号码类型',
-                'restraint' => '详见 [link href="dmp_audience_data_type"]DMP自定义人群号码类型[/link]',
-                'errormsg' => '人群号码类型错误',
-                'enum' => 'enum',
-                'source' => 'ApiAudienceDataType',
+                'type' => '',
             ),
 
             'data_file' => array(
@@ -184,24 +174,14 @@ class Create {
                 'name' => 'file_md5',
                 'extendType' => 'file_md5',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '上传文件的内容md5',
-                'restraint' => '如果本字段值与服务端接收文件的md5值不匹配则会报错',
-                'errormsg' => '上传文件的内容md5不正确',
-                'max_length' => '32',
-                'min_length' => '32',
+                'type' => '',
             ),
 
             'description' => array(
                 'name' => 'description',
                 'extendType' => 'description',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '描述',
-                'restraint' => '0-100个字符',
-                'errormsg' => '描述不正确',
-                'max_length' => '300',
-                'min_length' => '1',
+                'type' => '',
             ),
 
         );

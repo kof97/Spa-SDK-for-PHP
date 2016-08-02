@@ -153,46 +153,14 @@ class Count {
                 'name' => 'where',
                 'extendType' => 'where',
                 'require' => 'no',
-                'type' => 'struct',
-                'description' => '过滤条件',
-                'restraint' => '若此字段不传，或传空则视为无限制条件。例{"status":"AD_STATUS_NORMAL"}, 可选过滤字段：status，adgroup_name。',
-                'errormsg' => '过滤条件不正确',
-                'element' => array(
-                    'configured_status' => array(
-                        'name' => 'configured_status',
-                        'extendType' => 'configured_status',
-                        'require' => 'no',
-                    ),
-                    'system_status' => array(
-                        'name' => 'system_status',
-                        'extendType' => 'system_status',
-                        'require' => 'no',
-                    ),
-                    'adgroup_name' => array(
-                        'name' => 'adgroup_name',
-                        'extendType' => 'adgroup_name',
-                        'require' => 'no',
-                    ),
-                ),
+                'type' => '',
             ),
 
             'group_by' => array(
                 'name' => 'group_by',
                 'extendType' => 'group_by',
                 'require' => 'yes',
-                'type' => 'array',
-                'description' => '聚合字段',
-                'restraint' => '目前支持configured_status，system_status 例：["status, system_status"]',
-                'errormsg' => '聚合字段不正确',
-                'list' => 'configured_status,system_status',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'string',
-                    'list' => 'configured_status,system_status',
-                    'item_max_length' => '255',
-                )
+                'type' => '',
             ),
 
         );

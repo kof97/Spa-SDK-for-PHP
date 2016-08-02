@@ -151,9 +151,15 @@ class GetEstimationByTargetingAudience {
 
             'combine_rule' => array(
                 'name' => 'combine_rule',
-                'extendType' => 'targeting_audience.combine_rule',
+                'extendType' => 'combine_rule',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'string',
+                'description' => '组合规则',
+                'restraint' => '不超过64000个字符，且不超过3层',
+                'errormsg' => '组合规则不正确',
+                'max_length' => '64000',
+                'min_length' => '1',
+                'pattern' => '/.*/',
             ),
 
         );

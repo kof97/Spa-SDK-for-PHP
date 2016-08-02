@@ -151,9 +151,14 @@ class UpdateAdvertiser {
 
             'corporation_name' => array(
                 'name' => 'corporation_name',
-                'extendType' => 'advertiser.corporation_name',
+                'extendType' => 'corporation_name',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '公司名称',
+                'restraint' => '小于120个英文字符',
+                'errormsg' => '公司名称不正确',
+                'max_length' => '120',
+                'min_length' => '1',
             ),
 
             'certification_image_id' => array(
@@ -182,23 +187,51 @@ class UpdateAdvertiser {
 
             'qualification_image_id_list' => array(
                 'name' => 'qualification_image_id_list',
-                'extendType' => 'advertiser.image_id_list',
+                'extendType' => 'image_id_list',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'array',
+                'description' => '广告特殊资质证明图片ID。最多不超过1
+0个',
+                'restraint' => 'URL小于255个英文字符',
+                'errormsg' => '广告特殊资质证明图片ID不正确',
+                    
+
+                'item_max_length' => '255',
+                'repeated' => array(
+                    'type' => 'string',
+                    'item_max_length' => '255',
+                )
             ),
 
             'ad_qualification_image_id_list' => array(
                 'name' => 'ad_qualification_image_id_list',
-                'extendType' => 'advertiser.image_id_list',
+                'extendType' => 'image_id_list',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'array',
+                'description' => '广告特殊资质证明图片ID。最多不超过1
+0个',
+                'restraint' => 'URL小于255个英文字符',
+                'errormsg' => '广告特殊资质证明图片ID不正确',
+                    
+
+                'item_max_length' => '255',
+                'repeated' => array(
+                    'type' => 'string',
+                    'item_max_length' => '255',
+                )
             ),
 
             'website' => array(
                 'name' => 'website',
-                'extendType' => 'advertiser.website',
+                'extendType' => 'website',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '推广站点地址',
+                'restraint' => 'URL小于255个英文字符',
+                'errormsg' => '推广站点地址不正确',
+                'max_length' => '255',
+                'min_length' => '1',
+                'pattern' => '{url_pattern}',
             ),
 
             'icp_image_id' => array(
@@ -215,23 +248,40 @@ class UpdateAdvertiser {
 
             'corporation_image_name' => array(
                 'name' => 'corporation_image_name',
-                'extendType' => 'advertiser.corporation_image_name',
+                'extendType' => 'corporation_image_name',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '品牌名称',
+                'restraint' => '小于120个英文字符',
+                'errormsg' => '品牌名称不正确',
+                'max_length' => '120',
+                'min_length' => '1',
             ),
 
             'contact_person_telephone' => array(
                 'name' => 'contact_person_telephone',
-                'extendType' => 'advertiser.contact_person_telephone',
+                'extendType' => 'contact_person_telephone',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '联系人座机电话号码',
+                'restraint' => '例如：0755-86013388',
+                'errormsg' => '联系人电话号码不正确',
+                'max_length' => '20',
+                'min_length' => '0',
+                'pattern' => '/^[0-9]{3,4}\-[0-9]{6,8}(\-[0-9]{1,8})?$/',
             ),
 
             'contact_person_mobile' => array(
                 'name' => 'contact_person_mobile',
-                'extendType' => 'advertiser.contact_person_mobile',
+                'extendType' => 'contact_person_mobile',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '联系人手机号码',
+                'restraint' => '例如：+8613900000000 或 13900000000',
+                'errormsg' => '联系人手机号码不正确',
+                'max_length' => '20',
+                'min_length' => '0',
+                'pattern' => '/^\+?[0-9]{6,13}$/',
             ),
 
         );

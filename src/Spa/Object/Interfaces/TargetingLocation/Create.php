@@ -153,39 +153,21 @@ class Create {
                 'name' => 'location_type',
                 'extendType' => 'location_type',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '商圈类型',
-                'restraint' => '商圈类型',
-                'enum' => 'enum',
-                'source' => 'api_location_type',
+                'type' => '',
             ),
 
             'location_name' => array(
                 'name' => 'location_name',
                 'extendType' => 'location_name',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '自定义打点名称',
-                'restraint' => '小于等于60个英文字符，同一账户下名称不允许重复。',
-                'errormsg' => '自定义打点名称错误',
-                'max_length' => '60',
-                'min_length' => '1',
+                'type' => '',
             ),
 
             'location_spec' => array(
                 'name' => 'location_spec',
                 'extendType' => 'location_spec',
                 'require' => 'yes',
-                'type' => 'struct',
-                'description' => '商圈具体配置信息',
-                'restraint' => '商圈具体配置信息',
-                'element' => array(
-                    'location_type_circle' => array(
-                        'name' => 'location_type_circle',
-                        'extendType' => 'location_type_circle',
-                        'require' => 'yes',
-                    ),
-                ),
+                'type' => '',
             ),
 
             'city_id' => array(

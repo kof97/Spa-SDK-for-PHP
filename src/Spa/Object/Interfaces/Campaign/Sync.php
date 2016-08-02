@@ -165,12 +165,7 @@ class Sync {
                 'name' => 'outer_campaign_id',
                 'extendType' => 'outer_campaign_id',
                 'require' => 'no',
-                'type' => 'id',
-                'description' => '外部推广计划Id',
-                'restraint' => '小于2^63',
-                'errormsg' => '外部推广计划Id不正确',
-                'max' => '9223372036854775807',
-                'min' => '1',
+                'type' => '',
             ),
 
             'campaign_name' => array(
@@ -189,19 +184,19 @@ class Sync {
                 'name' => 'campaign_type',
                 'extendType' => 'campaign_type',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '推广计划类型',
-                'restraint' => '详见 [link href="campaign_type"]推广计划类型[/link]',
-                'errormsg' => '推广计划类型不正确',
-                'enum' => 'enum',
-                'source' => 'api_campaign_type',
+                'type' => '',
             ),
 
             'daily_budget' => array(
                 'name' => 'daily_budget',
-                'extendType' => 'account.unlimited_daily_budget',
+                'extendType' => 'unlimited_daily_budget',
                 'require' => 'yes',
-                'type' => '',
+                'type' => 'integer',
+                'description' => '日限额，单位为分',
+                'restraint' => '0 – 400000000，0表示不限，单位为分',
+                'errormsg' => '日消耗限额不正确',
+                'max' => '400000000',
+                'min' => '0',
             ),
 
             'configured_status' => array(
@@ -246,38 +241,26 @@ class Sync {
                 'name' => 'site_set',
                 'extendType' => 'site_set',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '投放站点集合',
-                'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
-                'errormsg' => '投放站点集合不正确',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'string',
-                    'item_max_length' => '255',
-                    'enum' => 'enum',
-                    'source' => 'api_site_set_definition',
-                )
+                'type' => '',
             ),
 
             'time_series' => array(
                 'name' => 'time_series',
-                'extendType' => 'adgroup.time_series',
+                'extendType' => 'time_series',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '投放时间段，格式为48 * 7位由0和1组成的字符串，也就是以半个小时为最小粒度，0为不投放，1为投放',
+                'restraint' => '等于48*7位字符串，且都是0或1，不传此字段则视为全时段投放',
+                'errormsg' => '结束投放时间点对应的时间戳不正确',
+                'max_length' => '336',
+                'min_length' => '336',
             ),
 
             'speed_mode' => array(
                 'name' => 'speed_mode',
                 'extendType' => 'speed_mode',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '标准投放类型',
-                'restraint' => '详见 [link href="speed_mode"]标准投放类型[/link]',
-                'errormsg' => '标准投放类型不正确',
-                'enum' => 'enum',
-                'source' => 'api_speed_mode',
+                'type' => '',
             ),
 
             'outer_version' => array(

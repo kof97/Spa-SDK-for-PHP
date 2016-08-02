@@ -163,47 +163,35 @@ class TransferBack {
 
             'outer_advertiser_id' => array(
                 'name' => 'outer_advertiser_id',
-                'extendType' => 'advertiser.outer_advertiser_id',
+                'extendType' => 'outer_advertiser_id',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'id',
+                'description' => '外部广告主Id',
+                'restraint' => '小于2^63',
+                'errormsg' => '外部广告主Id不正确',
+                'max' => '9223372036854775807',
+                'min' => '1',
             ),
 
             'amount' => array(
                 'name' => 'amount',
                 'extendType' => 'amount',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '金额',
-                'restraint' => '单位为分',
-                'errormsg' => '金额不正确',
-                'max' => '2000000000',
-                'min' => '1',
+                'type' => '',
             ),
 
             'external_bill_no' => array(
                 'name' => 'external_bill_no',
                 'extendType' => 'external_bill_no',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '外部订单号',
-                'restraint' => '不超过35字符，需要有调用方标示前缀，且要保证在同一个广告主下唯一，如jdzt-xxx-xxx',
-                'errormsg' => '外部订单号不正确',
-                'max_length' => '35',
-                'min_length' => '1',
-                'pattern' => '/^[0-9a-z\-_]{10,35}$/',
+                'type' => '',
             ),
 
             'memo' => array(
                 'name' => 'memo',
                 'extendType' => 'memo',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '备注信息',
-                'restraint' => '不超过64个英文字符',
-                'errormsg' => '备注信息不正确',
-                'max_length' => '64',
-                'min_length' => '1',
-                'pattern' => '{memo_pattern}',
+                'type' => '',
             ),
 
         );

@@ -153,24 +153,14 @@ class Sync {
                 'name' => 'outer_advertiser_id',
                 'extendType' => 'outer_advertiser_id',
                 'require' => 'no',
-                'type' => 'id',
-                'description' => '外部广告主Id',
-                'restraint' => '小于2^63',
-                'errormsg' => '外部广告主Id不正确',
-                'max' => '9223372036854775807',
-                'min' => '1',
+                'type' => '',
             ),
 
             'corporation_name' => array(
                 'name' => 'corporation_name',
                 'extendType' => 'corporation_name',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '公司名称',
-                'restraint' => '小于120个英文字符',
-                'errormsg' => '公司名称不正确',
-                'max_length' => '120',
-                'min_length' => '1',
+                'type' => '',
             ),
 
             'certification_image_id' => array(
@@ -201,61 +191,28 @@ class Sync {
                 'name' => 'daily_budget',
                 'extendType' => 'sync_daily_budget',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '日限额，单位为分',
-                'restraint' => '0 – 1000000000，0表示不限，单位为分',
-                'errormsg' => '日消耗限额不正确',
-                'max' => '1000000000',
-                'min' => '0',
+                'type' => '',
             ),
 
             'qualification_image_id_list' => array(
                 'name' => 'qualification_image_id_list',
                 'extendType' => 'image_id_list',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '广告特殊资质证明图片ID。最多不超过1
-0个',
-                'restraint' => 'URL小于255个英文字符',
-                'errormsg' => '广告特殊资质证明图片ID不正确',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'string',
-                    'item_max_length' => '255',
-                )
+                'type' => '',
             ),
 
             'ad_qualification_image_id_list' => array(
                 'name' => 'ad_qualification_image_id_list',
                 'extendType' => 'image_id_list',
                 'require' => 'no',
-                'type' => 'array',
-                'description' => '广告特殊资质证明图片ID。最多不超过1
-0个',
-                'restraint' => 'URL小于255个英文字符',
-                'errormsg' => '广告特殊资质证明图片ID不正确',
-                    
-
-                'item_max_length' => '255',
-                'repeated' => array(
-                    'type' => 'string',
-                    'item_max_length' => '255',
-                )
+                'type' => '',
             ),
 
             'website' => array(
                 'name' => 'website',
                 'extendType' => 'website',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '推广站点地址',
-                'restraint' => 'URL小于255个英文字符',
-                'errormsg' => '推广站点地址不正确',
-                'max_length' => '255',
-                'min_length' => '1',
-                'pattern' => '{url_pattern}',
+                'type' => '',
             ),
 
             'icp_image_id' => array(
@@ -274,70 +231,28 @@ class Sync {
                 'name' => 'corporation_image_name',
                 'extendType' => 'corporation_image_name',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '品牌名称',
-                'restraint' => '小于120个英文字符',
-                'errormsg' => '品牌名称不正确',
-                'max_length' => '120',
-                'min_length' => '1',
+                'type' => '',
             ),
 
             'contact_person_telephone' => array(
                 'name' => 'contact_person_telephone',
                 'extendType' => 'contact_person_telephone',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '联系人座机电话号码',
-                'restraint' => '例如：0755-86013388',
-                'errormsg' => '联系人电话号码不正确',
-                'max_length' => '20',
-                'min_length' => '0',
-                'pattern' => '/^[0-9]{3,4}\-[0-9]{6,8}(\-[0-9]{1,8})?$/',
+                'type' => '',
             ),
 
             'contact_person_mobile' => array(
                 'name' => 'contact_person_mobile',
                 'extendType' => 'contact_person_mobile',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '联系人手机号码',
-                'restraint' => '例如：+8613900000000 或 13900000000',
-                'errormsg' => '联系人手机号码不正确',
-                'max_length' => '20',
-                'min_length' => '0',
-                'pattern' => '/^\+?[0-9]{6,13}$/',
+                'type' => '',
             ),
 
             'outer_extend_info' => array(
                 'name' => 'outer_extend_info',
                 'extendType' => 'outer_extend_info',
                 'require' => 'yes',
-                'type' => 'struct',
-                'description' => '广告主扩展信息',
-                'restraint' => '详见 [link href="outer_extend_info"]广告主扩展信息[/link]',
-                'errormsg' => '广告主扩展信息不正确',
-                'element' => array(
-                    'id' => array(
-                        'name' => 'id',
-                        'extendType' => 'outer_extend_info_id',
-                        'require' => 'no',
-                    ),
-                    'name' => array(
-                        'name' => 'name',
-                        'extendType' => 'outer_extend_info_name',
-                        'require' => 'no',
-                    ),
-                    'category_id' => array(
-                        'name' => 'category_id',
-                        'extendType' => 'outer_extend_info_category_id',
-                        'require' => 'no',
-                    ),
-                    'category_name' => array(
-                        'name' => 'category_name',
-                        'extendType' => 'outer_extend_info_category_name',
-                        'require' => 'no',
-                    ),
-                ),
+                'type' => '',
             ),
 
             'outer_version' => array(

@@ -153,24 +153,14 @@ class WechatOrderQuery {
                 'name' => 'wechat_appid',
                 'extendType' => 'wechat_appid',
                 'require' => 'yes',
-                'type' => 'string',
-                'description' => '微信开放平台账户appid',
-                'restraint' => '在开放平台查看，标识申请的应用',
-                'errormsg' => '微信开放平台账户appid错误',
-                'max_length' => '32',
-                'min_length' => '1',
+                'type' => '',
             ),
 
             'out_trade_no' => array(
                 'name' => 'out_trade_no',
                 'extendType' => 'out_trade_no',
                 'require' => 'no',
-                'type' => 'string',
-                'description' => '订单号码',
-                'restraint' => '最多32个字符',
-                'errormsg' => '订单号码错误',
-                'max_length' => '32',
-                'min_length' => '1',
+                'type' => '',
             ),
 
         );
