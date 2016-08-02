@@ -107,7 +107,6 @@ class $interface_class {
 
             if (!isset(\$params[\$key])) {
                 throw new ParamsException("Expect the required params '\$key' that you didn't provide");
-                
             }
         }
     }

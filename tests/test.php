@@ -21,9 +21,12 @@ $test = $spa->getApp();
 
 $params = array(
 	'advertiser_id' => '321',
-	'targeting_na1me' => 321,
-	'bbbb' => 321,
-	'ssss' => 321,
+	'targeting_name' => 321,
+	'description' => 321,
+	'targeting_setting' => 321,
+	'outer_targeting_id' => 321,
+	'targeting_setting' => 321,
+	'targeting_setting' => 321,
 
 
 
