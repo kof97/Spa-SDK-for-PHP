@@ -310,6 +310,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $max_size = isset($arr['max_size']) ? "'max_size' => '" . $arr['max_size'] . "'," : '';
                 $min_size = isset($arr['min_size']) ? "'min_size' => '" . $arr['min_size'] . "'," : '';
 
+                /** ------------------------------------------------------- **/
                 $element = '';
                 $ele = isset($arr['element']) ? $arr['element'] : null;
                 if ($ele) {
@@ -319,17 +320,45 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                         $ele_extendType = isset($value['extendType']) ? "'extendType' => '" . $value['extendType'] . "'," : '';
                         $ele_require = isset($value['require']) ? "'require' => '" . $value['require'] . "'," : '';
 
+                        $ele_ext_type = $value['extendType'];
+                        $ele_ext_mod_name = $mod_name;
+                        if (strpos($ele_ext_type, '.') !== false) {
+                            $t = explode('.', $ele_ext_type);
+                            $ele_ext_type = array_pop($t);
+                            $ele_ext_mod_name = implode($t, '');
+                        }
+                        $ele_arr = getExtendTypeInfo($data, $ele_ext_mod_name, $interface_name, $value['extendType']);
+
+                        $ele_type = isset($ele_arr['type']) ? "'type' => '" . $ele_arr['type'] . "'," : '';
+                        $ele_description = isset($ele_arr['description']) ? $ele_arr['description'] : '';
+                        $ele_description = str_replace('\'', '"', $ele_description);
+                        $ele_description = $ele_description ? "'description' => '" . $ele_description . "'," : '';
+
+                        $ele_restraint = isset($ele_arr['restraint']) ? $ele_arr['restraint'] : '';
+                        $ele_restraint = str_replace('\'', '"', $ele_restraint);
+                        $ele_restraint = $ele_restraint ? "'restraint' => '" . $ele_restraint . "'," : '';
+
+                        $ele_errormsg = isset($ele_arr['errormsg']) ? $ele_arr['errormsg'] : '';
+                        $ele_errormsg = str_replace('\'', '"', $ele_errormsg);
+                        $ele_errormsg = $ele_errormsg ? "'errormsg' => '" . $ele_errormsg . "'," : '';
+var_dump($ele_arr);
+var_dump($value['name']);
                         $element .= "
                     '$key' => array(
                         $ele_name
                         $ele_extendType
                         $ele_require
+                        $ele_type
+                        $ele_description
+                        $ele_restraint
+                        $ele_errormsg
                     ),";
                     }
                     $element .= "
                 ),";
 
                 }
+                /** ------------------------------------------------------- **/
 
                 $repeat = '';
                 $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;

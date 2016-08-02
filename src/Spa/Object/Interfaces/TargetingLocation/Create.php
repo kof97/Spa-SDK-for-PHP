@@ -107,6 +107,10 @@ class Create {
                         'name' => 'location_type_circle',
                         'extendType' => 'location_type_circle',
                         'require' => 'yes',
+                        'type' => 'struct',
+                        'description' => '经纬度+半径',
+                        
+                        
                     ),
                 ),
             ),

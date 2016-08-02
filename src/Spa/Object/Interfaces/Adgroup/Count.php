@@ -85,16 +85,28 @@ class Count {
                         'name' => 'configured_status',
                         'extendType' => 'configured_status',
                         'require' => 'no',
+                        'type' => 'string',
+                        'description' => '用户状态',
+                        
+                        'errormsg' => '用户状态不正确',
                     ),
                     'system_status' => array(
                         'name' => 'system_status',
                         'extendType' => 'system_status',
                         'require' => 'no',
+                        'type' => 'string',
+                        'description' => '系统状态',
+                        
+                        'errormsg' => '系统状态不正确',
                     ),
                     'adgroup_name' => array(
                         'name' => 'adgroup_name',
                         'extendType' => 'adgroup_name',
                         'require' => 'no',
+                        'type' => 'string',
+                        'description' => '广告组名称',
+                        'restraint' => '小于120个英文字符，同一账户下名称不允许重复。',
+                        'errormsg' => '广告组名称不正确',
                     ),
                 ),
             ),

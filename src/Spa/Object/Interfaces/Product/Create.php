@@ -122,11 +122,19 @@ class Create {
                         'name' => 'product_type_jd_item',
                         'extendType' => 'ec_info',
                         'require' => 'no',
+                        'type' => 'struct',
+                        'description' => '电商标的物信息',
+                        'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
+                        
                     ),
                     'product_type_jd_shop' => array(
                         'name' => 'product_type_jd_shop',
                         'extendType' => 'ec_info',
                         'require' => 'no',
+                        'type' => 'struct',
+                        'description' => '电商标的物信息',
+                        'restraint' => '详见 [link href="ec_info"]京东、拍拍涉及标的物[/link]',
+                        
                     ),
                 ),
             ),

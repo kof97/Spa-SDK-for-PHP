@@ -112,9 +112,12 @@ class FieldsDetector {
 
         if (isset($data['element'])) {
             $element = $data['element'];
-            
-            var_dump($value);
-            var_dump($element);
+            $struct_name = $data['name'];
+
+            foreach ($element as $key => $value) {
+                var_dump($key);
+                var_dump($value);
+            }
         }
         
     }
@@ -156,7 +159,7 @@ class FieldsDetector {
     protected static function validateRequireField($data, $params) {
         $from_element = 0;
         if (isset($data['element'])) {
-            $element_name = $data['name'];
+            $struct_name = $data['name'];
             $data = $data['element'];
             $from_element = 1;
         }
@@ -168,7 +171,7 @@ class FieldsDetector {
 
             if (!isset($params[$key])) {
                 if ($from_element) {
-                    throw new ParamsException("Expect the required params '$key' in the element '$element_name' that you didn't provide");
+                    throw new ParamsException("Expect the required params '$key' in the element '$struct_name' that you didn't provide");
                 }
                 throw new ParamsException("Expect the required params '$key' that you didn't provide");
             }
