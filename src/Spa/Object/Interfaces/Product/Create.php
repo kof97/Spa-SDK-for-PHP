@@ -117,7 +117,6 @@ class Create {
                 'description' => '标的物详细信息',
                 'restraint' => '详见 [link href="ec_info"]京东、拍拍店铺、标的物[/link]',
                 'errormsg' => '京东购物行为不正确',
-                        
 
                 'element' => array(
                     'product_type_jd_item' => array(

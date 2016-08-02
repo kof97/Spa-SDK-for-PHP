@@ -80,7 +80,6 @@ class SelectCampaignDaily {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-                        
 
                 'element' => array(
                     'start_date' => array(
@@ -136,7 +135,6 @@ class SelectCampaignDaily {
                 'description' => '排序参数,默认按日期降序',
                 'restraint' => '见 [link href="order_by"]排序规则定义[/link]',
                 'errormsg' => '排序参数不正确',
-                        
 
                 'element' => array(
                     'cpc' => array(

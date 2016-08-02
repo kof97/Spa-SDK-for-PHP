@@ -80,7 +80,6 @@ class Count {
                 'description' => '过滤条件',
                 'restraint' => '若此字段不传，或传空则视为无限制条件。例{"status":"AD_STATUS_NORMAL"}, 可选过滤字段：status，adgroup_name。',
                 'errormsg' => '过滤条件不正确',
-                        
 
                 'element' => array(
                     'configured_status' => array(

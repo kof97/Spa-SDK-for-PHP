@@ -237,7 +237,6 @@ class Sync {
                 'description' => '广告主扩展信息',
                 'restraint' => '详见 [link href="outer_extend_info"]广告主扩展信息[/link]',
                 'errormsg' => '广告主扩展信息不正确',
-                        
 
                 'element' => array(
                     'id' => array(

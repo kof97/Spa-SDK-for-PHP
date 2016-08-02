@@ -353,8 +353,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                         $ele_item_max_length = isset($ele_arr['item_max_length']) ? "'item_max_length' => '" . $ele_arr['item_max_length'] . "'," : '';
                         $ele_max_size = isset($ele_arr['max_size']) ? "'max_size' => '" . $ele_arr['max_size'] . "'," : '';
                         $ele_min_size = isset($ele_arr['min_size']) ? "'min_size' => '" . $ele_arr['min_size'] . "'," : '';
-var_dump($ele_arr);
-var_dump($value['name']);
+
                         $element .= "
                     '$key' => array(
                         $ele_name
@@ -416,12 +415,7 @@ var_dump($value['name']);
                         $repeat = str_replace($pattern, "\r\n", $repeat);
                     }
                 }
-if ($name === 'product_type') {
-    //var_dump($mod_name);
-    //var_dump($interface_name);
-    //var_dump($type);
-    //var_dump("\r\n");
-}
+
                 $field_info .= "
             '$name' => array(
                 'name' => '$name',
@@ -450,6 +444,10 @@ if ($name === 'product_type') {
                     $field_info = str_replace($pattern, "\r\n", $field_info);
                 }
                 $pattern = "\r\n                    \r\n";
+                while (strpos($field_info, $pattern) != false) {
+                    $field_info = str_replace($pattern, "\r\n", $field_info);
+                }
+                $pattern = "\r\n                        \r\n";
                 while (strpos($field_info, $pattern) != false) {
                     $field_info = str_replace($pattern, "\r\n", $field_info);
                 }

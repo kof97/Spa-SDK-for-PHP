@@ -108,7 +108,6 @@ class Select {
                 'description' => '排序规则',
                 'restraint' => '当前支持根据audience_id或user_count排序',
                 'errormsg' => '排序参数不正确',
-                        
 
                 'element' => array(
                     'audience_id' => array(

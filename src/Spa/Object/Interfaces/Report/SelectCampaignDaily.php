@@ -80,7 +80,6 @@ class SelectCampaignDaily {
                 'description' => '时间范围',
                 'restraint' => '日期格式，{"start_date":"2014-03-01","end_date":"2014-04-02"}',
                 'errormsg' => '时间范围不正确',
-                        
 
                 'element' => array(
                     'start_date' => array(

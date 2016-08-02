@@ -92,7 +92,6 @@ class GetTargetingParse {
                 'description' => '定向详细设置',
                 'restraint' => '存放所有定向条件',
                 'errormsg' => '定向详细设置不正确',
-                        
 
                 'element' => array(
                     'age' => array(

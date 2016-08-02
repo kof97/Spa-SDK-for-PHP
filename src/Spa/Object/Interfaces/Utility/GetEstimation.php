@@ -80,7 +80,6 @@ class GetEstimation {
                 'description' => '定向详细设置',
                 'restraint' => '存放所有定向条件',
                 'errormsg' => '定向详细设置不正确',
-                        
 
                 'element' => array(
                     'age' => array(
@@ -316,7 +315,6 @@ class GetEstimation {
                 'description' => '广告组信息所组成的对象',
                 'restraint' => '小于1024英文字符，支持字段time_series, site_set, bid_type, bid, product_refs_id, product_type，示例：{"bid_type":"COSTTYPE_CPC", "product_type": "PRODUCT_TYPE_LINK"}',
                 'errormsg' => '广告组信息不正确',
-                        
 
                 'element' => array(
                     'bid_type' => array(

@@ -207,7 +207,6 @@ class Signup {
                 'description' => '身份证明',
                 'restraint' => '当 广告主组织类型为 CUSTOMER_REGISTIONTYPE_INDIVIDUAL时，需要提供身份证和个人半身照，结构如{"identification_image_id":"574656","photo_image_id":"77368"}',
                 'errormsg' => '身份证明不正确',
-                        
 
                 'element' => array(
                     'identification_image_id' => array(
