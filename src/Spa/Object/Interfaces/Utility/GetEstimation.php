@@ -273,14 +273,59 @@ class GetEstimation {
                 'name' => 'adgroup_setting',
                 'extendType' => 'adgroup_setting',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'struct',
+                'description' => '广告组信息所组成的对象',
+                'restraint' => '小于1024英文字符，支持字段time_series, site_set, bid_type, bid, product_refs_id, product_type，示例：{"bid_type":"COSTTYPE_CPC", "product_type": "PRODUCT_TYPE_LINK"}',
+                'errormsg' => '广告组信息不正确',
+                'element' => array(
+                    'bid_type' => array(
+                        'name' => 'bid_type',
+                        'extendType' => 'adgroup.bid_type',
+                        'require' => 'no',
+                    ),
+                    'bid_amount' => array(
+                        'name' => 'bid_amount',
+                        'extendType' => 'adgroup.bid_amount',
+                        'require' => 'no',
+                    ),
+                    'site_set' => array(
+                        'name' => 'site_set',
+                        'extendType' => 'site_set',
+                        'require' => 'no',
+                    ),
+                    'time_series' => array(
+                        'name' => 'time_series',
+                        'extendType' => 'adgroup.time_series',
+                        'require' => 'no',
+                    ),
+                    'product_type' => array(
+                        'name' => 'product_type',
+                        'extendType' => 'product_type',
+                        'require' => 'no',
+                    ),
+                    'product_refs_id' => array(
+                        'name' => 'product_refs_id',
+                        'extendType' => 'product_refs_id',
+                        'require' => 'no',
+                    ),
+                ),
             ),
 
             'creative_setting' => array(
                 'name' => 'creative_setting',
                 'extendType' => 'creative_setting',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'array',
+                'description' => '素材信息所组成的对象',
+                'restraint' => '小于1024英文字符，支持字段creative_template_id，[{"creative_template_id":1},{"creative_template_id":2}]',
+                'errormsg' => '素材信息不正确',
+                    
+
+                'item_max_length' => '32',
+                'repeated' => array(
+                    'type' => 'creative_struct',
+                    'item_max_length' => '32',
+                )
             ),
 
         );

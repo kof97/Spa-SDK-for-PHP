@@ -174,7 +174,19 @@ class Sync {
                 'name' => 'site_set',
                 'extendType' => 'site_set',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'array',
+                'description' => '投放站点集合',
+                'restraint' => '当前仅支持单站点，取值详见 [link href="site_set_definition"]投放站点集合[/link]',
+                'errormsg' => '投放站点集合不正确',
+                    
+
+                'item_max_length' => '255',
+                'repeated' => array(
+                    'type' => 'string',
+                    'item_max_length' => '255',
+                    'enum' => 'enum',
+                    'source' => 'api_site_set_definition',
+                )
             ),
 
             'time_series' => array(
@@ -193,7 +205,12 @@ class Sync {
                 'name' => 'speed_mode',
                 'extendType' => 'speed_mode',
                 'require' => 'no',
-                'type' => '',
+                'type' => 'string',
+                'description' => '标准投放类型',
+                'restraint' => '详见 [link href="speed_mode"]标准投放类型[/link]',
+                'errormsg' => '标准投放类型不正确',
+                'enum' => 'enum',
+                'source' => 'api_speed_mode',
             ),
 
             'outer_version' => array(
