@@ -41,7 +41,7 @@ $modules = $spa->getModules();
 
 
 
-var_dump($modules->advertiser->signup->fieldInfo());
+var_dump($modules->advertiser->signup->validateField());
 //var_dump($modules::ADVERTISER);
 
 //var_dump($spa->getClient()->getBaseUrl());
