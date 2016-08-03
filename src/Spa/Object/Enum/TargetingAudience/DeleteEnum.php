@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingAudience;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class DeleteEnum {
+class DeleteEnum
+{
     
     /**
      * @const advertiser_id 
@@ -25,8 +26,9 @@ class DeleteEnum {
     /**
      * Init audience_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

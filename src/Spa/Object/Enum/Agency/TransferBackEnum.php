@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Agency;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class TransferBackEnum {
+class TransferBackEnum
+{
     
     /**
      * @const advertiser_id 
@@ -45,8 +46,9 @@ class TransferBackEnum {
     /**
      * Init memo.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

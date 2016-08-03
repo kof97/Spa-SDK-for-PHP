@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Agency;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class TransferEnum {
+class TransferEnum
+{
     
     /**
      * @const advertiser_id 
@@ -45,8 +46,9 @@ class TransferEnum {
     /**
      * Init expire_date.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

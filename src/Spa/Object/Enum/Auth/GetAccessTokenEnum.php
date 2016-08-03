@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Auth;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetAccessTokenEnum {
+class GetAccessTokenEnum
+{
     
     /**
      * @const app_id 
@@ -30,8 +31,9 @@ class GetAccessTokenEnum {
     /**
      * Init authorization_code.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

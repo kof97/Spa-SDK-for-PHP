@@ -11,8 +11,8 @@ use Spa\Object\Detector\FieldsDetector;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetBusinessInterestList {
-
+class GetBusinessInterestList
+{
     /**
      * Instance of Spa.
      */
@@ -31,7 +31,8 @@ class GetBusinessInterestList {
     /**
      * Init .
      */
-    public function __construct($spa, $mod, $act) {
+    public function __construct($spa, $mod, $act)
+    {
 
         $this->spa = $spa;
 
@@ -48,7 +49,8 @@ class GetBusinessInterestList {
      * @param array $headers The request headers.
      * @return Response
      */
-    public function send($params = array(), $headers = array()) {
+    public function send($params = array(), $headers = array())
+    {
 
         $data = $this->fieldInfo();
 
@@ -62,7 +64,8 @@ class GetBusinessInterestList {
     /**
      * The fields info.
      */
-    public function fieldInfo() {
+    public function fieldInfo()
+    {
         return array(
 
         );

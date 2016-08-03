@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Image;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class CreateByUrlEnum {
+class CreateByUrlEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class CreateByUrlEnum {
     /**
      * Init outer_image_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

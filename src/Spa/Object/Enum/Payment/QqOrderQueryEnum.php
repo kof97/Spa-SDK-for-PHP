@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Payment;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class QqOrderQueryEnum {
+class QqOrderQueryEnum
+{
     
     /**
      * @const advertiser_id 
@@ -25,8 +26,9 @@ class QqOrderQueryEnum {
     /**
      * Init out_trade_no.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

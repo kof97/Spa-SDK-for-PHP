@@ -18,7 +18,8 @@ use Spa\Object\Interfaces\Account\CheckPaipaiWhiteList;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Account {
+class Account
+{
     
     /**
      * Instance of Spa.
@@ -33,7 +34,8 @@ class Account {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -44,7 +46,8 @@ class Account {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'select':
                 return new Select($this->spa, $this->mod, 'select');

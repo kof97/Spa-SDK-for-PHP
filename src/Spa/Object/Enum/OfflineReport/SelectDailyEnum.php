@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\OfflineReport;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SelectDailyEnum {
+class SelectDailyEnum
+{
     
     /**
      * @const task 
@@ -25,8 +26,9 @@ class SelectDailyEnum {
     /**
      * Init date.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

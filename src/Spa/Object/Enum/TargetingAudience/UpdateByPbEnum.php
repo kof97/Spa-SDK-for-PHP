@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingAudience;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class UpdateByPbEnum {
+class UpdateByPbEnum
+{
     
     /**
      * @const operation_type 
@@ -40,8 +41,9 @@ class UpdateByPbEnum {
     /**
      * Init refs_app_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

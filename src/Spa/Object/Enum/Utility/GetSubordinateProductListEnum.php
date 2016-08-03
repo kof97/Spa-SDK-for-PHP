@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Utility;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetSubordinateProductListEnum {
+class GetSubordinateProductListEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class GetSubordinateProductListEnum {
     /**
      * Init product_type.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

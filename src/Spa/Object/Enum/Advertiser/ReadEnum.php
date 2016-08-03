@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Advertiser;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class ReadEnum {
+class ReadEnum
+{
     
     /**
      * @const advertiser_id 
@@ -20,8 +21,9 @@ class ReadEnum {
     /**
      * Init advertiser_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

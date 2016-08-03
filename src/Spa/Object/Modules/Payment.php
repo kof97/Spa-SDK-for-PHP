@@ -16,7 +16,8 @@ use Spa\Object\Interfaces\Payment\QqOrderQuery;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Payment {
+class Payment
+{
     
     /**
      * Instance of Spa.
@@ -31,7 +32,8 @@ class Payment {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -42,7 +44,8 @@ class Payment {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'wechat_order_create':
                 return new WechatOrderCreate($this->spa, $this->mod, 'wechat_order_create');

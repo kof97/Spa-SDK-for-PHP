@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\PreviewTargeting;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class CreateEnum {
+class CreateEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class CreateEnum {
     /**
      * Init preview_qq_list.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

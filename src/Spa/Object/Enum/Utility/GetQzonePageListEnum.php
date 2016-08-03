@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Utility;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetQzonePageListEnum {
+class GetQzonePageListEnum
+{
     
     /**
      * @const qq 
@@ -20,8 +21,9 @@ class GetQzonePageListEnum {
     /**
      * Init qq.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Agency;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetAllTransactionDetailEnum {
+class GetAllTransactionDetailEnum
+{
     
     /**
      * @const account_type 
@@ -40,8 +41,9 @@ class GetAllTransactionDetailEnum {
     /**
      * Init no_page.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Media;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class InfoEnum {
+class InfoEnum
+{
     
     /**
      * @const advertiser_id 
@@ -25,8 +26,9 @@ class InfoEnum {
     /**
      * Init media_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

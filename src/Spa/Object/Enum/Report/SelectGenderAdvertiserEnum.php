@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Report;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SelectGenderAdvertiserEnum {
+class SelectGenderAdvertiserEnum
+{
     
     /**
      * @const advertiser_id 
@@ -40,8 +41,9 @@ class SelectGenderAdvertiserEnum {
     /**
      * Init page_size.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

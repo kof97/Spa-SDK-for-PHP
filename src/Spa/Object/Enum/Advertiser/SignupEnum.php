@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Advertiser;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SignupEnum {
+class SignupEnum
+{
     
     /**
      * @const customer_registration_type 
@@ -115,8 +116,9 @@ class SignupEnum {
     /**
      * Init legal_person_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

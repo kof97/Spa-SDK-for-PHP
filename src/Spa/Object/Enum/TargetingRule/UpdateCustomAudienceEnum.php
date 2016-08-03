@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingRule;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class UpdateCustomAudienceEnum {
+class UpdateCustomAudienceEnum
+{
     
     /**
      * @const advertiser_id 
@@ -35,8 +36,9 @@ class UpdateCustomAudienceEnum {
     /**
      * Init description.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Report;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SelectAdvertiserDailyEnum {
+class SelectAdvertiserDailyEnum
+{
     
     /**
      * @const advertiser_id 
@@ -40,8 +41,9 @@ class SelectAdvertiserDailyEnum {
     /**
      * Init group_by.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

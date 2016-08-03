@@ -22,7 +22,8 @@ use Spa\Object\Interfaces\Agency\RealtimeCost;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Agency {
+class Agency
+{
     
     /**
      * Instance of Spa.
@@ -37,7 +38,8 @@ class Agency {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -48,7 +50,8 @@ class Agency {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'inner_transfer':
                 return new InnerTransfer($this->spa, $this->mod, 'inner_transfer');

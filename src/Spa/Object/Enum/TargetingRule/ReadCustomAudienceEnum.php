@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingRule;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class ReadCustomAudienceEnum {
+class ReadCustomAudienceEnum
+{
     
     /**
      * @const advertiser_id 
@@ -25,8 +26,9 @@ class ReadCustomAudienceEnum {
     /**
      * Init rule_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

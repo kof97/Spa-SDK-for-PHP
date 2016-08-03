@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\SuperReport;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SelectCampaignDailyEnum {
+class SelectCampaignDailyEnum
+{
     
     /**
      * @const advertiser_id 
@@ -50,8 +51,9 @@ class SelectCampaignDailyEnum {
     /**
      * Init page_size.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingCustomizedAudience;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class CreateEnum {
+class CreateEnum
+{
     
     /**
      * @const advertiser_id 
@@ -45,8 +46,9 @@ class CreateEnum {
     /**
      * Init description.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

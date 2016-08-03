@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Agency;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetFinancialOverviewEnum {
+class GetFinancialOverviewEnum
+{
     
     
 }

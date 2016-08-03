@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingRule;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class UploadEnum {
+class UploadEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class UploadEnum {
     /**
      * Init file_md5.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

@@ -14,7 +14,8 @@ use Spa\Object\Interfaces\OfflineReport\SelectHourly;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class OfflineReport {
+class OfflineReport
+{
     
     /**
      * Instance of Spa.
@@ -29,7 +30,8 @@ class OfflineReport {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -40,7 +42,8 @@ class OfflineReport {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'select_daily':
                 return new SelectDaily($this->spa, $this->mod, 'select_daily');

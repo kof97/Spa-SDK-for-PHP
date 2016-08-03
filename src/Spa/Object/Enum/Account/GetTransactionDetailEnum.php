@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Account;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetTransactionDetailEnum {
+class GetTransactionDetailEnum
+{
     
     /**
      * @const advertiser_id 
@@ -40,8 +41,9 @@ class GetTransactionDetailEnum {
     /**
      * Init page_size.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

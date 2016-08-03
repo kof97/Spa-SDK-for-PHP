@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Utility;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetUnionMediaCategoryListEnum {
+class GetUnionMediaCategoryListEnum
+{
     
     
 }

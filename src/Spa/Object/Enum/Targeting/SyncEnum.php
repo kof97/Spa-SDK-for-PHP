@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Targeting;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SyncEnum {
+class SyncEnum
+{
     
     /**
      * @const advertiser_id 
@@ -60,8 +61,9 @@ class SyncEnum {
     /**
      * Init outer_version.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

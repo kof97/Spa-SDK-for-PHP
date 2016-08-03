@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\TargetingCustomizedAudience;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class AppendEnum {
+class AppendEnum
+{
     
     /**
      * @const advertiser_id 
@@ -35,8 +36,9 @@ class AppendEnum {
     /**
      * Init file_md5.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

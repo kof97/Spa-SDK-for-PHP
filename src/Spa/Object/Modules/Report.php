@@ -24,7 +24,8 @@ use Spa\Object\Interfaces\Report\SelectRegionAdvertiser;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Report {
+class Report
+{
     
     /**
      * Instance of Spa.
@@ -39,7 +40,8 @@ class Report {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -50,7 +52,8 @@ class Report {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'select_advertiser_daily':
                 return new SelectAdvertiserDaily($this->spa, $this->mod, 'select_advertiser_daily');

@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Campaign;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SetDailyBudgetEnum {
+class SetDailyBudgetEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class SetDailyBudgetEnum {
     /**
      * Init daily_budget.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

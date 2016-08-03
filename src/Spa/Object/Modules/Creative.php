@@ -18,7 +18,8 @@ use Spa\Object\Interfaces\Creative\Sync;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Creative {
+class Creative
+{
     
     /**
      * Instance of Spa.
@@ -33,7 +34,8 @@ class Creative {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -44,7 +46,8 @@ class Creative {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create':
                 return new Create($this->spa, $this->mod, 'create');

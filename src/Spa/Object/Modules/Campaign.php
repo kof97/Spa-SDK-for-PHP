@@ -20,7 +20,8 @@ use Spa\Object\Interfaces\Campaign\Sync;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Campaign {
+class Campaign
+{
     
     /**
      * Instance of Spa.
@@ -35,7 +36,8 @@ class Campaign {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -46,7 +48,8 @@ class Campaign {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create':
                 return new Create($this->spa, $this->mod, 'create');

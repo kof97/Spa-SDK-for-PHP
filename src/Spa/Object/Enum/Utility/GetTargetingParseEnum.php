@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Utility;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetTargetingParseEnum {
+class GetTargetingParseEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class GetTargetingParseEnum {
     /**
      * Init targeting_setting.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

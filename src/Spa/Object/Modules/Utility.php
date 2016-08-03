@@ -30,7 +30,8 @@ use Spa\Object\Interfaces\Utility\GetDynamicRightInfo;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Utility {
+class Utility
+{
     
     /**
      * Instance of Spa.
@@ -45,7 +46,8 @@ class Utility {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -56,7 +58,8 @@ class Utility {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'get_estimation':
                 return new GetEstimation($this->spa, $this->mod, 'get_estimation');

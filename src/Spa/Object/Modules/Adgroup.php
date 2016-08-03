@@ -19,7 +19,8 @@ use Spa\Object\Interfaces\Adgroup\Sync;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Adgroup {
+class Adgroup
+{
     
     /**
      * Instance of Spa.
@@ -34,7 +35,8 @@ class Adgroup {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -45,7 +47,8 @@ class Adgroup {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create':
                 return new Create($this->spa, $this->mod, 'create');

@@ -15,7 +15,8 @@ use Spa\Object\Interfaces\Advertiser\Sync;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Advertiser {
+class Advertiser
+{
     
     /**
      * Instance of Spa.
@@ -30,7 +31,8 @@ class Advertiser {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -41,7 +43,8 @@ class Advertiser {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'signup':
                 return new Signup($this->spa, $this->mod, 'signup');

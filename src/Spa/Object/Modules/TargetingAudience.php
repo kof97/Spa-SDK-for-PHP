@@ -19,7 +19,8 @@ use Spa\Object\Interfaces\TargetingAudience\Delete;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class TargetingAudience {
+class TargetingAudience
+{
     
     /**
      * Instance of Spa.
@@ -34,7 +35,8 @@ class TargetingAudience {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -45,7 +47,8 @@ class TargetingAudience {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create':
                 return new Create($this->spa, $this->mod, 'create');

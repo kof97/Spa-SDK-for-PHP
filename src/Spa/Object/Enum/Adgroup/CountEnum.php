@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Adgroup;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class CountEnum {
+class CountEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class CountEnum {
     /**
      * Init group_by.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

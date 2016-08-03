@@ -16,7 +16,8 @@ use Spa\Object\Interfaces\SuperReport\SelectCampaignHourly;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SuperReport {
+class SuperReport
+{
     
     /**
      * Instance of Spa.
@@ -31,7 +32,8 @@ class SuperReport {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -42,7 +44,8 @@ class SuperReport {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'select_adgroup_daily':
                 return new SelectAdgroupDaily($this->spa, $this->mod, 'select_adgroup_daily');

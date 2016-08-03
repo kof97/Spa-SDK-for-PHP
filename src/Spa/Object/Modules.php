@@ -33,7 +33,8 @@ use Spa\Object\Modules\TargetingLocation;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Modules {
+class Modules
+{
     
     /**
      * Instance of Spa.
@@ -43,7 +44,8 @@ class Modules {
     /**
      * Init .
      */
-    public function __construct($spa) {
+    public function __construct($spa)
+    {
         $this->spa = $spa;
     }
     
@@ -52,7 +54,8 @@ class Modules {
      *
      * @param string $mod The mod name.
      */
-    public function __get($mod) {
+    public function __get($mod)
+    {
         switch ($mod) {
             case 'advertiser':
                 return new Advertiser($this->spa, 'advertiser');

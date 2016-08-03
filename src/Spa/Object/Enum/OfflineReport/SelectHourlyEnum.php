@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\OfflineReport;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SelectHourlyEnum {
+class SelectHourlyEnum
+{
     
     /**
      * @const task 
@@ -30,8 +31,9 @@ class SelectHourlyEnum {
     /**
      * Init hour.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

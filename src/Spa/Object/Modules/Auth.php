@@ -16,7 +16,8 @@ use Spa\Object\Interfaces\Auth\GetOpenid;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Auth {
+class Auth
+{
     
     /**
      * Instance of Spa.
@@ -31,7 +32,8 @@ class Auth {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -42,7 +44,8 @@ class Auth {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'ptlogin':
                 return new Ptlogin($this->spa, $this->mod, 'ptlogin');

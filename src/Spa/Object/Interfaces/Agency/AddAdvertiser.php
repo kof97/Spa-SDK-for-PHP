@@ -11,8 +11,8 @@ use Spa\Object\Detector\FieldsDetector;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class AddAdvertiser {
-
+class AddAdvertiser
+{
     /**
      * Instance of Spa.
      */
@@ -31,7 +31,8 @@ class AddAdvertiser {
     /**
      * Init .
      */
-    public function __construct($spa, $mod, $act) {
+    public function __construct($spa, $mod, $act)
+    {
 
         $this->spa = $spa;
 
@@ -48,7 +49,8 @@ class AddAdvertiser {
      * @param array $headers The request headers.
      * @return Response
      */
-    public function send($params = array(), $headers = array()) {
+    public function send($params = array(), $headers = array())
+    {
 
         $data = $this->fieldInfo();
 
@@ -62,7 +64,8 @@ class AddAdvertiser {
     /**
      * The fields info.
      */
-    public function fieldInfo() {
+    public function fieldInfo()
+    {
         return array(
 
             'corporation_name' => array(

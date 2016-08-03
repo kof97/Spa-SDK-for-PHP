@@ -20,7 +20,8 @@ use Spa\Object\Interfaces\TargetingRule\AuthorizationList;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class TargetingRule {
+class TargetingRule
+{
     
     /**
      * Instance of Spa.
@@ -35,7 +36,8 @@ class TargetingRule {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -46,7 +48,8 @@ class TargetingRule {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create_custom_audience':
                 return new CreateCustomAudience($this->spa, $this->mod, 'create_custom_audience');

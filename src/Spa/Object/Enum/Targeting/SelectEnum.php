@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Targeting;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class SelectEnum {
+class SelectEnum
+{
     
     /**
      * @const advertiser_id 
@@ -35,8 +36,9 @@ class SelectEnum {
     /**
      * Init page_size.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

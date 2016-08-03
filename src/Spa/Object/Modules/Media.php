@@ -16,7 +16,8 @@ use Spa\Object\Interfaces\Media\Info;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Media {
+class Media
+{
     
     /**
      * Instance of Spa.
@@ -31,7 +32,8 @@ class Media {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -42,7 +44,8 @@ class Media {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create':
                 return new Create($this->spa, $this->mod, 'create');

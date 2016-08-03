@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Agency;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class AddAdvertiserEnum {
+class AddAdvertiserEnum
+{
     
     /**
      * @const corporation_name 
@@ -70,8 +71,9 @@ class AddAdvertiserEnum {
     /**
      * Init contact_person_mobile.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

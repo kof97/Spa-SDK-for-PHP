@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Campaign;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetCostEnum {
+class GetCostEnum
+{
     
     /**
      * @const advertiser_id 
@@ -30,8 +31,9 @@ class GetCostEnum {
     /**
      * Init date.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

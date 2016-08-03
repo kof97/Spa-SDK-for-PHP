@@ -9,7 +9,8 @@ namespace Spa\Object\Enum\Utility;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetLocationListEnum {
+class GetLocationListEnum
+{
     
     /**
      * @const region_id 
@@ -20,8 +21,9 @@ class GetLocationListEnum {
     /**
      * Init region_id.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 
 }

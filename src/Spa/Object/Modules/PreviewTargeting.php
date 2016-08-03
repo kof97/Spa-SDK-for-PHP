@@ -15,7 +15,8 @@ use Spa\Object\Interfaces\PreviewTargeting\Select;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class PreviewTargeting {
+class PreviewTargeting
+{
     
     /**
      * Instance of Spa.
@@ -30,7 +31,8 @@ class PreviewTargeting {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -41,7 +43,8 @@ class PreviewTargeting {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {
             case 'create':
                 return new Create($this->spa, $this->mod, 'create');
