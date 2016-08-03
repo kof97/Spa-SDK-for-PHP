@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Utility\GetEstimation;
 use Spa\Object\Interfaces\Utility\GetSystemLocationRegionList;
 use Spa\Object\Interfaces\Utility\GetLocationList;

@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Account\Select;
 use Spa\Object\Interfaces\Account\GetTransactionDetail;
 use Spa\Object\Interfaces\Account\SetDailyBudget;

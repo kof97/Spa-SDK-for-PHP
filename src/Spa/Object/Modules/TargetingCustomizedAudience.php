@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\TargetingCustomizedAudience\Create;
 use Spa\Object\Interfaces\TargetingCustomizedAudience\Read;
 use Spa\Object\Interfaces\TargetingCustomizedAudience\Select;

@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Auth\Ptlogin;
 use Spa\Object\Interfaces\Auth\PtloginToken;
 use Spa\Object\Interfaces\Auth\GetAccessToken;

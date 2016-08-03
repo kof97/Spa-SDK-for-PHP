@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\TargetingRule\CreateCustomAudience;
 use Spa\Object\Interfaces\TargetingRule\ReadCustomAudience;
 use Spa\Object\Interfaces\TargetingRule\UpdateCustomAudience;

@@ -255,8 +255,7 @@ function createInterfacesEnum($get, $construct, $use, $class_name, $items = '', 
 
 namespace Spa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-$use
+use Spa\Exceptions\InterfaceException;$use
 
 /**
  * Class $class_name

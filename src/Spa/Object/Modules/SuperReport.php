@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\SuperReport\SelectAdgroupDaily;
 use Spa\Object\Interfaces\SuperReport\SelectAdgroupHourly;
 use Spa\Object\Interfaces\SuperReport\SelectCampaignDaily;

@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\OfflineReport\SelectDaily;
 use Spa\Object\Interfaces\OfflineReport\SelectHourly;
 

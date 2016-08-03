@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Image\Create;
 use Spa\Object\Interfaces\Image\CreateByUrl;
 use Spa\Object\Interfaces\Image\Select;

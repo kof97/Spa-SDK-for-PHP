@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Adgroup\Create;
 use Spa\Object\Interfaces\Adgroup\Read;
 use Spa\Object\Interfaces\Adgroup\Update;

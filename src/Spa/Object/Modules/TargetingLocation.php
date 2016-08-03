@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\TargetingLocation\Create;
 use Spa\Object\Interfaces\TargetingLocation\Read;
 use Spa\Object\Interfaces\TargetingLocation\Select;

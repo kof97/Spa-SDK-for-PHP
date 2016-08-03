@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\PreviewTargeting\Create;
 use Spa\Object\Interfaces\PreviewTargeting\Update;
 use Spa\Object\Interfaces\PreviewTargeting\Select;

@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Agency\InnerTransfer;
 use Spa\Object\Interfaces\Agency\GetFinancialOverview;
 use Spa\Object\Interfaces\Agency\GetTransactionDetail;

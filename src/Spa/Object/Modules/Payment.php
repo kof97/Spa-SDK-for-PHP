@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Payment\WechatOrderCreate;
 use Spa\Object\Interfaces\Payment\WechatOrderQuery;
 use Spa\Object\Interfaces\Payment\QqOrderCreate;

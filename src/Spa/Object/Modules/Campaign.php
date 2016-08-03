@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Campaign\Create;
 use Spa\Object\Interfaces\Campaign\Read;
 use Spa\Object\Interfaces\Campaign\Update;

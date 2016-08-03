@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Advertiser\Signup;
 use Spa\Object\Interfaces\Advertiser\Read;
 use Spa\Object\Interfaces\Advertiser\Sync;

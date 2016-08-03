@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Targeting\Create;
 use Spa\Object\Interfaces\Targeting\Read;
 use Spa\Object\Interfaces\Targeting\Update;

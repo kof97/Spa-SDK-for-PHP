@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Creative\Create;
 use Spa\Object\Interfaces\Creative\Read;
 use Spa\Object\Interfaces\Creative\Update;

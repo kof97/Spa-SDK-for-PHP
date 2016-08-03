@@ -3,7 +3,6 @@
 namespace Spa\Object\Modules;
 
 use Spa\Exceptions\InterfaceException;
-
 use Spa\Object\Interfaces\Media\Create;
 use Spa\Object\Interfaces\Media\Select;
 use Spa\Object\Interfaces\Media\Read;
