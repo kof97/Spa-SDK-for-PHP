@@ -30,8 +30,8 @@ class CountEnum {
     /**
      * Init group_by.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

@@ -70,8 +70,8 @@ class UpdateAdvertiserEnum {
     /**
      * Init contact_person_mobile.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

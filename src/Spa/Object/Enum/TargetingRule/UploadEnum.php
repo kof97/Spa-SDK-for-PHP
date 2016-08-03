@@ -30,8 +30,8 @@ class UploadEnum {
     /**
      * Init file_md5.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

@@ -30,8 +30,8 @@ class GetAccessTokenEnum {
     /**
      * Init authorization_code.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

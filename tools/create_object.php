@@ -91,6 +91,11 @@ function getModulesEnumData($data) {
     }';
 
     $get = '
+    /**
+     * To get the module instance.
+     *
+     * @param string $mod The mod name.
+     */
     public function __get($mod) {
         switch ($mod) {';
 
@@ -142,7 +147,6 @@ $use
 class Modules {
     $items
     $construct
-
     $get
 }
 

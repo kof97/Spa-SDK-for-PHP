@@ -45,8 +45,8 @@ class TransferEnum {
     /**
      * Init expire_date.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

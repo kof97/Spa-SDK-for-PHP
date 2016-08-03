@@ -115,8 +115,8 @@ class SignupEnum {
     /**
      * Init legal_person_id.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

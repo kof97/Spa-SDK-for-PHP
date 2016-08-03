@@ -95,8 +95,8 @@ class CreateEnum {
     /**
      * Init outer_audience_id.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

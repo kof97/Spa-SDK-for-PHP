@@ -40,8 +40,8 @@ class SelectAdvertiserHourlyEnum {
     /**
      * Init group_by.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

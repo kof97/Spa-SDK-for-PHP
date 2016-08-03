@@ -25,8 +25,8 @@ class QqOrderQueryEnum {
     /**
      * Init out_trade_no.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

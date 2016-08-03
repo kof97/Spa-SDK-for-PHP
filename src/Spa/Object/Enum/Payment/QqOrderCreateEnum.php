@@ -40,8 +40,8 @@ class QqOrderCreateEnum {
     /**
      * Init notify_url.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

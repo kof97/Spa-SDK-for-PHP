@@ -25,8 +25,8 @@ class DeleteEnum {
     /**
      * Init creative_id.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

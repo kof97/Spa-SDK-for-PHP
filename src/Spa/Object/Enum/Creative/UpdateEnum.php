@@ -65,8 +65,8 @@ class UpdateEnum {
     /**
      * Init configured_status.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

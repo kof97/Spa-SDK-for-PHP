@@ -46,8 +46,12 @@ class Modules {
     public function __construct($spa) {
         $this->spa = $spa;
     }
-
     
+    /**
+     * To get the module instance.
+     *
+     * @param string $mod The mod name.
+     */
     public function __get($mod) {
         switch ($mod) {
             case 'advertiser':

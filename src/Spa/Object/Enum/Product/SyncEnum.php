@@ -45,8 +45,8 @@ class SyncEnum {
     /**
      * Init outer_version.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

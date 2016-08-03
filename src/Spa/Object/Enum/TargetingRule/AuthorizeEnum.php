@@ -45,8 +45,8 @@ class AuthorizeEnum {
     /**
      * Init description.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

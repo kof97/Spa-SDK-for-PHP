@@ -40,8 +40,8 @@ class GetAllTransactionDetailEnum {
     /**
      * Init no_page.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

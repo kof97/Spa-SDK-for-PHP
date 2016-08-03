@@ -30,8 +30,8 @@ class PreviewEnum {
     /**
      * Init sign.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

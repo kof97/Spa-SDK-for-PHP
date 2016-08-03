@@ -40,8 +40,8 @@ class SelectRegionAdvertiserEnum {
     /**
      * Init page_size.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

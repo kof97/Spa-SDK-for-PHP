@@ -35,8 +35,8 @@ class CreateEnum {
     /**
      * Init media_description.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

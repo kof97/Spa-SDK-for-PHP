@@ -20,8 +20,8 @@ class GetQzonePageListEnum {
     /**
      * Init qq.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }

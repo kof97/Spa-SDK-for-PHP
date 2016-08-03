@@ -20,8 +20,8 @@ class CheckPaipaiWhiteListEnum {
     /**
      * Init advertiser_id.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 
 }
