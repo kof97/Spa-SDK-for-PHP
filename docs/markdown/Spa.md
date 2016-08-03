@@ -47,6 +47,13 @@ Spa\Spa 类提供了主要功能的接口入口
     $signup->send({$params}, {$headers});
 ```
 
+也支持链式操作
+
+```
+    // 选择模块 -> 选择接口 -> 发送请求
+    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+```
+
 接下来是数据的拼接，在 `Spa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
 
 ```
@@ -93,19 +100,19 @@ Spa\Spa 类提供了主要功能的接口入口
 ### 发送 get 请求
 
 ```
-    $response = $spa->get('/advertiser/read?advertiser_id=123');
+    $response = $spa->get('/advertiser/read?advertiser_id=123', {$headers});
 ```
 
 ### 发送 post 请求
 
 ```
-    $response = $spa->post('/advertiser/signup');
+    $response = $spa->post('/advertiser/signup', {$params}, {$headers});
 ```
 
 ### 发送 request 请求
 
 ```
-    $response = $spa->sendRequest('post', '/advertiser/signup');
+    $response = $spa->sendRequest('post', '/advertiser/signup', {$params}, {$headers});
 ```
 
 ## 详细介绍：
@@ -188,3 +195,15 @@ Spa\Spa 类提供了主要功能的接口入口
 ```
 
 收集处理 `request` 请求信息，返回值为 `Spa\Request` 对象
+
+### getModules()
+
+```
+    public Spa\Object\Modules getModules()
+```
+
+返回模块的集合，用于选择要请求的模块
+
+```
+    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+```
