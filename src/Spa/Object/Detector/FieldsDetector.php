@@ -14,7 +14,7 @@ use Spa\Exceptions\ParamsException;
 class FieldsDetector {
 
     private function __construct() {
-        // It would never be used.
+        // It should never be invoked.
     }
 
     /**

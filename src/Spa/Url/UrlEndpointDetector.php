@@ -9,11 +9,9 @@ use Spa\Exceptions\SpaSDKException;
  *
  * @category PHP
  * @package  Spa
- * @author	 Arno <arnoliu@tencent.com>
+ * @author   Arno <arnoliu@tencent.com>
  */
 class UrlEndpointDetector {
-
-
 
 }
 

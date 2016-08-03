@@ -164,7 +164,7 @@ class Spa {
 	}
 
 	/**
-	 * Return .
+	 * Return Modules.
 	 */
 	public function getModules() {
 		return new Modules($this);

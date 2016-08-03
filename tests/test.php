@@ -50,7 +50,7 @@ $modules = $spa->getModules();
 
 $response = $modules->super_report->select_adgroup_daily->send($params);
 //$res = $modules->image->create_by_url->send($params);
-//var_dump($response);
+var_dump($response);
 //var_dump($modules::ADVERTISER);
 
 //var_dump($spa->getClient()->getBaseUrl());
