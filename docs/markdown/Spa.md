@@ -6,7 +6,23 @@ Spa\Spa 类提供了主要功能的接口入口
 
 # Spa\Spa
 
-## 快速使用：
+## 快速调用
+
+### 初始化实例
+
+```
+    $conf = array(
+        'uid'               => '{uid}',
+        'appid'             => '{appid}',
+        'appkey'            => '{appkey}',
+        'http_client_type'  => 'curl',
+        'version'           => 'v3'
+    );
+
+    $spa = new Spa\Spa($conf);
+```
+
+## 传统调用：
 
 ### 初始化实例
 
