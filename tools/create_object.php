@@ -252,7 +252,16 @@ EOF;
 }
 
 /**
- * 生成接口实体
+ * 生成接口对象实体，包含发送请求，参数列表信息
+ *
+ * @param object $data            idl 根节点
+ * @param string $mod_class       模块的类名
+ * @param string $interface_class 接口类名
+ * @param string $method          请求的 HTTP 方式
+ * @param string $interface       interface 的节点
+ * @param string $mod_name        当前模块原始名称
+ * @param string $interface_name  当前接口原始名称
+ * @return array
  */
 function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name) {
     $arr = array();
@@ -311,12 +320,12 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $min_size = isset($arr['min_size']) ? "'min_size' => '" . $arr['min_size'] . "'," : '';
                 $decimalLength = isset($arr['decimalLength']) ? "'decimalLength' => '" . $arr['decimalLength'] . "'," : '';
 
-                /** ------------------------------------------------------- **/
+                /** element 生成 **/
                 /* 递归层数 */
                 $flag = 0;
                 $element = getElements($data, $arr, $mod_name, $interface_name, $flag);
-                /** ------------------------------------------------------- **/
 
+                /** repeated 生成 **/
                 $repeat = '';
                 $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
                 if ($repeated) {
@@ -471,6 +480,16 @@ EOF;
 
 }
 
+/**
+ * 递归拼接 element 数据
+ *
+ * @param object $data           idl 根节点
+ * @param array  $arr            需要用到的 element 信息
+ * @param string $mod_name       当前模块名称
+ * @param string $interface_name 当前接口名称
+ * @param string $flag           当前遍历 element 层级
+ * @return string
+ */
 function getElements($data, $arr, $mod_name, $interface_name, $flag) {
     $flag++;
     $element = '';
