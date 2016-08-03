@@ -45,6 +45,10 @@ class FieldsDetector {
                 self::validateInteger($data, $key, $value);
                 continue;
 
+            case 'float':
+                self::validateFloat($data, $key, $value);
+                continue;
+
             case 'id':
 
             case 'number':
@@ -91,7 +95,31 @@ class FieldsDetector {
     }
 
     protected static function validateInteger($data, $key, $value) {
+        // check the type like '015'
+        $value = ltrim($value, '0');
+
         if ($value . '' !== intval($value) . '') {
+            throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
+        }
+
+        if (isset($data['max'])) {
+            if ($value >= ($max = $data['max'])) {
+                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'");
+            }
+        }
+
+        if (isset($data['min'])) {
+            if ($value <= ($min = $data['min'])) {
+                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'");
+            }
+        }
+    }
+
+    protected static function validateFloat($data, $key, $value) {
+        var_dump(is_float($value));
+        var_dump(floatval($value));
+        var_dump($value . '');
+        if ($value . '' !== floatval($value) . '') {
             throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
         }
 
