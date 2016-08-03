@@ -12,15 +12,41 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'uid'               => '{uid}',     // 必填
+        'appid'             => '{appid}',   // 必填
+        'appkey'            => '{appkey}',  // 必填
+        'http_client_type'  => 'curl',      // 可不填
+        'version'           => 'v3'         // 可不填
     );
 
     $spa = new Spa\Spa($conf);
+
+    // 获取模块集合
+    $modules = $spa->getModules();
 ```
+
+### 选择请求的模块和接口并发送请求
+
+```
+    // 选择模块 -> 选择接口 -> 发送请求
+    $modules->advertiser->signup->send({$params}, {$headers});
+```
+
+### 详细解说
+
+首先是对于模块（module）和接口（interface）的选择
+
+```
+    // 返回了 advertiser 模块
+    $advertiser = $modules->advertiser;
+
+    // 返回接口 signup 的请求实体
+    $signup = $advertiser->signup;
+
+    // 向 advertiser/signup 发送请求
+    $signup->send({$params}, {$headers});
+```
+
 
 ## 传统调用：
 
