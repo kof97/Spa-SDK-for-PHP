@@ -28,11 +28,6 @@ class SelectAdvertiserDaily {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

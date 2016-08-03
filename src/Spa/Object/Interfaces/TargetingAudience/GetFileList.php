@@ -28,11 +28,6 @@ class GetFileList {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

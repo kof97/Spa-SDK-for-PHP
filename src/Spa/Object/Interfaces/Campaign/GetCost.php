@@ -28,11 +28,6 @@ class GetCost {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

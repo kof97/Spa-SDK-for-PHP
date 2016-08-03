@@ -413,11 +413,6 @@ class $interface_class {
      */
     protected \$endpoint;
 
-    protected \$name;
-
-    protected \$title;
-
-
     /**
      * Init .
      */

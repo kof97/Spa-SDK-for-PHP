@@ -28,11 +28,6 @@ class GetDailyInvoice {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

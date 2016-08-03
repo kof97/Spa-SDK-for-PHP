@@ -28,11 +28,6 @@ class Create {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

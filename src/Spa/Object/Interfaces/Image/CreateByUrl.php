@@ -28,11 +28,6 @@ class CreateByUrl {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

@@ -28,11 +28,6 @@ class SelectAdvertiserHourly {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

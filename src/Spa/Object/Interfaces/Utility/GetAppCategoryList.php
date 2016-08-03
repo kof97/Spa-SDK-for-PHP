@@ -28,11 +28,6 @@ class GetAppCategoryList {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

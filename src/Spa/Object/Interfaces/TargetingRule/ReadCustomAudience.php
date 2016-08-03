@@ -28,11 +28,6 @@ class ReadCustomAudience {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

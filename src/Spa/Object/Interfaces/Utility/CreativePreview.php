@@ -28,11 +28,6 @@ class CreativePreview {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

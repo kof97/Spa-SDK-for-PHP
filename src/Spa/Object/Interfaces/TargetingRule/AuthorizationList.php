@@ -28,11 +28,6 @@ class AuthorizationList {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

@@ -28,11 +28,6 @@ class GetTargetingParse {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

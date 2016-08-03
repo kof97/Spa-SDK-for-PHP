@@ -28,11 +28,6 @@ class GetSubordinateProductList {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

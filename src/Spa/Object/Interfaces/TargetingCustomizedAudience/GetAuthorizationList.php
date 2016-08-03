@@ -28,11 +28,6 @@ class GetAuthorizationList {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

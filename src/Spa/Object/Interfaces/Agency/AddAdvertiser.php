@@ -28,11 +28,6 @@ class AddAdvertiser {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

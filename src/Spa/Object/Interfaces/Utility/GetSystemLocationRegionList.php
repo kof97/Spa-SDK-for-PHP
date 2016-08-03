@@ -28,11 +28,6 @@ class GetSystemLocationRegionList {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

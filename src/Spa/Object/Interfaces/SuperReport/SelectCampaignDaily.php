@@ -28,11 +28,6 @@ class SelectCampaignDaily {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

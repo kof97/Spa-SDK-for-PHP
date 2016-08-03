@@ -28,11 +28,6 @@ class GetDynamicRightInfo {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

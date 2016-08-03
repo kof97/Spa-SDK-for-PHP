@@ -28,11 +28,6 @@ class UpdateCustomAudience {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

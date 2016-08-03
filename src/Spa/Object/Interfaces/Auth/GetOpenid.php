@@ -28,11 +28,6 @@ class GetOpenid {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */

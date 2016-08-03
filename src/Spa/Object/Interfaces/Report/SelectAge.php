@@ -28,11 +28,6 @@ class SelectAge {
      */
     protected $endpoint;
 
-    protected $name;
-
-    protected $title;
-
-
     /**
      * Init .
      */
