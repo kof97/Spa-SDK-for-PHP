@@ -29,8 +29,8 @@ function creatEnum($mod_class, $interface_class, $interface) {
     /**
      * Init $enum.
      */
-    public function __construct() {
-    
+    private function __construct() {
+        // It would never be used.
     }
 ";
             }
@@ -183,6 +183,11 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name) {
     }';
 
     $get = '
+    /**
+     * To get the interface instance.
+     *
+     * @param string $interface The interface name.
+     */
     public function __get($interface) {
         switch ($interface) {';
 

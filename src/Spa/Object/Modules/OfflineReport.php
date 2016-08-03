@@ -35,6 +35,11 @@ class OfflineReport {
         $this->mod = $mod;
     }
     
+    /**
+     * To get the interface instance.
+     *
+     * @param string $interface The interface name.
+     */
     public function __get($interface) {
         switch ($interface) {
             case 'select_daily':
