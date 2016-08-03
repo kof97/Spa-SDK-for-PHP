@@ -114,12 +114,20 @@ class Create {
                                 'name' => 'longitude',
                                 'extendType' => 'longitude',
                                 'require' => 'yes',
+                                'type' => 'float',
+                                'description' => '经度，单位度',
+                                'restraint' => '小于等于180，大于等于-180，至多6位小数',
+                                'errormsg' => '经度错误',
                             ),
         
                             'latitude' => array(
                                 'name' => 'latitude',
                                 'extendType' => 'latitude',
                                 'require' => 'yes',
+                                'type' => 'float',
+                                'description' => '纬度，单位度',
+                                'restraint' => '小于等于90，大于等于-90，至多6位小数',
+                                'errormsg' => '纬度错误',
                             ),
         
                             'radius' => array(
