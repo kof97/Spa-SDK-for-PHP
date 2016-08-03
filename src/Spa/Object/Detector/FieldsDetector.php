@@ -109,19 +109,21 @@ class FieldsDetector {
     }
 
     protected static function validateStruct($data, $key, $value) {
-var_dump(is_object($value));
         if (is_object($value)) {
-            $value = (array)$value;var_dump($value);
             $value = json_encode($value);
         }
 
+        /* check the json */
         $value = strtr($value, "'", "\"");
-        $value = str_replace(': }', ':""}', $value);
-        $value = preg_replace('/:(\s)*}/', ':""}', $value);
-        $value = preg_replace('/:(\s)*,/', ':"",', $value);
-var_dump($value);
+        $value = preg_replace('/:(\s)*(,|})/', ':"",', $value);
+        $value = preg_replace('/:(\s)*"(\s)*(,|})/', ':"",', $value);
+        $value = preg_replace('/:(\s)*\'(\s)*(,|})/', ':"",', $value);
+
         $value = (array)json_decode($value);
 
+        if (empty($value)) {
+            throw new ParamsException("Error in the value of the '$key'");
+        }
 
         self::validateRequireField($data, $value);
 
