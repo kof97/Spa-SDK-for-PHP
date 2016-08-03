@@ -11,7 +11,7 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 ### 初始化实例
 
 ```
-	$conf = array(
+    $conf = array(
         'uid'               => '{uid}',
         'appid'             => '{appid}',
         'appkey'            => '{appkey}',
@@ -29,7 +29,7 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 或直接创建
 
 ```
-	$accessToken = new Spa\Authentication\AccessToken({$uid}, {$appid}, {$appkey});
+    $accessToken = new Spa\Authentication\AccessToken({$uid}, {$appid}, {$appkey});
 ```
 
 ## 主要方法
@@ -37,7 +37,7 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 ### getValue()
 
 ```
-	public string getValue()
+    public string getValue()
 ```
 
 返回 access token 的值

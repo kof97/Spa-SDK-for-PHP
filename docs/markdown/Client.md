@@ -11,10 +11,10 @@ Spa\Client 类用于发起请求
 ### Spa\Client
 
 ```
-	new Spa\Client(
-		BaseClientInterface $httpClient = null, 
-		$version = null
-	)
+    new Spa\Client(
+        BaseClientInterface $httpClient = null, 
+        $version = null
+    )
 ```
 
 > **$httpClient :** `Spa\HttpClients\BaseClientInterface` 的实例，用于发起请求
@@ -25,23 +25,23 @@ Spa\Client 类用于发起请求
 例：
 
 ```
-	$conf = array(
-		'uid'				=> '{uid}',
-		'appid'				=> '{appid}',
-		'appkey'			=> '{appkey}',
-		'http_client_type'	=> 'curl',
-		'version'			=> 'v3'
-	);
+    $conf = array(
+        'uid'               => '{uid}',
+        'appid'             => '{appid}',
+        'appkey'            => '{appkey}',
+        'http_client_type'  => 'curl',
+        'version'           => 'v3'
+    );
 
-	$spa = new Spa\Spa($conf);
+    $spa = new Spa\Spa($conf);
 
-	$spaClient = $spa->getClient();
+    $spaClient = $spa->getClient();
 ```
 
 或是直接创建
 
 ```
-	$spaClient = new Spa\Client({$httpClient}, {$version});
+    $spaClient = new Spa\Client({$httpClient}, {$version});
 ```
 
 ## 方法介绍
@@ -49,7 +49,7 @@ Spa\Client 类用于发起请求
 ### setHttpClient()
 
 ```
-	public void setHttpClient(Spa\HttpClients\BaseClientInterface $httpClient)
+    public void setHttpClient(Spa\HttpClients\BaseClientInterface $httpClient)
 ```
 
 设置 `$httpClient`，用于发起 http 请求
@@ -57,7 +57,7 @@ Spa\Client 类用于发起请求
 ### getHttpClient()
 
 ```
-	public Spa\HttpClients\BaseClientInterface getHttpClient()
+    public Spa\HttpClients\BaseClientInterface getHttpClient()
 ```
 
 获取 `Spa\HttpClients\BaseClientInterface` 对象实例
@@ -65,7 +65,7 @@ Spa\Client 类用于发起请求
 ### sendRequest()
 
 ```
-	public Spa\Response sendRequest(Spa\Request $request)
+    public Spa\Response sendRequest(Spa\Request $request)
 ```
 
 参数为 `Spa\Request` 的对象

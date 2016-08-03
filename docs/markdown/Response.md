@@ -35,7 +35,7 @@ Spa\Response 类返回了本次请求的响应信息
 ### getRequest()
 
 ```
-	public Spa\Request getRequest()
+    public Spa\Request getRequest()
 ```
 
 返回本次请求的 `Spa\Request` 实例
@@ -43,7 +43,7 @@ Spa\Response 类返回了本次请求的响应信息
 ### getApp()
 
 ```
-	public Spa\App getApp()
+    public Spa\App getApp()
 ```
 
 返回本次请求的 `Spa\App` 实例
@@ -51,7 +51,7 @@ Spa\Response 类返回了本次请求的响应信息
 ### getAccessToken()
 
 ```
-	public string getAccessToken()
+    public string getAccessToken()
 ```
 
 返回 access token 信息
@@ -59,7 +59,7 @@ Spa\Response 类返回了本次请求的响应信息
 ### getHttpStatusCode()
 
 ```
-	public int getHttpStatusCode()
+    public int getHttpStatusCode()
 ```
 
 返回本次请求返回的状态码
@@ -67,7 +67,7 @@ Spa\Response 类返回了本次请求的响应信息
 ### getHeaders()
 
 ```
-	public array getHeaders()
+    public array getHeaders()
 ```
 
 返回本次请求返回的响应头信息
@@ -75,7 +75,7 @@ Spa\Response 类返回了本次请求的响应信息
 ### getBody()
 
 ```
-	public json getBody()
+    public json getBody()
 ```
 
 返回本次请求的 `body` 信息（json 格式）
