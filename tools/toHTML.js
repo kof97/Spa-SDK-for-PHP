@@ -3,12 +3,9 @@ var fs = require('fs');
 var sourcePath = '../docs/markdown',
 	targetPath = '../docs/html';
 
-var message = '<meta charset="utf-8">' + 
-			  '<link rel="stylesheet" href="./css/style.css">';
+markdownToHTML(sourcePath, targetPath);
 
-markdownToHTML(sourcePath, targetPath, message);
-
-function markdownToHTML(sourcePath, targetPath, message) {
+function markdownToHTML(sourcePath, targetPath) {
 	var fileList = getAllFiles(sourcePath);
 		len = fileList.length;
 
@@ -20,7 +17,10 @@ function markdownToHTML(sourcePath, targetPath, message) {
 
 		data.replace("\r\n", "");
 
-		var md = message + toHTML(data);
+		var md = '<meta charset="utf-8">' + "\r\n" + 
+			  	 '<link rel="stylesheet" href="./css/style.css">' + "\r\n" + 
+			  	 '<body>' + "\r\n" +  toHTML(data) + "\r\n" +  '</body>';
+
 			target = targetPath + file + '.html';
 			fileInfo = getPathAndName(target);
 

@@ -1,0 +1,6 @@
+* { padding: 0 4em; margin: 0; font-style: "Microsoft YaHei"; }
+
+h1, h2, h3, h4, h5 { padding: 0.3em 0; }
+
+hr { background: #F7F7F7; height: 0.2em; border: 1px solid #E7E7E7; box-shadow: 0 0 1px #eee; margin: 1em 0; }
+pre { background: #F7F7F7; }
