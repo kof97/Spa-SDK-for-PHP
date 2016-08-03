@@ -33,13 +33,11 @@ class WubaCategory
      */
     public function __construct($spa, $mod, $act)
     {
-
         $this->spa = $spa;
 
         $this->method = 'GET';
 
         $this->endpoint = $mod . '/' . $act;
-
     }
 
     /**
@@ -51,7 +49,6 @@ class WubaCategory
      */
     public function send($params = array(), $headers = array())
     {
-
         $data = $this->fieldInfo();
 
         FieldsDetector::validateField($params, $data);

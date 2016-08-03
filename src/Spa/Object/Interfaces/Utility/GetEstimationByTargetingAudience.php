@@ -33,13 +33,11 @@ class GetEstimationByTargetingAudience
      */
     public function __construct($spa, $mod, $act)
     {
-
         $this->spa = $spa;
 
         $this->method = 'POST';
 
         $this->endpoint = $mod . '/' . $act;
-
     }
 
     /**
@@ -51,7 +49,6 @@ class GetEstimationByTargetingAudience
      */
     public function send($params = array(), $headers = array())
     {
-
         $data = $this->fieldInfo();
 
         FieldsDetector::validateField($params, $data);

@@ -438,13 +438,11 @@ class $interface_class
      */
     public function __construct(\$spa, \$mod, \$act)
     {
-
         \$this->spa = \$spa;
 
         \$this->method = '$method';
 
         \$this->endpoint = \$mod . '/' . \$act;
-
     }
 
     /**
@@ -456,7 +454,6 @@ class $interface_class
      */
     public function send(\$params = array(), \$headers = array())
     {
-
         \$data = \$this->fieldInfo();
 
         FieldsDetector::validateField(\$params, \$data);
