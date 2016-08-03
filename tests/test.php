@@ -20,8 +20,8 @@ $spa = new Spa\Spa($conf);
 $test = $spa->getApp();
 
 $params = array(
-    'city_id' => '010',
-    'location_spec' => '{"location_type_circle":{"longitude":"0.1700019","latitude": "-0.1500" , "radius":3200}}',
+    'city_id' => '10',
+    'location_spec' => '{"location_type_circle":{"longitude":"0.170009","latitude": "-0.1500" , "radius":3200}}',
     'location_name' => 321,
     'location_type' => 321,
     'advertiser_id' => 321,
