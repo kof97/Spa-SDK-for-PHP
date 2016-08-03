@@ -426,6 +426,13 @@ class $interface_class {
 
     }
 
+    /**
+     * Send a request.
+     *
+     * @param array \$params  The request params.
+     * @param array \$headers The request headers.
+     * @return Response
+     */
     public function send(\$params = array(), \$headers = array()) {
 
         \$data = \$this->fieldInfo();
@@ -437,6 +444,9 @@ class $interface_class {
         return \$response;
     }
 
+    /**
+     * The fields info.
+     */
     public function fieldInfo() {
         return $field_info
     }

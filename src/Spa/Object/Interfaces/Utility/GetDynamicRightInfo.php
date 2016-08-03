@@ -41,6 +41,13 @@ class GetDynamicRightInfo {
 
     }
 
+    /**
+     * Send a request.
+     *
+     * @param array $params  The request params.
+     * @param array $headers The request headers.
+     * @return Response
+     */
     public function send($params = array(), $headers = array()) {
 
         $data = $this->fieldInfo();
@@ -52,6 +59,9 @@ class GetDynamicRightInfo {
         return $response;
     }
 
+    /**
+     * The fields info.
+     */
     public function fieldInfo() {
         return array(
 
