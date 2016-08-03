@@ -218,6 +218,17 @@ use Spa\Object\Interfaces\\$mod_class\\$interface_class;";
     createInterfacesEnum($get, $construct, $interface_namespace_use, $mod_class, $interface_content);
 }
 
+/**
+ * 生成接口枚举类，用于选择接口
+ *
+ * @param object $get        get 魔术方法
+ * @param string $construct  构造函数
+ * @param string $use        use 信息
+ * @param string $class_name 所属模块名
+ * @param string $items      类成员变量数据
+ * @param string $base_path  接口枚举类路径
+ * @return void
+ */
 function createInterfacesEnum($get, $construct, $use, $class_name, $items = '', $base_path = '../src/Spa/Object/Modules/') {
     $content = <<<EOF
 <?php 
@@ -261,7 +272,7 @@ EOF;
  * @param string $interface       interface 的节点
  * @param string $mod_name        当前模块原始名称
  * @param string $interface_name  当前接口原始名称
- * @return array
+ * @return void
  */
 function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name) {
     $arr = array();
@@ -451,6 +462,15 @@ EOF;
 
 }
 
+/**
+ * 拼接 array 数据
+ *
+ * @param object $data           idl 根节点
+ * @param array  $arr            需要用到的 element 信息
+ * @param string $mod_name       当前模块名称
+ * @param string $interface_name 当前接口名称
+ * @return string
+ */
 function getRepeated($data, $arr, $mod_name, $interface_name) {
     $repeat = '';
     $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
@@ -465,11 +485,12 @@ function getRepeated($data, $arr, $mod_name, $interface_name) {
         $repeat_enum = isset($repeated['enum']) ? "'enum' => '" . $repeated['enum'] . "'," : '';
         $repeat_source = isset($repeated['source']) ? "'source' => '" . $repeated['source'] . "'," : '';
 
+        // array element 获取
         $repeat_element = '';
         $t = $repeated['type'];
         if ($t === 'filter_struct' || $t === 'creative_struct') {
             $ele_arr = getExtendTypeInfo($data, $mod_name, $interface_name, $t);
-            $repeat_element = getElements($data, $ele_arr, $mod_name, $interface_name, 1);
+            $repeat_element = getElements($data, $ele_arr, $mod_name, $interface_name, 100);
         }
 
         $repeat = "
@@ -606,8 +627,14 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag) {
                 }
                 break;
 
-            case '4':
-                
+            // array element 专用通道
+            case '101':
+                $pattern = "\r\n";
+                $element = str_replace($pattern, "\r\n    ", $element);
+                $pattern = "\r\n                            \r\n";
+                while (strpos($element, $pattern) != false) {
+                    $element = str_replace($pattern, "\r\n", $element);
+                }
                 break;
 
             default: break;
