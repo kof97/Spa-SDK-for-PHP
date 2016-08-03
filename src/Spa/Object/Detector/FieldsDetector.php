@@ -114,11 +114,11 @@ class FieldsDetector {
             }
         }
     }
-
+ 
     protected static function validateFloat($data, $key, $value) {
-        var_dump(is_float($value));
-        var_dump(floatval($value));
-        var_dump($value . '');
+        if (strpos($value, '.')) {
+            $value = rtrim($value, '0');
+        }
         if ($value . '' !== floatval($value) . '') {
             throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
         }
