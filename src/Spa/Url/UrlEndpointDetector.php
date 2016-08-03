@@ -11,7 +11,8 @@ use Spa\Exceptions\SpaSDKException;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class UrlEndpointDetector {
+class UrlEndpointDetector
+{
 
 }
 
