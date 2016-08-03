@@ -8,7 +8,8 @@ getModulesEnumData($idl);
  * 枚举类
  *
  */
-function creatEnum($mod_class, $interface_class, $interface) {
+function creatEnum($mod_class, $interface_class, $interface)
+{
     $enum_class_name = $interface_class . 'Enum';
     $items = '';
     $construct = '';
@@ -29,8 +30,9 @@ function creatEnum($mod_class, $interface_class, $interface) {
     /**
      * Init $enum.
      */
-    private function __construct() {
-        // It would never be used.
+    private function __construct()
+    {
+        // It should never be invoked.
     }
 ";
             }
@@ -50,7 +52,8 @@ namespace Spa\Object\Enum\\$mod_class;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class $enum_class_name {
+class $enum_class_name
+{
     $items
     $construct
 }
@@ -73,7 +76,8 @@ EOF;
  * 生成模块的主类，用来选择各模块
  *
  */
-function getModulesEnumData($data) {
+function getModulesEnumData($data)
+{
     $modules_content = '
     /**
      * Instance of Spa.
@@ -86,7 +90,8 @@ function getModulesEnumData($data) {
     /**
      * Init .
      */
-    public function __construct($spa) {
+    public function __construct($spa)
+    {
         $this->spa = $spa;
     }';
 
@@ -96,7 +101,8 @@ function getModulesEnumData($data) {
      *
      * @param string $mod The mod name.
      */
-    public function __get($mod) {
+    public function __get($mod)
+    {
         switch ($mod) {';
 
     foreach ($data->children()->children() as $child) {
@@ -128,7 +134,8 @@ use Spa\Object\Modules\\$mod_class;";
     createModulesEnum($get, $construct, $modules_namespace_use, $modules_content);
 }
 
-function createModulesEnum($get, $construct, $use, $items, $file_path = '../src/Spa/Object/Modules.php') {
+function createModulesEnum($get, $construct, $use, $items, $file_path = '../src/Spa/Object/Modules.php')
+{
     $content = <<<EOF
 <?php 
 
@@ -144,7 +151,8 @@ $use
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Modules {
+class Modules
+{
     $items
     $construct
     $get
@@ -163,7 +171,8 @@ EOF;
  * 各接口的选择类，用来选择各接口，返回接口请求实体
  *
  */
-function getInterfacesEnumData($data, $module, $mod_class, $mod_name) {
+function getInterfacesEnumData($data, $module, $mod_class, $mod_name)
+{
     $interface_content = '
     /**
      * Instance of Spa.
@@ -180,7 +189,8 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name) {
     /**
      * Init .
      */
-    public function __construct($spa, $mod) {
+    public function __construct($spa, $mod)
+    {
         $this->spa = $spa;
 
         $this->mod = $mod;
@@ -192,7 +202,8 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name) {
      *
      * @param string $interface The interface name.
      */
-    public function __get($interface) {
+    public function __get($interface)
+    {
         switch ($interface) {';
 
     foreach ($module as $key => $value) {
@@ -238,7 +249,8 @@ use Spa\Object\Interfaces\\$mod_class\\$interface_class;";
  * @param string $base_path  接口枚举类路径
  * @return void
  */
-function createInterfacesEnum($get, $construct, $use, $class_name, $items = '', $base_path = '../src/Spa/Object/Modules/') {
+function createInterfacesEnum($get, $construct, $use, $class_name, $items = '', $base_path = '../src/Spa/Object/Modules/')
+{
     $content = <<<EOF
 <?php 
 
@@ -254,7 +266,8 @@ $use
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class $class_name {
+class $class_name
+{
     $items
     $construct
     $get
@@ -283,7 +296,8 @@ EOF;
  * @param string $interface_name  当前接口原始名称
  * @return void
  */
-function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name) {
+function creatInterface($data, $mod_class, $interface_class, $method, $interface, $mod_name, $interface_name)
+{
     $arr = array();
     $method = strtoupper($method);
     $field_info = 'array(
@@ -405,8 +419,8 @@ use Spa\Object\Detector\FieldsDetector;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class $interface_class {
-
+class $interface_class
+{
     /**
      * Instance of Spa.
      */
@@ -425,7 +439,8 @@ class $interface_class {
     /**
      * Init .
      */
-    public function __construct(\$spa, \$mod, \$act) {
+    public function __construct(\$spa, \$mod, \$act)
+    {
 
         \$this->spa = \$spa;
 

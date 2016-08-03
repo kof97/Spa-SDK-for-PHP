@@ -10,47 +10,50 @@ use Spa\Http\Curl\CurlClient;
  *
  * @category PHP
  * @package  Spa
- * @author	 Arno <arnoliu@tencent.com>
+ * @author   Arno <arnoliu@tencent.com>
  */
-class ClientsFactory {
+class ClientsFactory
+{
+    private function __construct()
+    {
+        // It should never be invoked.
+    }
 
-	private function __construct() {
-		// It should never be invoked.
-	}
+    /**
+     * HTTP client.
+     *
+     * @param ClientInterface|string|null $client_type Expected 'curl' or an instance of ClientInterface
+     *
+     * @return ClientInterface
+     */
+    public static function createClient($client_type)
+    {
+        if (!$client_type) {
+            return self::defaultClient();
+        }
 
-	/**
-	 * HTTP client.
-	 *
-	 * @param ClientInterface|string|null $client_type Expected 'curl' or an instance of ClientInterface
-	 *
-	 * @return ClientInterface
-	 */
-	public static function createClient($client_type) {
-		if (!$client_type) {
-			return self::defaultClient();
-		}
+        if ($client_type instanceof ClientInterface) {
+            return $client_type;
+        }
 
-		if ($client_type instanceof ClientInterface) {
-			return $client_type;
-		}
+        switch ($client_type) {
+            case 'curl':
+                return new CurlClient();
 
-		switch ($client_type) {
-			case 'curl':
-				return new CurlClient();
+            default:
+                throw new InvalidArgumentException('The "http_client_type" only support "curl" or an instance of Spa\Http\ClientInterface');
+        }
+    }
 
-			default:
-				throw new InvalidArgumentException('The "http_client_type" only support "curl" or an instance of Spa\Http\ClientInterface');
-		}
-	}
-
-	/**
-	 * Default HTTP client.
-	 *
-	 * @return ClientInterface
-	 */
-	private static function defaultClient() {
-		return new CurlClient();
-	}
+    /**
+     * Default HTTP client.
+     *
+     * @return ClientInterface
+     */
+    private static function defaultClient()
+    {
+        return new CurlClient();
+    }
 
 }
 

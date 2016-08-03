@@ -11,9 +11,10 @@ use Spa\Exceptions\ParamsException;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class FieldsDetector {
-
-    private function __construct() {
+class FieldsDetector
+{
+    private function __construct()
+    {
         // It should never be invoked.
     }
 
@@ -23,7 +24,8 @@ class FieldsDetector {
      * @param array $data   The field info.
      * @param array $params The params that users want to send.
      */
-    public static function validateField($params, $data) {
+    public static function validateField($params, $data)
+    {
         if (empty($params)) {
             return;
         }
@@ -47,7 +49,8 @@ class FieldsDetector {
      * @param array $key   The user's params key.
      * @param array $value The user's params value.
      */
-    protected static function validateBasicType($data, $key, $value) {
+    protected static function validateBasicType($data, $key, $value)
+    {
         $type = $data['type'];
         switch ($type) {
             case 'string':
@@ -92,7 +95,8 @@ class FieldsDetector {
      * @param array $key   The user's params key.
      * @param array $value The user's params value.
      */
-    protected static function validateString($data, $key, $value) {
+    protected static function validateString($data, $key, $value)
+    {
         $origin_value = $value;
 
         $len = strlen($value);
@@ -128,7 +132,8 @@ class FieldsDetector {
      * @param array $key   The user's params key.
      * @param array $value The user's params value.
      */
-    protected static function validateInteger($data, $key, $value) {
+    protected static function validateInteger($data, $key, $value)
+    {
         $origin_value = $value;
 
         // check the type like '015'
@@ -160,7 +165,8 @@ class FieldsDetector {
      * @param array $key   The user's params key.
      * @param array $value The user's params value.
      */
-    protected static function validateFloat($data, $key, $value) {
+    protected static function validateFloat($data, $key, $value)
+    {
         $origin_value = $value;
 
         if (strpos($value, '.')) {
@@ -200,7 +206,8 @@ class FieldsDetector {
      * @param array $key   The user's params key.
      * @param array $value The user's params value.
      */
-    protected static function validateStruct($data, $key, $value) {
+    protected static function validateStruct($data, $key, $value)
+    {
         $origin_value = $value;
 
         if (is_object($value)) {
@@ -238,7 +245,8 @@ class FieldsDetector {
      * @param array $key   The user's params key.
      * @param array $value The user's params value.
      */
-    protected static function validateArray($data, $key, $value) {
+    protected static function validateArray($data, $key, $value)
+    {
         if (!is_array($value)) {
             throw new ParamsException("Error in '$value', the value of field '$key' needs the format 'array'.");
         }
@@ -255,7 +263,8 @@ class FieldsDetector {
      * @param array $key     The user's params key.
      * @param array $value   The user's params value.
      */
-    protected static function validatePattern($pattern, $key, $value) {
+    protected static function validatePattern($pattern, $key, $value)
+    {
         $origin_value = $value;
 
         switch ($pattern) {
@@ -300,7 +309,8 @@ class FieldsDetector {
      * @param array $data   The field info.
      * @param array $params The params that users want to send.
      */
-    protected static function validateRequireField($data, $params) {
+    protected static function validateRequireField($data, $params)
+    {
         $from_element = 0;
         if (isset($data['element'])) {
             $struct_name = $data['name'];
