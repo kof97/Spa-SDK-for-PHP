@@ -60,7 +60,7 @@ class FieldsDetector {
                 break;
 
             case 'array':
-                
+                self::validateArray($data, $key, $value);
                 break;
 
             default: break;
@@ -110,13 +110,13 @@ class FieldsDetector {
 
         if (isset($data['max'])) {
             if ($value > ($max = $data['max'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'.");
+                throw new ParamsException("Error in '$origin_value', the value of field '$key' is big, it expects the value less than '$max'.");
             }
         }
 
         if (isset($data['min'])) {
             if ($value < ($min = $data['min'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'.");
+                throw new ParamsException("Error in '$origin_value', the value of field '$key' is small, it expects the value more than '$min'.");
             }
         }
     }
@@ -155,6 +155,8 @@ class FieldsDetector {
     }
 
     protected static function validateStruct($data, $key, $value) {
+        $origin_value = $value;
+
         if (is_object($value)) {
             $value = json_encode($value);
         }
@@ -168,7 +170,7 @@ class FieldsDetector {
         $value = (array)json_decode($value);
 
         if (empty($value)) {
-            throw new ParamsException("Error in the value of the '$key'.");
+            throw new ParamsException("Error in the value '$origin_value' of the '$key'.");
         }
 
         self::validateRequireField($data, $value);
@@ -181,6 +183,10 @@ class FieldsDetector {
                 self::validateBasicType($element[$key], $key, $v);
             }
         }
+    }
+
+    protected static function validateArray($data, $key, $value) {
+
     }
 
     protected static function validatePattern($pattern, $key, $value) {

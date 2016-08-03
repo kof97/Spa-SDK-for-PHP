@@ -21,7 +21,7 @@ $test = $spa->getApp();
 
 $params = array(
     'city_id' => '10',
-    'location_spec' => '{"location_type_circle":{"longitude":"0.170009","latitude": "-0.1500" , "radius":3200}}',
+    'date_range' => '{"start_date":"2016-12-11","end_date": "2016-12-19"}',
     'location_name' => 321,
     'location_type' => 321,
     'advertiser_id' => 321,
@@ -48,7 +48,7 @@ $params = array(
 $modules = $spa->getModules();
 
 
-$response = $modules->targeting_location->create->send($params);
+$response = $modules->super_report->select_adgroup_daily->send($params);
 //$res = $modules->image->create_by_url->send($params);
 //var_dump($response);
 //var_dump($modules::ADVERTISER);
