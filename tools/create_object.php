@@ -457,7 +457,8 @@ class $interface_class
      * @param array \$headers The request headers.
      * @return Response
      */
-    public function send(\$params = array(), \$headers = array()) {
+    public function send(\$params = array(), \$headers = array())
+    {
 
         \$data = \$this->fieldInfo();
 
@@ -471,7 +472,8 @@ class $interface_class
     /**
      * The fields info.
      */
-    public function fieldInfo() {
+    public function fieldInfo()
+    {
         return $field_info
     }
 
@@ -500,7 +502,8 @@ EOF;
  * @param string $interface_name 当前接口名称
  * @return string
  */
-function getRepeated($data, $arr, $mod_name, $interface_name) {
+function getRepeated($data, $arr, $mod_name, $interface_name)
+{
     $repeat = '';
     $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
 
@@ -558,7 +561,8 @@ function getRepeated($data, $arr, $mod_name, $interface_name) {
  * @param string $flag           当前遍历 element 层级
  * @return string
  */
-function getElements($data, $arr, $mod_name, $interface_name, $flag) {
+function getElements($data, $arr, $mod_name, $interface_name, $flag)
+{
     $flag++;
     $element = '';
     $ele = isset($arr['element']) ? $arr['element'] : null;
@@ -686,7 +690,8 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag) {
  * @param string $extendType     所要获取的 type 类型
  * @return array
  */
-function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType) {
+function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType)
+{
     $arr = array();
 
     foreach ($data->children()->children() as $child) {
@@ -747,7 +752,8 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType) {
  * @param object $data simpleType or complexType
  * @return array
  */
-function processField($data) {
+function processField($data)
+{
     $type = $data->attributes()['extends'] . '';
     $arr['type'] = $type;
 
