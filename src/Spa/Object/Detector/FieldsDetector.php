@@ -71,13 +71,13 @@ class FieldsDetector {
         $len = strlen($value);
         if (isset($data['max_length'])) {
             if ($len > ($max_length = $data['max_length'])) {
-                throw new ParamsException("Error in '$value', the length of field '$key' is too long, it expects the length can't more than '$max_length'");
+                throw new ParamsException("Error in '$value', the length of field '$key' is too long, it expects the length can't more than '$max_length'.");
             }
         }
 
         if (isset($data['min_length'])) {
             if ($len < ($min_length = $data['min_length'])) {
-                throw new ParamsException("Error in '$value', the length of field '$key' is too short, it expects the length at least '$min_length'");
+                throw new ParamsException("Error in '$value', the length of field '$key' is too short, it expects the length at least '$min_length'.");
             }
         }
 
@@ -85,7 +85,7 @@ class FieldsDetector {
             $list = explode(',', $data['list']);
             if (!in_array($value, $list)) {
                 $list = implode($list, ',');
-                throw new ParamsException("Error in '$value', the value of field '$key' is limited in '$list'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is limited in '$list'.");
             }
         }
 
@@ -99,39 +99,49 @@ class FieldsDetector {
         $value = ltrim($value, '0');
 
         if ($value . '' !== intval($value) . '') {
-            throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
+            throw new ParamsException("Error in '$value', the value of field '$key' needs the type 'int'.");
         }
 
         if (isset($data['max'])) {
             if ($value >= ($max = $data['max'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'.");
             }
         }
 
         if (isset($data['min'])) {
             if ($value <= ($min = $data['min'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'.");
             }
         }
     }
  
     protected static function validateFloat($data, $key, $value) {
+        var_dump(strpos($value, '.'));
         if (strpos($value, '.')) {
             $value = rtrim($value, '0');
         }
+
         if ($value . '' !== floatval($value) . '') {
-            throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
+            throw new ParamsException("Error in '$value', the value of field '$key' needs the type 'float'.");
+        }
+
+        if (isset($data['decimalLength'])) {
+            $decimal_length = $data['decimalLength'];
+            if (strpos($value, '.')) {
+                
+            }
+            var_dump($decimal_length);
         }
 
         if (isset($data['max'])) {
             if ($value >= ($max = $data['max'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is big, it expects the value less than '$max'.");
             }
         }
 
         if (isset($data['min'])) {
             if ($value <= ($min = $data['min'])) {
-                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'");
+                throw new ParamsException("Error in '$value', the value of field '$key' is small, it expects the value more than '$min'.");
             }
         }
     }
@@ -150,7 +160,7 @@ class FieldsDetector {
         $value = (array)json_decode($value);
 
         if (empty($value)) {
-            throw new ParamsException("Error in the value of the '$key'");
+            throw new ParamsException("Error in the value of the '$key'.");
         }
 
         self::validateRequireField($data, $value);
@@ -171,12 +181,12 @@ class FieldsDetector {
             case '{url_pattern}':
                 //$regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
                 $regex = '/^(http|https|ftp):\/\/([A-Z0-9][A-Z0-9_-]*(?:\.[A-Z0-9][A-Z0-9_-]*)+):?(\d+)?\/?/i';
-                $err_msg = "The value of field '$key', '$value' is not a validate value, It needs to like 'https://github.com'";
+                $err_msg = "The value of field '$key', '$value' is not a validate value, It needs to like 'https://github.com'.";
                 break;
             
             case '{age_pattern}':
                 if ($value . '' !== intval($value) . '') {
-                    throw new ParamsException("Error in '$value', the value of field '$key' needs the type int");
+                    throw new ParamsException("Error in '$value', the value of field '$key' needs the type 'int'.");
                 }
                 return;
 
@@ -187,12 +197,12 @@ class FieldsDetector {
             case '{date_pattern}':
                 // 2016-12-11
                 $regex = '/^((?:19|20)\d\d)-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/';
-                $err_msg = "The value of field '$key', '$value' is not a validate value, It needs to like '2016-12-11'";
+                $err_msg = "The value of field '$key', '$value' is not a validate value, It needs to like '2016-12-11'.";
                 break;
 
             default:
                 $regex = $pattern;
-                $err_msg = "The value of field '$key', '$value' is not a validate value";
+                $err_msg = "The value of field '$key', '$value' is not a validate value.";
                 break;
         }
 
@@ -218,9 +228,9 @@ class FieldsDetector {
 
             if (!isset($params[$key])) {
                 if ($from_element) {
-                    throw new ParamsException("Expect the required params '$key' in the element '$struct_name' that you didn't provide");
+                    throw new ParamsException("Expect the required params '$key' in the element '$struct_name' that you didn't provide.");
                 }
-                throw new ParamsException("Expect the required params '$key' that you didn't provide");
+                throw new ParamsException("Expect the required params '$key' that you didn't provide.");
             }
         }
     }
