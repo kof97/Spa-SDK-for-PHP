@@ -38,6 +38,18 @@ array(
                         'max'         => '4294967295',
                         'min'         => '10000'
                     ),
+                    // float
+                    'latitude' => array(
+                        'extendType'    => 'latitude',
+                        'require'       => 'no',
+                        'type'          => 'float',
+                        'description'   => '半径，单位米',
+                        'restraint'     => '大于等于1000，小于等于5000',
+                        'errormsg'      => '半径错误',
+                        'max'           => '5000',
+                        'min'           => '1000',
+                        'decimalLength' => '6',
+                    ),
                     // id / number
                     'campaign_id' => array(
                         'extendType'  => 'campaign_id',

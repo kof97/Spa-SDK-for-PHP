@@ -309,6 +309,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $item_max_length = isset($arr['item_max_length']) ? "'item_max_length' => '" . $arr['item_max_length'] . "'," : '';
                 $max_size = isset($arr['max_size']) ? "'max_size' => '" . $arr['max_size'] . "'," : '';
                 $min_size = isset($arr['min_size']) ? "'min_size' => '" . $arr['min_size'] . "'," : '';
+                $decimalLength = isset($arr['decimalLength']) ? "'decimalLength' => '" . $arr['decimalLength'] . "'," : '';
 
                 /** ------------------------------------------------------- **/
                 /* 递归层数 */
@@ -364,6 +365,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $source
                 $max
                 $min
+                $decimalLength
                 $item_max_length
                 $element
                 $repeat
@@ -513,6 +515,7 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag) {
             $ele_item_max_length = isset($ele_arr['item_max_length']) ? "'item_max_length' => '" . $ele_arr['item_max_length'] . "'," : '';
             $ele_max_size = isset($ele_arr['max_size']) ? "'max_size' => '" . $ele_arr['max_size'] . "'," : '';
             $ele_min_size = isset($ele_arr['min_size']) ? "'min_size' => '" . $ele_arr['min_size'] . "'," : '';
+            $ele_decimalLength = isset($ele_arr['decimalLength']) ? "'decimalLength' => '" . $ele_arr['decimalLength'] . "'," : '';
 
             // 递归获取 element
             $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name, $flag);
@@ -534,6 +537,7 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag) {
                         $ele_source
                         $ele_max
                         $ele_min
+                        $ele_decimalLength
                         $ele_item_max_length
                         $ele_element
                     ),
@@ -580,6 +584,15 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag) {
     return $element;
 }
 
+/**
+ * 获得 extendType 的数据的信息
+ *
+ * @param object $data           idl 根节点
+ * @param string $mod_name       当前模块名称
+ * @param string $interface_name 当前接口名称
+ * @param string $extendType     所要获取的 type 类型
+ * @return array
+ */
 function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType) {
     $arr = array();
 
@@ -635,6 +648,12 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType) {
     }
 }
 
+/**
+ * 读取 simpleType 或者 complexType 中的数据结构
+ *
+ * @param object $data simpleType or complexType
+ * @return array
+ */
 function processField($data) {
     $type = $data->attributes()['extends'] . '';
     $arr['type'] = $type;
@@ -725,7 +744,7 @@ function processField($data) {
                 }
                 if ($key === 'restriction') {
                     foreach ($value as $k => $v) {
-                        if (($v->attributes()['type'] . '') === 'integer') {
+                        if (($v->attributes()['type'] . '') === 'float') {
                             foreach ($v as $key => $value) {
                                 $attr = $value->attributes();
                                 if ($key === 'max') {
@@ -735,6 +754,7 @@ function processField($data) {
                                     $arr['min'] = $attr['value'] . '';
                                 }
                                 if ($key === 'decimalLength') {
+
                                     $arr['decimalLength'] = $attr['value'] . '';
                                 }
                             }
