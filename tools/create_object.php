@@ -5,8 +5,12 @@ $idl = simplexml_load_file('luna.idl.xml');
 getModulesEnumData($idl);
 
 /**
- * 枚举类
+ * 生成枚举类，field 枚举类
  *
+ * @param object $mod_class       模块类名
+ * @param string $interface_class 接口类名
+ * @param string $interface       interface 节点
+ * @return void
  */
 function creatEnum($mod_class, $interface_class, $interface)
 {
@@ -72,8 +76,10 @@ EOF;
 }
 
 /**
- * 生成模块的主类，用来选择各模块
+ * 收集 `生成模块枚举类` 所需要的信息
  *
+ * @param object $data 根节点
+ * @return void
  */
 function getModulesEnumData($data)
 {
@@ -133,6 +139,17 @@ use Spa\Object\Modules\\$mod_class;";
     createModulesEnum($get, $construct, $modules_namespace_use, $modules_content);
 }
 
+/**
+ * 生成模块的枚举类，用于选择 `模块`
+ *
+ * @param object $get        get 魔术方法
+ * @param string $construct  构造函数
+ * @param string $use        use 信息
+ * @param string $class_name 所属模块名
+ * @param string $items      类成员变量数据
+ * @param string $file_path  模块枚举类完整路径
+ * @return void
+ */
 function createModulesEnum($get, $construct, $use, $items, $file_path = '../src/Spa/Object/Modules.php')
 {
     $content = <<<EOF
@@ -166,8 +183,13 @@ EOF;
 }
 
 /**
- * 各接口的选择类，用来选择各接口，返回接口请求实体
+ * 收集 `生成接口枚举类` 所需要的信息
  *
+ * @param object $data      根节点
+ * @param object $module    module 节点
+ * @param string $mod_class 模块类名
+ * @param string $mod_name  模块真实名称
+ * @return void
  */
 function getInterfacesEnumData($data, $module, $mod_class, $mod_name)
 {
