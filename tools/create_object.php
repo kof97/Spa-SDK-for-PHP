@@ -487,15 +487,18 @@ function getRepeated($data, $arr, $mod_name, $interface_name) {
 
         // array element 获取
         $repeat_element = '';
+        $repeat_name = '';
         $t = $repeated['type'];
         if ($t === 'filter_struct' || $t === 'creative_struct') {
             $ele_arr = getExtendTypeInfo($data, $mod_name, $interface_name, $t);
             $repeat_element = getElements($data, $ele_arr, $mod_name, $interface_name, 100);
+            $repeat_name = "'name' => '$t',";
         }
 
         $repeat = "
                 'repeated' => array(
                     $repeat_type
+                    $repeat_name
                     $repeat_list
                     $repeat_pattern
                     $repeat_item_max_length

@@ -55,6 +55,11 @@ class FieldsDetector {
                 self::validateInteger($data, $key, $value);
                 break;
 
+            // creative_struct and filter_struct is belong to array type.
+            case 'creative_struct':
+
+            case 'filter_struct':
+
             case 'struct':
                 self::validateStruct($data, $key, $value);
                 break;
@@ -170,7 +175,7 @@ class FieldsDetector {
         $value = (array)json_decode($value);
 
         if (empty($value)) {
-            throw new ParamsException("Error in the value '$origin_value' of the '$key'.");
+            throw new ParamsException("Error in the value '$origin_value' of the '$key', it needs the 'json' format.");
         }
 
         self::validateRequireField($data, $value);
@@ -186,7 +191,13 @@ class FieldsDetector {
     }
 
     protected static function validateArray($data, $key, $value) {
+        if (!is_array($value)) {
+            throw new ParamsException("Error in '$value', the value of field '$key' needs the format 'array'.");
+        }
 
+        foreach ($value as $v) {
+            self::validateBasicType($data['repeated'], $data['name'], $v);
+        }
     }
 
     protected static function validatePattern($pattern, $key, $value) {

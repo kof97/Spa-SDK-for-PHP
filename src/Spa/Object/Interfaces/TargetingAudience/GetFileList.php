@@ -93,6 +93,7 @@ class GetFileList {
                 'item_max_length' => '255',
                 'repeated' => array(
                     'type' => 'filter_struct',
+                    'name' => 'filter_struct',
                     'item_max_length' => '255',
                     'element' => array(
                         'field' => array(

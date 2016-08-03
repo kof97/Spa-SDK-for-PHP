@@ -382,6 +382,7 @@ class GetEstimation {
                 'item_max_length' => '32',
                 'repeated' => array(
                     'type' => 'creative_struct',
+                    'name' => 'creative_struct',
                     'item_max_length' => '32',
                     'element' => array(
                         'creative_template_id' => array(
