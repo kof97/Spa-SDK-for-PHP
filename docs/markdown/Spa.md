@@ -47,6 +47,32 @@ Spa\Spa 类提供了主要功能的接口入口
     $signup->send({$params}, {$headers});
 ```
 
+接下来是数据的拼接，在 `Spa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
+
+```
+    // Spa\Object\Enum\ {mod_class} \ {interface_enum_class}
+    use Spa\Object\Enum\Advertiser\SignupEnum;
+
+    $params = array(
+        SignupEnum::LOGIN_NAME       => '',
+        SignupEnum::ADVERTISER_NAME  => '',
+        SignupEnum::CORPORATION_NAME => '',
+        SignupEnum::ADDRESS          => '',
+    );
+```
+
+上述例子等同于：
+
+```
+    $params = array(
+        'login_name'       => '',
+        'advertiser_name'  => '',
+        'corporation_name' => '',
+        'address'          => '',
+    );
+```
+
+---
 
 ## 传统调用：
 
