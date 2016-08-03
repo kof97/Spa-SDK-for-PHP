@@ -709,6 +709,41 @@ function processField($data) {
             }
             return $arr;
 
+        case 'float':
+            foreach ($data as $key => $value) {
+                if ($key === 'attribute') {
+                    $attr = $value->attributes();
+                    if (($attr['name'] . '') === 'description') {
+                        $arr['description'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'restraint') {
+                        $arr['restraint'] = $attr['value'] . '';
+                    }
+                    if (($attr['name'] . '') === 'errormsg') {
+                        $arr['errormsg'] = $attr['value'] . '';
+                    }
+                }
+                if ($key === 'restriction') {
+                    foreach ($value as $k => $v) {
+                        if (($v->attributes()['type'] . '') === 'integer') {
+                            foreach ($v as $key => $value) {
+                                $attr = $value->attributes();
+                                if ($key === 'max') {
+                                    $arr['max'] = $attr['value'] . '';
+                                }
+                                if ($key === 'min') {
+                                    $arr['min'] = $attr['value'] . '';
+                                }
+                                if ($key === 'decimalLength') {
+                                    $arr['decimalLength'] = $attr['value'] . '';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return $arr;
+
         case 'id':
 
         case 'number':
