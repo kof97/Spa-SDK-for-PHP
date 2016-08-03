@@ -17,6 +17,12 @@ class FieldsDetector {
         // It would never be used.
     }
 
+    /**
+     * Validate the fields.
+     *
+     * @param array $data   The field info.
+     * @param array $params The params that users want to send.
+     */
     public static function validateField($params, $data) {
         if (empty($params)) {
             return;
@@ -34,6 +40,13 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the basic type fields.
+     *
+     * @param array $data  The field info.
+     * @param array $key   The user's params key.
+     * @param array $value The user's params value.
+     */
     protected static function validateBasicType($data, $key, $value) {
         $type = $data['type'];
         switch ($type) {
@@ -72,6 +85,13 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the string format fields.
+     *
+     * @param array $data  The field info.
+     * @param array $key   The user's params key.
+     * @param array $value The user's params value.
+     */
     protected static function validateString($data, $key, $value) {
         $origin_value = $value;
 
@@ -101,6 +121,13 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the integer format fields.
+     *
+     * @param array $data  The field info.
+     * @param array $key   The user's params key.
+     * @param array $value The user's params value.
+     */
     protected static function validateInteger($data, $key, $value) {
         $origin_value = $value;
 
@@ -126,6 +153,13 @@ class FieldsDetector {
         }
     }
  
+    /**
+     * Validate the float format fields.
+     *
+     * @param array $data  The field info.
+     * @param array $key   The user's params key.
+     * @param array $value The user's params value.
+     */
     protected static function validateFloat($data, $key, $value) {
         $origin_value = $value;
 
@@ -159,6 +193,13 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the struct format fields.
+     *
+     * @param array $data  The field info.
+     * @param array $key   The user's params key.
+     * @param array $value The user's params value.
+     */
     protected static function validateStruct($data, $key, $value) {
         $origin_value = $value;
 
@@ -190,6 +231,13 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the array format fields.
+     *
+     * @param array $data  The field info.
+     * @param array $key   The user's params key.
+     * @param array $value The user's params value.
+     */
     protected static function validateArray($data, $key, $value) {
         if (!is_array($value)) {
             throw new ParamsException("Error in '$value', the value of field '$key' needs the format 'array'.");
@@ -200,6 +248,13 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the fields that need use the pattern.
+     *
+     * @param array $pattern The pattern.
+     * @param array $key     The user's params key.
+     * @param array $value   The user's params value.
+     */
     protected static function validatePattern($pattern, $key, $value) {
         $origin_value = $value;
 
@@ -239,6 +294,12 @@ class FieldsDetector {
         }
     }
 
+    /**
+     * Validate the required fields.
+     *
+     * @param array $data   The field info.
+     * @param array $params The params that users want to send.
+     */
     protected static function validateRequireField($data, $params) {
         $from_element = 0;
         if (isset($data['element'])) {
