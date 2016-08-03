@@ -5,12 +5,88 @@
 使用：引入 <code>autoload.php</code> 即可使用
 
 <pre><codeblock>
-	require_once __DIR__ . './src/Spa/autoload.php';
+    require_once __DIR__ . './src/Spa/autoload.php';
 </codeblock></pre>
 
-<h2>快速使用</h2>
+<h2>快速调用</h2>
 
-<h3>实例化对象</h3>
+<h3>初始化实例</h3>
+
+<pre><codeblock>
+    $conf = array(
+        'uid'               => '{uid}',     // 必填
+        'appid'             => '{appid}',   // 必填
+        'appkey'            => '{appkey}',  // 必填
+        'http_client_type'  => 'curl',      // 可不填
+        'version'           => 'v3'         // 可不填
+    );
+
+    $spa = new Spa\Spa($conf);
+
+    // 获取模块集合
+    $modules = $spa->getModules();
+</codeblock></pre>
+
+<h3>选择请求的模块和接口并发送请求</h3>
+
+<pre><codeblock>
+    // 选择模块 -> 选择接口 -> 发送请求
+    $modules->advertiser->signup->send({$params}, {$headers});
+</codeblock></pre>
+
+<h3>详细解说</h3>
+
+首先是对于模块（module）和接口（interface）的选择
+
+<pre><codeblock>
+    // 返回了 advertiser 模块
+    $advertiser = $modules->advertiser;
+
+    // 返回接口 signup 的请求实体
+    $signup = $advertiser->signup;
+
+    // 向 advertiser/signup 发送请求
+    $signup->send({$params}, {$headers});
+</codeblock></pre>
+
+也支持链式操作
+
+<pre><codeblock>
+    // 选择模块 -> 选择接口 -> 发送请求
+    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+</codeblock></pre>
+
+接下来是数据的拼接，在 <code>Spa\Object\Enum\</code> 下定义了各个模块中各个接口参数的枚举类
+
+<pre><codeblock>
+    // Spa\Object\Enum\ {mod_class} \ {interface_enum_class}
+    use Spa\Object\Enum\Advertiser\SignupEnum;
+
+    $params = array(
+        SignupEnum::LOGIN_NAME       => '',
+        SignupEnum::ADVERTISER_NAME  => '',
+        SignupEnum::CORPORATION_NAME => '',
+        SignupEnum::ADDRESS          => '',
+    );
+</codeblock></pre>
+
+上述例子等同于：
+
+<pre><codeblock>
+    $params = array(
+        'login_name'       => '',
+        'advertiser_name'  => '',
+        'corporation_name' => '',
+        'address'          => '',
+    );
+</codeblock></pre>
+
+<hr>
+
+<h2>传统调用：</h2>
+
+<h3>初始化实例</h3>
+
 <pre><codeblock>
     $conf = array(
         'uid'               => '{uid}',
@@ -26,31 +102,18 @@
 <h3>发送 get 请求</h3>
 
 <pre><codeblock>
-    $response = $spa->get('/advertiser/read?advertiser_id=123');
+    $response = $spa->get('/advertiser/read?advertiser_id=123', {$headers});
 </codeblock></pre>
 
 <h3>发送 post 请求</h3>
 
 <pre><codeblock>
-    $response = $spa->post('/advertiser/signup');
+    $response = $spa->post('/advertiser/signup', {$params}, {$headers});
 </codeblock></pre>
 
 <h3>发送 request 请求</h3>
 
 <pre><codeblock>
-    $response = $spa->sendRequest('post', '/advertiser/signup');
-</codeblock></pre>
-
-<h3>response 处理</h3>
-
-<pre><codeblock>
-	// 获取请求响应状态码 (int)
-	$httpStatusCode = $response->getHttpStatusCode();
-
-	// 获取响应头信息 (array)
-	$headers = $response->getHeaders();
-
-	// 获取响应 body 信息 (json)
-	$body = $response->getBody();
+    $response = $spa->sendRequest('post', '/advertiser/signup', {$params}, {$headers});
 </codeblock></pre>
 

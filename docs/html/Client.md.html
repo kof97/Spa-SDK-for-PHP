@@ -11,10 +11,10 @@ Spa\Client 类用于发起请求
 <h3>Spa\Client</h3>
 
 <pre><codeblock>
-	new Spa\Client(
-		BaseClientInterface $httpClient = null, 
-		$version = null
-	)
+    new Spa\Client(
+        BaseClientInterface $httpClient = null, 
+        $version = null
+    )
 </codeblock></pre>
 <p><em></em>$httpClient :<em></em> <code>Spa\HttpClients\BaseClientInterface</code> 的实例，用于发起请求</p><p><em></em>$version :<em></em> 请求的 api 版本，默认 v3，目前只支持 v3</p>
 
@@ -23,23 +23,23 @@ Spa\Client 类用于发起请求
 例：
 
 <pre><codeblock>
-	$conf = array(
-		'uid'				=> '{uid}',
-		'appid'				=> '{appid}',
-		'appkey'			=> '{appkey}',
-		'http_client_type'	=> 'curl',
-		'version'			=> 'v3'
-	);
+    $conf = array(
+        'uid'               => '{uid}',
+        'appid'             => '{appid}',
+        'appkey'            => '{appkey}',
+        'http_client_type'  => 'curl',
+        'version'           => 'v3'
+    );
 
-	$spa = new Spa\Spa($conf);
+    $spa = new Spa\Spa($conf);
 
-	$spaClient = $spa->getClient();
+    $spaClient = $spa->getClient();
 </codeblock></pre>
 
 或是直接创建
 
 <pre><codeblock>
-	$spaClient = new Spa\Client({$httpClient}, {$version});
+    $spaClient = new Spa\Client({$httpClient}, {$version});
 </codeblock></pre>
 
 <h2>方法介绍</h2>
@@ -47,7 +47,7 @@ Spa\Client 类用于发起请求
 <h3>setHttpClient()</h3>
 
 <pre><codeblock>
-	public void setHttpClient(Spa\HttpClients\BaseClientInterface $httpClient)
+    public void setHttpClient(Spa\HttpClients\BaseClientInterface $httpClient)
 </codeblock></pre>
 
 设置 <code>$httpClient</code>，用于发起 http 请求
@@ -55,7 +55,7 @@ Spa\Client 类用于发起请求
 <h3>getHttpClient()</h3>
 
 <pre><codeblock>
-	public Spa\HttpClients\BaseClientInterface getHttpClient()
+    public Spa\HttpClients\BaseClientInterface getHttpClient()
 </codeblock></pre>
 
 获取 <code>Spa\HttpClients\BaseClientInterface</code> 对象实例
@@ -63,7 +63,7 @@ Spa\Client 类用于发起请求
 <h3>sendRequest()</h3>
 
 <pre><codeblock>
-	public Spa\Response sendRequest(Spa\Request $request)
+    public Spa\Response sendRequest(Spa\Request $request)
 </codeblock></pre>
 
 参数为 <code>Spa\Request</code> 的对象
