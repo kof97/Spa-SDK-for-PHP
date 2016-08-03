@@ -338,6 +338,13 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                     $repeat_enum = isset($repeated['enum']) ? "'enum' => '" . $repeated['enum'] . "'," : '';
                     $repeat_source = isset($repeated['source']) ? "'source' => '" . $repeated['source'] . "'," : '';
 
+                    $repeat_element = '';
+                    $t = $repeated['type'];
+                    if ($t === 'filter_struct' || $t === 'creative_struct') {
+                        $ele_arr = getExtendTypeInfo($data, $mod_name, $interface_name, $t);
+                        $repeat_element = getElements($data, $ele_arr, $mod_name, $interface_name, 1);
+                    }
+
                     $repeat = "
                 'repeated' => array(
                     $repeat_type
@@ -348,6 +355,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                     $repeat_source
                     $repeat_max
                     $repeat_min
+                    $repeat_element
                 )";
 
 

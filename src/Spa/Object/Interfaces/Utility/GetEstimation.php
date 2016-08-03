@@ -384,6 +384,18 @@ class GetEstimation {
                 'repeated' => array(
                     'type' => 'creative_struct',
                     'item_max_length' => '32',
+                    'element' => array(
+                            'creative_template_id' => array(
+                                'name' => 'creative_template_id',
+                                'extendType' => 'creative_template_id',
+                                'require' => 'yes',
+                                'type' => 'integer',
+                                'description' => '素材规格Id',
+                                'restraint' => '详见 [link href="creative_template_id"]素材规格Id[/link]',
+                                'errormsg' => '素材规格Id不正确',
+                            ),
+        
+                        ),
                 )
             ),
 

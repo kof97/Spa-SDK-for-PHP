@@ -98,6 +98,45 @@ class SelectCampaignHourly {
                 'repeated' => array(
                     'type' => 'filter_struct',
                     'item_max_length' => '255',
+                    'element' => array(
+                            'field' => array(
+                                'name' => 'field',
+                                'extendType' => 'field',
+                                'require' => 'yes',
+                                'type' => 'string',
+                                'description' => '字段',
+                                'restraint' => '字段',
+                                'errormsg' => '字段不正确',
+                                'max_length' => '32',
+                                'min_length' => '1',
+                                'list' => 'adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
+                            ),
+        
+                            'operator' => array(
+                                'name' => 'operator',
+                                'extendType' => 'operator',
+                                'require' => 'yes',
+                                'type' => 'string',
+                                'description' => '操作符',
+                                'restraint' => '操作符',
+                                'errormsg' => '操作符不正确',
+                                'enum' => 'enum',
+                                'source' => 'api_filter_operator',
+                            ),
+        
+                            'value' => array(
+                                'name' => 'value',
+                                'extendType' => 'value',
+                                'require' => 'yes',
+                                'type' => 'string',
+                                'description' => '字段取值',
+                                'restraint' => '字段取值',
+                                'errormsg' => '字段取值不正确',
+                                'max_length' => '32',
+                                'min_length' => '1',
+                            ),
+        
+                        ),
                 )
             ),
 
