@@ -27,7 +27,6 @@ class ReadEnum
      */
     const PRODUCT_TYPE = 'product_type';
 
-    
     /**
      * Init product_type.
      */

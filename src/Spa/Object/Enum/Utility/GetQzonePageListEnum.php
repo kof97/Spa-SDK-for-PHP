@@ -17,7 +17,6 @@ class GetQzonePageListEnum
      */
     const QQ = 'qq';
 
-    
     /**
      * Init qq.
      */

@@ -32,7 +32,6 @@ class SelectEnum
      */
     const FILTER = 'filter';
 
-    
     /**
      * Init filter.
      */

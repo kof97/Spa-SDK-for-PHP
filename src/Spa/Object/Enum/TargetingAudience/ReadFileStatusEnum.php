@@ -22,7 +22,6 @@ class ReadFileStatusEnum
      */
     const FILE_ID = 'file_id';
 
-    
     /**
      * Init file_id.
      */

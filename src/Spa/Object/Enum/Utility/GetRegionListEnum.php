@@ -12,7 +12,6 @@ namespace Spa\Object\Enum\Utility;
 class GetRegionListEnum
 {
     
-    
 }
 
 //end of script

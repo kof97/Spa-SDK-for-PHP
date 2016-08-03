@@ -22,7 +22,6 @@ class InfoEnum
      */
     const MEDIA_ID = 'media_id';
 
-    
     /**
      * Init media_id.
      */

@@ -37,7 +37,6 @@ class UpdateByPbEnum
      */
     const REFS_APP_ID = 'refs_app_id';
 
-    
     /**
      * Init refs_app_id.
      */

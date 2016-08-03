@@ -32,7 +32,6 @@ class GetEstimationEnum
      */
     const CREATIVE_SETTING = 'creative_setting';
 
-    
     /**
      * Init creative_setting.
      */

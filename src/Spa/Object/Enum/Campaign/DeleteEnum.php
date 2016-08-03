@@ -22,7 +22,6 @@ class DeleteEnum
      */
     const CAMPAIGN_ID = 'campaign_id';
 
-    
     /**
      * Init campaign_id.
      */

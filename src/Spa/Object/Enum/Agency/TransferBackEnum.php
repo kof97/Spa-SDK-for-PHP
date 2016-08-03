@@ -42,7 +42,6 @@ class TransferBackEnum
      */
     const MEMO = 'memo';
 
-    
     /**
      * Init memo.
      */

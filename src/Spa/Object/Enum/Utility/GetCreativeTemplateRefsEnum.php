@@ -17,7 +17,6 @@ class GetCreativeTemplateRefsEnum
      */
     const CREATIVE_TEMPLATE_ID = 'creative_template_id';
 
-    
     /**
      * Init creative_template_id.
      */

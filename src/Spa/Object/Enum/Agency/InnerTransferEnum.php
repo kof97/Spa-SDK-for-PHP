@@ -37,7 +37,6 @@ class InnerTransferEnum
      */
     const MEMO = 'memo';
 
-    
     /**
      * Init memo.
      */

@@ -92,7 +92,6 @@ class CreateEnum
      */
     const OUTER_AUDIENCE_ID = 'outer_audience_id';
 
-    
     /**
      * Init outer_audience_id.
      */

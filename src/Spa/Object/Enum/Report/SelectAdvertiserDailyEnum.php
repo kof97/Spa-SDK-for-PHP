@@ -37,7 +37,6 @@ class SelectAdvertiserDailyEnum
      */
     const GROUP_BY = 'group_by';
 
-    
     /**
      * Init group_by.
      */

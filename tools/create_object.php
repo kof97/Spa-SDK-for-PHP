@@ -54,8 +54,7 @@ namespace Spa\Object\Enum\\$mod_class;
  */
 class $enum_class_name
 {
-    $items
-    $construct
+    $items$construct
 }
 
 //end of script

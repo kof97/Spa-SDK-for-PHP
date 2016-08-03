@@ -27,7 +27,6 @@ class PreviewEnum
      */
     const SIGN = 'sign';
 
-    
     /**
      * Init sign.
      */

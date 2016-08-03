@@ -112,7 +112,6 @@ class SignupEnum
      */
     const LEGAL_PERSON_ID = 'legal_person_id';
 
-    
     /**
      * Init legal_person_id.
      */

@@ -12,7 +12,6 @@ namespace Spa\Object\Enum\Agency;
 class RealtimeCostEnum
 {
     
-    
 }
 
 //end of script

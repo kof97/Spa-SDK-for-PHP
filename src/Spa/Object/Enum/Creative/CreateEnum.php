@@ -72,7 +72,6 @@ class CreateEnum
      */
     const CONFIGURED_STATUS = 'configured_status';
 
-    
     /**
      * Init configured_status.
      */

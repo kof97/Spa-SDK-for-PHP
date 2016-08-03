@@ -17,7 +17,6 @@ class GetLocationListEnum
      */
     const REGION_ID = 'region_id';
 
-    
     /**
      * Init region_id.
      */

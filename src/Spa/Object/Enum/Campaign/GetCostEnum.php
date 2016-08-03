@@ -27,7 +27,6 @@ class GetCostEnum
      */
     const DATE = 'date';
 
-    
     /**
      * Init date.
      */

@@ -42,7 +42,6 @@ class AuthorizeEnum
      */
     const DESCRIPTION = 'description';
 
-    
     /**
      * Init description.
      */

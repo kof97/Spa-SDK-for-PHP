@@ -27,7 +27,6 @@ class GetAccessTokenEnum
      */
     const AUTHORIZATION_CODE = 'authorization_code';
 
-    
     /**
      * Init authorization_code.
      */

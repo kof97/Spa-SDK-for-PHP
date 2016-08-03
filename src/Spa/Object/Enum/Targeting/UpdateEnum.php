@@ -37,7 +37,6 @@ class UpdateEnum
      */
     const TARGETING_SETTING = 'targeting_setting';
 
-    
     /**
      * Init targeting_setting.
      */

@@ -32,7 +32,6 @@ class CreateEnum
      */
     const MEDIA_DESCRIPTION = 'media_description';
 
-    
     /**
      * Init media_description.
      */

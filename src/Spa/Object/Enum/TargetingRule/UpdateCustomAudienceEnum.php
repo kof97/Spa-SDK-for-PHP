@@ -32,7 +32,6 @@ class UpdateCustomAudienceEnum
      */
     const DESCRIPTION = 'description';
 
-    
     /**
      * Init description.
      */

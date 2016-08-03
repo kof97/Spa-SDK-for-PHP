@@ -27,7 +27,6 @@ class CreateByUrlEnum
      */
     const OUTER_IMAGE_ID = 'outer_image_id';
 
-    
     /**
      * Init outer_image_id.
      */

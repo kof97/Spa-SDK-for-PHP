@@ -22,7 +22,6 @@ class ReadEnum
      */
     const IMAGE_ID = 'image_id';
 
-    
     /**
      * Init image_id.
      */

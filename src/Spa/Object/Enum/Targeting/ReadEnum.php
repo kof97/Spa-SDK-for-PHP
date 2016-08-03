@@ -22,7 +22,6 @@ class ReadEnum
      */
     const TARGETING_ID = 'targeting_id';
 
-    
     /**
      * Init targeting_id.
      */

@@ -52,7 +52,6 @@ class SelectAdgroupHourlyEnum
      */
     const REPORT_ONLY = 'report_only';
 
-    
     /**
      * Init report_only.
      */

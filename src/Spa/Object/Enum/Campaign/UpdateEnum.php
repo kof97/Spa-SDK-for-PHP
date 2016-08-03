@@ -57,7 +57,6 @@ class UpdateEnum
      */
     const CONFIGURED_STATUS = 'configured_status';
 
-    
     /**
      * Init configured_status.
      */

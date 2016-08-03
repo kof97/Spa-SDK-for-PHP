@@ -42,7 +42,6 @@ class CreateEnum
      */
     const OUTER_TARGETING_ID = 'outer_targeting_id';
 
-    
     /**
      * Init outer_targeting_id.
      */

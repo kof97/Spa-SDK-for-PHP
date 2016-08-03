@@ -27,7 +27,6 @@ class SetDailyBudgetEnum
      */
     const DAILY_BUDGET = 'daily_budget';
 
-    
     /**
      * Init daily_budget.
      */

@@ -87,7 +87,6 @@ class SyncEnum
      */
     const OUTER_VERSION = 'outer_version';
 
-    
     /**
      * Init outer_version.
      */

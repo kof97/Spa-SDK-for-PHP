@@ -37,7 +37,6 @@ class UpdateEnum
      */
     const PRODUCT_INFO = 'product_info';
 
-    
     /**
      * Init product_info.
      */

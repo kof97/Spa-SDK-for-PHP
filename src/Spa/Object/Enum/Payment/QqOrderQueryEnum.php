@@ -22,7 +22,6 @@ class QqOrderQueryEnum
      */
     const OUT_TRADE_NO = 'out_trade_no';
 
-    
     /**
      * Init out_trade_no.
      */

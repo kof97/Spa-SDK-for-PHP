@@ -22,7 +22,6 @@ class SelectDailyEnum
      */
     const DATE = 'date';
 
-    
     /**
      * Init date.
      */

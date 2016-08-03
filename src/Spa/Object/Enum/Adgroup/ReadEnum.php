@@ -22,7 +22,6 @@ class ReadEnum
      */
     const ADGROUP_ID = 'adgroup_id';
 
-    
     /**
      * Init adgroup_id.
      */

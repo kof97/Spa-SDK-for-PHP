@@ -47,7 +47,6 @@ class SelectRegionEnum
      */
     const PAGE_SIZE = 'page_size';
 
-    
     /**
      * Init page_size.
      */

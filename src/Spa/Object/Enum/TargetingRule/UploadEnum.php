@@ -27,7 +27,6 @@ class UploadEnum
      */
     const FILE_MD5 = 'file_md5';
 
-    
     /**
      * Init file_md5.
      */

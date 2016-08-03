@@ -22,7 +22,6 @@ class ReadEnum
      */
     const AUDIENCE_ID = 'audience_id';
 
-    
     /**
      * Init audience_id.
      */

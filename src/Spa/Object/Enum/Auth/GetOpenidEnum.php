@@ -17,7 +17,6 @@ class GetOpenidEnum
      */
     const APP_ID = 'app_id';
 
-    
     /**
      * Init app_id.
      */

@@ -42,7 +42,6 @@ class TransferEnum
      */
     const EXPIRE_DATE = 'expire_date';
 
-    
     /**
      * Init expire_date.
      */

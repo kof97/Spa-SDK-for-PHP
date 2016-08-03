@@ -22,7 +22,6 @@ class ReadEnum
      */
     const CREATIVE_ID = 'creative_id';
 
-    
     /**
      * Init creative_id.
      */

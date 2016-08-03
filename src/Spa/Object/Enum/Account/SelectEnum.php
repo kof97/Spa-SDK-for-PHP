@@ -17,7 +17,6 @@ class SelectEnum
      */
     const ADVERTISER_ID = 'advertiser_id';
 
-    
     /**
      * Init advertiser_id.
      */

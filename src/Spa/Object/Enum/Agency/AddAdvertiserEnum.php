@@ -67,7 +67,6 @@ class AddAdvertiserEnum
      */
     const CONTACT_PERSON_MOBILE = 'contact_person_mobile';
 
-    
     /**
      * Init contact_person_mobile.
      */

@@ -27,7 +27,6 @@ class CountEnum
      */
     const GROUP_BY = 'group_by';
 
-    
     /**
      * Init group_by.
      */

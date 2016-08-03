@@ -22,7 +22,6 @@ class DeleteEnum
      */
     const ADGROUP_ID = 'adgroup_id';
 
-    
     /**
      * Init adgroup_id.
      */

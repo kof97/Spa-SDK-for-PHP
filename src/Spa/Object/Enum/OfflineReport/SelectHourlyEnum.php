@@ -27,7 +27,6 @@ class SelectHourlyEnum
      */
     const HOUR = 'hour';
 
-    
     /**
      * Init hour.
      */

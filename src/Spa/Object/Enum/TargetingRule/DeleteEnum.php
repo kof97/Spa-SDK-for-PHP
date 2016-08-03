@@ -22,7 +22,6 @@ class DeleteEnum
      */
     const RULE_ID = 'rule_id';
 
-    
     /**
      * Init rule_id.
      */

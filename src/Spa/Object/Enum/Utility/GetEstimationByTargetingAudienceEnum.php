@@ -22,7 +22,6 @@ class GetEstimationByTargetingAudienceEnum
      */
     const COMBINE_RULE = 'combine_rule';
 
-    
     /**
      * Init combine_rule.
      */

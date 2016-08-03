@@ -27,7 +27,6 @@ class CreateEnum
      */
     const PREVIEW_QQ_LIST = 'preview_qq_list';
 
-    
     /**
      * Init preview_qq_list.
      */

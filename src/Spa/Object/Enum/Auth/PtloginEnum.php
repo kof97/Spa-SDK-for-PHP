@@ -32,7 +32,6 @@ class PtloginEnum
      */
     const SKEY = 'skey';
 
-    
     /**
      * Init skey.
      */

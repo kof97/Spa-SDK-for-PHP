@@ -42,7 +42,6 @@ class CreateEnum
      */
     const DESCRIPTION = 'description';
 
-    
     /**
      * Init description.
      */

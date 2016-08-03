@@ -42,7 +42,6 @@ class SelectCampaignHourlyEnum
      */
     const PAGE_SIZE = 'page_size';
 
-    
     /**
      * Init page_size.
      */

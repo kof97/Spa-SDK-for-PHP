@@ -127,7 +127,6 @@ class CreateEnum
      */
     const TOTAL_BUDGET = 'total_budget';
 
-    
     /**
      * Init total_budget.
      */

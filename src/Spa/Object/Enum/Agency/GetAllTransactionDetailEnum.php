@@ -37,7 +37,6 @@ class GetAllTransactionDetailEnum
      */
     const NO_PAGE = 'no_page';
 
-    
     /**
      * Init no_page.
      */

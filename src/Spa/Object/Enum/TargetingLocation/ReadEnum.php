@@ -22,7 +22,6 @@ class ReadEnum
      */
     const LOCATION_ID = 'location_id';
 
-    
     /**
      * Init location_id.
      */

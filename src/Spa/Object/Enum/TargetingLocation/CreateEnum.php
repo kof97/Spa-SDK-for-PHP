@@ -37,7 +37,6 @@ class CreateEnum
      */
     const CITY_ID = 'city_id';
 
-    
     /**
      * Init city_id.
      */

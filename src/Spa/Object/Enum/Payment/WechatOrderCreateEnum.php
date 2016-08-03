@@ -37,7 +37,6 @@ class WechatOrderCreateEnum
      */
     const NOTIFY_URL = 'notify_url';
 
-    
     /**
      * Init notify_url.
      */
