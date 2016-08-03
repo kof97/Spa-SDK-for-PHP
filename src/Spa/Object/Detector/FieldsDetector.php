@@ -116,7 +116,6 @@ class FieldsDetector {
     }
  
     protected static function validateFloat($data, $key, $value) {
-        var_dump(strpos($value, '.'));
         if (strpos($value, '.')) {
             $value = rtrim($value, '0');
         }
@@ -127,10 +126,11 @@ class FieldsDetector {
 
         if (isset($data['decimalLength'])) {
             $decimal_length = $data['decimalLength'];
-            if (strpos($value, '.')) {
-                
+
+            $decimal = substr($value, strpos($value, '.') + 1);
+            if (strlen($decimal) > $decimal_length) {
+                throw new ParamsException("Error in '$value', the decimal length expects the value less than '$decimal_length'.");
             }
-            var_dump($decimal_length);
         }
 
         if (isset($data['max'])) {
