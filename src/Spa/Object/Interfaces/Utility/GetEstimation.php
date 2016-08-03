@@ -379,7 +379,6 @@ class GetEstimation {
                 'description' => '素材信息所组成的对象',
                 'restraint' => '小于1024英文字符，支持字段creative_template_id，[{"creative_template_id":1},{"creative_template_id":2}]',
                 'errormsg' => '素材信息不正确',
-
                 'item_max_length' => '32',
                 'repeated' => array(
                     'type' => 'creative_struct',

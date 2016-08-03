@@ -118,7 +118,6 @@ class SelectRegion {
                 'description' => '如[2001,2002,2003,2004]，可不填',
                 'restraint' => '数量不能不超过200个',
                 'errormsg' => '推广计划ID列表不正确',
-
                 'item_max_length' => '255',
                 'repeated' => array(
                     'type' => 'integer',
@@ -135,7 +134,6 @@ class SelectRegion {
                 'description' => '如[2001,2002,2003,2004]，可不填',
                 'restraint' => '数量不能不超过200个',
                 'errormsg' => '广告组ID列表不正确',
-
                 'item_max_length' => '255',
                 'repeated' => array(
                     'type' => 'integer',
@@ -152,7 +150,6 @@ class SelectRegion {
                 'description' => '聚合参数，例：["date"]',
                 'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
-
                 'item_max_length' => '255',
                 'repeated' => array(
                     'type' => 'string',

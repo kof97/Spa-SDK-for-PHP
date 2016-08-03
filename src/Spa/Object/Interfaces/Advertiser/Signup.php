@@ -154,7 +154,6 @@ class Signup {
 0个',
                 'restraint' => 'URL小于255个英文字符',
                 'errormsg' => '广告特殊资质证明图片ID不正确',
-
                 'item_max_length' => '255',
                 'repeated' => array(
                     'type' => 'string',

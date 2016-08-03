@@ -326,44 +326,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 $element = getElements($data, $arr, $mod_name, $interface_name, $flag);
 
                 /** repeated 生成 **/
-                $repeat = '';
-                $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
-                if ($repeated) {
-                    $repeat_type = isset($repeated['type']) ? "'type' => '" . $repeated['type'] . "'," : '';
-                    $repeat_list = isset($repeated['list']) ? "'list' => '" . $repeated['list'] . "'," : '';
-                    $repeat_pattern = isset($repeated['pattern']) ? "'pattern' => '" . $repeated['pattern'] . "'," : '';
-                    $repeat_item_max_length = isset($repeated['item_max_length']) ? "'item_max_length' => '" . $repeated['item_max_length'] . "'," : '';
-                    $repeat_max = isset($repeated['max']) ? "'max' => '" . $repeated['max'] . "'," : '';
-                    $repeat_min = isset($repeated['min']) ? "'min' => '" . $repeated['min'] . "'," : '';
-                    $repeat_enum = isset($repeated['enum']) ? "'enum' => '" . $repeated['enum'] . "'," : '';
-                    $repeat_source = isset($repeated['source']) ? "'source' => '" . $repeated['source'] . "'," : '';
-
-                    $repeat_element = '';
-                    $t = $repeated['type'];
-                    if ($t === 'filter_struct' || $t === 'creative_struct') {
-                        $ele_arr = getExtendTypeInfo($data, $mod_name, $interface_name, $t);
-                        $repeat_element = getElements($data, $ele_arr, $mod_name, $interface_name, 1);
-                    }
-
-                    $repeat = "
-                'repeated' => array(
-                    $repeat_type
-                    $repeat_list
-                    $repeat_pattern
-                    $repeat_item_max_length
-                    $repeat_enum
-                    $repeat_source
-                    $repeat_max
-                    $repeat_min
-                    $repeat_element
-                )";
-
-
-                    $pattern = "\r\n                    \r\n";
-                    while (strpos($repeat, $pattern) != false) {
-                        $repeat = str_replace($pattern, "\r\n", $repeat);
-                    }
-                }
+                $repeat = getRepeated($data, $arr, $mod_name, $interface_name);
 
                 $field_info .= "
             '$name' => array(
@@ -486,6 +449,50 @@ EOF;
     fwrite($file, $content);
     fclose($file);
 
+}
+
+function getRepeated($data, $arr, $mod_name, $interface_name) {
+    $repeat = '';
+    $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
+
+    if ($repeated) {
+        $repeat_type = isset($repeated['type']) ? "'type' => '" . $repeated['type'] . "'," : '';
+        $repeat_list = isset($repeated['list']) ? "'list' => '" . $repeated['list'] . "'," : '';
+        $repeat_pattern = isset($repeated['pattern']) ? "'pattern' => '" . $repeated['pattern'] . "'," : '';
+        $repeat_item_max_length = isset($repeated['item_max_length']) ? "'item_max_length' => '" . $repeated['item_max_length'] . "'," : '';
+        $repeat_max = isset($repeated['max']) ? "'max' => '" . $repeated['max'] . "'," : '';
+        $repeat_min = isset($repeated['min']) ? "'min' => '" . $repeated['min'] . "'," : '';
+        $repeat_enum = isset($repeated['enum']) ? "'enum' => '" . $repeated['enum'] . "'," : '';
+        $repeat_source = isset($repeated['source']) ? "'source' => '" . $repeated['source'] . "'," : '';
+
+        $repeat_element = '';
+        $t = $repeated['type'];
+        if ($t === 'filter_struct' || $t === 'creative_struct') {
+            $ele_arr = getExtendTypeInfo($data, $mod_name, $interface_name, $t);
+            $repeat_element = getElements($data, $ele_arr, $mod_name, $interface_name, 1);
+        }
+
+        $repeat = "
+                'repeated' => array(
+                    $repeat_type
+                    $repeat_list
+                    $repeat_pattern
+                    $repeat_item_max_length
+                    $repeat_enum
+                    $repeat_source
+                    $repeat_max
+                    $repeat_min
+                    $repeat_element
+                )";
+
+
+        $pattern = "\r\n                    \r\n";
+        while (strpos($repeat, $pattern) != false) {
+            $repeat = str_replace($pattern, "\r\n", $repeat);
+        }
+    }
+
+    return $repeat;
 }
 
 /**
