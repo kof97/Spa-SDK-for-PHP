@@ -754,7 +754,6 @@ function processField($data) {
                                     $arr['min'] = $attr['value'] . '';
                                 }
                                 if ($key === 'decimalLength') {
-
                                     $arr['decimalLength'] = $attr['value'] . '';
                                 }
                             }

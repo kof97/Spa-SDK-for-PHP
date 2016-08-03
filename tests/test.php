@@ -20,11 +20,11 @@ $spa = new Spa\Spa($conf);
 $test = $spa->getApp();
 
 $params = array(
-    'advertiser_id' => '10',
-    'date_range' => '{"start_date":"2014-03-01","end_date":\'2014-04-02\'}',
-    'campaign_id' => 321,
-    'adgroup_name' => 321,
-    'targeting_id' => 321,
+    'city_id' => '10',
+    'location_spec' => '{"location_type_circle":{"longitude":"","latitude":, "radius":3200}}',
+    'location_name' => 321,
+    'location_type' => 321,
+    'advertiser_id' => 321,
     'configured_status' => 321,
     'bid_type' => 321,
     'bid_amount' => 321,
@@ -48,7 +48,7 @@ $params = array(
 $modules = $spa->getModules();
 
 
-$response = $modules->super_report->select_adgroup_daily->send($params);
+$response = $modules->targeting_location->create->send($params);
 //$res = $modules->image->create_by_url->send($params);
 //var_dump($response);
 //var_dump($modules::ADVERTISER);
