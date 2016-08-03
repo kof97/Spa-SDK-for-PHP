@@ -11,7 +11,7 @@ use Spa\Exceptions\SpaSDKException;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Response 
+class Response
 {
     /**
      * @var int The response HTTP status code.
@@ -41,7 +41,7 @@ class Response
      * @param string|null   $body
      * @param int|null      $http_status_code
      */
-    public function __construct(Request $request, $headers = array(), $body = null, $http_status_code = null) 
+    public function __construct(Request $request, $headers = array(), $body = null, $http_status_code = null)
     {
         $this->request = $request;
         $this->headers = $headers;
@@ -54,7 +54,7 @@ class Response
      *
      * @return Request
      */
-    public function getRequest() 
+    public function getRequest()
     {
         return $this->request;
     }
@@ -64,7 +64,7 @@ class Response
      *
      * @return App
      */
-    public function getApp() 
+    public function getApp()
     {
         return $this->request->getApp();
     }
@@ -74,7 +74,7 @@ class Response
      *
      * @return string|null
      */
-    public function getAccessToken() 
+    public function getAccessToken()
     {
         return $this->request->getAccessToken();
     }
@@ -84,7 +84,7 @@ class Response
      *
      * @return int
      */
-    public function getHttpStatusCode() 
+    public function getHttpStatusCode()
     {
         return $this->httpStatusCode;
     }
@@ -94,7 +94,7 @@ class Response
      *
      * @return array
      */
-    public function getHeaders() 
+    public function getHeaders()
     {
         return $this->headers;
     }
@@ -104,7 +104,7 @@ class Response
      *
      * @return string
      */
-    public function getBody() 
+    public function getBody()
     {
         return $this->body;
     }

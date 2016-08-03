@@ -16,7 +16,7 @@ use Spa\Object\Modules;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Spa 
+class Spa
 {
     /**
      * @var App The Spa App entity.
@@ -35,7 +35,7 @@ class Spa
      *
      * @return
      */
-    public function __construct($config = array()) 
+    public function __construct($config = array())
     {
 
         if (!is_array($config)) {
@@ -73,7 +73,7 @@ class Spa
      *
      * @return App
      */
-    public function getApp() 
+    public function getApp()
     {
         return $this->app;
     }
@@ -83,7 +83,7 @@ class Spa
      *
      * @return Client
      */
-    public function getClient() 
+    public function getClient()
     {
         return $this->client;
     }
@@ -97,7 +97,7 @@ class Spa
      *
      * @return Response
      */
-    public function get($url, $headers = array(), $access_token = null) 
+    public function get($url, $headers = array(), $access_token = null)
     {
         return $this->sendRequest(
             'GET',
@@ -118,7 +118,7 @@ class Spa
      *
      * @return Response
      */
-    public function post($url, $params = array(), $headers = array(), $access_token = null) 
+    public function post($url, $params = array(), $headers = array(), $access_token = null)
     {
         return $this->sendRequest(
             'POST',
@@ -140,7 +140,7 @@ class Spa
      *
      * @return Response
      */
-    public function sendRequest($method, $url, $params = array(), $headers = array(), $access_token = null) 
+    public function sendRequest($method, $url, $params = array(), $headers = array(), $access_token = null)
     {
         $request = $this->request($method, $url, $params, $headers, $access_token);
 
@@ -158,7 +158,7 @@ class Spa
      *
      * @return Request
      */
-    public function request($method, $url, $params = array(), $headers = array(), $access_token = null) 
+    public function request($method, $url, $params = array(), $headers = array(), $access_token = null)
     {
         return new Request(
             $this->app,
@@ -173,7 +173,7 @@ class Spa
     /**
      * Return Modules.
      */
-    public function getModules() 
+    public function getModules()
     {
         return new Modules($this);
     }
