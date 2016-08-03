@@ -141,8 +141,7 @@ function createModulesEnum($get, $construct, $use, $items, $file_path = '../src/
 
 namespace Spa\Object;
 
-use Spa\Exceptions\ModuleException;
-$use
+use Spa\Exceptions\ModuleException;$use
 
 /**
  * Class Modules

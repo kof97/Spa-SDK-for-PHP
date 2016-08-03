@@ -3,7 +3,6 @@
 namespace Spa\Object;
 
 use Spa\Exceptions\ModuleException;
-
 use Spa\Object\Modules\Advertiser;
 use Spa\Object\Modules\Account;
 use Spa\Object\Modules\Campaign;
