@@ -93,7 +93,7 @@ class CurlClient implements ClientInterface
         );
 
         if ($method !== "GET") {
-            $options[CURLOPT_POSTFIELDS] = $params;
+            $options[CURLOPT_POSTFIELDS] = http_build_query($params);
         }
 
         $this->curl->init();
