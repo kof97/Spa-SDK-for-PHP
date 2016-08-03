@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../src/Spa/autoload.php';
 
-use Spa\Object\Enum\Account\CheckPaipaiWhiteListEnum;
+use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 
 var_dump(PHP_VERSION);
 
@@ -21,7 +21,7 @@ $test = $spa->getApp();
 
 $params = array(
     'adgroup_name' => '10',
-    'targe4ting_id' => '{"start_date":"2016-12-11","end_date": "2016-12-19"}',
+    SelectAdgroupDailyEnum::DATE_RANGE => '{"start_date":"2016-12-11","end_date": "2016-12-19"}',
     'campaign_id' => 321,
     'location_type' => 321,
     'advertiser_id' => 321,
