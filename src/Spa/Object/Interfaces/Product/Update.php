@@ -11,8 +11,8 @@ use Spa\Object\Detector\FieldsDetector;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Update
-{
+class Update {
+
     /**
      * Instance of Spa.
      */
@@ -31,13 +31,14 @@ class Update
     /**
      * Init .
      */
-    public function __construct($spa, $mod, $act)
-    {
+    public function __construct($spa, $mod, $act) {
+
         $this->spa = $spa;
 
         $this->method = 'POST';
 
         $this->endpoint = $mod . '/' . $act;
+
     }
 
     /**
@@ -47,13 +48,13 @@ class Update
      * @param array $headers The request headers.
      * @return Response
      */
-    public function send($params = array(), $headers = array())
-    {
+    public function send($params = array(), $headers = array(), $access_token = null) {
+
         $data = $this->fieldInfo();
 
         FieldsDetector::validateField($params, $data);
 
-        $response = $this->spa->sendRequest($this->method, $this->endpoint, $params, $headers);
+        $response = $this->spa->sendRequest($this->method, $this->endpoint, $params, $headers, $access_token);
 
         return $response;
     }
@@ -61,8 +62,7 @@ class Update
     /**
      * The fields info.
      */
-    public function fieldInfo()
-    {
+    public function fieldInfo() {
         return array(
 
             'advertiser_id' => array(
