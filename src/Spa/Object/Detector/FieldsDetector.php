@@ -210,7 +210,7 @@ class FieldsDetector
     {
         $origin_value = $value;
 
-        if (is_object($value)) {
+        if (is_object($value) || is_array($value)) {
             $value = json_encode($value);
         }
 

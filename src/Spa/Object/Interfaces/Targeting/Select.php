@@ -101,6 +101,7 @@ class Select {
                             'errormsg' => '字段不正确',
                             'max_length' => '32',
                             'min_length' => '1',
+                            'list' => 'targeting_name',
                         ),
     
                         'operator' => array(

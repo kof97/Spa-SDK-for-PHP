@@ -101,7 +101,7 @@ class Select {
                             'errormsg' => '字段不正确',
                             'max_length' => '32',
                             'min_length' => '1',
-                            'list' => 'configured_status,system_status,adgroup_name,campaign_id,start_date,end_date',
+                            'list' => 'configured_status,campaign_name',
                         ),
     
                         'operator' => array(

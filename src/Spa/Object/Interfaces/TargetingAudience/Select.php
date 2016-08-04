@@ -113,7 +113,7 @@ class Select {
                             'errormsg' => '字段不正确',
                             'max_length' => '32',
                             'min_length' => '1',
-                            'list' => 'status,audience_name,audience_id,parent_audience_id',
+                            'list' => 'status,audience_name,audience_id,parent_audience_id,file_name',
                         ),
     
                         'operator' => array(
@@ -161,6 +161,7 @@ class Select {
                         'description' => 'audience_id_order_by',
                         'restraint' => 'audience_id_order_by',
                         'errormsg' => 'audience_id_order_by不正确',
+                        'list' => 'ASCENDING,DESCENDING',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
                     ),
@@ -173,6 +174,7 @@ class Select {
                         'description' => 'user_count_order_by',
                         'restraint' => 'user_count_order_by',
                         'errormsg' => 'user_count_order_by不正确',
+                        'list' => 'ASCENDING,DESCENDING',
                         'enum' => 'enum',
                         'source' => 'api_Sortord',
                     ),

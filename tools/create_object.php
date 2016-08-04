@@ -613,7 +613,7 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
 
             $ele_max_length = isset($ele_arr['max_length']) ? "'max_length' => '" . $ele_arr['max_length'] . "'," : '';
             $ele_min_length = isset($ele_arr['min_length']) ? "'min_length' => '" . $ele_arr['min_length'] . "'," : '';
-            $ele_list = isset($ele_arr['list']) ? "'list' => '" . $ele_arr['list'] . "'," : '';
+
             $ele_pattern = isset($ele_arr['pattern']) ? "'pattern' => '" . $ele_arr['pattern'] . "'," : '';
             $ele_enum = isset($ele_arr['enum']) ? "'enum' => '" . $ele_arr['enum'] . "'," : '';
             $ele_source = isset($ele_arr['source']) ? "'source' => '" . $ele_arr['source'] . "'," : '';
@@ -623,6 +623,12 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
             $ele_max_size = isset($ele_arr['max_size']) ? "'max_size' => '" . $ele_arr['max_size'] . "'," : '';
             $ele_min_size = isset($ele_arr['min_size']) ? "'min_size' => '" . $ele_arr['min_size'] . "'," : '';
             $ele_decimalLength = isset($ele_arr['decimalLength']) ? "'decimalLength' => '" . $ele_arr['decimalLength'] . "'," : '';
+
+            // list 判断逻辑
+            $ele_list = $value['list'] ? "'list' => '" . $value['list'] . "'," : '';
+            if (!$ele_list) {
+                $ele_list = isset($ele_arr['list']) ? "'list' => '" . $ele_arr['list'] . "'," : '';
+            }
 
             // 递归获取 element
             $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name, $flag);
@@ -920,10 +926,13 @@ function processField($data)
                     $name = $attr['name'] . '';
                     $extendType = $attr['type'] . '';
                     $require = $attr['require'] . '';
+                    $list = $attr['list'] ? $attr['list'] . '' : null;
+
                     $arr['element'][$name] = array(
                                                 'name'       => $name,
                                                 'extendType' => $extendType,
-                                                'require'    => $require
+                                                'require'    => $require,
+                                                'list' => $list
                                             );
                 }
             }

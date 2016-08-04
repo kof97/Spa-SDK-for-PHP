@@ -111,7 +111,7 @@ class GetFileList {
                             'errormsg' => '字段不正确',
                             'max_length' => '32',
                             'min_length' => '1',
-                            'list' => 'status,audience_name,audience_id,parent_audience_id',
+                            'list' => 'status,audience_name,audience_id,parent_audience_id,file_name',
                         ),
     
                         'operator' => array(

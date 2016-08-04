@@ -20,10 +20,10 @@ $spa = new Spa\Spa($conf);
 $test = $spa->getApp();
 
 $params = array(
-    'adgroup_name' => '10',
+    'advertiser_id' => '10',
     SelectAdgroupDailyEnum::DATE_RANGE => '{"start_date":"2016-12-11","end_date": "2016-12-19"}',
-    'campaign_id' => 321,
-    'location_type' => 321,
+    'targeting_name' => 321,
+    'description' => 321,
     'advertiser_id' => 321,
     'filter' => array('{"field":"end_date","operator": "2016-12-19","value":"1"}'),
     'bid_type' => 321,
@@ -32,7 +32,7 @@ $params = array(
     'end_date' => '2016-12-11',
     'site_set' => array(),
     'product_type' => 'PRODUCT_TYPE_QZONE_PAGE_ARTICLE',
-    'targeting_id' => 4654,
+    'ui_visibility' => 4654,
 
 
 
@@ -49,7 +49,7 @@ $params = array(
 $modules = $spa->getModules();
 
 
-$response = $modules->adgroup->create->send($params);
+$response = $modules->targeting->create->send($params, array(), 'qweqweqwe');
 //$res = $modules->image->create_by_url->send($params);
 var_dump($response);
 //var_dump($modules::ADVERTISER);
