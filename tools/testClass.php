@@ -48,13 +48,13 @@ class $interface_class {
      * @param array \$headers The request headers.
      * @return Response
      */
-    public function send(\$params = array(), \$headers = array()) {
+    public function send(\$params = array(), \$headers = array(), \$access_token = null) {
 
         \$data = \$this->fieldInfo();
 
         FieldsDetector::validateField(\$params, \$data);
 
-        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers);
+        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers, \$access_token);
 
         return \$response;
     }

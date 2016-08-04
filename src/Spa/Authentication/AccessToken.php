@@ -52,7 +52,7 @@ class AccessToken {
 		$sign = sha1($appid . $appkey . $time);
 		$token = base64_encode($uid . ',' . $appid . ',' . $time . ',' . $sign);
 
-		return $token;
+		return 'Bearer ' . $token;
 	}
 
 	/**
