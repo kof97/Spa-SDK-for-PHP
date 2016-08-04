@@ -30,6 +30,7 @@ function markdownToHTML(sourcePath, targetPath, css) {
 		data.replace("\r\n", "");
 
 		var md = '<meta charset="utf-8">' + "\r\n" + 
+			  	 // '<link rel="stylesheet" href="./css/style.css">' + "\r\n" + 
 			  	 css + "\r\n" + 
 			  	 '<body>' + "\r\n" +  toHTML(data) + "\r\n" +  '</body>';
 
