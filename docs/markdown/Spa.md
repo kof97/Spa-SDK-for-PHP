@@ -135,6 +135,8 @@ Spa\Spa 类提供了主要功能的接口入口
 
 返回在本次请求中 `Spa\App` 的实例
 
+---
+
 ### getClient()
 
 ```
@@ -142,6 +144,8 @@ Spa\Spa 类提供了主要功能的接口入口
 ```
 
 返回在本次请求中 `Spa\Client` 的实例
+
+---
 
 ### get()
 
@@ -155,6 +159,8 @@ Spa\Spa 类提供了主要功能的接口入口
 
 发起一个 `get` 请求，返回值为 `Spa\Response` 对象
 
+---
+
 ### post()
 
 ```
@@ -167,6 +173,8 @@ Spa\Spa 类提供了主要功能的接口入口
 ```
 
 发起一个 `post` 请求，返回值为 `Spa\Response` 对象
+
+---
 
 ### sendRequest()
 
@@ -182,6 +190,8 @@ Spa\Spa 类提供了主要功能的接口入口
 
 发送 `request` 请求，自己指定请求方式，只支持 `GET / POST`，返回值为 `Spa\Response` 对象
 
+---
+
 ### request()
 
 ```
@@ -195,6 +205,8 @@ Spa\Spa 类提供了主要功能的接口入口
 ```
 
 收集处理 `request` 请求信息，返回值为 `Spa\Request` 对象
+
+---
 
 ### getModules()
 
