@@ -34,6 +34,8 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 
 ## 主要方法
 
+---
+
 ### getValue()
 
 ```

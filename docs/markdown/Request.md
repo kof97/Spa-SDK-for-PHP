@@ -55,6 +55,8 @@ Spa\Request 类存储处理请求信息
 
 ## 方法介绍
 
+---
+
 ### setApp()
 
 ```
@@ -62,6 +64,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 用于设置 `Spa\App` 对象，返回 `Spa\Request` 对象，可以使用链式操作
+
+---
 
 ### getApp()
 
@@ -71,6 +75,8 @@ Spa\Request 类存储处理请求信息
 
 获取 `Spa\App` 实例
 
+---
+
 ### setMethod()
 
 ```
@@ -78,6 +84,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 设置 `method`，返回 `Spa\Request` 对象，可以使用链式操作
+
+---
 
 ### getMethod()
 
@@ -87,6 +95,8 @@ Spa\Request 类存储处理请求信息
 
 返回请求的 `method`
 
+---
+
 ### setUrl()
 
 ```
@@ -94,6 +104,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 设置请求 `URL`，返回 `Spa\Request` 对象，可以使用链式操作
+
+---
 
 ### getUrl()
 
@@ -107,6 +119,8 @@ Spa\Request 类存储处理请求信息
 
 验证处理过程中如果出错则会抛出 `SpaSDKException` 错误
 
+---
+
 ### setParams()
 
 ```
@@ -114,6 +128,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 设置请求参数，返回 `Spa\Request` 对象，可以使用链式操作
+
+---
 
 ### getParams()
 
@@ -123,6 +139,8 @@ Spa\Request 类存储处理请求信息
 
 获取请求参数
 
+---
+
 ### getPostParams()
 
 ```
@@ -130,6 +148,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 获取 `post` 请求参数
+
+---
 
 ### setHeaders()
 
@@ -139,6 +159,8 @@ Spa\Request 类存储处理请求信息
 
 设置请求头信息，返回 `Spa\Request` 对象，可以使用链式操作
 
+---
+
 ### getHeaders()
 
 ```
@@ -146,6 +168,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 获取请求头信息，同时会对 access token 进行验证，若不通过则会抛出 `SpaSDKException` 错误
+
+---
 
 ### setAccessToken()
 
@@ -155,6 +179,8 @@ Spa\Request 类存储处理请求信息
 
 设置 access token，返回 `Spa\Request` 对象，可以使用链式操作
 
+---
+
 ### getAccessToken()
 
 ```
@@ -163,6 +189,8 @@ Spa\Request 类存储处理请求信息
 
 获取 access token
 
+---
+
 ### validateAccessToken()
 
 ```
@@ -170,6 +198,8 @@ Spa\Request 类存储处理请求信息
 ```
 
 验证实例中的 `access token`，验证失败则抛出 `SpaSDKException` 错误
+
+---
 
 ### validateMethod()
 

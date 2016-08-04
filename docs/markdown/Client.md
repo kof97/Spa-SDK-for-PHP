@@ -46,6 +46,8 @@ Spa\Client 类用于发起请求
 
 ## 方法介绍
 
+---
+
 ### setHttpClient()
 
 ```
@@ -54,6 +56,8 @@ Spa\Client 类用于发起请求
 
 设置 `$httpClient`，用于发起 http 请求
 
+---
+
 ### getHttpClient()
 
 ```
@@ -61,6 +65,8 @@ Spa\Client 类用于发起请求
 ```
 
 获取 `Spa\HttpClients\BaseClientInterface` 对象实例
+
+---
 
 ### sendRequest()
 

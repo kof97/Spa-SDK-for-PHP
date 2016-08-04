@@ -32,6 +32,8 @@ Spa\Response 类返回了本次请求的响应信息
 
 ## Spa\Response 类提供的方法
 
+---
+
 ### getRequest()
 
 ```
@@ -39,6 +41,8 @@ Spa\Response 类返回了本次请求的响应信息
 ```
 
 返回本次请求的 `Spa\Request` 实例
+
+---
 
 ### getApp()
 
@@ -48,6 +52,8 @@ Spa\Response 类返回了本次请求的响应信息
 
 返回本次请求的 `Spa\App` 实例
 
+---
+
 ### getAccessToken()
 
 ```
@@ -55,6 +61,8 @@ Spa\Response 类返回了本次请求的响应信息
 ```
 
 返回 access token 信息
+
+---
 
 ### getHttpStatusCode()
 
@@ -64,6 +72,8 @@ Spa\Response 类返回了本次请求的响应信息
 
 返回本次请求返回的状态码
 
+---
+
 ### getHeaders()
 
 ```
@@ -71,6 +81,8 @@ Spa\Response 类返回了本次请求的响应信息
 ```
 
 返回本次请求返回的响应头信息
+
+---
 
 ### getBody()
 
