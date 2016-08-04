@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/style.css">
+<body>
+<h1>SPA PHP SDK token 类 Spa\Authentication\AccessToken</h1>
+
+Spa\Authentication\AccessToken 类提供了 access token 相关的操作
+
+<hr>
+
+<h1>Spa\Authentication\AccessToken</h1>
+
+<h2>实例介绍</h2>
+
+<h3>初始化实例</h3>
+
+<pre><codeblock>
+    $conf = array(
+        'uid'               => '{uid}',
+        'appid'             => '{appid}',
+        'appkey'            => '{appkey}',
+        'http_client_type'  => 'curl',
+        'version'           => 'v3'
+    );
+
+    $spa = new Spa\Spa($conf);
+
+    $spaApp = $spa->getApp();
+
+    $accessToken = $spaApp->getAccessToken();
+</codeblock></pre>
+
+或直接创建
+
+<pre><codeblock>
+    $accessToken = new Spa\Authentication\AccessToken({$uid}, {$appid}, {$appkey});
+</codeblock></pre>
+
+<h2>主要方法</h2>
+
+<h3>getValue()</h3>
+
+<pre><codeblock>
+    public string getValue()
+</codeblock></pre>
+
+返回 access token 的值
+
+<hr>
+
+PS：当该类作为字符串处理时，会自动进行类型转换，返回 access token 的值
+
+</body>
