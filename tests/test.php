@@ -62,8 +62,8 @@ use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 $params = array(
     'advertiser_id' => '1',
     'date' => '2016-12-11',
-    //'filter' => '[{"field":"campaign_id","operator":"12","value":"123"}]',
-    'filter' => array('{"field":"campaign_id","operator":"12","value":"123"}'),
+    'filter' => '[{"field":"campaign_id","operator":"12","value":"123"}]',
+    //'filter' => array('{"field":"campaign_id","operator":"12","value":"123"}'),
     'order_by' => '{"cost":"ASCENDING"}',
     'page' => '21',
 );
