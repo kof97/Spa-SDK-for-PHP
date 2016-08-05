@@ -12,14 +12,21 @@ Spa\Request 类存储处理请求信息
 
 ```
     new Spa\Request(
-        App|null $app, // Spa\App 实例
-        string|null $method, // 请求的方式，GET / POST
-        string|null $url, // 请求的 URL
-        array|array() $params, // 请求参数
-        array|array() $headers, // 请求头信息
-        AccessToken|string|null $accessToken // access token
+        $app,
+        $method,
+        $url,
+        $params,
+        $headers,
+        $accessToken
     )
 ```
+
+> `$app`: {App|null} Spa\App 实例
+> `$method`: {string|null} 请求的方式，GET / POST
+> `$url`: {string|null} 请求的 URL
+> `$params`: {array|array()} 请求参数
+> `$headers`: {array|array()} 请求头信息
+> `$accessToken`: {AccessToken|string|null} access token
 
 用于收集并处理请求信息
 

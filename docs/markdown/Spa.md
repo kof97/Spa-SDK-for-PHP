@@ -213,13 +213,19 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     public Spa\Request request(
-        string $method, // 请求方式 GET/POST
-        string $url, // 请求的 url，（必填）
-        array|array() $params = array(), // 请求参数信息，（选填）
-        array|array() $headers = array(), // 请求要传的请求头信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $method,
+        $url,
+        $params = array(),
+        $headers = array(),
+        $accessToken = null
     )
 ```
+
+> `$method`: {string} 请求方式 GET/POST
+> `$url`: {string} 请求的 url，（必填）
+> `$params`: {array|array()} 请求参数信息，（选填）
+> `$headers`: {array|array()} 请求要传的请求头信息，（选填）
+> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 收集处理 `request` 请求信息，返回值为 `Spa\Request` 对象
 
