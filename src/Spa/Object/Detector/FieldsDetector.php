@@ -233,6 +233,10 @@ class FieldsDetector
             $struct_name = $data['name'];
 
             foreach ($value as $key => $v) {
+                if (!isset($element[$key])) {
+                    continue;
+                }
+
                 self::validateBasicType($element[$key], $key, $v);
             }
         }
