@@ -151,11 +151,12 @@ Spa\Spa 类提供了主要功能的接口入口
 
 <pre><codeblock>
     public Spa\Response get(
-        string $url, // 请求的 url，（必填）
-        array|array() $headers = array(), // 请求要传的请求头信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $url,
+        $headers = array(), 
+        $accessToken = null
     )
 </codeblock></pre>
+<p><code>$url</code>: {string} 请求的 url，（必填）</p><p><code>$headers</code>: {array|array()} 请求要传的请求头信息，（选填）</p><p><code>$accessToken</code>: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）</p>
 
 发起一个 <code>get</code> 请求，返回值为 <code>Spa\Response</code> 对象
 
@@ -165,12 +166,13 @@ Spa\Spa 类提供了主要功能的接口入口
 
 <pre><codeblock>
     public Spa\Response post(
-        string $url, // 请求的 url，（必填）
-        array|array() $params = array(), // 请求要传的请求头信息，（选填）
-        array|array() $headers = array(), // post 请求参数信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $url,
+        $params = array(), 
+        $headers = array(), 
+        $accessToken = null
     )
 </codeblock></pre>
+<p><code>$url</code>: {string} 请求的 url，（必填）</p><p><code>$params</code>: {array|array()} post 请求参数信息，（选填）</p><p><code>$headers</code>: {array|array()} 请求要传的请求头信息，（选填）</p><p><code>$accessToken</code>: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）</p>
 
 发起一个 <code>post</code> 请求，返回值为 <code>Spa\Response</code> 对象
 
@@ -180,13 +182,14 @@ Spa\Spa 类提供了主要功能的接口入口
 
 <pre><codeblock>
     public Spa\Response sendRequest(
-        string $method, // 请求方式 GET/POST
-        string $url, // 请求的 url，（必填）
-        array|array() $params = array(), // 请求参数信息，（选填）
-        array|array() $headers = array(), // 请求要传的请求头信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $method,
+        $url,
+        $params = array(),
+        $headers = array(),
+        $accessToken = null
     )
 </codeblock></pre>
+<p><code>$method</code>: {string} 请求方式 GET/POST</p><p><code>$url</code>: {string} 请求的 url，（必填）</p><p><code>$params</code>: {array|array()} 请求参数信息，（选填）</p><p><code>$headers</code>: {array|array()} 请求要传的请求头信息，（选填）</p><p><code>$accessToken</code>: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）</p>
 
 发送 <code>request</code> 请求，自己指定请求方式，只支持 <code>GET / POST</code>，返回值为 <code>Spa\Response</code> 对象
 
@@ -196,13 +199,14 @@ Spa\Spa 类提供了主要功能的接口入口
 
 <pre><codeblock>
     public Spa\Request request(
-        string $method, // 请求方式 GET/POST
-        string $url, // 请求的 url，（必填）
-        array|array() $params = array(), // 请求参数信息，（选填）
-        array|array() $headers = array(), // 请求要传的请求头信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $method,
+        $url,
+        $params = array(),
+        $headers = array(),
+        $accessToken = null
     )
 </codeblock></pre>
+<p><code>$method</code>: {string} 请求方式 GET/POST</p><p><code>$url</code>: {string} 请求的 url，（必填）</p><p><code>$params</code>: {array|array()} 请求参数信息，（选填）</p><p><code>$headers</code>: {array|array()} 请求要传的请求头信息，（选填）</p><p><code>$accessToken</code>: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）</p>
 
 收集处理 <code>request</code> 请求信息，返回值为 <code>Spa\Request</code> 对象
 
