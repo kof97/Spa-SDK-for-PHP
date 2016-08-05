@@ -1,6 +1,6 @@
 # Spa SDK for PHP
 
-环境：PHP5.3 以上
+环境：`PHP5.3` 以上
 
 使用：引入 `autoload.php` 即可使用
 
