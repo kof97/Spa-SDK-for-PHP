@@ -6,7 +6,7 @@ var sourcePath = '../docs/markdown',
 var css = '\
 <style>\
 * { padding: 0; margin: 0; }\
-body { width: 90%; margin: 0 auto; padding: 1em 2em; font-family: "Times New Roman"; border: 1px solid #eee; }\
+body { width: 90%; margin: 0 auto; padding: 1em 2em 2em; font-family: "Times New Roman"; border: 1px solid #eee; }\
 h1 { border-bottom: 1px solid #eee; }\
 h1, h2, h3, h4, h5 { padding: 0.4em 0; margin-bottom: 0.5em; }\
 p { border-left: 0.4em #DDDDDD solid; padding: 0.1em 1em 0.5em; background: #FEFFFF; font-size: 0.9em; font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }\
