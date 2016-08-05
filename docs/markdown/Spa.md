@@ -163,6 +163,8 @@ Spa\Spa 类提供了主要功能的接口入口
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
 > `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
+
+
 发起一个 `get` 请求，返回值为 `Spa\Response` 对象
 
 ---
@@ -182,6 +184,8 @@ Spa\Spa 类提供了主要功能的接口入口
 > `$params`: {array|array()} post 请求参数信息，（选填）
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
 > `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+
+
 
 发起一个 `post` 请求，返回值为 `Spa\Response` 对象
 
@@ -205,6 +209,8 @@ Spa\Spa 类提供了主要功能的接口入口
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
 > `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
+
+
 发送 `request` 请求，自己指定请求方式，只支持 `GET / POST`，返回值为 `Spa\Response` 对象
 
 ---
@@ -226,6 +232,8 @@ Spa\Spa 类提供了主要功能的接口入口
 > `$params`: {array|array()} 请求参数信息，（选填）
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
 > `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+
+
 
 收集处理 `request` 请求信息，返回值为 `Spa\Request` 对象
 

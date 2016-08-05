@@ -20,6 +20,8 @@ Spa\Client 类用于发起请求
 > **$httpClient :** `Spa\HttpClients\ClientInterface` 的实例，用于发起请求
 > **$version :** 请求的 api 版本，默认 v3，目前只支持 v3
 
+
+
 一般由 `Spa\Spa` 类初始化，可以直接通过 `Spa\Spa` 的 `getClient()` 方法获取实例
 
 例：

@@ -28,6 +28,9 @@ Spa\Request 类存储处理请求信息
 > `$headers`: {array|array()} 请求头信息
 > `$accessToken`: {AccessToken|string|null} access token
 
+
+
+
 用于收集并处理请求信息
 
 初始化实例：
