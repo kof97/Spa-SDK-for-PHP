@@ -59,10 +59,11 @@ use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 //var_dump($req->getUrl());
 //var_dump($test);
 //var_dump($test->getAccessToken()->getValue());
+
 $params = array(
-    'advertiser_id' => '',
-    'date_range' => '{"start_date":"","end_date":""}',
-    'filter' => 'array({"field":"","operator":"","value":""},{"field":"","operator":"","value":""})',
+    'advertiser_id' => '1',
+    'date_range' => '{"start_date":"2016-11-11","end_date":"2016-11-11"}',
+    'filter' => '[{"field":"","operator":"","value":""}]',
 );
 $headers = array(
     'Authorization' => 'Bearer ',
@@ -75,4 +76,7 @@ try {
 } catch (Exception $e) {
     echo $e->getMessage();
 }
+
+
+
 //end of script

@@ -252,6 +252,13 @@ class FieldsDetector
     protected static function validateArray($data, $key, $value)
     {
         if (!is_array($value)) {
+            if (is_string($value)) {
+                $value = trim($value);
+                if (strpos($value, '[') === 0) {
+                    $value
+                    var_dump($value);
+                }
+            }
             throw new ParamsException("Error in '$value', the value of field '$key' needs the format 'array'.");
         }
 
