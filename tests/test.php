@@ -63,7 +63,7 @@ use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 $params = array(
     'advertiser_id' => '1',
     'date_range' => '{"start_date":"2016-11-11","end_date":"2016-11-11"}',
-    'filter' => '[{"field":"","operator":"","value":""}]',
+    'filter' => '[{"field":"12","operator":"","value":""},{"field":"","operator":"","value":""}]',
 );
 $headers = array(
     'Authorization' => 'Bearer ',
