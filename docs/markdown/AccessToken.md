@@ -32,6 +32,8 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
     $accessToken = new Spa\Authentication\AccessToken({$uid}, {$appid}, {$appkey});
 ```
 
+---
+
 ## 主要方法
 
 ---

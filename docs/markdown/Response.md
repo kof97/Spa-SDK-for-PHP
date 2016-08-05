@@ -30,6 +30,8 @@ Spa\Response 类返回了本次请求的响应信息
 
 发起请求之后返回 `Spa\Response` 对象
 
+---
+
 ## Spa\Response 类提供的方法
 
 ---

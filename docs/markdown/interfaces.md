@@ -24,6 +24,8 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
     $modules->advertiser->signup->send({$params}, {$headers}, {$access_token});
 ```
 
+---
+
 ## 提供的方法
 
 ### send()

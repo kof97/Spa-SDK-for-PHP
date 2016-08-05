@@ -46,6 +46,8 @@ Spa\Client 类用于发起请求
     $spaClient = new Spa\Client({$http_client}, {$version});
 ```
 
+---
+
 ## 方法介绍
 
 ---

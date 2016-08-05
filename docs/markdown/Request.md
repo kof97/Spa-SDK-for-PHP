@@ -63,6 +63,8 @@ Spa\Request 类存储处理请求信息
     $response = $spa->getClient()->sendRequest($spa_request);
 ```
 
+---
+
 ## 方法介绍
 
 ---
