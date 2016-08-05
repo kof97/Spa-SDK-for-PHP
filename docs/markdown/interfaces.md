@@ -35,3 +35,16 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
         $access_token = null
     )
 ```
+
+用于快速的构造请求，通过 `$spa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
+
+---
+
+### fieldInfo()
+
+```
+    public array fieldInfo()
+```
+
+用于获取该接口下的所有字段结构以及验证规则，包括 `struct` 和 `array` 下的递归嵌套的结构类型
+
