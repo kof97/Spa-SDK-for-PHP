@@ -153,11 +153,15 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     public Spa\Response get(
-        string $url, // 请求的 url，（必填）
-        array|array() $headers = array(), // 请求要传的请求头信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $url,
+        $headers = array(), 
+        $accessToken = null
     )
 ```
+
+> `$url`: {string} 请求的 url，（必填）
+> `$headers`: {array|array()} 请求要传的请求头信息，（选填）
+> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 发起一个 `get` 请求，返回值为 `Spa\Response` 对象
 
@@ -167,12 +171,17 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     public Spa\Response post(
-        string $url, // 请求的 url，（必填）
-        array|array() $params = array(), // 请求要传的请求头信息，（选填）
-        array|array() $headers = array(), // post 请求参数信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $url,
+        $params = array(), 
+        $headers = array(), 
+        $accessToken = null
     )
 ```
+
+> `$url`: {string} 请求的 url，（必填）
+> `$params`: {array|array()} post 请求参数信息，（选填）
+> `$headers`: {array|array()} 请求要传的请求头信息，（选填）
+> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 发起一个 `post` 请求，返回值为 `Spa\Response` 对象
 
@@ -182,13 +191,19 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     public Spa\Response sendRequest(
-        string $method, // 请求方式 GET/POST
-        string $url, // 请求的 url，（必填）
-        array|array() $params = array(), // 请求参数信息，（选填）
-        array|array() $headers = array(), // 请求要传的请求头信息，（选填）
-        AccessToken|string|null $accessToken = null // access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+        $method,
+        $url,
+        $params = array(),
+        $headers = array(),
+        $accessToken = null
     )
 ```
+
+> `$method`: {string} 请求方式 GET/POST
+> `$url`: {string} 请求的 url，（必填）
+> `$params`: {array|array()} 请求参数信息，（选填）
+> `$headers`: {array|array()} 请求要传的请求头信息，（选填）
+> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 发送 `request` 请求，自己指定请求方式，只支持 `GET / POST`，返回值为 `Spa\Response` 对象
 
