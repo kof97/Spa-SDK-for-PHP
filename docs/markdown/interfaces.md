@@ -9,7 +9,7 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 ## 如何调用
 
 ```
-	$conf = array(
+    $conf = array(
         'uid'    => '{uid}',  
         'appid'  => '{appid}',
         'appkey' => '{appkey}'
@@ -29,7 +29,7 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 ### send()
 
 ```
-	public Spa\Response send(
+    public Spa\Response send(
         $params = array(),
         $headers = array(),
         $access_token = null

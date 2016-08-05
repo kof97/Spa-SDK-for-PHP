@@ -20,10 +20,10 @@ Spa\Request 类存储处理请求信息
         $url,
         $params,
         $headers,
-        $accessToken
+        $access_token
     )
 </codeblock></pre>
-<p><code>$app</code>: {App|null} Spa\App 实例</p><p><code>$method</code>: {string|null} 请求的方式，GET / POST</p><p><code>$url</code>: {string|null} 请求的 URL</p><p><code>$params</code>: {array|array()} 请求参数</p><p><code>$headers</code>: {array|array()} 请求头信息</p><p><code>$accessToken</code>: {AccessToken|string|null} access token</p>
+<p><code>$app</code>: {App|null} Spa\App 实例</p><p><code>$method</code>: {string|null} 请求的方式，GET / POST</p><p><code>$url</code>: {string|null} 请求的 URL</p><p><code>$params</code>: {array|array()} 请求参数</p><p><code>$headers</code>: {array|array()} 请求头信息</p><p><code>$access_token</code>: {AccessToken|string|null} access token</p>
 <br>
 用于收集并处理请求信息
 
@@ -32,7 +32,7 @@ Spa\Request 类存储处理请求信息
 <pre><codeblock>
     $spaApp = new Spa\App({$uid}, {$appid}, {$appkey});
 
-    $spaRequest = new Spa\Request($spaApp, 'GET', '/advertiser/read');
+    $spa_request = new Spa\Request($spaApp, 'GET', '/advertiser/read');
 </codeblock></pre>
 
 或通过 <code>Spa\Spa</code> 类初始化
@@ -48,13 +48,13 @@ Spa\Request 类存储处理请求信息
 
     $spa = new Spa\Spa($conf);
 
-    $spaRequest = $spa->request('GET', '/advertiser/read');
+    $spa_request = $spa->request('GET', '/advertiser/read');
 </codeblock></pre>
 
 发送请求信息
 
 <pre><codeblock>
-    $response = $spa->getClient()->sendRequest($spaRequest);
+    $response = $spa->getClient()->sendRequest($spa_request);
 </codeblock></pre>
 
 <h2>方法介绍</h2>
@@ -178,7 +178,7 @@ Spa\Request 类存储处理请求信息
 <h3>setAccessToken()</h3>
 
 <pre><codeblock>
-    public Spa\Request setAccessToken(AccessToken|string $accessToken)
+    public Spa\Request setAccessToken(AccessToken|string $access_token)
 </codeblock></pre>
 
 设置 access token，返回 <code>Spa\Request</code> 对象，可以使用链式操作
