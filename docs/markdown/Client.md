@@ -12,12 +12,12 @@ Spa\Client 类用于发起请求
 
 ```
     new Spa\Client(
-        ClientInterface $httpClient = null, 
+        ClientInterface $http_client = null, 
         $version = null
     )
 ```
 
-> **$httpClient :** `Spa\HttpClients\ClientInterface` 的实例，用于发起请求
+> **$http_client :** `Spa\HttpClients\ClientInterface` 的实例，用于发起请求
 > **$version :** 请求的 api 版本，默认 v3，目前只支持 v3
 
 
@@ -43,7 +43,7 @@ Spa\Client 类用于发起请求
 或是直接创建
 
 ```
-    $spaClient = new Spa\Client({$httpClient}, {$version});
+    $spaClient = new Spa\Client({$http_client}, {$version});
 ```
 
 ## 方法介绍
@@ -53,10 +53,10 @@ Spa\Client 类用于发起请求
 ### setHttpClient()
 
 ```
-    public void setHttpClient(Spa\HttpClients\ClientInterface $httpClient)
+    public void setHttpClient(Spa\HttpClients\ClientInterface $http_client)
 ```
 
-设置 `$httpClient`，用于发起 http 请求
+设置 `$http_client`，用于发起 http 请求
 
 ---
 

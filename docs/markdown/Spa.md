@@ -155,13 +155,13 @@ Spa\Spa 类提供了主要功能的接口入口
     public Spa\Response get(
         $url,
         $headers = array(), 
-        $accessToken = null
+        $access_token = null
     )
 ```
 
 > `$url`: {string} 请求的 url，（必填）
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
-> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+> `$access_token`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 
 
@@ -176,14 +176,14 @@ Spa\Spa 类提供了主要功能的接口入口
         $url,
         $params = array(), 
         $headers = array(), 
-        $accessToken = null
+        $access_token = null
     )
 ```
 
 > `$url`: {string} 请求的 url，（必填）
 > `$params`: {array|array()} post 请求参数信息，（选填）
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
-> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+> `$access_token`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 
 
@@ -199,7 +199,7 @@ Spa\Spa 类提供了主要功能的接口入口
         $url,
         $params = array(),
         $headers = array(),
-        $accessToken = null
+        $access_token = null
     )
 ```
 
@@ -207,7 +207,7 @@ Spa\Spa 类提供了主要功能的接口入口
 > `$url`: {string} 请求的 url，（必填）
 > `$params`: {array|array()} 请求参数信息，（选填）
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
-> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+> `$access_token`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 
 
@@ -223,7 +223,7 @@ Spa\Spa 类提供了主要功能的接口入口
         $url,
         $params = array(),
         $headers = array(),
-        $accessToken = null
+        $access_token = null
     )
 ```
 
@@ -231,7 +231,7 @@ Spa\Spa 类提供了主要功能的接口入口
 > `$url`: {string} 请求的 url，（必填）
 > `$params`: {array|array()} 请求参数信息，（选填）
 > `$headers`: {array|array()} 请求要传的请求头信息，（选填）
-> `$accessToken`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
+> `$access_token`: {AccessToken|string|null} access token，不填的话自动从 $conf 中的配置信息生成，（选填）
 
 
 
