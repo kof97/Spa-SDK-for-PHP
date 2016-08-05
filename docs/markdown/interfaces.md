@@ -36,7 +36,13 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
     )
 ```
 
-用于快速的构造请求，通过 `$spa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
+```
+    // 选择模块 -> 选择接口 -> 发送请求
+    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers}, ($access_token));
+```
+
+> 用于快速的构造请求，通过 `$spa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
+> 也可用于使用特定的 `access_token` 来进行临时请求，若不填，则使用 `$conf` 中配置的信息生成
 
 ---
 
