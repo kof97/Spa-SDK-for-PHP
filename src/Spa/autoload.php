@@ -18,8 +18,7 @@ defined('DS') || define('DS', DIRECTORY_SEPARATOR);
  * @param string $class class name.
  * @return void
  */
-spl_autoload_register(function ($class)
-{
+spl_autoload_register(function ($class) {
     $prefix = 'Spa\\';
 
     $len = strlen($prefix);
