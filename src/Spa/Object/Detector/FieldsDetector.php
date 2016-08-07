@@ -98,6 +98,11 @@ class FieldsDetector
     protected static function validateString($data, $key, $value)
     {
         $origin_value = $value;
+
+        if (!is_scalar($value) || is_bool($value)) {
+            throw new ParamsException("Error in '$origin_value', the value of field '$key' needs the type 'string'.");
+        }
+
         $len = strlen($value);
 
         if (isset($data['list'])) {
@@ -106,6 +111,10 @@ class FieldsDetector
                 $list = implode($list, ',');
                 throw new ParamsException("Error in '$origin_value', the value of field '$key' is limited in '$list'.");
             }
+        }
+
+        if (isset($data['pattern'])) {
+            self::validatePattern($data['pattern'], $key, $value);
         }
 
         if (isset($data['max_length'])) {
@@ -120,9 +129,6 @@ class FieldsDetector
             }
         }
 
-        if (isset($data['pattern'])) {
-            self::validatePattern($data['pattern'], $key, $value);
-        }
     }
 
     /**
@@ -136,10 +142,10 @@ class FieldsDetector
     {
         $origin_value = $value;
 
-        // check the type like '015'
-        if ($value != 0) {
-            $value = ltrim($value, '0');
-        }
+        // // check the type like '015'
+        // if ($value != 0) {
+        //     $value = ltrim($value, '0');
+        // }
 
         if ($value . '' !== intval($value) . '') {
             throw new ParamsException("Error in '$origin_value', the value of field '$key' needs the type 'int'.");
@@ -168,6 +174,10 @@ class FieldsDetector
     protected static function validateFloat($data, $key, $value)
     {
         $origin_value = $value;
+
+        if (!is_scalar($value) || is_bool($value)) {
+            throw new ParamsException("Error in '$origin_value', the value of field '$key' needs the type 'float'.");
+        }
 
         if (strpos($value, '.')) {
             $value = rtrim($value, '0');
