@@ -3,6 +3,10 @@ composer.lock
 
 tools/luna.idl.xml
 
+# 有 uid 的版本
+src(uid)/
+
+
 # src/
 # docs/
 # tools/
