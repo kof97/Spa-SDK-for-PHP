@@ -37,7 +37,6 @@ class Spa
      */
     public function __construct($config = array())
     {
-
         if (!is_array($config)) {
             throw new SpaSDKException('The "config" must be formatted as an array.');
         }

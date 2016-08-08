@@ -61,11 +61,12 @@ use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 //var_dump($test->getAccessToken()->getValue());
 
 $params = array(
-    'advertiser_id' => '12',
-    'location_type' => '',
-    'location_name' => 'true',
-    'location_spec' => '{"location_type_circle":{"longitude":"array()","latitude":"","radius":""}}',
-    'city_id' => '',
+    'advertiser_id' => '412',
+    'date' => '2016-12-11',
+    'report_only' => '0',
+    'filter' => '[{"field":"adgroup_id","operator":"23","value":"123"}]',
+    'page' => '234',
+    'page_size' => '23',
 );
 $headers = array(
     'Authorization' => 'Bearer ',
@@ -74,10 +75,11 @@ $conf = array('uid' => 'uid', 'appid' => 'appid', 'appkey' => 'appkey');
 $spa = new Spa\Spa($conf);
 $modules = $spa->getModules();
 try {
-    $response = $modules->targeting_location->create->send($params, $headers, 'Bearer ');
+    $response = $modules->super_report->select_adgroup_hourly->send($params, $headers, 'Bearer ');
 } catch (Exception $e) {
     echo $e->getMessage();
 }
 
+var_dump($response->getAccessToken());
 
 //end of script
