@@ -7,62 +7,61 @@ namespace Spa\Authentication;
  *
  * @category PHP
  * @package  Spa
- * @author	 Arno <arnoliu@tencent.com>
+ * @author   Arno <arnoliu@tencent.com>
  */
-class AccessToken {
+class AccessToken
+{
+    /**
+     * The access token value.
+     *
+     * @var string
+     */
+    protected $value = '';
 
-	/**
-	 * The access token value.
-	 *
-	 * @var string
-	 */
-	protected $value = '';
+    /**
+     * @param string $appid
+     * @param string $appkey
+     *
+     * @return
+     */
+    public function __construct($appid, $appkey) {
+        $this->value = $this->createAccessToken($appid, $appkey);
+    }
 
-	/**
-	 * @param string $uid
-	 * @param string $appid
-	 * @param string $appkey
-	 *
-	 * @return
-	 */
-	public function __construct($uid, $appid, $appkey) {
-		$this->value = $this->createAccessToken($uid, $appid, $appkey);
-	}
+    /**
+     * Returns the value.
+     *
+     * @return string
+     */
+    public function getValue() {
+        return $this->value;
+    }
 
-	/**
-	 * Returns the value.
-	 *
-	 * @return string
-	 */
-	public function getValue() {
-		return $this->value;
-	}
+    /**
+     * calculate the access token
+     *
+     * @param string $appid
+     * @param string $appkey
+     * @return string AccessToken
+     */
+    private function createAccessToken($appid, $appkey) {
+        $time = time();
+        $uid = $appid;
 
-	/**
-	 * calculate the access token
-	 *
-	 * @param string $uid
-	 * @param string $appid
-	 * @param string $appkey
-	 * @return string AccessToken
-	 */
-	private function createAccessToken($uid, $appid, $appkey) {
-		$time = time();
+        $sign = sha1($appid . $appkey . $time);
+        $token = base64_encode($uid . ',' . $appid . ',' . $time . ',' . $sign);
 
-		$sign = sha1($appid . $appkey . $time);
-		$token = base64_encode($uid . ',' . $appid . ',' . $time . ',' . $sign);
+        return 'Bearer ' . $token;
+    }
 
-		return 'Bearer ' . $token;
-	}
-
-	/**
-	 * Returns the access token as a string.
-	 *
-	 * @return string
-	 */
-	public function __toString() {
-		return $this->getValue();
-	}
+    /**
+     * Returns the access token as a string.
+     *
+     * @return string
+     */
+    public function __toString() {
+        return $this->getValue();
+    }
 
 }
 

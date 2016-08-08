@@ -15,11 +15,6 @@ use Spa\Exceptions\SpaSDKException;
 class App
 {
     /**
-     * @var string uid.
-     */
-    protected $uid;
-
-    /**
      * @var string The appid.
      */
     protected $appid;
@@ -30,35 +25,23 @@ class App
     protected $appkey;
 
     /**
-     * @param string $uid
      * @param string $appid
      * @param string $appkey
      *
      * @return
      */
-    public function __construct($uid, $appid, $appkey)
+    public function __construct($appid, $appkey)
     {
-        if ((!is_string($uid) && !is_int($uid)) || (!is_string($appid) && !is_int($appid))) {
-            throw new SpaSDKException('The "uid" and "appid" must be formatted as a string or int.');
+        if (!is_string($appid) && !is_int($appid)) {
+            throw new SpaSDKException('The "appid" must be formatted as a string or int.');
         }
 
         if (!is_string($appkey)) {
             throw new SpaSDKException('The "appkey" must be formatted as a string.');
         }
 
-        $this->uid = $uid;
         $this->appid = $appid;
         $this->appkey = $appkey;
-    }
-
-    /**
-     * Returns the uid.
-     *
-     * @return string
-     */
-    public function getUid()
-    {
-        return $this->uid;
     }
 
     /**
@@ -88,7 +71,7 @@ class App
      */
     public function getAccessToken()
     {
-        return new AccessToken($this->uid, $this->appid, $this->appkey);
+        return new AccessToken($this->appid, $this->appkey);
     }
 
 }

@@ -9,7 +9,8 @@ namespace Spa\Exceptions;
  * @package  Spa
  * @author	 Arno <arnoliu@tencent.com>
  */
-class ParamsException extends SpaSDKException {
+class ParamsException extends SpaSDKException
+{
 
 }
 

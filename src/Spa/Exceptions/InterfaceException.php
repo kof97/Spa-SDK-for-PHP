@@ -9,7 +9,8 @@ namespace Spa\Exceptions;
  * @package  Spa
  * @author	 Arno <arnoliu@tencent.com>
  */
-class InterfaceException extends SpaSDKException {
+class InterfaceException extends SpaSDKException
+{
 
 }
 

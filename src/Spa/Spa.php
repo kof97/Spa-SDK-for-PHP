@@ -29,7 +29,6 @@ class Spa
     protected $client;
 
     /**
-     * @param string $uid
      * @param string $appid
      * @param string $appkey
      *
@@ -42,17 +41,12 @@ class Spa
         }
 
         $config = array_merge(array(
-            'uid'               => false,
             'appid'             => false,
             'appkey'            => false,
             'access_token'      => null,
             'version'           => 'v3',
             'http_client_type'  => null
         ), $config);
-
-        if (!$config['uid']) {
-            throw new SpaSDKException('Required "uid" key not supplied in config or the "uid" key is not an effective value.');
-        }
 
         if (!$config['appid']) {
             throw new SpaSDKException('Required "appid" key not supplied in config or the "appid" key is not an effective value.');
@@ -62,7 +56,7 @@ class Spa
             throw new SpaSDKException('Required "appkey" key not supplied in config or the "appkey" key is not an effective value.');
         }
 
-        $this->app = new App($config['uid'], $config['appid'], $config['appkey']);
+        $this->app = new App($config['appid'], $config['appkey']);
 
         $this->client = new Client(ClientsFactory::createClient($config['http_client_type']), $config['version']);
     }
