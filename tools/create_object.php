@@ -459,13 +459,11 @@ class $interface_class {
      * Init .
      */
     public function __construct(\$spa, \$mod, \$act) {
-
         \$this->spa = \$spa;
 
         \$this->method = '$method';
 
         \$this->endpoint = \$mod . '/' . \$act;
-
     }
 
     /**
@@ -475,26 +473,25 @@ class $interface_class {
      * @param array \$headers The request headers.
      * @return Response
      */
-    public function send(\$params = array(), \$headers = array(), \$access_token = null) {
-
+    public function send(\$params = array(), \$headers = array()) {
         \$data = \$this->fieldInfo();
 
         FieldsDetector::validateField(\$params, \$data);
 
-        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers, \$access_token);
+        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers);
 
         return \$response;
     }
 
     /**
-     * Send a request.
+     * Send a request with the user's token.
      *
-     * @param array \$params  The request params.
-     * @param array \$headers The request headers.
+     * @param array \$params       The request params.
+     * @param array \$headers      The request headers.
+     * @param array \$access_token The user's access token.
      * @return Response
      */
-    public function send(\$params = array(), \$headers = array(), \$access_token = null) {
-
+    public function sendWithAccessToken(\$params = array(), \$headers = array(), \$access_token = null) {
         \$data = \$this->fieldInfo();
 
         FieldsDetector::validateField(\$params, \$data);
