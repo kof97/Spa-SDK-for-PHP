@@ -146,6 +146,10 @@ class FieldsDetector
         // if ($value != 0) {
         //     $value = ltrim($value, '0');
         // }
+        
+        if (trim($value) === '') {
+            $value = 0;
+        }
 
         if ($value . '' !== intval($value) . '') {
             throw new ParamsException("Error in '$origin_value', the value of field '$key' needs the type 'int'.");
