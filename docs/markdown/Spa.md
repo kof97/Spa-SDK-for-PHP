@@ -12,11 +12,10 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     $conf = array(
-        'uid'               => '{uid}',     // 必填
-        'appid'             => '{appid}',   // 必填
-        'appkey'            => '{appkey}',  // 必填
-        'http_client_type'  => 'curl',      // 可不填
-        'version'           => 'v3'         // 可不填
+        'appid'            => '{appid}',   // 必填
+        'appkey'           => '{appkey}',  // 必填
+        'http_client_type' => 'curl',      // 可不填
+        'version'          => 'v3'         // 可不填
     );
 
     $spa = new Spa\Spa($conf);
@@ -87,11 +86,10 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'appid'            => '{appid}',
+        'appkey'           => '{appkey}',
+        'http_client_type' => 'curl',
+        'version'          => 'v3'
     );
 
     $spa = new Spa\Spa($conf);
@@ -119,7 +117,6 @@ Spa\Spa 类提供了主要功能的接口入口
 
 ### 初始化配置 $conf
 
-> `uid`: 授权客户的id（即：若是代理商授权，则此处为代理商账户id，若为广告主授权则为广告主账户id），通常与 `appid` 一致，在广点通开通账户后获得；
 > `appid`: API授权接入方唯一身份标识，目前为申请API接入的直客或代理商id；
 > `appkey`: 开通API授权后获得的私钥，在开通授权邮件中会与app_id一块提供；
 > `http_client_type`: 选填项，目前只支持 `curl`，（选填）

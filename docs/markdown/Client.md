@@ -28,11 +28,10 @@ Spa\Client 类用于发起请求
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'appid'            => '{appid}',
+        'appkey'           => '{appkey}',
+        'http_client_type' => 'curl',
+        'version'          => 'v3'
     );
 
     $spa = new Spa\Spa($conf);

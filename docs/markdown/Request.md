@@ -36,7 +36,7 @@ Spa\Request 类存储处理请求信息
 初始化实例：
 
 ```
-    $spaApp = new Spa\App({$uid}, {$appid}, {$appkey});
+    $spaApp = new Spa\App({$appid}, {$appkey});
 
     $spa_request = new Spa\Request($spaApp, 'GET', '/advertiser/read');
 ```
@@ -45,11 +45,10 @@ Spa\Request 类存储处理请求信息
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'appid'            => '{appid}',
+        'appkey'           => '{appkey}',
+        'http_client_type' => 'curl',
+        'version'          => 'v3'
     );
 
     $spa = new Spa\Spa($conf);

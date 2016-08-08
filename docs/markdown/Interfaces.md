@@ -10,7 +10,6 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 
 ```
     $conf = array(
-        'uid'    => '{uid}',  
         'appid'  => '{appid}',
         'appkey' => '{appkey}'
     );
@@ -21,7 +20,7 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
     $modules = $spa->getModules();
 
     // 选择模块 -> 选择接口 -> 发送请求
-    $modules->advertiser->signup->send({$params}, {$headers}, {$access_token});
+    $modules->advertiser->signup->send({$params}, {$headers});
 ```
 
 ---
@@ -33,6 +32,24 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 ```
     public Spa\Response send(
         $params = array(),
+        $headers = array()
+    )
+```
+
+```
+    // 选择模块 -> 选择接口 -> 发送请求
+    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+```
+
+> 用于快速的构造请求，通过 `$spa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
+
+---
+
+### sendWithAccessToken()
+
+```
+    public Spa\Response sendWithAccessToken(
+        $params = array(),
         $headers = array(),
         $access_token = null
     )
@@ -40,11 +57,10 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 
 ```
     // 选择模块 -> 选择接口 -> 发送请求
-    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers}, ($access_token));
+    $response = $spa->getModules()->advertiser->signup->sendWithAccessToken({$params}, {$headers}, {$access_token});
 ```
 
-> 用于快速的构造请求，通过 `$spa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
-> 也可用于使用特定的 `access_token` 来进行临时请求，若不填，则使用 `$conf` 中配置的信息生成
+> 也用于快速的构造请求,可用于使用特定的 `access_token` 来进行临时请求，若不填，则使用 `$conf` 中配置的信息生成
 
 ---
 

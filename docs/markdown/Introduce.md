@@ -19,11 +19,10 @@
 
 ```
     $conf = array(
-        'uid'               => '{uid}',     // 必填
-        'appid'             => '{appid}',   // 必填
-        'appkey'            => '{appkey}',  // 必填
-        'http_client_type'  => 'curl',      // 可不填
-        'version'           => 'v3'         // 可不填
+        'appid'            => '{appid}',   // 必填
+        'appkey'           => '{appkey}',  // 必填
+        'http_client_type' => 'curl',      // 可不填
+        'version'          => 'v3'         // 可不填
     );
 
     $spa = new Spa\Spa($conf);
@@ -94,11 +93,10 @@
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'appid'            => '{appid}',
+        'appkey'           => '{appkey}',
+        'http_client_type' => 'curl',
+        'version'          => 'v3'
     );
 
     $spa = new Spa\Spa($conf);
