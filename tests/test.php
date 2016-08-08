@@ -75,7 +75,7 @@ $conf = array('uid' => 'uid', 'appid' => 'appid', 'appkey' => 'appkey');
 $spa = new Spa\Spa($conf);
 $modules = $spa->getModules();
 try {
-    $response = $modules->super_report->select_adgroup_hourly->send($params, $headers, 'Bearer ');
+    $response = $modules->super_report->select_adgroup_hourly->sendWithAccessToken($params, $headers, 'Bearer ');
 } catch (Exception $e) {
     echo $e->getMessage();
 }

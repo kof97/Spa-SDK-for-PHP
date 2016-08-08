@@ -11,8 +11,8 @@ use Spa\Object\Detector\FieldsDetector;
  * @package  Spa
  * @author   Arno <arnoliu@tencent.com>
  */
-class GetEstimation {
-
+class GetEstimation
+{
     /**
      * Instance of Spa.
      */
@@ -31,7 +31,8 @@ class GetEstimation {
     /**
      * Init .
      */
-    public function __construct($spa, $mod, $act) {
+    public function __construct($spa, $mod, $act)
+    {
         $this->spa = $spa;
 
         $this->method = 'POST';
@@ -46,7 +47,8 @@ class GetEstimation {
      * @param array $headers The request headers.
      * @return Response
      */
-    public function send($params = array(), $headers = array()) {
+    public function send($params = array(), $headers = array())
+    {
         $data = $this->fieldInfo();
 
         FieldsDetector::validateField($params, $data);
@@ -64,7 +66,8 @@ class GetEstimation {
      * @param array $access_token The user's access token.
      * @return Response
      */
-    public function sendWithAccessToken($params = array(), $headers = array(), $access_token = null) {
+    public function sendWithAccessToken($params = array(), $headers = array(), $access_token = null)
+    {
         $data = $this->fieldInfo();
 
         FieldsDetector::validateField($params, $data);
@@ -77,7 +80,8 @@ class GetEstimation {
     /**
      * The fields info.
      */
-    public function fieldInfo() {
+    public function fieldInfo()
+    {
         return array(
 
             'advertiser_id' => array(
