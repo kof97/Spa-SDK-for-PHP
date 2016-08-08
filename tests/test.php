@@ -61,25 +61,20 @@ use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 //var_dump($test->getAccessToken()->getValue());
 
 $params = array(
-    'advertiser_id' => '412',
-    'date' => '2016-12-11',
-    'report_only' => '0',
-    'filter' => '[{"field":"adgroup_id","operator":"23","value":"123"}]',
-    'page' => '234',
-    'page_size' => '23',
+    'advertiser_id' => '123',
 );
 $headers = array(
     'Authorization' => 'Bearer ',
 );
-$conf = array('uid' => 'uid', 'appid' => 'appid', 'appkey' => 'appkey');
+$conf = array('appid' => 'appid', 'appkey' => 'appkey');
 $spa = new Spa\Spa($conf);
 $modules = $spa->getModules();
 try {
-    $response = $modules->super_report->select_adgroup_hourly->sendWithAccessToken($params, $headers, 'Bearer ');
+    $response = $modules->advertiser->read->sendWithAccessToken($params, $headers, 'Bearer ');
 } catch (Exception $e) {
     echo $e->getMessage();
 }
 
-var_dump($response->getAccessToken());
+var_dump($response);
 
 //end of script

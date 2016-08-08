@@ -12,11 +12,10 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'appid'            => '{appid}',
+        'appkey'           => '{appkey}',
+        'http_client_type' => 'curl',
+        'version'          => 'v3'
     );
 
     $spa = new Spa\Spa($conf);
@@ -29,7 +28,7 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 或直接创建
 
 ```
-    $accessToken = new Spa\Authentication\AccessToken({$uid}, {$appid}, {$appkey});
+    $accessToken = new Spa\Authentication\AccessToken({$appid}, {$appkey});
 ```
 
 ---
