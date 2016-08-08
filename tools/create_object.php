@@ -487,6 +487,24 @@ class $interface_class {
     }
 
     /**
+     * Send a request.
+     *
+     * @param array \$params  The request params.
+     * @param array \$headers The request headers.
+     * @return Response
+     */
+    public function send(\$params = array(), \$headers = array(), \$access_token = null) {
+
+        \$data = \$this->fieldInfo();
+
+        FieldsDetector::validateField(\$params, \$data);
+
+        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers, \$access_token);
+
+        return \$response;
+    }
+
+    /**
      * The fields info.
      */
     public function fieldInfo() {
