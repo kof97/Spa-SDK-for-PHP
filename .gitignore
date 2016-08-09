@@ -7,6 +7,6 @@ tools/luna.idl.xml
 src(uid)/
 
 
-# src/
-# docs/
-# tools/
+src/
+docs/
+tools/
