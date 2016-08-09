@@ -68,6 +68,9 @@ $headers = array(
 );
 $conf = array('appid' => 'appid', 'appkey' => 'appkey');
 $spa = new Spa\Spa($conf);
+
+var_dump($spa->getVersion());
+
 $modules = $spa->getModules();
 try {
     $response = $modules->advertiser->read->sendWithAccessToken($params, $headers, 'Bearer ');

@@ -19,6 +19,11 @@ use Spa\Object\Modules;
 class Spa
 {
     /**
+     * @const SDK version.
+     */
+    const SDK_VERSION = 'v1.0.0';
+
+    /**
      * @var App The Spa App entity.
      */
     protected $app;
@@ -59,6 +64,16 @@ class Spa
         $this->app = new App($config['appid'], $config['appkey']);
 
         $this->client = new Client(ClientsFactory::createClient($config['http_client_type']), $config['version']);
+    }
+
+    /**
+     * Returns the SDK version.
+     *
+     * @return string
+     */
+    public function getVersion()
+    {
+        return static::SDK_VERSION;
     }
 
     /**
