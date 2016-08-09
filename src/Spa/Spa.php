@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Spa;
 
@@ -46,11 +46,11 @@ class Spa
         }
 
         $config = array_merge(array(
-            'appid'             => false,
-            'appkey'            => false,
-            'access_token'      => null,
-            'version'           => 'v3',
-            'http_client_type'  => null
+            'appid'            => false,
+            'appkey'           => false,
+            'access_token'     => null,
+            'version'          => 'v3',
+            'http_client_type' => null
         ), $config);
 
         if (!$config['appid']) {
