@@ -21,7 +21,7 @@ class SuperReport
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -31,9 +31,9 @@ class SuperReport
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -47,16 +47,16 @@ class SuperReport
     {
         switch ($interface) {
             case 'select_adgroup_daily':
-                return new SelectAdgroupDaily($this->spa, $this->mod, 'select_adgroup_daily');
+                return new SelectAdgroupDaily($this->tsa, $this->mod, 'select_adgroup_daily');
 
             case 'select_adgroup_hourly':
-                return new SelectAdgroupHourly($this->spa, $this->mod, 'select_adgroup_hourly');
+                return new SelectAdgroupHourly($this->tsa, $this->mod, 'select_adgroup_hourly');
 
             case 'select_campaign_daily':
-                return new SelectCampaignDaily($this->spa, $this->mod, 'select_campaign_daily');
+                return new SelectCampaignDaily($this->tsa, $this->mod, 'select_campaign_daily');
 
             case 'select_campaign_hourly':
-                return new SelectCampaignHourly($this->spa, $this->mod, 'select_campaign_hourly');
+                return new SelectCampaignHourly($this->tsa, $this->mod, 'select_campaign_hourly');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

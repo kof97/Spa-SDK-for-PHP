@@ -21,7 +21,7 @@ class Auth
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -31,9 +31,9 @@ class Auth
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -47,16 +47,16 @@ class Auth
     {
         switch ($interface) {
             case 'ptlogin':
-                return new Ptlogin($this->spa, $this->mod, 'ptlogin');
+                return new Ptlogin($this->tsa, $this->mod, 'ptlogin');
 
             case 'ptlogin_token':
-                return new PtloginToken($this->spa, $this->mod, 'ptlogin_token');
+                return new PtloginToken($this->tsa, $this->mod, 'ptlogin_token');
 
             case 'get_access_token':
-                return new GetAccessToken($this->spa, $this->mod, 'get_access_token');
+                return new GetAccessToken($this->tsa, $this->mod, 'get_access_token');
 
             case 'get_openid':
-                return new GetOpenid($this->spa, $this->mod, 'get_openid');
+                return new GetOpenid($this->tsa, $this->mod, 'get_openid');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

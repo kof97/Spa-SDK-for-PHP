@@ -27,7 +27,7 @@ class Agency
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -37,9 +37,9 @@ class Agency
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -53,34 +53,34 @@ class Agency
     {
         switch ($interface) {
             case 'inner_transfer':
-                return new InnerTransfer($this->spa, $this->mod, 'inner_transfer');
+                return new InnerTransfer($this->tsa, $this->mod, 'inner_transfer');
 
             case 'get_financial_overview':
-                return new GetFinancialOverview($this->spa, $this->mod, 'get_financial_overview');
+                return new GetFinancialOverview($this->tsa, $this->mod, 'get_financial_overview');
 
             case 'get_transaction_detail':
-                return new GetTransactionDetail($this->spa, $this->mod, 'get_transaction_detail');
+                return new GetTransactionDetail($this->tsa, $this->mod, 'get_transaction_detail');
 
             case 'get_all_transaction_detail':
-                return new GetAllTransactionDetail($this->spa, $this->mod, 'get_all_transaction_detail');
+                return new GetAllTransactionDetail($this->tsa, $this->mod, 'get_all_transaction_detail');
 
             case 'transfer':
-                return new Transfer($this->spa, $this->mod, 'transfer');
+                return new Transfer($this->tsa, $this->mod, 'transfer');
 
             case 'transfer_back':
-                return new TransferBack($this->spa, $this->mod, 'transfer_back');
+                return new TransferBack($this->tsa, $this->mod, 'transfer_back');
 
             case 'add_advertiser':
-                return new AddAdvertiser($this->spa, $this->mod, 'add_advertiser');
+                return new AddAdvertiser($this->tsa, $this->mod, 'add_advertiser');
 
             case 'update_advertiser':
-                return new UpdateAdvertiser($this->spa, $this->mod, 'update_advertiser');
+                return new UpdateAdvertiser($this->tsa, $this->mod, 'update_advertiser');
 
             case 'get_advertiser_list':
-                return new GetAdvertiserList($this->spa, $this->mod, 'get_advertiser_list');
+                return new GetAdvertiserList($this->tsa, $this->mod, 'get_advertiser_list');
 
             case 'realtime_cost':
-                return new RealtimeCost($this->spa, $this->mod, 'realtime_cost');
+                return new RealtimeCost($this->tsa, $this->mod, 'realtime_cost');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

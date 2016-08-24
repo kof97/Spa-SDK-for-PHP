@@ -23,7 +23,7 @@ class TargetingCustomizedAudience
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -33,9 +33,9 @@ class TargetingCustomizedAudience
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -49,22 +49,22 @@ class TargetingCustomizedAudience
     {
         switch ($interface) {
             case 'create':
-                return new Create($this->spa, $this->mod, 'create');
+                return new Create($this->tsa, $this->mod, 'create');
 
             case 'read':
-                return new Read($this->spa, $this->mod, 'read');
+                return new Read($this->tsa, $this->mod, 'read');
 
             case 'select':
-                return new Select($this->spa, $this->mod, 'select');
+                return new Select($this->tsa, $this->mod, 'select');
 
             case 'authorize':
-                return new Authorize($this->spa, $this->mod, 'authorize');
+                return new Authorize($this->tsa, $this->mod, 'authorize');
 
             case 'get_authorization_list':
-                return new GetAuthorizationList($this->spa, $this->mod, 'get_authorization_list');
+                return new GetAuthorizationList($this->tsa, $this->mod, 'get_authorization_list');
 
             case 'append':
-                return new Append($this->spa, $this->mod, 'append');
+                return new Append($this->tsa, $this->mod, 'append');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

@@ -20,7 +20,7 @@ class PreviewTargeting
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -30,9 +30,9 @@ class PreviewTargeting
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -46,13 +46,13 @@ class PreviewTargeting
     {
         switch ($interface) {
             case 'create':
-                return new Create($this->spa, $this->mod, 'create');
+                return new Create($this->tsa, $this->mod, 'create');
 
             case 'update':
-                return new Update($this->spa, $this->mod, 'update');
+                return new Update($this->tsa, $this->mod, 'update');
 
             case 'select':
-                return new Select($this->spa, $this->mod, 'select');
+                return new Select($this->tsa, $this->mod, 'select');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

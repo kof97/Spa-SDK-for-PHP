@@ -21,7 +21,7 @@ class Payment
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -31,9 +31,9 @@ class Payment
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -47,16 +47,16 @@ class Payment
     {
         switch ($interface) {
             case 'wechat_order_create':
-                return new WechatOrderCreate($this->spa, $this->mod, 'wechat_order_create');
+                return new WechatOrderCreate($this->tsa, $this->mod, 'wechat_order_create');
 
             case 'wechat_order_query':
-                return new WechatOrderQuery($this->spa, $this->mod, 'wechat_order_query');
+                return new WechatOrderQuery($this->tsa, $this->mod, 'wechat_order_query');
 
             case 'qq_order_create':
-                return new QqOrderCreate($this->spa, $this->mod, 'qq_order_create');
+                return new QqOrderCreate($this->tsa, $this->mod, 'qq_order_create');
 
             case 'qq_order_query':
-                return new QqOrderQuery($this->spa, $this->mod, 'qq_order_query');
+                return new QqOrderQuery($this->tsa, $this->mod, 'qq_order_query');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

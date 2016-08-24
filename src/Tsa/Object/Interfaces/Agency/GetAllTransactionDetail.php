@@ -16,7 +16,7 @@ class GetAllTransactionDetail
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * HTTP method.
@@ -31,9 +31,9 @@ class GetAllTransactionDetail
     /**
      * Init .
      */
-    public function __construct($spa, $mod, $act)
+    public function __construct($tsa, $mod, $act)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->method = 'GET';
 
@@ -53,7 +53,7 @@ class GetAllTransactionDetail
 
         FieldsDetector::validateField($params, $data);
 
-        $response = $this->spa->sendRequest($this->method, $this->endpoint, $params, $headers);
+        $response = $this->tsa->sendRequest($this->method, $this->endpoint, $params, $headers);
 
         return $response;
     }
@@ -72,7 +72,7 @@ class GetAllTransactionDetail
 
         FieldsDetector::validateField($params, $data);
 
-        $response = $this->spa->sendRequest($this->method, $this->endpoint, $params, $headers, $access_token);
+        $response = $this->tsa->sendRequest($this->method, $this->endpoint, $params, $headers, $access_token);
 
         return $response;
     }

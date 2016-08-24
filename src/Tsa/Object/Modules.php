@@ -38,14 +38,14 @@ class Modules
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
     
     /**
      * Init .
      */
-    public function __construct($spa)
+    public function __construct($tsa)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
     }
     
     /**
@@ -57,67 +57,67 @@ class Modules
     {
         switch ($mod) {
             case 'advertiser':
-                return new Advertiser($this->spa, 'advertiser');
+                return new Advertiser($this->tsa, 'advertiser');
 
             case 'account':
-                return new Account($this->spa, 'account');
+                return new Account($this->tsa, 'account');
 
             case 'campaign':
-                return new Campaign($this->spa, 'campaign');
+                return new Campaign($this->tsa, 'campaign');
 
             case 'adgroup':
-                return new Adgroup($this->spa, 'adgroup');
+                return new Adgroup($this->tsa, 'adgroup');
 
             case 'creative':
-                return new Creative($this->spa, 'creative');
+                return new Creative($this->tsa, 'creative');
 
             case 'targeting':
-                return new Targeting($this->spa, 'targeting');
+                return new Targeting($this->tsa, 'targeting');
 
             case 'targeting_rule':
-                return new TargetingRule($this->spa, 'targeting_rule');
+                return new TargetingRule($this->tsa, 'targeting_rule');
 
             case 'media':
-                return new Media($this->spa, 'media');
+                return new Media($this->tsa, 'media');
 
             case 'report':
-                return new Report($this->spa, 'report');
+                return new Report($this->tsa, 'report');
 
             case 'offline_report':
-                return new OfflineReport($this->spa, 'offline_report');
+                return new OfflineReport($this->tsa, 'offline_report');
 
             case 'super_report':
-                return new SuperReport($this->spa, 'super_report');
+                return new SuperReport($this->tsa, 'super_report');
 
             case 'agency':
-                return new Agency($this->spa, 'agency');
+                return new Agency($this->tsa, 'agency');
 
             case 'utility':
-                return new Utility($this->spa, 'utility');
+                return new Utility($this->tsa, 'utility');
 
             case 'auth':
-                return new Auth($this->spa, 'auth');
+                return new Auth($this->tsa, 'auth');
 
             case 'image':
-                return new Image($this->spa, 'image');
+                return new Image($this->tsa, 'image');
 
             case 'product':
-                return new Product($this->spa, 'product');
+                return new Product($this->tsa, 'product');
 
             case 'payment':
-                return new Payment($this->spa, 'payment');
+                return new Payment($this->tsa, 'payment');
 
             case 'targeting_customized_audience':
-                return new TargetingCustomizedAudience($this->spa, 'targeting_customized_audience');
+                return new TargetingCustomizedAudience($this->tsa, 'targeting_customized_audience');
 
             case 'targeting_audience':
-                return new TargetingAudience($this->spa, 'targeting_audience');
+                return new TargetingAudience($this->tsa, 'targeting_audience');
 
             case 'preview_targeting':
-                return new PreviewTargeting($this->spa, 'preview_targeting');
+                return new PreviewTargeting($this->tsa, 'preview_targeting');
 
             case 'targeting_location':
-                return new TargetingLocation($this->spa, 'targeting_location');
+                return new TargetingLocation($this->tsa, 'targeting_location');
 
             default:
                 throw new ModuleException("Could not find the module called $mod");

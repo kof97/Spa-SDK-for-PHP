@@ -25,7 +25,7 @@ class TargetingRule
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -35,9 +35,9 @@ class TargetingRule
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -51,28 +51,28 @@ class TargetingRule
     {
         switch ($interface) {
             case 'create_custom_audience':
-                return new CreateCustomAudience($this->spa, $this->mod, 'create_custom_audience');
+                return new CreateCustomAudience($this->tsa, $this->mod, 'create_custom_audience');
 
             case 'read_custom_audience':
-                return new ReadCustomAudience($this->spa, $this->mod, 'read_custom_audience');
+                return new ReadCustomAudience($this->tsa, $this->mod, 'read_custom_audience');
 
             case 'update_custom_audience':
-                return new UpdateCustomAudience($this->spa, $this->mod, 'update_custom_audience');
+                return new UpdateCustomAudience($this->tsa, $this->mod, 'update_custom_audience');
 
             case 'delete':
-                return new Delete($this->spa, $this->mod, 'delete');
+                return new Delete($this->tsa, $this->mod, 'delete');
 
             case 'select':
-                return new Select($this->spa, $this->mod, 'select');
+                return new Select($this->tsa, $this->mod, 'select');
 
             case 'upload':
-                return new Upload($this->spa, $this->mod, 'upload');
+                return new Upload($this->tsa, $this->mod, 'upload');
 
             case 'authorize':
-                return new Authorize($this->spa, $this->mod, 'authorize');
+                return new Authorize($this->tsa, $this->mod, 'authorize');
 
             case 'authorization_list':
-                return new AuthorizationList($this->spa, $this->mod, 'authorization_list');
+                return new AuthorizationList($this->tsa, $this->mod, 'authorization_list');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

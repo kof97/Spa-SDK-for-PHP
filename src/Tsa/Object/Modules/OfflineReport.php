@@ -19,7 +19,7 @@ class OfflineReport
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -29,9 +29,9 @@ class OfflineReport
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -45,10 +45,10 @@ class OfflineReport
     {
         switch ($interface) {
             case 'select_daily':
-                return new SelectDaily($this->spa, $this->mod, 'select_daily');
+                return new SelectDaily($this->tsa, $this->mod, 'select_daily');
 
             case 'select_hourly':
-                return new SelectHourly($this->spa, $this->mod, 'select_hourly');
+                return new SelectHourly($this->tsa, $this->mod, 'select_hourly');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

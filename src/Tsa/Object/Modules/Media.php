@@ -21,7 +21,7 @@ class Media
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -31,9 +31,9 @@ class Media
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -47,16 +47,16 @@ class Media
     {
         switch ($interface) {
             case 'create':
-                return new Create($this->spa, $this->mod, 'create');
+                return new Create($this->tsa, $this->mod, 'create');
 
             case 'select':
-                return new Select($this->spa, $this->mod, 'select');
+                return new Select($this->tsa, $this->mod, 'select');
 
             case 'read':
-                return new Read($this->spa, $this->mod, 'read');
+                return new Read($this->tsa, $this->mod, 'read');
 
             case 'info':
-                return new Info($this->spa, $this->mod, 'info');
+                return new Info($this->tsa, $this->mod, 'info');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");

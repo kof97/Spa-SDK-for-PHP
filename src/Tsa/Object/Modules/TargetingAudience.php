@@ -24,7 +24,7 @@ class TargetingAudience
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -34,9 +34,9 @@ class TargetingAudience
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }
@@ -50,25 +50,25 @@ class TargetingAudience
     {
         switch ($interface) {
             case 'create':
-                return new Create($this->spa, $this->mod, 'create');
+                return new Create($this->tsa, $this->mod, 'create');
 
             case 'select':
-                return new Select($this->spa, $this->mod, 'select');
+                return new Select($this->tsa, $this->mod, 'select');
 
             case 'read_file_status':
-                return new ReadFileStatus($this->spa, $this->mod, 'read_file_status');
+                return new ReadFileStatus($this->tsa, $this->mod, 'read_file_status');
 
             case 'get_file_list':
-                return new GetFileList($this->spa, $this->mod, 'get_file_list');
+                return new GetFileList($this->tsa, $this->mod, 'get_file_list');
 
             case 'update':
-                return new Update($this->spa, $this->mod, 'update');
+                return new Update($this->tsa, $this->mod, 'update');
 
             case 'update_by_pb':
-                return new UpdateByPb($this->spa, $this->mod, 'update_by_pb');
+                return new UpdateByPb($this->tsa, $this->mod, 'update_by_pb');
 
             case 'delete':
-                return new Delete($this->spa, $this->mod, 'delete');
+                return new Delete($this->tsa, $this->mod, 'delete');
 
             default:
                 throw new InterfaceException("Could not find the interface of the module called $interface ");
