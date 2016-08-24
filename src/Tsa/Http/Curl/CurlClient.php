@@ -1,16 +1,16 @@
 <?php 
 
-namespace Spa\Http\Curl;
+namespace Tsa\Http\Curl;
 
-use Spa\Exceptions\SpaSDKException;
-use Spa\Http\ClientInterface;
-use Spa\Http\ResponseAnalyzer;
+use Tsa\Exceptions\TsaSDKException;
+use Tsa\Http\ClientInterface;
+use Tsa\Http\ResponseAnalyzer;
 
 /**
  * Class CurlClient
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class CurlClient implements ClientInterface
@@ -62,7 +62,7 @@ class CurlClient implements ClientInterface
         $this->sendCurl();
 
         if ($this->curlErrorCode = $this->curl->errno()) {
-            throw new SpaSDKException($this->curl->error(), $this->curlErrorCode);
+            throw new TsaSDKException($this->curl->error(), $this->curlErrorCode);
         }
 
         list($response_headers, $response_body, $http_status_code) = $this->analyzeResponse();

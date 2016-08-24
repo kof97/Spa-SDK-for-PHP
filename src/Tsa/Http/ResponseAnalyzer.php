@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Http;
+namespace Tsa\Http;
 
 /**
  * Class ResponseAnalyzer
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class ResponseAnalyzer

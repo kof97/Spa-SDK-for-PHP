@@ -1,15 +1,15 @@
 <?php 
 
-namespace Spa\Exceptions;
+namespace Tsa\Exceptions;
 
 /**
  * Class ModuleException
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author	 Arno <arnoliu@tencent.com>
  */
-class ModuleException extends SpaSDKException
+class ModuleException extends TsaSDKException
 {
 
 }

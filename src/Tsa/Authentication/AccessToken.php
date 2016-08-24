@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Authentication;
+namespace Tsa\Authentication;
 
 /**
  * Class AccessToken
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class AccessToken

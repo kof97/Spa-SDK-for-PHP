@@ -1,6 +1,6 @@
 <?php 
 
-namespace Spa\Http\Curl;
+namespace Tsa\Http\Curl;
 
 use Exception;
 
@@ -8,7 +8,7 @@ use Exception;
  * Class Curl
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Curl

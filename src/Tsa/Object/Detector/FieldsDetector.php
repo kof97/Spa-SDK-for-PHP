@@ -1,14 +1,14 @@
 <?php 
 
-namespace Spa\Object\Detector;
+namespace Tsa\Object\Detector;
 
-use Spa\Exceptions\ParamsException;
+use Tsa\Exceptions\ParamsException;
 
 /**
  * Class FieldsDetector
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class FieldsDetector

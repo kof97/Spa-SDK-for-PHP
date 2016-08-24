@@ -1,15 +1,15 @@
 <?php 
 
-namespace Spa\Exceptions;
+namespace Tsa\Exceptions;
 
 /**
  * Class InterfaceException
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author	 Arno <arnoliu@tencent.com>
  */
-class InterfaceException extends SpaSDKException
+class InterfaceException extends TsaSDKException
 {
 
 }

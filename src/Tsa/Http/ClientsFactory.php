@@ -1,15 +1,15 @@
 <?php 
 
-namespace Spa\Http;
+namespace Tsa\Http;
 
 use InvalidArgumentException;
-use Spa\Http\Curl\CurlClient;
+use Tsa\Http\Curl\CurlClient;
 
 /**
  * Class ClientsFactory
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class ClientsFactory
@@ -41,7 +41,7 @@ class ClientsFactory
                 return new CurlClient();
 
             default:
-                throw new InvalidArgumentException('The "http_client_type" only support "curl" or an instance of Spa\Http\ClientInterface');
+                throw new InvalidArgumentException('The "http_client_type" only support "curl" or an instance of Tsa\Http\ClientInterface');
         }
     }
 

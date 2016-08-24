@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Http;
+namespace Tsa\Http;
 
 /**
  * interface ClientInterface
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 interface ClientInterface
