@@ -87,7 +87,7 @@ function getModulesEnumData($data)
     /**
      * Instance of Tsa.
      */
-    protected $spa;';
+    protected $tsa;';
 
     $modules_namespace_use = '';
 
@@ -95,9 +95,9 @@ function getModulesEnumData($data)
     /**
      * Init .
      */
-    public function __construct($spa)
+    public function __construct($tsa)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
     }';
 
     $get = '
@@ -123,7 +123,7 @@ use Tsa\Object\Modules\\$mod_class;";
 
                 $get .= "
             case '$mod_name':
-                return new $mod_class(\$this->spa, '$mod_name');
+                return new $mod_class(\$this->tsa, '$mod_name');
 ";
                 getInterfacesEnumData($data, $module, $mod_class, $mod_name);
             }
@@ -197,7 +197,7 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name)
     /**
      * Instance of Tsa.
      */
-    protected $spa;
+    protected $tsa;
 
     /**
      * Module.
@@ -209,9 +209,9 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name)
     /**
      * Init .
      */
-    public function __construct($spa, $mod)
+    public function __construct($tsa, $mod)
     {
-        $this->spa = $spa;
+        $this->tsa = $tsa;
 
         $this->mod = $mod;
     }';
@@ -240,7 +240,7 @@ use Tsa\Object\Interfaces\\$mod_class\\$interface_class;";
 
             $get .= "
             case '$interface_name':
-                return new $interface_class(\$this->spa, \$this->mod, '$interface_name');
+                return new $interface_class(\$this->tsa, \$this->mod, '$interface_name');
 ";
 
             creatEnum($mod_class, $interface_class, $value);
@@ -443,7 +443,7 @@ class $interface_class
     /**
      * Instance of Tsa.
      */
-    protected \$spa;
+    protected \$tsa;
 
     /**
      * HTTP method.
@@ -458,9 +458,9 @@ class $interface_class
     /**
      * Init .
      */
-    public function __construct(\$spa, \$mod, \$act)
+    public function __construct(\$tsa, \$mod, \$act)
     {
-        \$this->spa = \$spa;
+        \$this->tsa = \$tsa;
 
         \$this->method = '$method';
 
@@ -480,7 +480,7 @@ class $interface_class
 
         FieldsDetector::validateField(\$params, \$data);
 
-        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers);
+        \$response = \$this->tsa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers);
 
         return \$response;
     }
@@ -499,7 +499,7 @@ class $interface_class
 
         FieldsDetector::validateField(\$params, \$data);
 
-        \$response = \$this->spa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers, \$access_token);
+        \$response = \$this->tsa->sendRequest(\$this->method, \$this->endpoint, \$params, \$headers, \$access_token);
 
         return \$response;
     }
