@@ -18,10 +18,10 @@ Tsa\Tsa 类提供了主要功能的接口入口
         'version'          => 'v3'         // 可不填
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
     // 获取模块集合
-    $modules = $spa->getModules();
+    $modules = $tsa->getModules();
 ```
 
 ### 选择请求的模块和接口并发送请求
@@ -50,7 +50,7 @@ Tsa\Tsa 类提供了主要功能的接口入口
 
 ```
     // 选择模块 -> 选择接口 -> 发送请求
-    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+    $response = $tsa->getModules()->advertiser->signup->send({$params}, {$headers});
 ```
 
 接下来是数据的拼接，在 `Tsa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
@@ -92,25 +92,25 @@ Tsa\Tsa 类提供了主要功能的接口入口
         'version'          => 'v3'
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 ```
 
 ### 发送 get 请求
 
 ```
-    $response = $spa->get('/advertiser/read?advertiser_id=123', {$headers});
+    $response = $tsa->get('/advertiser/read?advertiser_id=123', {$headers});
 ```
 
 ### 发送 post 请求
 
 ```
-    $response = $spa->post('/advertiser/signup', {$params}, {$headers});
+    $response = $tsa->post('/advertiser/signup', {$params}, {$headers});
 ```
 
 ### 发送 request 请求
 
 ```
-    $response = $spa->sendRequest('post', '/advertiser/signup', {$params}, {$headers});
+    $response = $tsa->sendRequest('post', '/advertiser/signup', {$params}, {$headers});
 ```
 
 ## 详细介绍：
@@ -245,5 +245,5 @@ Tsa\Tsa 类提供了主要功能的接口入口
 返回模块的集合，用于选择要请求的模块
 
 ```
-    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+    $response = $tsa->getModules()->advertiser->signup->send({$params}, {$headers});
 ```

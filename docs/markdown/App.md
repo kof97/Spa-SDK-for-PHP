@@ -28,9 +28,9 @@ Tsa\App 类存储了应用实例的基本信息
         'version'          => 'v3'
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
-    $spaApp = $spa->getApp();
+    $tsaApp = $tsa->getApp();
 ```
 
 ---

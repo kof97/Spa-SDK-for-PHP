@@ -14,10 +14,10 @@ Tsa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
         'appkey' => '{appkey}'
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
     // 获取模块集合
-    $modules = $spa->getModules();
+    $modules = $tsa->getModules();
 
     // 选择模块 -> 选择接口 -> 发送请求
     $modules->advertiser->signup->send({$params}, {$headers});
@@ -38,10 +38,10 @@ Tsa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 
 ```
     // 选择模块 -> 选择接口 -> 发送请求
-    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+    $response = $tsa->getModules()->advertiser->signup->send({$params}, {$headers});
 ```
 
-> 用于快速的构造请求，通过 `$spa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
+> 用于快速的构造请求，通过 `$tsa->getModules()` 直接选择 `module` 和 `interface` 来进行发送请求
 
 ---
 
@@ -57,7 +57,7 @@ Tsa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 
 ```
     // 选择模块 -> 选择接口 -> 发送请求
-    $response = $spa->getModules()->advertiser->signup->sendWithAccessToken({$params}, {$headers}, {$access_token});
+    $response = $tsa->getModules()->advertiser->signup->sendWithAccessToken({$params}, {$headers}, {$access_token});
 ```
 
 > 也用于快速的构造请求,可用于使用特定的 `access_token` 来进行临时请求，若不填，则使用 `$conf` 中配置的信息生成

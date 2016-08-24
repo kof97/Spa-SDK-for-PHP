@@ -34,15 +34,15 @@ Tsa\Client 类用于发起请求
         'version'          => 'v3'
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
-    $spaClient = $spa->getClient();
+    $tsaClient = $tsa->getClient();
 ```
 
 或是直接创建
 
 ```
-    $spaClient = new Tsa\Client({$http_client}, {$version});
+    $tsaClient = new Tsa\Client({$http_client}, {$version});
 ```
 
 ---

@@ -36,9 +36,9 @@ Tsa\Request 类存储处理请求信息
 初始化实例：
 
 ```
-    $spaApp = new Tsa\App({$appid}, {$appkey});
+    $tsaApp = new Tsa\App({$appid}, {$appkey});
 
-    $spa_request = new Tsa\Request($spaApp, 'GET', '/advertiser/read');
+    $tsa_request = new Tsa\Request($tsaApp, 'GET', '/advertiser/read');
 ```
 
 或通过 `Tsa\Tsa` 类初始化
@@ -51,15 +51,15 @@ Tsa\Request 类存储处理请求信息
         'version'          => 'v3'
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
-    $spa_request = $spa->request('GET', '/advertiser/read');
+    $tsa_request = $tsa->request('GET', '/advertiser/read');
 ```
 
 发送请求信息
 
 ```
-    $response = $spa->getClient()->sendRequest($spa_request);
+    $response = $tsa->getClient()->sendRequest($tsa_request);
 ```
 
 ---

@@ -18,13 +18,13 @@ Tsa\Response 类返回了本次请求的响应信息
         'version'          => 'v3'
     );
 
-    $spa = new Tsa\Tsa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
-    $response = $spa->get('/advertiser/read?advertiser_id=123');
+    $response = $tsa->get('/advertiser/read?advertiser_id=123');
 
-    $response = $spa->post('/advertiser/signup');
+    $response = $tsa->post('/advertiser/signup');
 
-    $response = $spa->sendRequest('post', '/advertiser/signup');
+    $response = $tsa->sendRequest('post', '/advertiser/signup');
 ```
 
 发起请求之后返回 `Tsa\Response` 对象
