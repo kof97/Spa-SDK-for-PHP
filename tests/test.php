@@ -1,8 +1,8 @@
 <?php 
 
-require_once __DIR__ . '/../src/Spa/autoload.php';
+require_once __DIR__ . '/../src/Tsa/autoload.php';
 
-use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
+use Tsa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 
 // var_dump(PHP_VERSION);
 
@@ -14,7 +14,7 @@ use Spa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 //     'version'           => 'v3'
 // );
 
-// $spa = new Spa\Spa($conf);
+// $spa = new Tsa\Tsa($conf);
 
 
 // $test = $spa->getApp();
@@ -67,7 +67,7 @@ $headers = array(
     'Authorization' => 'Bearer ',
 );
 $conf = array('appid' => 'appid', 'appkey' => 'appkey');
-$spa = new Spa\Spa($conf);
+$spa = new Tsa\Tsa($conf);
 
 var_dump($spa->getVersion());
 
