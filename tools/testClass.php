@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\\$mod_class;
+namespace Tsa\Object\Interfaces\\$mod_class;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class $interface_class
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class $interface_class
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected \$spa;
 
