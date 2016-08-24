@@ -1,4 +1,4 @@
-# SPA PHP SDK 接口请求实体类 Tsa\Object\Enum\
+# TSA PHP SDK 接口请求实体类 Tsa\Object\Enum\
 
 Tsa\Object\Enum\ 命名空间下是各个接口的参数枚举类
 
