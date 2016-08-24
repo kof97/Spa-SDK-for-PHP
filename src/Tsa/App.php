@@ -1,15 +1,15 @@
 <?php 
 
-namespace Spa;
+namespace Tsa;
 
-use Spa\Authentication\AccessToken;
-use Spa\Exceptions\SpaSDKException;
+use Tsa\Authentication\AccessToken;
+use Tsa\Exceptions\TsaSDKException;
 
 /**
  * Class App
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class App
@@ -33,11 +33,11 @@ class App
     public function __construct($appid, $appkey)
     {
         if (!is_string($appid) && !is_int($appid)) {
-            throw new SpaSDKException('The "appid" must be formatted as a string or int.');
+            throw new TsaSDKException('The "appid" must be formatted as a string or int.');
         }
 
         if (!is_string($appkey)) {
-            throw new SpaSDKException('The "appkey" must be formatted as a string.');
+            throw new TsaSDKException('The "appkey" must be formatted as a string.');
         }
 
         $this->appid = $appid;
