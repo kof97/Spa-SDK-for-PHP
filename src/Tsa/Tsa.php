@@ -1,6 +1,6 @@
 <?php
 
-nameTsace Tsa;
+namespace Tsa;
 
 use Tsa\App;
 use Tsa\Client;

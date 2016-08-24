@@ -7,7 +7,7 @@
  */
 
 if (version_compare(PHP_VERSION, '5.3.0', '<')) {
-    throw new Exception('The Spa SDK requires PHP version 5.3 or higher.');
+    throw new Exception('The Tsa SDK requires PHP version 5.3 or higher.');
 }
 
 defined('DS') || define('DS', DIRECTORY_SEPARATOR);
@@ -19,7 +19,7 @@ defined('DS') || define('DS', DIRECTORY_SEPARATOR);
  * @return void
  */
 spl_autoload_register(function ($class) {
-    $prefix = 'Spa\\';
+    $prefix = 'Tsa\\';
 
     $len = strlen($prefix);
     if (strncmp($prefix, $class, $len) !== 0) {
