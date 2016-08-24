@@ -59,36 +59,36 @@ use Tsa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 //var_dump($req->getUrl());
 //var_dump($test);
 //var_dump($test->getAccessToken()->getValue());
-//
-//$params = array(
-//    'advertiser_id' => '123',
-//);
-//$headers = array(
-//    'Authorization' => 'Bearer ',
-//);
-//$conf = array('appid' => 'appid', 'appkey' => 'appkey');
-//$tsa = new Tsa\Tsa($conf);
-//
-//var_dump($tsa->getVersion());
-//
-//$modules = $tsa->getModules();
-//try {
-//    $response = $modules->advertiser->read->sendWithAccessToken($params, $headers, 'Bearer ');
-//} catch (Exception $e) {
-//    echo $e->getMessage();
-//}
-//
-//var_dump($response);
-
-
-use Tsa\Object\Enum\Advertiser\SignupEnum;
 
 $params = array(
-    SignupEnum::LOGIN_NAME => '',
-    SignupEnum::ADVERTISER_NAME => '',
-    SignupEnum::CORPORATION_NAME => '',
-    SignupEnum::ADDRESS => '',
+   'advertiser_id' => '123',
 );
+$headers = array(
+   'Authorization' => 'Bearer ',
+);
+$conf = array('appid' => 'appid', 'appkey' => 'appkey');
+$tsa = new Tsa\Tsa($conf);
+
+var_dump($tsa->getVersion());
+
+$modules = $tsa->getModules();
+try {
+   $response = $modules->advertiser->read->sendWithAccessToken($params, $headers, 'Bearer ');
+} catch (Exception $e) {
+   echo $e->getMessage();
+}
+
+var_dump($response->getProperty(321));
+
+
+// use Tsa\Object\Enum\Advertiser\SignupEnum;
+
+// $params = array(
+//     SignupEnum::LOGIN_NAME => '',
+//     SignupEnum::ADVERTISER_NAME => '',
+//     SignupEnum::CORPORATION_NAME => '',
+//     SignupEnum::ADDRESS => '',
+// );
 
 
 
@@ -99,7 +99,7 @@ $params = array(
 
 
 
-var_dump($params);
+// var_dump($params);
 
 
 //end of script

@@ -109,6 +109,31 @@ class Response
         return $this->body;
     }
 
+    /**
+     * Return the response body.
+     *
+     * @return string
+     */
+    public function getProperty($key = '')
+    {
+        $body = json_decode($this->body);
+
+        $res = (array)json_decode($body);
+
+        if (trim($key) === '') {
+            return $res;
+        }
+
+        if (isset($res[$key])) {
+            return $res[$key];
+        } else {
+            throw new TsaSDKException("The response don't have the property '$key'");
+            
+        }
+
+        return $res;
+    }
+
 }
 
 //end of script
