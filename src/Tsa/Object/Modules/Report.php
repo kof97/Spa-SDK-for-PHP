@@ -1,33 +1,33 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Report\SelectAdvertiserDaily;
-use Spa\Object\Interfaces\Report\SelectAdvertiserHourly;
-use Spa\Object\Interfaces\Report\SelectAdgroupDaily;
-use Spa\Object\Interfaces\Report\SelectAdgroupHourly;
-use Spa\Object\Interfaces\Report\SelectCampaignDaily;
-use Spa\Object\Interfaces\Report\SelectCampaignHourly;
-use Spa\Object\Interfaces\Report\SelectGender;
-use Spa\Object\Interfaces\Report\SelectGenderAdvertiser;
-use Spa\Object\Interfaces\Report\SelectAge;
-use Spa\Object\Interfaces\Report\SelectAgeAdvertiser;
-use Spa\Object\Interfaces\Report\SelectRegion;
-use Spa\Object\Interfaces\Report\SelectRegionAdvertiser;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Report\SelectAdvertiserDaily;
+use Tsa\Object\Interfaces\Report\SelectAdvertiserHourly;
+use Tsa\Object\Interfaces\Report\SelectAdgroupDaily;
+use Tsa\Object\Interfaces\Report\SelectAdgroupHourly;
+use Tsa\Object\Interfaces\Report\SelectCampaignDaily;
+use Tsa\Object\Interfaces\Report\SelectCampaignHourly;
+use Tsa\Object\Interfaces\Report\SelectGender;
+use Tsa\Object\Interfaces\Report\SelectGenderAdvertiser;
+use Tsa\Object\Interfaces\Report\SelectAge;
+use Tsa\Object\Interfaces\Report\SelectAgeAdvertiser;
+use Tsa\Object\Interfaces\Report\SelectRegion;
+use Tsa\Object\Interfaces\Report\SelectRegionAdvertiser;
 
 /**
  * Class Report
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Report
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

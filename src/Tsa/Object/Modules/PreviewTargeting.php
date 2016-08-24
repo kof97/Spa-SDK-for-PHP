@@ -1,24 +1,24 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\PreviewTargeting\Create;
-use Spa\Object\Interfaces\PreviewTargeting\Update;
-use Spa\Object\Interfaces\PreviewTargeting\Select;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\PreviewTargeting\Create;
+use Tsa\Object\Interfaces\PreviewTargeting\Update;
+use Tsa\Object\Interfaces\PreviewTargeting\Select;
 
 /**
  * Class PreviewTargeting
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class PreviewTargeting
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

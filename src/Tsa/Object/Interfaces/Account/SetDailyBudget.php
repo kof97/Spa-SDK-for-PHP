@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Account;
+namespace Tsa\Object\Interfaces\Account;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class SetDailyBudget
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SetDailyBudget
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

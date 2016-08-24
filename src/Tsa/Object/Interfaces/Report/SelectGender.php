@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Report;
+namespace Tsa\Object\Interfaces\Report;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class SelectGender
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectGender
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

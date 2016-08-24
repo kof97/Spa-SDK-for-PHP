@@ -1,27 +1,27 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Creative\Create;
-use Spa\Object\Interfaces\Creative\Read;
-use Spa\Object\Interfaces\Creative\Update;
-use Spa\Object\Interfaces\Creative\Delete;
-use Spa\Object\Interfaces\Creative\Select;
-use Spa\Object\Interfaces\Creative\Sync;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Creative\Create;
+use Tsa\Object\Interfaces\Creative\Read;
+use Tsa\Object\Interfaces\Creative\Update;
+use Tsa\Object\Interfaces\Creative\Delete;
+use Tsa\Object\Interfaces\Creative\Select;
+use Tsa\Object\Interfaces\Creative\Sync;
 
 /**
  * Class Creative
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Creative
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

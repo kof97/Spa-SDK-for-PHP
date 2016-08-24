@@ -1,23 +1,23 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\OfflineReport\SelectDaily;
-use Spa\Object\Interfaces\OfflineReport\SelectHourly;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\OfflineReport\SelectDaily;
+use Tsa\Object\Interfaces\OfflineReport\SelectHourly;
 
 /**
  * Class OfflineReport
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class OfflineReport
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

@@ -1,39 +1,39 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Utility\GetEstimation;
-use Spa\Object\Interfaces\Utility\GetSystemLocationRegionList;
-use Spa\Object\Interfaces\Utility\GetLocationList;
-use Spa\Object\Interfaces\Utility\GetRegionList;
-use Spa\Object\Interfaces\Utility\GetShoppingInterestList;
-use Spa\Object\Interfaces\Utility\GetBusinessInterestList;
-use Spa\Object\Interfaces\Utility\GetIndustryList;
-use Spa\Object\Interfaces\Utility\IndustryTreeForAdgroup;
-use Spa\Object\Interfaces\Utility\WubaCategory;
-use Spa\Object\Interfaces\Utility\GetAppCategoryList;
-use Spa\Object\Interfaces\Utility\GetUnionMediaCategoryList;
-use Spa\Object\Interfaces\Utility\GetSubordinateProductList;
-use Spa\Object\Interfaces\Utility\GetCreativeTemplateRefs;
-use Spa\Object\Interfaces\Utility\CreativePreview;
-use Spa\Object\Interfaces\Utility\GetQzonePageList;
-use Spa\Object\Interfaces\Utility\GetTargetingParse;
-use Spa\Object\Interfaces\Utility\GetEstimationByTargetingAudience;
-use Spa\Object\Interfaces\Utility\GetDynamicRightInfo;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Utility\GetEstimation;
+use Tsa\Object\Interfaces\Utility\GetSystemLocationRegionList;
+use Tsa\Object\Interfaces\Utility\GetLocationList;
+use Tsa\Object\Interfaces\Utility\GetRegionList;
+use Tsa\Object\Interfaces\Utility\GetShoppingInterestList;
+use Tsa\Object\Interfaces\Utility\GetBusinessInterestList;
+use Tsa\Object\Interfaces\Utility\GetIndustryList;
+use Tsa\Object\Interfaces\Utility\IndustryTreeForAdgroup;
+use Tsa\Object\Interfaces\Utility\WubaCategory;
+use Tsa\Object\Interfaces\Utility\GetAppCategoryList;
+use Tsa\Object\Interfaces\Utility\GetUnionMediaCategoryList;
+use Tsa\Object\Interfaces\Utility\GetSubordinateProductList;
+use Tsa\Object\Interfaces\Utility\GetCreativeTemplateRefs;
+use Tsa\Object\Interfaces\Utility\CreativePreview;
+use Tsa\Object\Interfaces\Utility\GetQzonePageList;
+use Tsa\Object\Interfaces\Utility\GetTargetingParse;
+use Tsa\Object\Interfaces\Utility\GetEstimationByTargetingAudience;
+use Tsa\Object\Interfaces\Utility\GetDynamicRightInfo;
 
 /**
  * Class Utility
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Utility
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

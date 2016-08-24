@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\OfflineReport;
+namespace Tsa\Object\Interfaces\OfflineReport;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class SelectHourly
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectHourly
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

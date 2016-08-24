@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Utility;
+namespace Tsa\Object\Interfaces\Utility;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class GetCreativeTemplateRefs
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetCreativeTemplateRefs
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

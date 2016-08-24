@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Payment;
+namespace Tsa\Object\Interfaces\Payment;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class WechatOrderQuery
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class WechatOrderQuery
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

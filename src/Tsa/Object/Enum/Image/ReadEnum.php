@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Image;
+namespace Tsa\Object\Enum\Image;
 
 /**
  * Class ReadEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class ReadEnum

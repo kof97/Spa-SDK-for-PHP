@@ -1,25 +1,25 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\SuperReport\SelectAdgroupDaily;
-use Spa\Object\Interfaces\SuperReport\SelectAdgroupHourly;
-use Spa\Object\Interfaces\SuperReport\SelectCampaignDaily;
-use Spa\Object\Interfaces\SuperReport\SelectCampaignHourly;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\SuperReport\SelectAdgroupDaily;
+use Tsa\Object\Interfaces\SuperReport\SelectAdgroupHourly;
+use Tsa\Object\Interfaces\SuperReport\SelectCampaignDaily;
+use Tsa\Object\Interfaces\SuperReport\SelectCampaignHourly;
 
 /**
  * Class SuperReport
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SuperReport
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

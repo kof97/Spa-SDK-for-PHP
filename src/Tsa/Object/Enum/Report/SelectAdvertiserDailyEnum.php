@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Report;
+namespace Tsa\Object\Enum\Report;
 
 /**
  * Class SelectAdvertiserDailyEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectAdvertiserDailyEnum

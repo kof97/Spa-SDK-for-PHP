@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Utility;
+namespace Tsa\Object\Enum\Utility;
 
 /**
  * Class GetCreativeTemplateRefsEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetCreativeTemplateRefsEnum

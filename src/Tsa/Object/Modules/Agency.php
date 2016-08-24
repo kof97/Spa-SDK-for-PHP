@@ -1,31 +1,31 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Agency\InnerTransfer;
-use Spa\Object\Interfaces\Agency\GetFinancialOverview;
-use Spa\Object\Interfaces\Agency\GetTransactionDetail;
-use Spa\Object\Interfaces\Agency\GetAllTransactionDetail;
-use Spa\Object\Interfaces\Agency\Transfer;
-use Spa\Object\Interfaces\Agency\TransferBack;
-use Spa\Object\Interfaces\Agency\AddAdvertiser;
-use Spa\Object\Interfaces\Agency\UpdateAdvertiser;
-use Spa\Object\Interfaces\Agency\GetAdvertiserList;
-use Spa\Object\Interfaces\Agency\RealtimeCost;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Agency\InnerTransfer;
+use Tsa\Object\Interfaces\Agency\GetFinancialOverview;
+use Tsa\Object\Interfaces\Agency\GetTransactionDetail;
+use Tsa\Object\Interfaces\Agency\GetAllTransactionDetail;
+use Tsa\Object\Interfaces\Agency\Transfer;
+use Tsa\Object\Interfaces\Agency\TransferBack;
+use Tsa\Object\Interfaces\Agency\AddAdvertiser;
+use Tsa\Object\Interfaces\Agency\UpdateAdvertiser;
+use Tsa\Object\Interfaces\Agency\GetAdvertiserList;
+use Tsa\Object\Interfaces\Agency\RealtimeCost;
 
 /**
  * Class Agency
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Agency
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

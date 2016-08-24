@@ -1,29 +1,29 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\TargetingRule\CreateCustomAudience;
-use Spa\Object\Interfaces\TargetingRule\ReadCustomAudience;
-use Spa\Object\Interfaces\TargetingRule\UpdateCustomAudience;
-use Spa\Object\Interfaces\TargetingRule\Delete;
-use Spa\Object\Interfaces\TargetingRule\Select;
-use Spa\Object\Interfaces\TargetingRule\Upload;
-use Spa\Object\Interfaces\TargetingRule\Authorize;
-use Spa\Object\Interfaces\TargetingRule\AuthorizationList;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\TargetingRule\CreateCustomAudience;
+use Tsa\Object\Interfaces\TargetingRule\ReadCustomAudience;
+use Tsa\Object\Interfaces\TargetingRule\UpdateCustomAudience;
+use Tsa\Object\Interfaces\TargetingRule\Delete;
+use Tsa\Object\Interfaces\TargetingRule\Select;
+use Tsa\Object\Interfaces\TargetingRule\Upload;
+use Tsa\Object\Interfaces\TargetingRule\Authorize;
+use Tsa\Object\Interfaces\TargetingRule\AuthorizationList;
 
 /**
  * Class TargetingRule
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class TargetingRule
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

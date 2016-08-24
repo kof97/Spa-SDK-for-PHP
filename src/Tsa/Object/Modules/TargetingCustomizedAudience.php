@@ -1,27 +1,27 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\TargetingCustomizedAudience\Create;
-use Spa\Object\Interfaces\TargetingCustomizedAudience\Read;
-use Spa\Object\Interfaces\TargetingCustomizedAudience\Select;
-use Spa\Object\Interfaces\TargetingCustomizedAudience\Authorize;
-use Spa\Object\Interfaces\TargetingCustomizedAudience\GetAuthorizationList;
-use Spa\Object\Interfaces\TargetingCustomizedAudience\Append;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\TargetingCustomizedAudience\Create;
+use Tsa\Object\Interfaces\TargetingCustomizedAudience\Read;
+use Tsa\Object\Interfaces\TargetingCustomizedAudience\Select;
+use Tsa\Object\Interfaces\TargetingCustomizedAudience\Authorize;
+use Tsa\Object\Interfaces\TargetingCustomizedAudience\GetAuthorizationList;
+use Tsa\Object\Interfaces\TargetingCustomizedAudience\Append;
 
 /**
  * Class TargetingCustomizedAudience
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class TargetingCustomizedAudience
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

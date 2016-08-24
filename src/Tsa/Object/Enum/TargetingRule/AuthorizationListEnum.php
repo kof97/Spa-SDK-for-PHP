@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\TargetingRule;
+namespace Tsa\Object\Enum\TargetingRule;
 
 /**
  * Class AuthorizationListEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class AuthorizationListEnum

@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Image;
+namespace Tsa\Object\Interfaces\Image;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class CreateByUrl
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class CreateByUrl
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

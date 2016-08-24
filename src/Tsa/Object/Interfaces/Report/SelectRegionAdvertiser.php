@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Report;
+namespace Tsa\Object\Interfaces\Report;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class SelectRegionAdvertiser
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectRegionAdvertiser
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

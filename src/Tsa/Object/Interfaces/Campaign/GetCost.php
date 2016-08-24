@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Campaign;
+namespace Tsa\Object\Interfaces\Campaign;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class GetCost
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetCost
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

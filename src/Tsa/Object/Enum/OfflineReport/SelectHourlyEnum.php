@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\OfflineReport;
+namespace Tsa\Object\Enum\OfflineReport;
 
 /**
  * Class SelectHourlyEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectHourlyEnum

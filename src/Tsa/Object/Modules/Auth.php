@@ -1,25 +1,25 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Auth\Ptlogin;
-use Spa\Object\Interfaces\Auth\PtloginToken;
-use Spa\Object\Interfaces\Auth\GetAccessToken;
-use Spa\Object\Interfaces\Auth\GetOpenid;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Auth\Ptlogin;
+use Tsa\Object\Interfaces\Auth\PtloginToken;
+use Tsa\Object\Interfaces\Auth\GetAccessToken;
+use Tsa\Object\Interfaces\Auth\GetOpenid;
 
 /**
  * Class Auth
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Auth
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

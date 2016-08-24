@@ -1,28 +1,28 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\TargetingAudience\Create;
-use Spa\Object\Interfaces\TargetingAudience\Select;
-use Spa\Object\Interfaces\TargetingAudience\ReadFileStatus;
-use Spa\Object\Interfaces\TargetingAudience\GetFileList;
-use Spa\Object\Interfaces\TargetingAudience\Update;
-use Spa\Object\Interfaces\TargetingAudience\UpdateByPb;
-use Spa\Object\Interfaces\TargetingAudience\Delete;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\TargetingAudience\Create;
+use Tsa\Object\Interfaces\TargetingAudience\Select;
+use Tsa\Object\Interfaces\TargetingAudience\ReadFileStatus;
+use Tsa\Object\Interfaces\TargetingAudience\GetFileList;
+use Tsa\Object\Interfaces\TargetingAudience\Update;
+use Tsa\Object\Interfaces\TargetingAudience\UpdateByPb;
+use Tsa\Object\Interfaces\TargetingAudience\Delete;
 
 /**
  * Class TargetingAudience
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class TargetingAudience
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

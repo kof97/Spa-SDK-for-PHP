@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\SuperReport;
+namespace Tsa\Object\Enum\SuperReport;
 
 /**
  * Class SelectAdgroupHourlyEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectAdgroupHourlyEnum

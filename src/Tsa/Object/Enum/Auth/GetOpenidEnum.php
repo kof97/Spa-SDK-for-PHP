@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Auth;
+namespace Tsa\Object\Enum\Auth;
 
 /**
  * Class GetOpenidEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetOpenidEnum

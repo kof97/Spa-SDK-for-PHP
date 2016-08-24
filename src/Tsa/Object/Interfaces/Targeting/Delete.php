@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Targeting;
+namespace Tsa\Object\Interfaces\Targeting;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class Delete
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Delete
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

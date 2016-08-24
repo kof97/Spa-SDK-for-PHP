@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\SuperReport;
+namespace Tsa\Object\Interfaces\SuperReport;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class SelectAdgroupDaily
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectAdgroupDaily
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

@@ -1,29 +1,29 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Campaign\Create;
-use Spa\Object\Interfaces\Campaign\Read;
-use Spa\Object\Interfaces\Campaign\Update;
-use Spa\Object\Interfaces\Campaign\Select;
-use Spa\Object\Interfaces\Campaign\SetDailyBudget;
-use Spa\Object\Interfaces\Campaign\GetCost;
-use Spa\Object\Interfaces\Campaign\Delete;
-use Spa\Object\Interfaces\Campaign\Sync;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Campaign\Create;
+use Tsa\Object\Interfaces\Campaign\Read;
+use Tsa\Object\Interfaces\Campaign\Update;
+use Tsa\Object\Interfaces\Campaign\Select;
+use Tsa\Object\Interfaces\Campaign\SetDailyBudget;
+use Tsa\Object\Interfaces\Campaign\GetCost;
+use Tsa\Object\Interfaces\Campaign\Delete;
+use Tsa\Object\Interfaces\Campaign\Sync;
 
 /**
  * Class Campaign
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Campaign
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

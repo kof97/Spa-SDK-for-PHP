@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Utility;
+namespace Tsa\Object\Interfaces\Utility;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class GetEstimationByTargetingAudience
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetEstimationByTargetingAudience
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

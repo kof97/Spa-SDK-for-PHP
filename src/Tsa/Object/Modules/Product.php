@@ -1,25 +1,25 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Product\Create;
-use Spa\Object\Interfaces\Product\Read;
-use Spa\Object\Interfaces\Product\Update;
-use Spa\Object\Interfaces\Product\Sync;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Product\Create;
+use Tsa\Object\Interfaces\Product\Read;
+use Tsa\Object\Interfaces\Product\Update;
+use Tsa\Object\Interfaces\Product\Sync;
 
 /**
  * Class Product
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Product
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

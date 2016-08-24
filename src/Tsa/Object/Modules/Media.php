@@ -1,25 +1,25 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Media\Create;
-use Spa\Object\Interfaces\Media\Select;
-use Spa\Object\Interfaces\Media\Read;
-use Spa\Object\Interfaces\Media\Info;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Media\Create;
+use Tsa\Object\Interfaces\Media\Select;
+use Tsa\Object\Interfaces\Media\Read;
+use Tsa\Object\Interfaces\Media\Info;
 
 /**
  * Class Media
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Media
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

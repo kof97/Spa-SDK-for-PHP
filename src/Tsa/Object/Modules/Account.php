@@ -1,27 +1,27 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Account\Select;
-use Spa\Object\Interfaces\Account\GetTransactionDetail;
-use Spa\Object\Interfaces\Account\SetDailyBudget;
-use Spa\Object\Interfaces\Account\GetDailyInvoice;
-use Spa\Object\Interfaces\Account\GetCost;
-use Spa\Object\Interfaces\Account\CheckPaipaiWhiteList;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Account\Select;
+use Tsa\Object\Interfaces\Account\GetTransactionDetail;
+use Tsa\Object\Interfaces\Account\SetDailyBudget;
+use Tsa\Object\Interfaces\Account\GetDailyInvoice;
+use Tsa\Object\Interfaces\Account\GetCost;
+use Tsa\Object\Interfaces\Account\CheckPaipaiWhiteList;
 
 /**
  * Class Account
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Account
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

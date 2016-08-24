@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Creative;
+namespace Tsa\Object\Interfaces\Creative;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class Update
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Update
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

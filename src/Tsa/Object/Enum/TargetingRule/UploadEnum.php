@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\TargetingRule;
+namespace Tsa\Object\Enum\TargetingRule;
 
 /**
  * Class UploadEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class UploadEnum

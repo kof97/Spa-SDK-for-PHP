@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Image;
+namespace Tsa\Object\Enum\Image;
 
 /**
  * Class CreateEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class CreateEnum

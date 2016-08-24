@@ -1,28 +1,28 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Adgroup\Create;
-use Spa\Object\Interfaces\Adgroup\Read;
-use Spa\Object\Interfaces\Adgroup\Update;
-use Spa\Object\Interfaces\Adgroup\Delete;
-use Spa\Object\Interfaces\Adgroup\Select;
-use Spa\Object\Interfaces\Adgroup\Count;
-use Spa\Object\Interfaces\Adgroup\Sync;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Adgroup\Create;
+use Tsa\Object\Interfaces\Adgroup\Read;
+use Tsa\Object\Interfaces\Adgroup\Update;
+use Tsa\Object\Interfaces\Adgroup\Delete;
+use Tsa\Object\Interfaces\Adgroup\Select;
+use Tsa\Object\Interfaces\Adgroup\Count;
+use Tsa\Object\Interfaces\Adgroup\Sync;
 
 /**
  * Class Adgroup
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Adgroup
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

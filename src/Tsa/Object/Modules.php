@@ -1,42 +1,42 @@
 <?php 
 
-namespace Spa\Object;
+namespace Tsa\Object;
 
-use Spa\Exceptions\ModuleException;
-use Spa\Object\Modules\Advertiser;
-use Spa\Object\Modules\Account;
-use Spa\Object\Modules\Campaign;
-use Spa\Object\Modules\Adgroup;
-use Spa\Object\Modules\Creative;
-use Spa\Object\Modules\Targeting;
-use Spa\Object\Modules\TargetingRule;
-use Spa\Object\Modules\Media;
-use Spa\Object\Modules\Report;
-use Spa\Object\Modules\OfflineReport;
-use Spa\Object\Modules\SuperReport;
-use Spa\Object\Modules\Agency;
-use Spa\Object\Modules\Utility;
-use Spa\Object\Modules\Auth;
-use Spa\Object\Modules\Image;
-use Spa\Object\Modules\Product;
-use Spa\Object\Modules\Payment;
-use Spa\Object\Modules\TargetingCustomizedAudience;
-use Spa\Object\Modules\TargetingAudience;
-use Spa\Object\Modules\PreviewTargeting;
-use Spa\Object\Modules\TargetingLocation;
+use Tsa\Exceptions\ModuleException;
+use Tsa\Object\Modules\Advertiser;
+use Tsa\Object\Modules\Account;
+use Tsa\Object\Modules\Campaign;
+use Tsa\Object\Modules\Adgroup;
+use Tsa\Object\Modules\Creative;
+use Tsa\Object\Modules\Targeting;
+use Tsa\Object\Modules\TargetingRule;
+use Tsa\Object\Modules\Media;
+use Tsa\Object\Modules\Report;
+use Tsa\Object\Modules\OfflineReport;
+use Tsa\Object\Modules\SuperReport;
+use Tsa\Object\Modules\Agency;
+use Tsa\Object\Modules\Utility;
+use Tsa\Object\Modules\Auth;
+use Tsa\Object\Modules\Image;
+use Tsa\Object\Modules\Product;
+use Tsa\Object\Modules\Payment;
+use Tsa\Object\Modules\TargetingCustomizedAudience;
+use Tsa\Object\Modules\TargetingAudience;
+use Tsa\Object\Modules\PreviewTargeting;
+use Tsa\Object\Modules\TargetingLocation;
 
 /**
  * Class Modules
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Modules
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
     

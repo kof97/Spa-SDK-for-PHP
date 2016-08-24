@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\TargetingLocation;
+namespace Tsa\Object\Enum\TargetingLocation;
 
 /**
  * Class ReadEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class ReadEnum

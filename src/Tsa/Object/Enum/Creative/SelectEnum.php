@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Creative;
+namespace Tsa\Object\Enum\Creative;
 
 /**
  * Class SelectEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SelectEnum

@@ -1,27 +1,27 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Targeting\Create;
-use Spa\Object\Interfaces\Targeting\Read;
-use Spa\Object\Interfaces\Targeting\Update;
-use Spa\Object\Interfaces\Targeting\Delete;
-use Spa\Object\Interfaces\Targeting\Sync;
-use Spa\Object\Interfaces\Targeting\Select;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Targeting\Create;
+use Tsa\Object\Interfaces\Targeting\Read;
+use Tsa\Object\Interfaces\Targeting\Update;
+use Tsa\Object\Interfaces\Targeting\Delete;
+use Tsa\Object\Interfaces\Targeting\Sync;
+use Tsa\Object\Interfaces\Targeting\Select;
 
 /**
  * Class Targeting
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Targeting
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

@@ -1,25 +1,25 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\TargetingLocation\Create;
-use Spa\Object\Interfaces\TargetingLocation\Read;
-use Spa\Object\Interfaces\TargetingLocation\Select;
-use Spa\Object\Interfaces\TargetingLocation\Delete;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\TargetingLocation\Create;
+use Tsa\Object\Interfaces\TargetingLocation\Read;
+use Tsa\Object\Interfaces\TargetingLocation\Select;
+use Tsa\Object\Interfaces\TargetingLocation\Delete;
 
 /**
  * Class TargetingLocation
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class TargetingLocation
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

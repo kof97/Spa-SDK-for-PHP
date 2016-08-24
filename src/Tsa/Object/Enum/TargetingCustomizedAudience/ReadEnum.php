@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\TargetingCustomizedAudience;
+namespace Tsa\Object\Enum\TargetingCustomizedAudience;
 
 /**
  * Class ReadEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class ReadEnum

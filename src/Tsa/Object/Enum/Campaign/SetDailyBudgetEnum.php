@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Campaign;
+namespace Tsa\Object\Enum\Campaign;
 
 /**
  * Class SetDailyBudgetEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SetDailyBudgetEnum

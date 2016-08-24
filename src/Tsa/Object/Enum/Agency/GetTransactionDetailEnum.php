@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Agency;
+namespace Tsa\Object\Enum\Agency;
 
 /**
  * Class GetTransactionDetailEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetTransactionDetailEnum

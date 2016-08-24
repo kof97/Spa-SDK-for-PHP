@@ -1,24 +1,24 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Advertiser\Signup;
-use Spa\Object\Interfaces\Advertiser\Read;
-use Spa\Object\Interfaces\Advertiser\Sync;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Advertiser\Signup;
+use Tsa\Object\Interfaces\Advertiser\Read;
+use Tsa\Object\Interfaces\Advertiser\Sync;
 
 /**
  * Class Advertiser
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Advertiser
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

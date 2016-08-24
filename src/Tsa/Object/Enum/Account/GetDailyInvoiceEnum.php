@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Account;
+namespace Tsa\Object\Enum\Account;
 
 /**
  * Class GetDailyInvoiceEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetDailyInvoiceEnum

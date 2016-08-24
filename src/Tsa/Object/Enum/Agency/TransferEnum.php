@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Agency;
+namespace Tsa\Object\Enum\Agency;
 
 /**
  * Class TransferEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class TransferEnum

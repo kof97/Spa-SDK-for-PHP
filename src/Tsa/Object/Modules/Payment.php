@@ -1,25 +1,25 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Payment\WechatOrderCreate;
-use Spa\Object\Interfaces\Payment\WechatOrderQuery;
-use Spa\Object\Interfaces\Payment\QqOrderCreate;
-use Spa\Object\Interfaces\Payment\QqOrderQuery;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Payment\WechatOrderCreate;
+use Tsa\Object\Interfaces\Payment\WechatOrderQuery;
+use Tsa\Object\Interfaces\Payment\QqOrderCreate;
+use Tsa\Object\Interfaces\Payment\QqOrderQuery;
 
 /**
  * Class Payment
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Payment
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

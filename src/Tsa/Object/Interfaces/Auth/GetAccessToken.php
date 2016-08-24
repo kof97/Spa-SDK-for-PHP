@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Auth;
+namespace Tsa\Object\Interfaces\Auth;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class GetAccessToken
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class GetAccessToken
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\TargetingRule;
+namespace Tsa\Object\Interfaces\TargetingRule;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class ReadCustomAudience
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class ReadCustomAudience
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

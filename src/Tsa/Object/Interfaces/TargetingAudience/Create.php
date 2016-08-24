@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\TargetingAudience;
+namespace Tsa\Object\Interfaces\TargetingAudience;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class Create
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Create
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

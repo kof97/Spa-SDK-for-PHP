@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Auth;
+namespace Tsa\Object\Enum\Auth;
 
 /**
  * Class PtloginTokenEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class PtloginTokenEnum

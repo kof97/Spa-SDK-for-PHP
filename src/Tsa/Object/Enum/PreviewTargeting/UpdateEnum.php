@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\PreviewTargeting;
+namespace Tsa\Object\Enum\PreviewTargeting;
 
 /**
  * Class UpdateEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class UpdateEnum

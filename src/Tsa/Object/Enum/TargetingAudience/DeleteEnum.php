@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\TargetingAudience;
+namespace Tsa\Object\Enum\TargetingAudience;
 
 /**
  * Class DeleteEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class DeleteEnum

@@ -1,20 +1,20 @@
 <?php 
 
-namespace Spa\Object\Interfaces\Agency;
+namespace Tsa\Object\Interfaces\Agency;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class Transfer
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Transfer
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 

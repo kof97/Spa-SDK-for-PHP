@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Product;
+namespace Tsa\Object\Enum\Product;
 
 /**
  * Class SyncEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class SyncEnum

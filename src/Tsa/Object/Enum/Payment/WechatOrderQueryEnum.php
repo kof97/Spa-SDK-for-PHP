@@ -1,12 +1,12 @@
 <?php 
 
-namespace Spa\Object\Enum\Payment;
+namespace Tsa\Object\Enum\Payment;
 
 /**
  * Class WechatOrderQueryEnum
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class WechatOrderQueryEnum

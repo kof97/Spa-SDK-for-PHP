@@ -1,26 +1,26 @@
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;
-use Spa\Object\Interfaces\Image\Create;
-use Spa\Object\Interfaces\Image\CreateByUrl;
-use Spa\Object\Interfaces\Image\Select;
-use Spa\Object\Interfaces\Image\Read;
-use Spa\Object\Interfaces\Image\Preview;
+use Tsa\Exceptions\InterfaceException;
+use Tsa\Object\Interfaces\Image\Create;
+use Tsa\Object\Interfaces\Image\CreateByUrl;
+use Tsa\Object\Interfaces\Image\Select;
+use Tsa\Object\Interfaces\Image\Read;
+use Tsa\Object\Interfaces\Image\Preview;
 
 /**
  * Class Image
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Image
 {
     
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 
