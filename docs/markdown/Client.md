@@ -1,28 +1,28 @@
-# SPA PHP SDK 请求端实例类 Spa\Client
+# SPA PHP SDK 请求端实例类 Tsa\Client
 
-Spa\Client 类用于发起请求
+Tsa\Client 类用于发起请求
 
 ---
 
-# Spa\Client
+# Tsa\Client
 
 ## 实例介绍
 
-### Spa\Client
+### Tsa\Client
 
 ```
-    new Spa\Client(
+    new Tsa\Client(
         ClientInterface $http_client = null, 
         $version = null
     )
 ```
 
-> **$http_client :** `Spa\HttpClients\ClientInterface` 的实例，用于发起请求
+> **$http_client :** `Tsa\HttpClients\ClientInterface` 的实例，用于发起请求
 > **$version :** 请求的 api 版本，默认 v3，目前只支持 v3
 
 
 
-一般由 `Spa\Spa` 类初始化，可以直接通过 `Spa\Spa` 的 `getClient()` 方法获取实例
+一般由 `Tsa\Tsa` 类初始化，可以直接通过 `Tsa\Tsa` 的 `getClient()` 方法获取实例
 
 例：
 
@@ -34,7 +34,7 @@ Spa\Client 类用于发起请求
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     $spaClient = $spa->getClient();
 ```
@@ -42,7 +42,7 @@ Spa\Client 类用于发起请求
 或是直接创建
 
 ```
-    $spaClient = new Spa\Client({$http_client}, {$version});
+    $spaClient = new Tsa\Client({$http_client}, {$version});
 ```
 
 ---
@@ -54,7 +54,7 @@ Spa\Client 类用于发起请求
 ### setHttpClient()
 
 ```
-    public void setHttpClient(Spa\HttpClients\ClientInterface $http_client)
+    public void setHttpClient(Tsa\HttpClients\ClientInterface $http_client)
 ```
 
 设置 `$http_client`，用于发起 http 请求
@@ -64,21 +64,21 @@ Spa\Client 类用于发起请求
 ### getHttpClient()
 
 ```
-    public Spa\HttpClients\ClientInterface getHttpClient()
+    public Tsa\HttpClients\ClientInterface getHttpClient()
 ```
 
-获取 `Spa\HttpClients\ClientInterface` 对象实例
+获取 `Tsa\HttpClients\ClientInterface` 对象实例
 
 ---
 
 ### sendRequest()
 
 ```
-    public Spa\Response sendRequest(Spa\Request $request)
+    public Tsa\Response sendRequest(Tsa\Request $request)
 ```
 
-参数为 `Spa\Request` 的对象
+参数为 `Tsa\Request` 的对象
 
-发起一个请求，返回值为 `Spa\Response` 的对象
+发起一个请求，返回值为 `Tsa\Response` 的对象
 
-如果出错，则抛出 `SpaSDKException` 错误
+如果出错，则抛出 `TsaSDKException` 错误

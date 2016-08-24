@@ -1,4 +1,4 @@
-# Spa SDK for PHP
+# Tsa SDK for PHP
 
 环境：`PHP5.3` 以上
 
@@ -10,7 +10,7 @@
 使用：引入 `autoload.php` 即可使用
 
 ```
-    require_once __DIR__ . './src/Spa/autoload.php';
+    require_once __DIR__ . './src/Tsa/autoload.php';
 ```
 
 ## 快速调用
@@ -25,7 +25,7 @@
         'version'          => 'v3'         // 可不填
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     // 获取模块集合
     $modules = $spa->getModules();
@@ -60,11 +60,11 @@
     $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
 ```
 
-接下来是数据的拼接，在 `Spa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
+接下来是数据的拼接，在 `Tsa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
 
 ```
-    // Spa\Object\Enum\ {mod_class} \ {interface_enum_class}
-    use Spa\Object\Enum\Advertiser\SignupEnum;
+    // Tsa\Object\Enum\ {mod_class} \ {interface_enum_class}
+    use Tsa\Object\Enum\Advertiser\SignupEnum;
 
     $params = array(
         SignupEnum::LOGIN_NAME       => '',
@@ -99,7 +99,7 @@
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 ```
 
 ### 发送 get 请求

@@ -1,10 +1,10 @@
-# SPA PHP SDK 接口请求实体类 Spa\Object\Interfaces\
+# SPA PHP SDK 接口请求实体类 Tsa\Object\Interfaces\
 
-Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
+Tsa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 
 ---
 
-# Spa\Object\Interfaces\
+# Tsa\Object\Interfaces\
 
 ## 如何调用
 
@@ -14,7 +14,7 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
         'appkey' => '{appkey}'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     // 获取模块集合
     $modules = $spa->getModules();
@@ -30,7 +30,7 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 ### send()
 
 ```
-    public Spa\Response send(
+    public Tsa\Response send(
         $params = array(),
         $headers = array()
     )
@@ -48,7 +48,7 @@ Spa\Object\Interfaces\ 命名空间下是各个接口的请求实体类
 ### sendWithAccessToken()
 
 ```
-    public Spa\Response sendWithAccessToken(
+    public Tsa\Response sendWithAccessToken(
         $params = array(),
         $headers = array(),
         $access_token = null

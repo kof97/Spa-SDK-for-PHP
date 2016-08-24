@@ -1,14 +1,14 @@
-# SPA PHP SDK 请求响应类 Spa\Response
+# SPA PHP SDK 请求响应类 Tsa\Response
 
-Spa\Response 类返回了本次请求的响应信息
+Tsa\Response 类返回了本次请求的响应信息
 
 ---
 
-# Spa\Response
+# Tsa\Response
 
 ## 实例介绍
 
-### Spa\Response
+### Tsa\Response
 
 ```
     $conf = array(
@@ -18,7 +18,7 @@ Spa\Response 类返回了本次请求的响应信息
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     $response = $spa->get('/advertiser/read?advertiser_id=123');
 
@@ -27,31 +27,31 @@ Spa\Response 类返回了本次请求的响应信息
     $response = $spa->sendRequest('post', '/advertiser/signup');
 ```
 
-发起请求之后返回 `Spa\Response` 对象
+发起请求之后返回 `Tsa\Response` 对象
 
 ---
 
-## Spa\Response 类提供的方法
+## Tsa\Response 类提供的方法
 
 ---
 
 ### getRequest()
 
 ```
-    public Spa\Request getRequest()
+    public Tsa\Request getRequest()
 ```
 
-返回本次请求的 `Spa\Request` 实例
+返回本次请求的 `Tsa\Request` 实例
 
 ---
 
 ### getApp()
 
 ```
-    public Spa\App getApp()
+    public Tsa\App getApp()
 ```
 
-返回本次请求的 `Spa\App` 实例
+返回本次请求的 `Tsa\App` 实例
 
 ---
 

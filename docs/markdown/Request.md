@@ -1,17 +1,17 @@
-# SPA PHP SDK 请求实例类 Spa\Request
+# SPA PHP SDK 请求实例类 Tsa\Request
 
-Spa\Request 类存储处理请求信息
+Tsa\Request 类存储处理请求信息
 
 ---
 
-# Spa\Request
+# Tsa\Request
 
 ## 实例介绍
 
-### Spa\Request
+### Tsa\Request
 
 ```
-    new Spa\Request(
+    new Tsa\Request(
         $app,
         $method,
         $url,
@@ -21,7 +21,7 @@ Spa\Request 类存储处理请求信息
     )
 ```
 
-> `$app`: {App|null} Spa\App 实例
+> `$app`: {App|null} Tsa\App 实例
 > `$method`: {string|null} 请求的方式，GET / POST
 > `$url`: {string|null} 请求的 URL
 > `$params`: {array|array()} 请求参数
@@ -36,12 +36,12 @@ Spa\Request 类存储处理请求信息
 初始化实例：
 
 ```
-    $spaApp = new Spa\App({$appid}, {$appkey});
+    $spaApp = new Tsa\App({$appid}, {$appkey});
 
-    $spa_request = new Spa\Request($spaApp, 'GET', '/advertiser/read');
+    $spa_request = new Tsa\Request($spaApp, 'GET', '/advertiser/read');
 ```
 
-或通过 `Spa\Spa` 类初始化
+或通过 `Tsa\Tsa` 类初始化
 
 ```
     $conf = array(
@@ -51,7 +51,7 @@ Spa\Request 类存储处理请求信息
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     $spa_request = $spa->request('GET', '/advertiser/read');
 ```
@@ -71,30 +71,30 @@ Spa\Request 类存储处理请求信息
 ### setApp()
 
 ```
-    public Spa\Request setApp(App $app = null)
+    public Tsa\Request setApp(App $app = null)
 ```
 
-用于设置 `Spa\App` 对象，返回 `Spa\Request` 对象，可以使用链式操作
+用于设置 `Tsa\App` 对象，返回 `Tsa\Request` 对象，可以使用链式操作
 
 ---
 
 ### getApp()
 
 ```
-    public Spa\App getApp()
+    public Tsa\App getApp()
 ```
 
-获取 `Spa\App` 实例
+获取 `Tsa\App` 实例
 
 ---
 
 ### setMethod()
 
 ```
-    public Spa\Request setMethod(string $method)
+    public Tsa\Request setMethod(string $method)
 ```
 
-设置 `method`，返回 `Spa\Request` 对象，可以使用链式操作
+设置 `method`，返回 `Tsa\Request` 对象，可以使用链式操作
 
 ---
 
@@ -111,10 +111,10 @@ Spa\Request 类存储处理请求信息
 ### setUrl()
 
 ```
-    public Spa\Request setUrl(string $url)
+    public Tsa\Request setUrl(string $url)
 ```
 
-设置请求 `URL`，返回 `Spa\Request` 对象，可以使用链式操作
+设置请求 `URL`，返回 `Tsa\Request` 对象，可以使用链式操作
 
 ---
 
@@ -128,17 +128,17 @@ Spa\Request 类存储处理请求信息
 
 获取的同时会对 `method` 进行验证，对 `url` 进行处理，返回处理后的 `url`
 
-验证处理过程中如果出错则会抛出 `SpaSDKException` 错误
+验证处理过程中如果出错则会抛出 `TsaSDKException` 错误
 
 ---
 
 ### setParams()
 
 ```
-    public Spa\Request setParams(array $params)
+    public Tsa\Request setParams(array $params)
 ```
 
-设置请求参数，返回 `Spa\Request` 对象，可以使用链式操作
+设置请求参数，返回 `Tsa\Request` 对象，可以使用链式操作
 
 ---
 
@@ -165,10 +165,10 @@ Spa\Request 类存储处理请求信息
 ### setHeaders()
 
 ```
-    public Spa\Request setHeaders(array $headers)
+    public Tsa\Request setHeaders(array $headers)
 ```
 
-设置请求头信息，返回 `Spa\Request` 对象，可以使用链式操作
+设置请求头信息，返回 `Tsa\Request` 对象，可以使用链式操作
 
 ---
 
@@ -178,17 +178,17 @@ Spa\Request 类存储处理请求信息
     public array getHeaders()
 ```
 
-获取请求头信息，同时会对 access token 进行验证，若不通过则会抛出 `SpaSDKException` 错误
+获取请求头信息，同时会对 access token 进行验证，若不通过则会抛出 `TsaSDKException` 错误
 
 ---
 
 ### setAccessToken()
 
 ```
-    public Spa\Request setAccessToken(AccessToken|string $access_token)
+    public Tsa\Request setAccessToken(AccessToken|string $access_token)
 ```
 
-设置 access token，返回 `Spa\Request` 对象，可以使用链式操作
+设置 access token，返回 `Tsa\Request` 对象，可以使用链式操作
 
 ---
 
@@ -208,7 +208,7 @@ Spa\Request 类存储处理请求信息
     public void validateAccessToken()
 ```
 
-验证实例中的 `access token`，验证失败则抛出 `SpaSDKException` 错误
+验证实例中的 `access token`，验证失败则抛出 `TsaSDKException` 错误
 
 ---
 
@@ -218,4 +218,4 @@ Spa\Request 类存储处理请求信息
     public void validateMethod()
 ```
 
-验证实例中的 `method`，验证失败则抛出 `SpaSDKException` 错误
+验证实例中的 `method`，验证失败则抛出 `TsaSDKException` 错误

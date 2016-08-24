@@ -1,10 +1,10 @@
-# SPA PHP SDK 主要服务类 Spa\Spa
+# SPA PHP SDK 主要服务类 Tsa\Tsa
 
-Spa\Spa 类提供了主要功能的接口入口
+Tsa\Tsa 类提供了主要功能的接口入口
 
 ---
 
-# Spa\Spa
+# Tsa\Tsa
 
 ## 快速调用
 
@@ -18,7 +18,7 @@ Spa\Spa 类提供了主要功能的接口入口
         'version'          => 'v3'         // 可不填
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     // 获取模块集合
     $modules = $spa->getModules();
@@ -53,11 +53,11 @@ Spa\Spa 类提供了主要功能的接口入口
     $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
 ```
 
-接下来是数据的拼接，在 `Spa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
+接下来是数据的拼接，在 `Tsa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
 
 ```
-    // Spa\Object\Enum\ {mod_class} \ {interface_enum_class}
-    use Spa\Object\Enum\Advertiser\SignupEnum;
+    // Tsa\Object\Enum\ {mod_class} \ {interface_enum_class}
+    use Tsa\Object\Enum\Advertiser\SignupEnum;
 
     $params = array(
         SignupEnum::LOGIN_NAME       => '',
@@ -92,7 +92,7 @@ Spa\Spa 类提供了主要功能的接口入口
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 ```
 
 ### 发送 get 请求
@@ -122,34 +122,34 @@ Spa\Spa 类提供了主要功能的接口入口
 > `http_client_type`: 选填项，目前只支持 `curl`，（选填）
 > `version`: api 版本，默认 `v3`，目前只支持 `v3`，（选填）
 
-## Spa 类提供的方法
+## Tsa 类提供的方法
 
 ---
 
 ### getApp()
 
 ```
-    public Spa\App getApp()
+    public Tsa\App getApp()
 ```
 
-返回在本次请求中 `Spa\App` 的实例
+返回在本次请求中 `Tsa\App` 的实例
 
 ---
 
 ### getClient()
 
 ```
-    public Spa\Client getClient()
+    public Tsa\Client getClient()
 ```
 
-返回在本次请求中 `Spa\Client` 的实例
+返回在本次请求中 `Tsa\Client` 的实例
 
 ---
 
 ### get()
 
 ```
-    public Spa\Response get(
+    public Tsa\Response get(
         $url,
         $headers = array(), 
         $access_token = null
@@ -162,14 +162,14 @@ Spa\Spa 类提供了主要功能的接口入口
 
 
 
-发起一个 `get` 请求，返回值为 `Spa\Response` 对象
+发起一个 `get` 请求，返回值为 `Tsa\Response` 对象
 
 ---
 
 ### post()
 
 ```
-    public Spa\Response post(
+    public Tsa\Response post(
         $url,
         $params = array(), 
         $headers = array(), 
@@ -184,14 +184,14 @@ Spa\Spa 类提供了主要功能的接口入口
 
 
 
-发起一个 `post` 请求，返回值为 `Spa\Response` 对象
+发起一个 `post` 请求，返回值为 `Tsa\Response` 对象
 
 ---
 
 ### sendRequest()
 
 ```
-    public Spa\Response sendRequest(
+    public Tsa\Response sendRequest(
         $method,
         $url,
         $params = array(),
@@ -208,14 +208,14 @@ Spa\Spa 类提供了主要功能的接口入口
 
 
 
-发送 `request` 请求，自己指定请求方式，只支持 `GET / POST`，返回值为 `Spa\Response` 对象
+发送 `request` 请求，自己指定请求方式，只支持 `GET / POST`，返回值为 `Tsa\Response` 对象
 
 ---
 
 ### request()
 
 ```
-    public Spa\Request request(
+    public Tsa\Request request(
         $method,
         $url,
         $params = array(),
@@ -232,14 +232,14 @@ Spa\Spa 类提供了主要功能的接口入口
 
 
 
-收集处理 `request` 请求信息，返回值为 `Spa\Request` 对象
+收集处理 `request` 请求信息，返回值为 `Tsa\Request` 对象
 
 ---
 
 ### getModules()
 
 ```
-    public Spa\Object\Modules getModules()
+    public Tsa\Object\Modules getModules()
 ```
 
 返回模块的集合，用于选择要请求的模块
