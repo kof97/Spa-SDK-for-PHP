@@ -47,13 +47,13 @@ function creatEnum($mod_class, $interface_class, $interface)
     $content = <<<EOF
 <?php 
 
-namespace Spa\Object\Enum\\$mod_class;
+namespace Tsa\Object\Enum\\$mod_class;
 
 /**
  * Class $enum_class_name
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class $enum_class_name
@@ -65,9 +65,9 @@ class $enum_class_name
 
 EOF;
 
-    $file_path = '../src/Spa/Object/Enum/' . $mod_class . '/' . $enum_class_name . '.php';
+    $file_path = '../src/Tsa/Object/Enum/' . $mod_class . '/' . $enum_class_name . '.php';
 
-    //mkdir('../src/Spa/Object/Enum/' . $mod_class);
+    //mkdir('../src/Tsa/Object/Enum/' . $mod_class);
 
     $file = fopen($file_path, "w") or die("Unable to open file!");
     fwrite($file, $content);
@@ -85,7 +85,7 @@ function getModulesEnumData($data)
 {
     $modules_content = '
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;';
 
@@ -119,7 +119,7 @@ function getModulesEnumData($data)
                 $mod_class = str_replace(' ', '', $mod_class);
 
                 $modules_namespace_use .= "
-use Spa\Object\Modules\\$mod_class;";
+use Tsa\Object\Modules\\$mod_class;";
 
                 $get .= "
             case '$mod_name':
@@ -150,20 +150,20 @@ use Spa\Object\Modules\\$mod_class;";
  * @param string $file_path  模块枚举类完整路径
  * @return void
  */
-function createModulesEnum($get, $construct, $use, $items, $file_path = '../src/Spa/Object/Modules.php')
+function createModulesEnum($get, $construct, $use, $items, $file_path = '../src/Tsa/Object/Modules.php')
 {
     $content = <<<EOF
 <?php 
 
-namespace Spa\Object;
+namespace Tsa\Object;
 
-use Spa\Exceptions\ModuleException;$use
+use Tsa\Exceptions\ModuleException;$use
 
 /**
  * Class Modules
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Modules
@@ -195,7 +195,7 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name)
 {
     $interface_content = '
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected $spa;
 
@@ -236,7 +236,7 @@ function getInterfacesEnumData($data, $module, $mod_class, $mod_name)
             $interface_enum = lcfirst($interface_class);
 
             $interface_namespace_use .= "
-use Spa\Object\Interfaces\\$mod_class\\$interface_class;";
+use Tsa\Object\Interfaces\\$mod_class\\$interface_class;";
 
             $get .= "
             case '$interface_name':
@@ -269,20 +269,20 @@ use Spa\Object\Interfaces\\$mod_class\\$interface_class;";
  * @param string $base_path  接口枚举类路径
  * @return void
  */
-function createInterfacesEnum($get, $construct, $use, $class_name, $items = '', $base_path = '../src/Spa/Object/Modules/')
+function createInterfacesEnum($get, $construct, $use, $class_name, $items = '', $base_path = '../src/Tsa/Object/Modules/')
 {
     $content = <<<EOF
 <?php 
 
-namespace Spa\Object\Modules;
+namespace Tsa\Object\Modules;
 
-use Spa\Exceptions\InterfaceException;$use
+use Tsa\Exceptions\InterfaceException;$use
 
 /**
  * Class $class_name
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class $class_name
@@ -427,21 +427,21 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
     $content = <<<EOF
 <?php 
 
-namespace Spa\Object\Interfaces\\$mod_class;
+namespace Tsa\Object\Interfaces\\$mod_class;
 
-use Spa\Object\Detector\FieldsDetector;
+use Tsa\Object\Detector\FieldsDetector;
 
 /**
  * Class $interface_class
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class $interface_class
 {
     /**
-     * Instance of Spa.
+     * Instance of Tsa.
      */
     protected \$spa;
 
@@ -518,9 +518,9 @@ class $interface_class
 
 EOF;
 
-    $file_path = '../src/Spa/Object/Interfaces/' . $mod_class . '/' . $interface_class . '.php';
+    $file_path = '../src/Tsa/Object/Interfaces/' . $mod_class . '/' . $interface_class . '.php';
 
-    //mkdir('../src/Spa/Object/Interfaces/' . $mod_class);
+    //mkdir('../src/Tsa/Object/Interfaces/' . $mod_class);
 
     $file = fopen($file_path, "w") or die("Unable to open file!");
     fwrite($file, $content);
