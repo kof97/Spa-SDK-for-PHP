@@ -1,15 +1,15 @@
 <?php 
 
-namespace Spa\Url;
+namespace Tsa\Url;
 
-use Spa\Exceptions\SpaSDKException;
-use Spa\Url\UrlEndpointDetector;
+use Tsa\Exceptions\TsaSDKException;
+use Tsa\Url\UrlEndpointDetector;
 
 /**
  * Class UrlDetector
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class UrlDetector
@@ -64,7 +64,7 @@ class UrlDetector
 
         // validate the module and act
         if (strpos($endpoint, '/') === false) {
-            throw new SpaSDKException('Please check your "module" or "act" to ensure that is validated');
+            throw new TsaSDKException('Please check your "module" or "act" to ensure that is validated');
         }
 
         list($module, $act) = explode('/', $endpoint, 2);

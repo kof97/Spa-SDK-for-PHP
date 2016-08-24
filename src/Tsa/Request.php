@@ -1,22 +1,22 @@
 <?php 
 
-namespace Spa;
+namespace Tsa;
 
-use Spa\App;
-use Spa\Exceptions\SpaSDKException;
-use Spa\Url\UrlDetector;
+use Tsa\App;
+use Tsa\Exceptions\TsaSDKException;
+use Tsa\Url\UrlDetector;
 
 /**
  * Class Request
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Request
 {
     /**
-     * @var App The Spa app entity.
+     * @var App The Tsa app entity.
      */
     protected $app;
 
@@ -116,16 +116,16 @@ class Request
     /**
      * Validate the HTTP method.
      *
-     * @throws SpaSDKException
+     * @throws TsaSDKException
      */
     public function validateMethod()
     {
         if (!$this->method) {
-            throw new SpaSDKException('Please input HTTP method.');
+            throw new TsaSDKException('Please input HTTP method.');
         }
 
         if (!in_array($this->method, array('GET', 'POST'))) {
-            throw new SpaSDKException('Invalid HTTP method, only support "POST" and "GET".');
+            throw new TsaSDKException('Invalid HTTP method, only support "POST" and "GET".');
         }
     }
 
@@ -228,7 +228,7 @@ class Request
 
         if (!isset($headers['Authorization'])) {
             if (!$this->getAccessToken()) {
-                throw new SpaSDKException('Don \'t get the "Authorization" header, please check you headers or access token');
+                throw new TsaSDKException('Don \'t get the "Authorization" header, please check you headers or access token');
             }
 
             $headers['Authorization'] = $this->getAccessToken();
@@ -275,7 +275,7 @@ class Request
         $access_token = $this->getAccessToken();
 
         if (!$access_token) {
-            throw new SpaSDKException('You must provide a validate access token.');
+            throw new TsaSDKException('You must provide a validate access token.');
         }
     }
 

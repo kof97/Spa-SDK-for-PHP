@@ -1,14 +1,14 @@
 <?php 
 
-namespace Spa\Url;
+namespace Tsa\Url;
 
-use Spa\Exceptions\SpaSDKException;
+use Tsa\Exceptions\TsaSDKException;
 
 /**
  * Class UrlEndpointDetector
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class UrlEndpointDetector

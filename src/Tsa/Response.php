@@ -1,14 +1,14 @@
 <?php 
 
-namespace Spa;
+namespace Tsa;
 
-use Spa\Exceptions\SpaSDKException;
+use Tsa\Exceptions\TsaSDKException;
 
 /**
  * Class Response
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Response
