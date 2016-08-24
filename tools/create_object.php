@@ -835,7 +835,7 @@ function processField($data)
                 }
             }
             return $arr;
-        
+
         case 'integer':
             foreach ($data as $key => $value) {
                 if ($key === 'attribute') {
