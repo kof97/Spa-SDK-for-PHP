@@ -1,22 +1,22 @@
 <?php
 
-namespace Spa;
+nameTsace Tsa;
 
-use Spa\App;
-use Spa\Client;
-use Spa\Request;
-use Spa\Exceptions\SpaSDKException;
-use Spa\Http\ClientsFactory;
-use Spa\Object\Modules;
+use Tsa\App;
+use Tsa\Client;
+use Tsa\Request;
+use Tsa\Exceptions\TsaSDKException;
+use Tsa\Http\ClientsFactory;
+use Tsa\Object\Modules;
 
 /**
- * Class Spa
+ * Class Tsa
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
-class Spa
+class Tsa
 {
     /**
      * @const SDK version.
@@ -24,12 +24,12 @@ class Spa
     const SDK_VERSION = 'v1.0.0';
 
     /**
-     * @var App The Spa App entity.
+     * @var App The Tsa App entity.
      */
     protected $app;
 
     /**
-     * @var Client The Spa client service.
+     * @var Client The Tsa client service.
      */
     protected $client;
 
@@ -42,7 +42,7 @@ class Spa
     public function __construct($config = array())
     {
         if (!is_array($config)) {
-            throw new SpaSDKException('The "config" must be formatted as an array.');
+            throw new TsaSDKException('The "config" must be formatted as an array.');
         }
 
         $config = array_merge(array(
@@ -54,11 +54,11 @@ class Spa
         ), $config);
 
         if (!$config['appid']) {
-            throw new SpaSDKException('Required "appid" key not supplied in config or the "appid" key is not an effective value.');
+            throw new TsaSDKException('Required "appid" key not supplied in config or the "appid" key is not an effective value.');
         }
 
         if (!$config['appkey']) {
-            throw new SpaSDKException('Required "appkey" key not supplied in config or the "appkey" key is not an effective value.');
+            throw new TsaSDKException('Required "appkey" key not supplied in config or the "appkey" key is not an effective value.');
         }
 
         $this->app = new App($config['appid'], $config['appkey']);
