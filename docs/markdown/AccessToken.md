@@ -1,10 +1,10 @@
-# SPA PHP SDK token 类 Spa\Authentication\AccessToken
+# SPA PHP SDK token 类 Tsa\Authentication\AccessToken
 
-Spa\Authentication\AccessToken 类提供了 access token 相关的操作
+Tsa\Authentication\AccessToken 类提供了 access token 相关的操作
 
 ---
 
-# Spa\Authentication\AccessToken
+# Tsa\Authentication\AccessToken
 
 ## 实例介绍
 
@@ -18,7 +18,7 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     $spaApp = $spa->getApp();
 
@@ -28,7 +28,7 @@ Spa\Authentication\AccessToken 类提供了 access token 相关的操作
 或直接创建
 
 ```
-    $accessToken = new Spa\Authentication\AccessToken({$appid}, {$appkey});
+    $accessToken = new Tsa\Authentication\AccessToken({$appid}, {$appkey});
 ```
 
 ---

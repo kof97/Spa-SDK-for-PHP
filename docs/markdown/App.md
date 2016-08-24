@@ -1,22 +1,22 @@
-# SPA PHP SDK 应用实例类 Spa\App
+# SPA PHP SDK 应用实例类 Tsa\App
 
-Spa\App 类存储了应用实例的基本信息
+Tsa\App 类存储了应用实例的基本信息
 
 ---
 
-# Spa\App
+# Tsa\App
 
 ## 实例介绍
 
-### Spa\App
+### Tsa\App
 
 ```
-    new Spa\App({$appid}, {$appkey})
+    new Tsa\App({$appid}, {$appkey})
 ```
 
 初始化要提供用户的 `appid` `appkey`
 
-一般由 `Spa\Spa` 类初始化，可以直接通过 `Spa\Spa` 的 `getApp()` 方法获取实例
+一般由 `Tsa\Tsa` 类初始化，可以直接通过 `Tsa\Tsa` 的 `getApp()` 方法获取实例
 
 例：
 
@@ -28,7 +28,7 @@ Spa\App 类存储了应用实例的基本信息
         'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $spa = new Tsa\Tsa($conf);
 
     $spaApp = $spa->getApp();
 ```
@@ -62,7 +62,7 @@ Spa\App 类存储了应用实例的基本信息
 ### getAccessToken()
 
 ```
-    public Spa\Authentication\AccessToken getAccessToken()
+    public Tsa\Authentication\AccessToken getAccessToken()
 ```
 
-返回 `Spa\Authentication\AccessToken` 的实例
+返回 `Tsa\Authentication\AccessToken` 的实例
