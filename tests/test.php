@@ -14,10 +14,10 @@ use Tsa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 //     'version'           => 'v3'
 // );
 
-// $spa = new Tsa\Tsa($conf);
+// $tsa = new Tsa\Tsa($conf);
 
 
-// $test = $spa->getApp();
+// $test = $tsa->getApp();
 
 // $params = array(
 //     'advertiser_id' => '10',
@@ -38,15 +38,15 @@ use Tsa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 
 // );
 
-// //$response = $spa->get('/advertiser/read?advertiser_id=123');
+// //$response = $tsa->get('/advertiser/read?advertiser_id=123');
 
-// //$req = $spa->sendRequest('post', '/mod/asdf/act//?qweqwe', $params);
+// //$req = $tsa->sendRequest('post', '/mod/asdf/act//?qweqwe', $params);
 
 // //var_dump($req);
 
 // //var_dump($response->getHttpStatusCode());
 
-// $modules = $spa->getModules();
+// $modules = $tsa->getModules();
 
 
 // $response = $modules->targeting->create->send($params, array(), 'qweqweqwe');
@@ -54,7 +54,7 @@ use Tsa\Object\Enum\SuperReport\SelectAdgroupDailyEnum;
 // //var_dump($response);
 //var_dump($modules::ADVERTISER);
 
-//var_dump($spa->getClient()->getBaseUrl());
+//var_dump($tsa->getClient()->getBaseUrl());
 
 //var_dump($req->getUrl());
 //var_dump($test);
@@ -67,11 +67,11 @@ $headers = array(
     'Authorization' => 'Bearer ',
 );
 $conf = array('appid' => 'appid', 'appkey' => 'appkey');
-$spa = new Tsa\Tsa($conf);
+$tsa = new Tsa\Tsa($conf);
 
-var_dump($spa->getVersion());
+var_dump($tsa->getVersion());
 
-$modules = $spa->getModules();
+$modules = $tsa->getModules();
 try {
     $response = $modules->advertiser->read->sendWithAccessToken($params, $headers, 'Bearer ');
 } catch (Exception $e) {
