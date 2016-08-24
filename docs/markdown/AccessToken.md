@@ -20,9 +20,9 @@ Tsa\Authentication\AccessToken 类提供了 access token 相关的操作
 
     $tsa = new Tsa\Tsa($conf);
 
-    $tsaApp = $tsa->getApp();
+    $tsa_app = $tsa->getApp();
 
-    $accessToken = $tsaApp->getAccessToken();
+    $accessToken = $tsa_app->getAccessToken();
 ```
 
 或直接创建

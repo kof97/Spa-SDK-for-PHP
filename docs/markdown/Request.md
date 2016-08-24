@@ -36,9 +36,9 @@ Tsa\Request 类存储处理请求信息
 初始化实例：
 
 ```
-    $tsaApp = new Tsa\App({$appid}, {$appkey});
+    $tsa_app = new Tsa\App({$appid}, {$appkey});
 
-    $tsa_request = new Tsa\Request($tsaApp, 'GET', '/advertiser/read');
+    $tsa_request = new Tsa\Request($tsa_app, 'GET', '/advertiser/read');
 ```
 
 或通过 `Tsa\Tsa` 类初始化

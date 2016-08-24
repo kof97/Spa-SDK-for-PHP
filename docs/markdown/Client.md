@@ -36,13 +36,13 @@ Tsa\Client 类用于发起请求
 
     $tsa = new Tsa\Tsa($conf);
 
-    $tsaClient = $tsa->getClient();
+    $tsa_client = $tsa->getClient();
 ```
 
 或是直接创建
 
 ```
-    $tsaClient = new Tsa\Client({$http_client}, {$version});
+    $tsa_client = new Tsa\Client({$http_client}, {$version});
 ```
 
 ---

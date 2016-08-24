@@ -30,7 +30,7 @@ Tsa\App 类存储了应用实例的基本信息
 
     $tsa = new Tsa\Tsa($conf);
 
-    $tsaApp = $tsa->getApp();
+    $tsa_app = $tsa->getApp();
 ```
 
 ---
