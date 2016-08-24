@@ -1,16 +1,16 @@
 <?php 
 
-namespace Spa;
+namespace Tsa;
 
-use Spa\Exceptions\SpaSDKException;
-use Spa\Http\ClientInterface;
-use Spa\Http\ClientFactory;
+use Tsa\Exceptions\TsaSDKException;
+use Tsa\Http\ClientInterface;
+use Tsa\Http\ClientFactory;
 
 /**
  * Class Client
  *
  * @category PHP
- * @package  Spa
+ * @package  Tsa
  * @author   Arno <arnoliu@tencent.com>
  */
 class Client
@@ -80,7 +80,7 @@ class Client
     protected function getBaseUrl()
     {
         if ($this->version !== 'v3') {
-            throw new SpaSDKException('Only support the version "v3", please check your config');
+            throw new TsaSDKException('Only support the version "v3", please check your config');
         }
 
         return static::DEFAULT_BASE_URL;
@@ -116,7 +116,7 @@ class Client
      */
     public function sendRequest(Request $request)
     {
-        if (get_class($request) === 'Spa\Request') {
+        if (get_class($request) === 'Tsa\Request') {
             $request->validateAccessToken();
         }
 
