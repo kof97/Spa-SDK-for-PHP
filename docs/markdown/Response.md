@@ -92,3 +92,18 @@ Tsa\Response 类返回了本次请求的响应信息
 ```
 
 返回本次请求的 `body` 信息（json 格式）
+
+---
+
+### getProperty()
+
+```
+    public array getProperty($key = '')
+```
+
+> $key string 用户要取的字段名，如果为空，以数组的形式返回所有的键值对，默认空
+
+获取响应的某个字段的值
+
+
+
