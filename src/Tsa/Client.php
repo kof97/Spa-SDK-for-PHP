@@ -18,7 +18,7 @@ class Client
     /**
      * @const string Default base URL.
      */
-    const DEFAULT_BASE_URL = 'http://api.e.qq.com/ads/v3';
+    const DEFAULT_BASE_URL = 'http://api.e.qq.com/luna/v3';
 
     /**
      * @var string The api version.
