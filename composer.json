@@ -1,7 +1,7 @@
 {
-    "name": "spa/spa-php-sdk",
-    "description": "Spa SDK for PHP",
-    "keywords": ["spa", "sdk"],
+    "name": "tsa/tsa-php-sdk",
+    "description": "Tsa SDK for PHP",
+    "keywords": ["tsa", "sdk"],
     "authors": [
         {
             "name": "Arno",
