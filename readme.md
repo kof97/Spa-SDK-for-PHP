@@ -1,11 +1,16 @@
-# Spa SDK for PHP
+# TSA SDK for PHP
 
-环境：PHP5.3 以上
+环境：`PHP5.3` 以上
+
+
+
+
+
 
 使用：引入 `autoload.php` 即可使用
 
 ```
-    require_once __DIR__ . './src/Spa/autoload.php';
+    require_once __DIR__ . './src/Tsa/autoload.php';
 ```
 
 ## 快速调用
@@ -14,17 +19,16 @@
 
 ```
     $conf = array(
-        'uid'               => '{uid}',     // 必填
-        'appid'             => '{appid}',   // 必填
-        'appkey'            => '{appkey}',  // 必填
-        'http_client_type'  => 'curl',      // 可不填
-        'version'           => 'v3'         // 可不填
+        'appid'            => '{appid}',   // 必填
+        'appkey'           => '{appkey}',  // 必填
+        'http_client_type' => 'curl',      // 可不填
+        'version'          => 'v3'         // 可不填
     );
 
-    $spa = new Spa\Spa($conf);
+    $tsa = new Tsa\Tsa($conf);
 
     // 获取模块集合
-    $modules = $spa->getModules();
+    $modules = $tsa->getModules();
 ```
 
 ### 选择请求的模块和接口并发送请求
@@ -53,14 +57,14 @@
 
 ```
     // 选择模块 -> 选择接口 -> 发送请求
-    $response = $spa->getModules()->advertiser->signup->send({$params}, {$headers});
+    $response = $tsa->getModules()->advertiser->signup->send({$params}, {$headers});
 ```
 
-接下来是数据的拼接，在 `Spa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
+接下来是数据的拼接，在 `Tsa\Object\Enum\` 下定义了各个模块中各个接口参数的枚举类
 
 ```
-    // Spa\Object\Enum\ {mod_class} \ {interface_enum_class}
-    use Spa\Object\Enum\Advertiser\SignupEnum;
+    // Tsa\Object\Enum\ {mod_class} \ {interface_enum_class}
+    use Tsa\Object\Enum\Advertiser\SignupEnum;
 
     $params = array(
         SignupEnum::LOGIN_NAME       => '',
@@ -89,31 +93,30 @@
 
 ```
     $conf = array(
-        'uid'               => '{uid}',
-        'appid'             => '{appid}',
-        'appkey'            => '{appkey}',
-        'http_client_type'  => 'curl',
-        'version'           => 'v3'
+        'appid'            => '{appid}',
+        'appkey'           => '{appkey}',
+        'http_client_type' => 'curl',
+        'version'          => 'v3'
     );
 
-    $spa = new Spa\Spa($conf);
+    $tsa = new Tsa\Tsa($conf);
 ```
 
 ### 发送 get 请求
 
 ```
-    $response = $spa->get('/advertiser/read?advertiser_id=123', {$headers});
+    $response = $tsa->get('/advertiser/read?advertiser_id=123', {$headers});
 ```
 
 ### 发送 post 请求
 
 ```
-    $response = $spa->post('/advertiser/signup', {$params}, {$headers});
+    $response = $tsa->post('/advertiser/signup', {$params}, {$headers});
 ```
 
 ### 发送 request 请求
 
 ```
-    $response = $spa->sendRequest('post', '/advertiser/signup', {$params}, {$headers});
+    $response = $tsa->sendRequest('post', '/advertiser/signup', {$params}, {$headers});
 ```
 
