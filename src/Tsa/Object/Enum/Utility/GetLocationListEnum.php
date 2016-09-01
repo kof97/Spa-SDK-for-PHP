@@ -1,0 +1,30 @@
+<?php 
+
+namespace Tsa\Object\Enum\Utility;
+
+/**
+ * Class GetLocationListEnum
+ *
+ * @category PHP
+ * @package  Tsa
+ * @author   Arno <arnoliu@tencent.com>
+ */
+class GetLocationListEnum
+{
+    
+    /**
+     * @const region_id 
+     */
+    const REGION_ID = 'region_id';
+
+    /**
+     * Init region_id.
+     */
+    private function __construct()
+    {
+        // It should never be invoked.
+    }
+
+}
+
+//end of script
