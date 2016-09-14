@@ -537,7 +537,7 @@ EOF;
  * @param string $interface_name 当前接口名称
  * @return string
  */
-function getRepeated($data, $arr, $mod_name, $interface_name)
+function getRepeated($data, $arr, $mod_name, $interface_name, $flag = 0)
 {
     $repeat = '';
     $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
@@ -580,6 +580,21 @@ function getRepeated($data, $arr, $mod_name, $interface_name)
         $pattern = "\r\n                    \r\n";
         while (strpos($repeat, $pattern) != false) {
             $repeat = str_replace($pattern, "\r\n", $repeat);
+        }
+
+        switch ($flag) {
+            // element array 专用通道
+            case '1':
+                $pattern = "\r\n                ";
+                $repeat = str_replace($pattern, "\r\n\r\n", $repeat);
+                $pattern = "\r\n\r\n";
+                $replace = "\r\n                        ";
+                while (strpos($repeat, $pattern) !== false) {
+                    $repeat = str_replace($pattern, $replace, $repeat);
+                }
+                break;
+
+            default: break;
         }
     }
 
@@ -652,6 +667,15 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
             // 递归获取 element
             $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name, $flag);
 
+            $repeat_sub = '';
+            if (isset($ele_arr['repeated'])) {
+                $repeat_sub = getRepeated($data, $ele_arr, $mod_name, $interface_name, 1);
+            }
+// var_dump($repeat_sub);
+            /** repeated 生成 **/
+            // $re = getExtendTypeInfo($data, $mod_name, $interface_name, $repeat_type);
+            // 
+
             $element .= "
                     '$key' => array(
                         $ele_name
@@ -672,6 +696,7 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
                         $ele_decimalLength
                         $ele_item_max_length
                         $ele_element
+                        $repeat_sub
                     ),
 ";
         }
@@ -716,7 +741,6 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
 
             default: break;
         }
-
     }
 
     return $element;
