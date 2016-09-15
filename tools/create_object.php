@@ -376,7 +376,7 @@ function creatInterface($data, $mod_class, $interface_class, $method, $interface
                 /** element 生成 **/
                 /* 递归层数 */
                 $flag = 0;
-                $element = getElements($data, $arr, $mod_name, $interface_name, $flag);
+                $element = getElements($data, $arr, $ext_mod_name, $interface_name, $flag);
 
                 /** repeated 生成 **/
                 $repeat = getRepeated($data, $arr, $mod_name, $interface_name);
@@ -543,6 +543,15 @@ function getRepeated($data, $arr, $mod_name, $interface_name, $flag = 0)
     $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
 
     if ($repeated) {
+        // // extendType 有继承其他模块的情况，重选 mod
+        // $extendType = isset($repeated['type']) ? $repeated['type'] : '';
+        // $ext_mod_name = $mod_name;
+        // if (strpos($extendType, '.') !== false) {
+        //     $t = explode('.', $extendType);
+        //     $extendType = array_pop($t);
+        //     $ext_mod_name = implode($t, '');
+        // }
+
         $repeat_type = isset($repeated['type']) ? "'type' => '" . $repeated['type'] . "'," : '';
         $repeat_list = isset($repeated['list']) ? "'list' => '" . $repeated['list'] . "'," : '';
         $repeat_pattern = isset($repeated['pattern']) ? "'pattern' => '" . $repeated['pattern'] . "'," : '';
@@ -630,7 +639,7 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
                 $ele_ext_type = array_pop($t);
                 $ele_ext_mod_name = implode($t, '');
             }
-            $ele_arr = getExtendTypeInfo($data, $ele_ext_mod_name, $interface_name, $value['extendType']);
+            $ele_arr = getExtendTypeInfo($data, $ele_ext_mod_name, $interface_name, $ele_ext_type);
 
             $ele_type = isset($ele_arr['type']) ? "'type' => '" . $ele_arr['type'] . "'," : '';
             $ele_description = isset($ele_arr['description']) ? $ele_arr['description'] : '';
@@ -665,11 +674,12 @@ function getElements($data, $arr, $mod_name, $interface_name, $flag)
             }
 
             // 递归获取 element
-            $ele_element = getElements($data, $ele_arr, $mod_name, $interface_name, $flag);
+            $ele_element = getElements($data, $ele_arr, $ele_ext_mod_name, $interface_name, $flag);
 
             $repeat_sub = '';
+
             if (isset($ele_arr['repeated'])) {
-                $repeat_sub = getRepeated($data, $ele_arr, $mod_name, $interface_name, 1);
+                $repeat_sub = getRepeated($data, $ele_arr, $ele_ext_mod_name, $interface_name, 1);
             }
 // var_dump($repeat_sub);
             /** repeated 生成 **/
@@ -764,8 +774,7 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType)
             // module
             foreach ($child->children() as $mod_key => $module) {
                 if (($module->attributes()['name'] . '') === $mod_name) {
-                    foreach ($module as $key => $value) {
-                        // interface
+                    foreach ($module->children() as $key => $value) {
                         if ($key === 'interface') {
                             if (($value->attributes()['service'] . '') === $interface_name) {
                                 foreach ($value as $k => $v) {
@@ -782,7 +791,10 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType)
                                 }
                             }
                         }
-                        // module > types
+                    }
+
+                    // module > types
+                    foreach ($module->children() as $key => $value) {
                         if ($key === 'types') {
                             foreach ($value as $k => $v) {
                                 if (($v->attributes()['name'] . '') === $extendType) {
@@ -797,7 +809,10 @@ function getExtendTypeInfo($data, $mod_name, $interface_name, $extendType)
                 }
             }
         }
-        // types
+    }
+
+    // types
+    foreach ($data->children()->children() as $child) {
         if ($child->getName() === 'types') {
             foreach ($child->children() as $k => $v) {
                 if (($v->attributes()['name'] . '') === $extendType) {
