@@ -88,12 +88,12 @@ class Delete
                 'name' => 'advertiser_id',
                 'extendType' => 'advertiser_id',
                 'require' => 'yes',
-                'type' => 'integer',
-                'description' => '广告主ID',
+                'type' => 'id',
+                'description' => '用户ID（服务商ID/直客ID/子客户ID）',
                 'restraint' => '详见附录',
-                'errormsg' => '广告主ID不正确',
-                'max' => '4294967296',
-                'min' => '0',
+                'errormsg' => '用户ID（服务商ID/直客ID/子客户ID）不正确',
+                'max' => '9223372036854775807',
+                'min' => '1',
             ),
 
             'rule_id' => array(

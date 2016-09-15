@@ -130,8 +130,8 @@ class SelectAdgroupHourly
                 'extendType' => 'group_by',
                 'require' => 'no',
                 'type' => 'array',
-                'description' => '聚合参数，例：["date"]',
-                'restraint' => '见 [link href="group_by"]聚合规则定义[/link]',
+                'description' => '聚合参数，例：["time"]',
+                'restraint' => '见[link href="group_by"]聚合规则定义[/link]',
                 'errormsg' => '聚合字段不正确',
                 'item_max_length' => '255',
                 'repeated' => array(

@@ -117,7 +117,7 @@ class AddAdvertiser
                 'restraint' => '详见 [link href="industry_id"]新行业分类[/link]',
                 'errormsg' => '行业分类不正确',
                 'max' => '1000000000000',
-                'min' => '0',
+                'min' => '1',
             ),
 
             'outer_advertiser_id' => array(

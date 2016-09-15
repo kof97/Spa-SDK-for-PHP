@@ -101,8 +101,8 @@ class GetAuthorizationList
                 'extendType' => 'filter',
                 'require' => 'no',
                 'type' => 'array',
-                'description' => '若此字段不传，或传空则视为无限制条件。参见：高级条件',
-                'restraint' => '过滤条件结构',
+                'description' => '过滤条件',
+                'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: rule_id,authorized_advertiser_id',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
                 'repeated' => array(
@@ -120,7 +120,7 @@ class GetAuthorizationList
                             'errormsg' => '字段不正确',
                             'max_length' => '32',
                             'min_length' => '1',
-                            'list' => 'status,audience_name',
+                            'list' => 'audience_id,authorized_advertiser_id',
                         ),
     
                         'operator' => array(

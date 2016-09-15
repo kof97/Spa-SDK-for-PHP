@@ -105,7 +105,7 @@ class GetSubordinateProductList
                 'restraint' => '小于128个英文字符',
                 'errormsg' => '标的物Id不正确',
                 'max_length' => '128',
-                'min_length' => '0',
+                'min_length' => '1',
             ),
 
             'product_type' => array(

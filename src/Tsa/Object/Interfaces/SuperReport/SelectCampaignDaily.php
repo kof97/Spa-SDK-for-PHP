@@ -140,7 +140,7 @@ class SelectCampaignDaily
                 'require' => 'no',
                 'type' => 'array',
                 'description' => '过滤条件',
-                'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
+                'restraint' => '若此字段不传，或传空则视为无限制条件。详见 [link href="filter"]高级条件[/link]。支持字段: campaign_id, campaign_name, status',
                 'errormsg' => '过滤条件不正确',
                 'item_max_length' => '255',
                 'repeated' => array(
@@ -158,7 +158,7 @@ class SelectCampaignDaily
                             'errormsg' => '字段不正确',
                             'max_length' => '32',
                             'min_length' => '1',
-                            'list' => 'adgroup_id,campaign_id,adgroup_name,status,start_date,end_date',
+                            'list' => 'campaign_id,campaign_name,status',
                         ),
     
                         'operator' => array(
