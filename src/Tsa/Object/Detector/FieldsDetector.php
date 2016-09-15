@@ -270,8 +270,9 @@ class FieldsDetector
             }
         }
 
+        $repeated = isset($data['repeated']) ? $data['repeated'] : $data;
         foreach ($value as $v) {
-            self::validateBasicType($data['repeated'], $data['name'], $v);
+            self::validateBasicType($repeated, $data['name'], $v);
         }
     }
 
