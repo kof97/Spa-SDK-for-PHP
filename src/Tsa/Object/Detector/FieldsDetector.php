@@ -301,7 +301,7 @@ class FieldsDetector
                 return;
 
             case '{memo_pattern}':
-                
+                $regex = '/.*/';
                 break;
 
             case '{date_pattern}':
