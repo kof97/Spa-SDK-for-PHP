@@ -543,15 +543,6 @@ function getRepeated($data, $arr, $mod_name, $interface_name, $flag = 0)
     $repeated = isset($arr['repeated']) ? $arr['repeated'] : null;
 
     if ($repeated) {
-        // // extendType 有继承其他模块的情况，重选 mod
-        // $extendType = isset($repeated['type']) ? $repeated['type'] : '';
-        // $ext_mod_name = $mod_name;
-        // if (strpos($extendType, '.') !== false) {
-        //     $t = explode('.', $extendType);
-        //     $extendType = array_pop($t);
-        //     $ext_mod_name = implode($t, '');
-        // }
-
         $repeat_type = isset($repeated['type']) ? "'type' => '" . $repeated['type'] . "'," : '';
         $repeat_list = isset($repeated['list']) ? "'list' => '" . $repeated['list'] . "'," : '';
         $repeat_pattern = isset($repeated['pattern']) ? "'pattern' => '" . $repeated['pattern'] . "'," : '';
