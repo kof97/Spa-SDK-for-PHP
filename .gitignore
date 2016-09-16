@@ -8,6 +8,6 @@ src(uid)/
 src(repeated)/
 
 
-# src/
-# docs/
-# tools/
+src/
+docs/
+tools/
