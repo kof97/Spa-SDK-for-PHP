@@ -10,7 +10,7 @@ import PageNotFound from './404/404'
 ReactDOM.render(
 	<Router history={hashHistory} >
 		<Route path="/" component={App}>
-			<Route path="/user" component={App} />
+
 		</Route>
 		<Route path="*" component={PageNotFound} />
 	</Router>,

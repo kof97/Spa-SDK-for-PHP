@@ -31,7 +31,7 @@ var webpackConfig = {
 	output: {
 		path: 'public',
 		filename: 'js/script.min.js',
-		publicPath: '/static/'
+		// publicPath: 'static/'
 	},
 
 	module: {
@@ -72,7 +72,7 @@ var webpackConfig = {
 		// 	minChunks: chunks.length // 提取所有entry共同依赖的模块
 		// }),
 		new ExtractTextPlugin({
-			filename: 'css/style.min.css',
+			filename: 'style.min.css',
 			allChunks: true
 		}),
 		new webpack.optimize.UglifyJsPlugin({

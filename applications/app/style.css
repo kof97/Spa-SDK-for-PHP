@@ -1,4 +1,22 @@
 
 * { padding: 0; margin: 0; }
 
+.left { float: left; }
+.right { float: right; }
+
 .app-container { width: 480px; height: 768px; margin: 0 auto; border: solid #eee 1px; }
+
+.app-header { width: 100%; height: 73px; background-color: #CD3D3D; }
+.app-header span { display: inline-block; height: 100%; background-size: 480px!important; }
+.app-header .app-sidebar-button { width: 80px; background: url(../../pics/header.png) no-repeat 0 0; }
+.app-header .app-search { width: 60px; background: url(../../pics/header.png) no-repeat -420px 0; }
+
+#app-nav { display: inline-block; width: 300px; height: 100%; margin-left: 40px; }
+#app-nav span { width: 80px; }
+#app-nav .app-recommend { background: url(../../pics/header.png) no-repeat -125px 0; }
+#app-nav .app-user { background: url(../../pics/header.png) no-repeat -202px 0; }
+#app-nav .app-dynamic { background: url(../../pics/header.png) no-repeat -275px 0; }
+
+#app-nav .app-recommend-native { background: url(../../pics/header.png) no-repeat -125px -73px; }
+#app-nav .app-user-native { background: url(../../pics/header.png) no-repeat -202px -73px; }
+#app-nav .app-dynamic-native { background: url(../../pics/header.png) no-repeat -275px -73px; }
