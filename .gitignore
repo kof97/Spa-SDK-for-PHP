@@ -1,5 +1,5 @@
 node_modules/
-pics/
+/pics/
 
 
 npm-debug.log.*
