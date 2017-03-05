@@ -1,10 +1,14 @@
 
-* { padding: 0; margin: 0; }
+* { padding: 0; margin: 0; font-family: 'Microsoft YaHei'; }
+
+title { display: block; }
 
 .left { float: left; }
 .right { float: right; }
 
-.app-container { width: 480px; height: 768px; margin: 0 auto; border: solid #eee 1px; }
+#root, body, html { height: 100%; }
+
+.app-container { max-width: 480px; height: 100%; margin: 0 auto; border: solid #eee 1px; }
 
 .app-header { width: 100%; height: 73px; background-color: #CD3D3D; }
 .app-header span { display: inline-block; height: 100%; background-size: 480px!important; }
@@ -20,3 +24,27 @@
 #app-nav .app-recommend-native { background: url(../../pics/header.png) no-repeat -125px -73px; }
 #app-nav .app-user-native { background: url(../../pics/header.png) no-repeat -202px -73px; }
 #app-nav .app-dynamic-native { background: url(../../pics/header.png) no-repeat -275px -73px; }
+
+
+
+.app-footer { height: 4.9em; width: 100%; max-width: 480px; position: fixed; bottom: 0; z-index: 999; }
+
+.radio-player { height: 4.6em; }
+
+.radio-pic { padding: .3em .5em .1em .5em; }
+.radio-pic img { width: 4em; height: 4em; }
+
+.radio-info { padding-top: .8em; padding-left: .5em; }
+.radio-info title { font-size: 1.1em; }
+.radio-info span { color: #747675; font-size: .9em; }
+
+.radio-controller { height: 3.5em; }
+.radio-controller span { width: 3.8em; height: 100%; margin-top: 0.5em; float: left; background-size: 180px!important; }
+.radio-controller .radio-list { background: url(../../pics/radio-control.png) no-repeat 3px 0; }
+.radio-controller .radio-stop { background: url(../../pics/radio-control.png) no-repeat -62px 0; }
+.radio-controller .radio-next { background: url(../../pics/radio-control.png) no-repeat -125px 0; }
+
+.radio-controller .radio-stop:hover { background: url(../../pics/radio-control.png) no-repeat -62px -53px; }
+
+
+.radio-progress { width: 60%; border-bottom: 1em solid #CD3D3D; }

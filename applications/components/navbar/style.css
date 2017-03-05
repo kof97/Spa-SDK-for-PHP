@@ -1,5 +1,5 @@
 #app-nav-bar {  }
-#app-nav-bar a { width: 25%; display: inline-block; padding: 0.7em 0; font-size: 1em; color: #747675; text-decoration: none; letter-spacing: 0.1em; text-align: center; font-family: 'Microsoft YaHei'; }
+#app-nav-bar a { width: 25%; display: inline-block; padding: 0.7em 0; font-size: 1em; color: #747675; text-decoration: none; letter-spacing: 0.1em; text-align: center; }
 #app-nav-bar li { list-style: none; }
 
 #app-nav-bar a.native { border-bottom: 3px solid #CD3D3D; color: #CD3D3D; }
