@@ -1,13 +1,8 @@
-vendor/
-composer.lock
-
-tools/luna.idl.xml
-
-# 有 uid 的版本
-src(uid)/
-src(repeated)/
+node_modules/
+pics/
 
 
-src/
-docs/
-tools/
+npm-debug.log.*
+
+package.json.bak
+
