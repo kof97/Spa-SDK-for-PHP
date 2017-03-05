@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 
 import Header from './header'
-import NavBar from '../components/navbar/nav'
-import SlideBanner from '../components/slidebanner/slide'
+import Recommend from '../pages/recommend/recommend'
 
 import './style.css'
 
@@ -12,11 +11,7 @@ export default class App extends Component {
 			<div className="app-container">
 				<Header />
 				<div id="app-pages">
-					<NavBar />
-					<SlideBanner />
-				</div>
-				<div>
-					testtestsetsetset
+					<Recommend />
 				</div>
 			</div>
 		)

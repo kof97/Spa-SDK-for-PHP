@@ -15,4 +15,4 @@ ReactDOM.render(
 		<Route path="*" component={PageNotFound} />
 	</Router>,
 	document.getElementById('root')
-);
+)
