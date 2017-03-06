@@ -30,23 +30,18 @@ export default class Footer extends Component {
 		let audioPlayer = document.getElementById('audio-player');
 		let obj = e.target;
 
-		try	{
-			switch (obj.className) {
-				case 'radio-play':
-					audioPlayer.pause();
-					obj.className = 'radio-stop';
-					break;
+		switch (obj.className) {
+			case 'radio-play':
+				audioPlayer.pause();
+				obj.className = 'radio-stop';
+				break;
 
-				case 'radio-stop':
-					audioPlayer.play();
-					obj.className = 'radio-play';
-					break;
+			case 'radio-stop':
+				audioPlayer.play();
+				obj.className = 'radio-play';
+				break;
 
-				default: return;
-			}
-		} catch (e) {
-			console.log('error');
-			return;
+			default: return;
 		}
 	}
 
