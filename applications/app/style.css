@@ -1,6 +1,8 @@
 
 * { padding: 0; margin: 0; font-family: 'Microsoft YaHei'; }
 
+body, html { min-width: 500px; }
+
 title { display: block; }
 
 .left { float: left; }
@@ -27,7 +29,7 @@ title { display: block; }
 
 
 
-.app-footer { height: 4.9em; width: 100%; max-width: 480px; position: fixed; bottom: 0; z-index: 999; }
+.app-footer { height: 4.9em; width: 100%; max-width: 480px; position: fixed; bottom: 0; z-index: 999; border-top: solid 1px #eee; }
 
 .radio-player { height: 4.6em; }
 
@@ -41,10 +43,12 @@ title { display: block; }
 .radio-controller { height: 3.5em; }
 .radio-controller span { width: 3.8em; height: 100%; margin-top: 0.5em; float: left; background-size: 180px!important; }
 .radio-controller .radio-list { background: url(../../pics/radio-control.png) no-repeat 3px 0; }
-.radio-controller .radio-stop { background: url(../../pics/radio-control.png) no-repeat -62px 0; }
 .radio-controller .radio-next { background: url(../../pics/radio-control.png) no-repeat -125px 0; }
 
-.radio-controller .radio-stop:hover { background: url(../../pics/radio-control.png) no-repeat -62px -53px; }
+.radio-controller .radio-play { background: url(../../pics/radio-control.png) no-repeat -62px 0; }
+.radio-controller .radio-stop { background: url(../../pics/radio-control.png) no-repeat -62px -53px; }
+
+/*.radio-controller .radio-stop:hover { background: url(../../pics/radio-control.png) no-repeat -62px -53px; }*/
 
 
-.radio-progress { width: 60%; border-bottom: 1em solid #CD3D3D; }
+#radio-progress { width: 60%; border-bottom: 1em solid #CD3D3D; }
