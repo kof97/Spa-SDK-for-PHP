@@ -10,7 +10,7 @@ title { display: block; }
 
 #root, body, html { height: 100%; }
 
-.app-container { max-width: 480px; height: 100%; margin: 0 auto; border: solid #eee 1px; }
+.app-container { max-width: 480px; height: 768px; margin: 0 auto; border: solid #eee 1px; }
 
 .app-header { width: 100%; height: 73px; background-color: #CD3D3D; }
 .app-header span { display: inline-block; height: 100%; background-size: 480px!important; }
@@ -29,7 +29,7 @@ title { display: block; }
 
 
 
-.app-footer { height: 4.9em; width: 100%; max-width: 480px; position: fixed; bottom: 0; z-index: 999; border-top: solid 1px #eee; }
+.app-footer { height: 75px; width: 100%; max-width: 480px; position: fixed; top: 690px; z-index: 999; border-top: solid 1px #eee; }
 
 .radio-player { height: 4.6em; }
 
@@ -51,4 +51,4 @@ title { display: block; }
 /*.radio-controller .radio-stop:hover { background: url(../../pics/radio-control.png) no-repeat -62px -53px; }*/
 
 
-#radio-progress { width: 60%; border-bottom: 1em solid #CD3D3D; }
+#radio-progress { width: 1%; border-bottom: 5px solid #CD3D3D; }

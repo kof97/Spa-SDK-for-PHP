@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 
 export default class Footer extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 
-		this.progress = null;
-
-		this.updatePorgress = this.updatePorgress.bind(this);
-		this.radioPlay = this.radioPlay.bind(this);
+		this.initPorgress();
 	}
 
-	updatePorgress(audioPlayer) {
-		this.progress = setInterval(function () {
+	initPorgress() {
+		let audioPlayer = document.getElementById('audio-player');
+		let rate = null;
+		
+		setInterval(function () {
 			if (audioPlayer === null) {
 				audioPlayer = document.getElementById('audio-player');
 			}
@@ -20,7 +20,9 @@ export default class Footer extends Component {
 				return;
 			}
 
-			console.log(audioPlayer.paused);
+			rate = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+
+			document.getElementById('radio-progress').style.width = rate + '%';
 		}, 1000);
 	}
 
@@ -28,22 +30,23 @@ export default class Footer extends Component {
 		let audioPlayer = document.getElementById('audio-player');
 		let obj = e.target;
 
-		switch (obj.className) {
-			case 'radio-play':
-				obj.className = 'radio-stop';
+		try	{
+			switch (obj.className) {
+				case 'radio-play':
+					audioPlayer.pause();
+					obj.className = 'radio-stop';
+					break;
 
-				clearInterval(this.progress);
-				audioPlayer.pause();
-				break;
+				case 'radio-stop':
+					audioPlayer.play();
+					obj.className = 'radio-play';
+					break;
 
-			case 'radio-stop':
-				obj.className = 'radio-play';
-
-				this.updatePorgress(audioPlayer);
-				audioPlayer.play();
-				break;
-
-			default: return;
+				default: return;
+			}
+		} catch (e) {
+			console.log('error');
+			return;
 		}
 	}
 
@@ -65,7 +68,7 @@ export default class Footer extends Component {
 					</div>
 				</div>
 				<div id="radio-progress"></div>
-				<audio id="audio-player" src="http://m8.music.126.net/20170306093357/e385526f3bf1a8e09334de602709b69a/ymusic/14b1/e12d/933e/a25b20007f534181f024c3a7b6941f4e.mp3"/>
+				<audio id="audio-player" src="http://m8.music.126.net/20170306113704/0c468ea9e04e955bf64e13be2328d858/ymusic/6dec/fad4/1e55/d543c948ab0d5161d1fa4203396cbcc4.mp3"/>
 			</footer>
 		)
 	}
