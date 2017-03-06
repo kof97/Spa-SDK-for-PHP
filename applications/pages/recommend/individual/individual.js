@@ -9,8 +9,8 @@ export default class Recommend extends Component {
 		return (
 			<div className="app-page-recommend-individual">
 				<SlideBanner />
-				<RecommendTitle />
-				<SongList />
+				<RecommendTitle type="recommend" />
+				<SongList url="http://musicapi.duapp.com/api.php?type=topPlayList&cat=全部&offset=0&limit=9" />
 			</div>
 		)
 	}

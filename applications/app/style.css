@@ -1,6 +1,8 @@
 
 * { padding: 0; margin: 0; font-family: 'Microsoft YaHei'; }
 
+::-webkit-scrollbar { display: none }
+
 body, html { min-width: 500px; }
 
 title { display: block; }
@@ -29,7 +31,7 @@ title { display: block; }
 #app-nav .app-dynamic-native { background: url(../../pics/header.png) no-repeat -275px -73px; }
 
 
-
+.app-blank { height: 75px; width: 100%; float: left; }
 .app-footer { height: 75px; width: 100%; max-width: 480px; position: fixed; top: 690px; z-index: 999; border-top: solid 1px #eee; background: rgb(255, 255, 255, 0.9); }
 
 .radio-player { height: 4.6em; }

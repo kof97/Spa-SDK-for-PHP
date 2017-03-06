@@ -31,7 +31,7 @@ var webpackConfig = {
 	output: {
 		path: 'public',
 		filename: 'js/script.min.js',
-		// publicPath: 'static/'
+		// publicPath: 'public/'
 	},
 
 	module: {
@@ -100,8 +100,11 @@ var webpackConfig = {
 			'react': __dirname + '/node_modules/react',
 			'react-dom': __dirname + '/node_modules/react-dom'
 		}
-	}
+	},
 
+	externals: {
+		jquery: 'window.$'
+	}
 };
 
 module.exports = webpackConfig;

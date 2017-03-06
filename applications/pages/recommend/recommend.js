@@ -12,6 +12,7 @@ export default class Recommend extends Component {
 				<NavBar />
 				<div className="app-page-recommend-container">
 					<Individual />
+					<div className="app-blank"></div>
 				</div>
 			</div>
 		)

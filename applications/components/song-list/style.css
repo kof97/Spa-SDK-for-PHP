@@ -1,9 +1,10 @@
 
-.app-song-list-item { display: inline-block; width: 33%; text-align: center; }
+.app-song-list-item { float: left; width: 33%; height: 11.2em; padding: .4em 0; text-align: center; }
 
 .app-song-list-item-pic { margin: 0 auto; width: 90%; }
 .app-song-list-item-pic img { width: 100%; }
-.app-song-list-item-pic span { position: relative; padding: .2em 1em; float: right; margin-bottom: -100%; background: rgb(0, 0, 0, 0.2); }
-.app-song-list-item-pic span p { font-size: .8em; color: #fff; }
+.app-song-list-item-pic span { position: relative; padding: .2em 1em; float: right; margin-bottom: -100%; background: rgb(0, 0, 0, 0.2); z-index: 9; }
+.app-song-list-item-pic span p { padding-left: 1.5em; font-size: .8em; color: #fff; background: url(../../../pics/listen.png) 0 0 no-repeat; background-size: 17px; }
+.app-song-list-item-pic a:hover { opacity: 0.9; }
 
-.app-song-list-item-description {  }
+.app-song-list-item-description { font-size: .9em; }
